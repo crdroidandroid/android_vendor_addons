@@ -13,3 +13,10 @@
 # limitations under the License.
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
+
+# Prebuilts
+PRODUCT_PACKAGES += \
+    MagiskManager
+
+PRODUCT_COPY_FILES += \
+    vendor/addons/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
