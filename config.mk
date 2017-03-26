@@ -23,4 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
+DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
+
 $(call inherit-product, vendor/addons/prebuilt/bootanimation/bootanimation.mk)
