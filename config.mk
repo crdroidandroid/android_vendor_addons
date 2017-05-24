@@ -21,7 +21,8 @@ PRODUCT_PACKAGES += \
     su
 
 PRODUCT_COPY_FILES += \
-    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    vendor/addons/prebuilt/system/fonts/NotoColorEmoji.ttf:system/fonts/NotoColorEmoji.ttf
 
 # Camera Effects for devices without a vendor partition
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
