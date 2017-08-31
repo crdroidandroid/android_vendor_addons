@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
     Turbo
 
 PRODUCT_COPY_FILES += \
-    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    vendor/addons/prebuilt/system/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
 
 # Camera Effects for devices without a vendor partition
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
