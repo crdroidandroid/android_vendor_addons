@@ -16,7 +16,10 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    AdAway
+    AdAway \
+    NexusOverlay \
+    PixelOverlay \
+    RedOverlay
 
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
