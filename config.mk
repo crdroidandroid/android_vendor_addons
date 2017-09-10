@@ -22,8 +22,8 @@ PRODUCT_PACKAGES += \
     RedOverlay \
     Turbo
 
-#PRODUCT_COPY_FILES += \
-#    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+PRODUCT_COPY_FILES += \
+    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Camera Effects for devices without a vendor partition
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
