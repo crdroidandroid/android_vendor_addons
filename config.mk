@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
     AdAway \
     NexusOverlay \
     PixelOverlay \
-    RedOverlay
+    RedOverlay \
+    Turbo
 
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
