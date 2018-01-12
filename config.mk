@@ -17,9 +17,6 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 # Prebuilts
 PRODUCT_PACKAGES += \
     AdAway \
-    NexusOverlay \
-    PixelOverlay \
-    RedOverlay \
     Turbo
 
 PRODUCT_COPY_FILES += \
