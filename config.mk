@@ -33,3 +33,4 @@ endif
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 
 $(call inherit-product, vendor/addons/prebuilt/bootanimation/bootanimation.mk)
+$(call inherit-product, vendor/addons/sepolicy/sepolicy.mk)
