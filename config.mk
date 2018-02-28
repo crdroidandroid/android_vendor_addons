@@ -1,4 +1,4 @@
-# Copyright (C) 2017 crDroid Android Project
+# Copyright (C) 2017-2018 crDroid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,4 +33,3 @@ endif
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 
 $(call inherit-product, vendor/addons/prebuilt/bootanimation/bootanimation.mk)
-$(call inherit-product, vendor/addons/sepolicy/sepolicy.mk)
