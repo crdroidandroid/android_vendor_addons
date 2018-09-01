@@ -14,24 +14,26 @@ else
 fi
 
 IMAGESCALEWIDTH="$IMAGEWIDTH"
-IMAGESCALEHEIGHT="$IMAGEHEIGHT"
+IMAGESCALEHEIGHT=$(expr $IMAGESCALEWIDTH \* 16 / 9)
+BOOTFPS=60
 
 if [ "$HALF_RES" = "true" ]; then
     IMAGEWIDTH=$(expr $IMAGEWIDTH / 2)
-    IMAGEHEIGHT=$(expr $IMAGEHEIGHT / 2)
+    BOOTFPS=30
 fi
 
+IMAGEHEIGHT=$(expr $IMAGEWIDTH \* 16 / 9)
 RESOLUTION=""$IMAGEWIDTH"x"$IMAGEHEIGHT""
 
-for part_cnt in 0 1
+for part_cnt in 0 1 2 3
 do
     mkdir -p $ANDROID_PRODUCT_OUT/obj/BOOTANIMATION/bootanimation/part$part_cnt
 done
 tar xfp "vendor/addons/prebuilt/bootanimation/bootanimation.tar" -C "$OUT/bootanimation/"
-mogrify -resize $RESOLUTION -colors 250 "$OUT/bootanimation/"*"/"*".png"
+#mogrify -resize $RESOLUTION -colors 250 "$OUT/bootanimation/"*"/"*".png"
 
 # Create desc.txt
-echo "$IMAGESCALEWIDTH $IMAGESCALEHEIGHT" 30 > "$OUT/bootanimation/desc.txt"
+echo "$IMAGESCALEWIDTH $IMAGESCALEHEIGHT $BOOTFPS" > "$OUT/bootanimation/desc.txt"
 cat "vendor/addons/prebuilt/bootanimation/desc.txt" >> "$OUT/bootanimation/desc.txt"
 
 # Create bootanimation.zip
