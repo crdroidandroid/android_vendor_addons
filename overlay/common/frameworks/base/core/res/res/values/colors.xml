@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016-2018 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <resources>
     <color name="user_icon_1">#ff5e97f6</color>
     <color name="user_icon_2">#ff5c6bc0</color>
@@ -8,4 +23,24 @@
     <color name="user_icon_6">#ff8bc34a</color>
     <color name="user_icon_7">#ffff9800</color>
     <color name="user_icon_8">#ffff7043</color>
+
+    <color name="highlighted_text_dark">#ff4285f4</color>
+    <color name="highlighted_text_light">#ff4285f4</color>
+    <color name="link_text_dark">#ff4285f4</color>
+    <color name="link_text_light">#ff4285f4</color>
+
+    <color name="system_notification_accent_color">#ff4285f4</color>
+
+    <color name="Teal_700">#ff3e4147</color>
+    <color name="Teal_800">#ff2a2c31</color>
+    <color name="Blue_700">#ff3e4147</color>
+    <color name="Blue_800">#ff2a2c31</color>
+    <color name="Indigo_700">#ff3e4147</color>
+    <color name="Indigo_800">#ff2a2c31</color>
+    <color name="Purple_700">#ff3e4147</color>
+    <color name="Purple_800">#ff2a2c31</color>
+    <color name="Pink_700">#ff3e4147</color>
+    <color name="Pink_800">#ff2a2c31</color>
+    <color name="Red_700">#ff3e4147</color>
+    <color name="Red_800">#ff2a2c31</color>
 </resources>

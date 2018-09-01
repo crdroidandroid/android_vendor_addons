@@ -15,13 +15,12 @@
      limitations under the License.
 -->
 <resources>
+    <color name="accent_material_light">#ff4285f4</color>
+    <color name="accent_material_dark">#ff4285f4</color>
 
-    <color name="highlight_color_lxx_light">#4285F4</color>
-    <color name="gesture_trail_color_lxx_light">#4285F4</color>
-    <color name="gesture_floating_preview_color_lxx_light">#CC303233</color>
-    <color name="sliding_key_input_preview_color_lxx_light">#B34285F4</color>
-    <color name="highlight_color_lxx_dark">#5E97F6</color>
-    <color name="gesture_trail_color_lxx_dark">#5E97F6</color>
-    <color name="gesture_floating_preview_color_lxx_dark">#CC1B1B21</color>
-    <color name="sliding_key_input_preview_color_lxx_dark">#B35E97F6</color>
+    <color name="timepicker_default_ampm_selected_background_color_material">#ff4285f4</color>
+    <color name="timepicker_default_selector_color_material">#ff4285f4</color>
+
+    <color name="datepicker_default_circle_background_color_material_light">#ff4285f4</color>
+    <color name="datepicker_default_circle_background_color_material_dark">#ff4285f4</color>
 </resources>
