@@ -16,6 +16,7 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Prebuilts
 PRODUCT_PACKAGES += \
+    Turbo \
     bootanimation.zip
 
 PRODUCT_COPY_FILES += \
