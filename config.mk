@@ -18,11 +18,13 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 PRODUCT_PACKAGES += \
     AdAway \
     Turbo \
+    turbo.xml \
+    privapp-permissions-turbo.xml \
+    dialer_experience.xml \
     bootanimation.zip
 
 PRODUCT_COPY_FILES += \
-    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
-    vendor/addons/prebuilt/system/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+    vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Camera Effects for devices without a vendor partition
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
