@@ -65,6 +65,28 @@ PRODUCT_PACKAGES += \
     SystemBlack \
     SysUIBlack
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileDefault \
+    QStileCircleTrim \
+    QStileCircleDualTone \
+    QStileCircleGradient \
+    QStileDottedCircle \
+    QStileDualToneCircle \
+    QStileInk \
+    QStileInkdrop \
+    QStileMountain \
+    QStileNinja \
+    QStileOreo \
+    QStileOreoCircleTrim \
+    QStileOreoSquircleTrim \
+    QStilePokesign \
+    QStileSquaremedo \
+    QStileSquircle \
+    QStileSquircleTrim \
+    QStileTeardrop \
+    QStileWavey
+
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
