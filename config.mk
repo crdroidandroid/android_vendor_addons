@@ -16,7 +16,6 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    AdAway \
     Turbo \
     bootanimation.zip
 
