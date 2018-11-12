@@ -25,11 +25,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
-# Camera Effects for devices without a vendor partition
-ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
-PRODUCT_COPY_FILES +=  \
-    vendor/addons/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/addons/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
-endif
-
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
