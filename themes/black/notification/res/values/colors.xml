@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Notifications -->
+    <color name="notification_legacy_background_color">#ff000000</color>
+    <color name="notification_material_background_dimmed_color">#ff000000</color>
+    <color name="notification_material_background_low_priority_color">#ff000000</color>
+    <color name="notification_divider_color">#ffe0e0e0</color>
+    <color name="notification_shade_background_color">#ff000000</color>
+    <color name="notification_ripple_untinted_color">#ffe0e0e0</color>
+    <color name="notification_ripple_color_low_priority">#fff9f9f9</color>
+    <color name="notification_ripple_tinted_color">#fffefefe</color>
+    <color name="notification_gear_color">#ffffffff</color>
+    <color name="notification_guts_bg_color">#ff000000</color>
+    <color name="notification_material_background_color">#ff000000</color>
+    <color name="notification_default_color">#ffe8eaf6</color>
+    <color name="notification_action_list">#ff000000</color>
+    <color name="notification_action_list_dark">#ff000000</color>
+    <color name="notification_primary_text_color_light">#ffe8eaf6</color>
+    <color name="notification_secondary_text_color_light">#b3e8eaf6</color>
+    <color name="notification_progress_background_color">#b3e8eaf6</color>
+    <color name="notification_snooze_text">#ffe8eaf6</color>
+    <color name="notification_text_color1">#ffe8eaf6</color>
+    <color name="notification_default_color_dark">#a0e8eaf6</color>
+
+</resources>

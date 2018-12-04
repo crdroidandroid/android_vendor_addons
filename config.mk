@@ -22,6 +22,52 @@ PRODUCT_PACKAGES += \
     dialer_experience.xml \
     bootanimation.zip
 
+# Accents
+PRODUCT_PACKAGES += \
+    Amber \
+    Black \
+    Blue \
+    BlueGrey \
+    Brown \
+    Cyan \
+    DeepOrange \
+    DeepPurple \
+    Green \
+    Grey \
+    Indigo \
+    LightBlue \
+    LightGreen \
+    Lime \
+    Orange \
+    Pink \
+    Purple \
+    Red \
+    Teal \
+    UserOne \
+    UserTwo \
+    UserThree \
+    UserFour \
+    UserFive \
+    UserSix \
+    UserSeven \
+    Yellow \
+    White
+
+# Themes
+PRODUCT_PACKAGES += \
+    GBoardDark \
+    NotificationDark \
+    SettingsDark \
+    SettingsIntelligenceDark \
+    SystemDark \
+    SysUIDark \
+    GBoardBlack \
+    NotificationBlack \
+    SettingsBlack \
+    SettingsIntelligenceBlack \
+    SystemBlack \
+    SysUIBlack
+
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
