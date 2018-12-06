@@ -16,9 +16,6 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    Turbo \
-    turbo.xml \
-    privapp-permissions-turbo.xml \
     dialer_experience.xml \
     bootanimation.zip
 
