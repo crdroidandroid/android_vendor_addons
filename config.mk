@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2018 crDroid Android Project
+# Copyright (C) 2017-2019 crDroid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 # Prebuilts
 PRODUCT_PACKAGES += \
     dialer_experience.xml \
+    google.xml \
     bootanimation.zip
 
 # Accents
