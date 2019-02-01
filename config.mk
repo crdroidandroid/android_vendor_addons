@@ -54,17 +54,21 @@ PRODUCT_PACKAGES += \
 # Themes
 PRODUCT_PACKAGES += \
     GBoardDark \
+    GoogleIntelligenceSenseDark \
     NotificationDark \
     SettingsDark \
     SettingsIntelligenceDark \
     SystemDark \
     SysUIDark \
+    WellbeingDark \
     GBoardBlack \
+    GoogleIntelligenceSenseBlack \
     NotificationBlack \
     SettingsBlack \
     SettingsIntelligenceBlack \
     SystemBlack \
-    SysUIBlack
+    SysUIBlack \
+    WellbeingBlack
 
 # QS tile styles
 PRODUCT_PACKAGES += \
