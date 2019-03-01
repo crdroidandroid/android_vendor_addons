@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 crDroid Android Project
+     Copyright (C) 2018-2019 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,29 +17,28 @@
 <resources>
 
     <!-- DU Tweaks -->
-    <color name="BottomBarBackgroundColor">@*android:color/black</color>
+    <color name="BottomBarBackgroundColor">@*android:color/primary_device_default_dark</color>
     <color name="bottom_nav_text_icon_active">@android:color/white</color>
     <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
 
     <!-- Color for the background of the shortcut icons.-->
-    <color name="shortcut_background">@*android:color/black</color>
+    <color name="shortcut_background">@*android:color/primary_device_default_dark</color>
 
     <!-- Wifi network details -->
     <color name="wifi_details_icon_color">#8AFFFFFF</color>
 
-    <color name="condition_card_background">@*android:color/black</color>
-    <color name="suggestion_condition_background">@*android:color/black</color>
-    <color name="suggestion_tile_background">@*android:color/black</color>
+    <color name="condition_card_background">@*android:color/background_material_dark</color>
+    <color name="suggestion_condition_background">@*android:color/primary_device_default_dark</color>
+    <color name="suggestion_tile_background">@*android:color/background_material_dark</color>
     <color name="suggestion_title_text_color">@*android:color/white</color>
     <color name="suggestion_summary_text_color">@*android:color/white</color>
-
-    <!-- crDroid Settings -->
-    <color name="config_tab_color">@*android:color/black</color>
-    <color name="config_tab_text_color">@*android:color/secondary_text_default_material_dark</color>
 
     <!-- MSIM Color picker dialog colors -->
     <color name="sim_color_picker_edit_text_color">@android:color/white</color>
     <color name="sim_color_picker_list_text_color">@android:color/white</color>
     <color name="sim_color_picker_carrier_text_color">@android:color/white</color>
     <color name="sim_color_picker_number_text_color">@android:color/white</color>
+
+    <!-- Suggestion cards -->
+    <color name="suggestion_card_background">@*android:color/secondary_device_default_settings</color>
 </resources>

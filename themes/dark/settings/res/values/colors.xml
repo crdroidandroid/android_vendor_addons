@@ -38,4 +38,7 @@
     <color name="sim_color_picker_list_text_color">@android:color/white</color>
     <color name="sim_color_picker_carrier_text_color">@android:color/white</color>
     <color name="sim_color_picker_number_text_color">@android:color/white</color>
+
+    <!-- Suggestion cards -->
+    <color name="suggestion_card_background">@*android:color/secondary_device_default_settings</color>
 </resources>

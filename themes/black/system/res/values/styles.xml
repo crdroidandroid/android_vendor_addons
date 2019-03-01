@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2019 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <resources>
     <style name="Theme.DeviceDefault.QuickSettings" parent="@*android:style/Theme.DeviceDefault">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
         <item name="android:colorControlNormal">@*android:color/text_color_primary</item>
-        <item name="android:colorBackgroundFloating">@*android:color/black</item>
+        <item name="android:colorBackgroundFloating">@*android:color/material_grey_900</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
         <item name="android:textAppearanceButton">@*android:style/TextAppearance.DeviceDefault.Widget.Button</item>
         <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
@@ -17,12 +32,12 @@
         <item name="android:panelColorBackground">@*android:color/primary_material_light</item>
     </style>
     <style name="Theme.DeviceDefault.QuickSettings.Dialog" parent="@*android:style/Theme.DeviceDefault.Dialog">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
         <item name="android:colorControlNormal">@*android:color/text_color_primary</item>
-        <item name="android:colorBackgroundFloating">@*android:color/black</item>
+        <item name="android:colorBackgroundFloating">@*android:color/material_grey_900</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
         <item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
@@ -31,15 +46,15 @@
     </style>
     <style name="Theme.DeviceDefault.Settings" parent="@*android:style/Theme.Material">
         <item name="android:actionBarTheme">@*android:style/ThemeOverlay.DeviceDefault.ActionBar.Accent</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
         <item name="android:colorEdgeEffect">#ffffffff</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:navigationBarColor">@*android:color/black</item>
-        <item name="android:textColorPrimaryInverse">@*android:color/black</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:navigationBarColor">@*android:color/primary_device_default_dark</item>
+        <item name="android:textColorPrimaryInverse">@*android:color/background_material_dark</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:textAppearanceButton">@*android:style/TextAppearance.DeviceDefault.Widget.Button</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
@@ -53,40 +68,40 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.Material.Settings.BaseDialog" parent="@*android:style/Theme.Material.BaseDialog">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
     <style name="Theme.Material.Settings.CompactMenu" parent="@*android:style/Theme.Material.CompactMenu">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
     <style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@*android:style/Theme.Material.Dialog.BaseAlert">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
     <style name="Theme.Material.Settings.DialogWhenLarge" parent="@*android:style/Theme.Material.DialogWhenLarge">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
     <style name="Theme.Material.Settings.DialogWhenLarge.NoActionBar" parent="@*android:style/Theme.Material.DialogWhenLarge.NoActionBar">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
     <style name="Theme.Material.Settings.Dialog.Presentation" parent="@*android:style/Theme.Material.Dialog.Presentation">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
     <style name="Theme.DeviceDefault.Light.Dialog" parent="@*android:style/Theme.Material.Dialog">
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
@@ -98,12 +113,12 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
         <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
@@ -126,12 +141,12 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
         <item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
@@ -143,9 +158,9 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.DeviceDefault.Light.Dialog.MinWidth" parent="@*android:style/Theme.Material.Dialog.MinWidth">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -153,7 +168,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
         <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
@@ -167,9 +182,9 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar" parent="@*android:style/Theme.Material.Dialog.NoActionBar">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -177,7 +192,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
         <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
@@ -191,9 +206,9 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" parent="@*android:style/Theme.Material.Dialog.NoActionBar.MinWidth">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -201,7 +216,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
         <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
@@ -219,9 +234,9 @@
         <item name="*android:windowFixedWidthMinor">@*android:dimen/dialog_fixed_width_minor</item>
         <item name="*android:windowFixedHeightMajor">@*android:dimen/dialog_fixed_height_major</item>
         <item name="*android:windowFixedHeightMinor">@*android:dimen/dialog_fixed_height_minor</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -229,7 +244,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
     </style>
     <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar.FixedSize" parent="@*android:style/Theme.Material" >
@@ -237,9 +252,9 @@
         <item name="*android:windowFixedWidthMinor">@*android:dimen/dialog_fixed_width_minor</item>
         <item name="*android:windowFixedHeightMajor">@*android:dimen/dialog_fixed_height_major</item>
         <item name="*android:windowFixedHeightMinor">@*android:dimen/dialog_fixed_height_minor</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -247,13 +262,13 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
     </style>
     <style name="Theme.DeviceDefault.Light.DialogWhenLarge" parent="@*android:style/Theme.Material.DialogWhenLarge">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -261,7 +276,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
         <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
@@ -275,9 +290,9 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" parent="@*android:style/Theme.Material.DialogWhenLarge.NoActionBar">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -285,7 +300,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
         <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
@@ -299,9 +314,9 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.DeviceDefault.Light.Dialog.Presentation" parent="@*android:style/Theme.Material.Dialog.Presentation">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -309,7 +324,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
         <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
@@ -323,13 +338,13 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.DeviceDefault.Light.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar">
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:textColorPrimaryInverse">@*android:color/black</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@*android:color/background_material_dark</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColorSecondary">#6d6d6d</item>
         <item name="android:textColorTertiary">#6d6d6d</item>
@@ -345,13 +360,13 @@
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
     <style name="Theme.DeviceDefault.Light.Panel" parent="@*android:style/Theme.Material.Panel" >
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:textColorPrimaryInverse">@*android:color/black</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@*android:color/background_material_dark</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
         <item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
@@ -372,11 +387,11 @@
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_device_default_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
         <item name="android:textColorPrimary">#FFC7C7C7</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
         <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
@@ -385,8 +400,8 @@
         <item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
         <item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
-    </style>
-    <style name="Theme.DeviceDefault.System" parent="@*android:style/Theme.Material">
+     </style>
+     <style name="Theme.DeviceDefault.System" parent="@*android:style/Theme.Material">
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
         <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
         <item name="android:buttonBarStyle">@*android:style/DeviceDefault.ButtonBar.AlertDialog</item>
@@ -396,12 +411,12 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
     <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@*android:style/Theme.Material.Light.DarkActionBar">
         <item name="android:windowTitleStyle">@*android:style/DialogWindowTitle.DeviceDefault</item>
@@ -413,12 +428,11 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/black</item>
-        <item name="android:colorPrimaryDark">@*android:color/black</item>
-        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
+        <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@*android:color/black</item>
         <item name="android:colorError">@*android:color/error_color_device_default_light</item>
         <item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>

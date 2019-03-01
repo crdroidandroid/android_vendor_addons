@@ -17,20 +17,20 @@
 <resources>
 
     <!-- Immersive cling -->
-    <color name="immersive_cling_bg_color">@*android:color/black</color>
+    <color name="immersive_cling_bg_color">@*android:color/background_material_dark</color>
     <color name="immersive_cling_text_color">@android:color/white</color>
     <color name="immersive_cling_button_text_color">@android:color/white</color>
 
     <!-- Resolver -->
-    <color name="resolver_list_bg">@*android:color/black</color>
-    <color name="chooser_service_row_background_color">@*android:color/black</color>
+    <color name="resolver_list_bg">@*android:color/background_material_dark</color>
+    <color name="chooser_service_row_background_color">@*android:color/background_material_dark</color>
 
     <!-- Autofill save dialog -->
-    <color name="autofill_save_title_color">@android:color/black</color>
-    <color name="autofill_autofill_save_custom_subtitle_color">@android:color/black</color>
+    <color name="autofill_save_title_color">@*android:color/primary_device_default_dark</color>
+    <color name="autofill_autofill_save_custom_subtitle_color">@*android:color/primary_device_default_dark</color>
 
     <!-- Toast text and bg colors -->
-    <color name="toast_bg_color">@*android:color/black</color>
+    <color name="toast_bg_color">@*android:color/background_material_dark</color>
     <color name="toast_text_color">@android:color/white</color>
 
     <!-- Two target preference vertical divider color -->
@@ -45,14 +45,14 @@
     <color name="primary_device_default_dark">@*android:color/black</color>
     <color name="primary_device_default_settings">@*android:color/black</color>
     <color name="primary_dark_device_default_settings">@*android:color/black</color>
-    <color name="secondary_device_default_settings">@*android:color/black</color>
-    <color name="background_material_dark">@*android:color/black</color>
+    <color name="secondary_device_default_settings">#ff151618</color>
+    <color name="background_material_dark">#ff151618</color>
     <color name="material_grey_900">@*android:color/black</color>
-    <color name="material_grey_850">@*android:color/black</color>
-    <color name="material_grey_800">@*android:color/black</color>
-    <color name="material_grey_600">@*android:color/black</color>
-    <color name="material_blue_grey_700">@*android:color/black</color>
-    <color name="material_blue_grey_800">@*android:color/black</color>
-    <color name="material_blue_grey_900">@*android:color/black</color>
+    <color name="material_grey_850">#ff151618</color>
+    <color name="material_grey_800">#ff1e1f22</color>
+    <color name="material_grey_600">#ff212121</color>
     <color name="material_blue_grey_950">@*android:color/black</color>
+    <color name="material_blue_grey_900">#ff151618</color>
+    <color name="material_blue_grey_800">#ff1e1f22</color>
+    <color name="material_blue_grey_700">#ff212121</color>
 </resources>

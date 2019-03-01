@@ -38,10 +38,11 @@
     <color name="notification_default_color">#ffe8eaf6</color>
     <color name="notification_action_list">#ff000000</color>
     <color name="notification_action_list_dark">#ff000000</color>
-    <color name="notification_primary_text_color_light">#ffe8eaf6</color>
-    <color name="notification_secondary_text_color_light">#b3e8eaf6</color>
-    <color name="notification_progress_background_color">#b3e8eaf6</color>
-    <color name="notification_snooze_text">#ffe8eaf6</color>
-    <color name="notification_text_color1">#ffe8eaf6</color>
-    <color name="notification_default_color_dark">#a0e8eaf6</color>
+    <color name="notification_primary_text_color_light">@*android:color/theme_text1</color>
+    <color name="notification_secondary_text_color_light">@*android:color/theme_text2</color>
+    <color name="notification_progress_background_color">@*android:color/theme_text2</color>
+    <color name="notification_snooze_text">@*android:color/theme_text1</color>
+    <color name="notification_text_color1">@*android:color/theme_text1</color>
+    <color name="notification_default_color_light">@*android:color/theme_text1</color>
+    <color name="notification_default_color_dark">@*android:color/theme_text1</color>
 </resources>
