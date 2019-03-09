@@ -15,7 +15,7 @@ fi
 
 IMAGESCALEWIDTH="$IMAGEWIDTH"
 IMAGESCALEHEIGHT=$(expr $IMAGESCALEWIDTH \* 16 / 9)
-BOOTFPS=60
+BOOTFPS=40
 
 if [ "$HALF_RES" = "true" ]; then
     IMAGEWIDTH=$(expr $IMAGEWIDTH / 2)
@@ -27,7 +27,7 @@ RESOLUTION=""$IMAGEWIDTH"x"$IMAGEHEIGHT""
 
 rm -rf $OUT >> null
 
-for part_cnt in 0 1 2 3
+for part_cnt in 0 1 2
 do
     mkdir -p $OUT/bootanimation/part$part_cnt
 done
