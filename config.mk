@@ -18,7 +18,8 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 PRODUCT_PACKAGES += \
     dialer_experience.xml \
     google.xml \
-    bootanimation.zip
+    bootanimation.zip \
+    Lawnchair
 
 # Accents
 PRODUCT_PACKAGES += \
@@ -108,5 +109,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/addons/prebuilt/system/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/addons/prebuilt/system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
