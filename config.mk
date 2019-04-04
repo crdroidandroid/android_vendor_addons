@@ -106,6 +106,11 @@ PRODUCT_PACKAGES += \
     OnePlusSwitch \
     StockSwitch
 
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
