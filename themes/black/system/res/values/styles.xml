@@ -442,4 +442,9 @@
         <item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
     </style>
+    <style name="Theme.Dialog.AppError" parent="@*android:style/CustomThemeDeviceDefaultDialogAlert">
+        <item name="android:windowContentTransitions">false</item>
+        <item name="android:windowActivityTransitions">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
 </resources>
