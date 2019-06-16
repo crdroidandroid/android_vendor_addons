@@ -77,11 +77,15 @@ PRODUCT_PACKAGES += \
     QStileCircleDualTone \
     QStileCircleGradient \
     QStileCookie \
+    QStileCosmos \
+    QStileDividedCircle \
     QStileDottedCircle \
     QStileDualToneCircle \
     QStileInk \
     QStileInkdrop \
+    QStileJustIcons \
     QStileMountain \
+    QStileNeonLike \
     QStileNinja \
     QStileOreo \
     QStileOreoCircleTrim \
@@ -91,6 +95,7 @@ PRODUCT_PACKAGES += \
     QStileSquircle \
     QStileSquircleTrim \
     QStileTeardrop \
+    QStileTriangle \
     QStileWavey
 
 # QS header styles
