@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
     dialer_experience.xml \
     google.xml \
     bootanimation.zip \
-    SubstratumKey
+    SubstratumSignature
 
 # Accents
 PRODUCT_PACKAGES += \
