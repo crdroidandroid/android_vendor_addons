@@ -18,7 +18,8 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 PRODUCT_PACKAGES += \
     dialer_experience.xml \
     google.xml \
-    bootanimation.zip
+    bootanimation.zip \
+    SubstratumSignature
 
 # Accents
 PRODUCT_PACKAGES += \
