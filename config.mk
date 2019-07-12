@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
     QStileOreo \
     QStileOreoCircleTrim \
     QStileOreoSquircleTrim \
+    QSTileOxygen \
     QStilePokesign \
     QStileSquaremedo \
     QStileSquircle \
