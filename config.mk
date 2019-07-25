@@ -49,6 +49,26 @@ PRODUCT_PACKAGES += \
     UserFive \
     UserSix \
     UserSeven \
+    brandOne \
+    brandTwo \
+    brandThree \
+    brandFour \
+    brandFive \
+    brandSix \
+    brandSeven \
+    brandEight \
+    brandNine \
+    brandTen \
+    brandEleven \
+    brandTwelve \
+    brandThirteen \
+    brandFourteen \
+    brandFifteen \
+    brandSixteen \
+    brandSeventeen \
+    brandEighteen \
+    brandNineteen \
+    brandTwenty \
     Yellow \
     White
 
