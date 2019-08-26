@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
     dialer_experience.xml \
     google.xml \
     bootanimation.zip \
-    SubstratumSignature
+    SubstratumSignature \
+    Longshot
 
 # Accents
 PRODUCT_PACKAGES += \
