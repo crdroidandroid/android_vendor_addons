@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     google.xml \
     bootanimation.zip \
     SubstratumSignature \
-    Longshot
+    Longshot \
+    org.pixelexperience.screenshot.xml
 
 # Accents
 PRODUCT_PACKAGES += \
