@@ -21,7 +21,9 @@ PRODUCT_PACKAGES += \
     bootanimation.zip \
     SubstratumSignature \
     Longshot \
-    org.pixelexperience.screenshot.xml
+    org.pixelexperience.screenshot.xml \
+    privapp-permissions-crdroidhome.xml \
+    pixelbridge
 
 # Accents
 PRODUCT_PACKAGES += \
