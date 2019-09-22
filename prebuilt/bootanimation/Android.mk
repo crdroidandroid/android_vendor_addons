@@ -42,11 +42,11 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	    IMAGEWIDTH=$(TARGET_SCREEN_WIDTH); \
 	fi; \
 	IMAGESCALEWIDTH=$$IMAGEWIDTH; \
-	IMAGESCALEHEIGHT=$$(expr $$IMAGESCALEWIDTH / 3); \
+	IMAGESCALEHEIGHT=$(expr $IMAGESCALEWIDTH \* 16 / 9); \
 	for part_cnt in 0 1 2; do \
 	    mkdir -p $(INTERMEDIATES)/part$$part_cnt; \
 	done; \
-	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT 60" > $(INTERMEDIATES)/desc.txt; \
+	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT 40" > $(INTERMEDIATES)/desc.txt; \
 	cat vendor/addons/prebuilt/bootanimation/desc.txt >> $(INTERMEDIATES)/desc.txt
 	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -D $(INTERMEDIATES)
 
