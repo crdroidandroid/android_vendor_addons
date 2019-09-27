@@ -22,7 +22,7 @@ ifeq ($(TARGET_SCREEN_HEIGHT),)
     $(warning TARGET_SCREEN_HEIGHT is not set, using default value: 1920)
     TARGET_SCREEN_HEIGHT := 1920
 endif
-BOOTFPS := 40
+BOOTFPS := 25
 
 TARGET_GENERATED_BOOTANIMATION := $(TARGET_OUT_INTERMEDIATES)/BOOTANIMATION/bootanimation.zip
 $(TARGET_GENERATED_BOOTANIMATION): INTERMEDIATES := $(TARGET_OUT_INTERMEDIATES)/BOOTANIMATION
@@ -30,13 +30,7 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	@echo "Building bootanimation.zip"
 	@rm -rf $(dir $@)
 	@mkdir -p $(dir $@)
-	$(hide) if [ $(TARGET_SCREEN_HEIGHT) -ge 1440 ]; then \
-	    tar xfp vendor/addons/prebuilt/bootanimation/bootanimation_1440.tar -C $(INTERMEDIATES); \
-	elif [ $(TARGET_SCREEN_HEIGHT) -ge 1080 ]; then \
-	    tar xfp vendor/addons/prebuilt/bootanimation/bootanimation_1080.tar -C $(INTERMEDIATES); \
-	else \
-	    tar xfp vendor/addons/prebuilt/bootanimation/bootanimation_720.tar -C $(INTERMEDIATES); \
-	fi; \
+	$(hide) tar xfp vendor/addons/prebuilt/bootanimation/bootanimation.tar -C $(INTERMEDIATES); \
 	if [ $(TARGET_SCREEN_HEIGHT) -lt $(TARGET_SCREEN_WIDTH) ]; then \
 	    IMAGEWIDTH=$(TARGET_SCREEN_HEIGHT); \
 	else \
@@ -44,9 +38,11 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	fi; \
 	IMAGESCALEWIDTH=$$IMAGEWIDTH; \
 	IMAGESCALEHEIGHT=$$(expr $$IMAGESCALEWIDTH \* 16 \/ 9); \
+	RESOLUTION="$$IMAGESCALEWIDTH"x"$$IMAGESCALEHEIGHT"; \
 	for part_cnt in 0 1 2; do \
 	    mkdir -p $(INTERMEDIATES)/part$$part_cnt; \
 	done; \
+	prebuilts/tools-lineage/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.png; \
 	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT $(BOOTFPS)" > $(INTERMEDIATES)/desc.txt; \
 	cat vendor/addons/prebuilt/bootanimation/desc.txt >> $(INTERMEDIATES)/desc.txt
 	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -D $(INTERMEDIATES)
