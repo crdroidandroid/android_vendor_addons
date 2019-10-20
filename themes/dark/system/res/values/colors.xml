@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2019 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Immersive cling -->
+    <color name="immersive_cling_bg_color">@*android:color/background_material_dark</color>
+    <color name="immersive_cling_text_color">@android:color/white</color>
+    <color name="immersive_cling_button_text_color">@android:color/white</color>
+
+    <!-- Resolver -->
+    <color name="resolver_list_bg">@*android:color/background_material_dark</color>
+    <color name="chooser_service_row_background_color">@*android:color/background_material_dark</color>
+
+    <!-- Autofill save dialog -->
+    <color name="autofill_save_title_color">@*android:color/primary_device_default_dark</color>
+    <color name="autofill_autofill_save_custom_subtitle_color">@*android:color/primary_device_default_dark</color>
+
+    <!-- Toast text and bg colors -->
+    <color name="toast_bg_color">@*android:color/background_material_dark</color>
+    <color name="toast_text_color">@android:color/white</color>
+
+    <!-- Two target preference vertical divider color -->
+    <color name="list_divider_dark">#64eeeeee</color>
+
+    <color name="app_permission_icon_tint">@android:color/white</color>
+
+    <!-- Updater snackbar text color -->
+    <color name="updater_snackbar_text_color">@android:color/black</color>
+
+    <!-- Device default colors -->
+    <color name="primary_device_default_dark">#ff151618</color>
+    <color name="primary_device_default_settings">#ff151618</color>
+    <color name="primary_dark_device_default_settings">#ff151618</color>
+    <color name="secondary_device_default_settings">#ff1e1f22</color>
+    <color name="background_material_dark">#ff1e1f22</color>
+    <color name="material_grey_900">#ff151618</color>
+    <color name="material_grey_850">#ff1e1f22</color>
+    <color name="material_grey_800">#ff212121</color>
+</resources>
