@@ -42,6 +42,8 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	    tar xfp vendor/addons/prebuilt/bootanimation/bootanimation_1440.tar -C $(INTERMEDIATES); \
 	elif [ "$$IMAGESCALEWIDTH" -eq 1080 ]; then \
 	    tar xfp vendor/addons/prebuilt/bootanimation/bootanimation_1080.tar -C $(INTERMEDIATES); \
+	elif [ "$$IMAGESCALEWIDTH" -eq 720 ]; then \
+	    tar xfp vendor/addons/prebuilt/bootanimation/bootanimation_720.tar -C $(INTERMEDIATES); \
 	else \
 	    tar xfp vendor/addons/prebuilt/bootanimation/bootanimation.tar -C $(INTERMEDIATES); \
 	    prebuilts/tools-lineage/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.png; \
