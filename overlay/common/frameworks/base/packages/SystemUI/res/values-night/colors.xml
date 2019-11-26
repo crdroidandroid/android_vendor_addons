@@ -18,7 +18,7 @@
   -->
 <resources>
     <!-- The color of the material notification background when dimmed -->
-    <color name="notification_material_background_dimmed_color">#ff202124</color>
+    <color name="notification_material_background_dimmed_color">#ff151618</color>
 
     <!-- The color of the dividing line between grouped notifications while . -->
     <color name="notification_divider_color">#ffe0e0e0</color>
@@ -27,14 +27,14 @@
     <color name="notification_ripple_untinted_color">#ffe0e0e0</color>
 
     <!-- The "inside" of a notification, reached via longpress -->
-    <color name="notification_guts_bg_color">#ff202124</color>
+    <color name="notification_guts_bg_color">#ff151618</color>
 
     <!-- The color of the background in the grid of the Global Actions menu -->
-    <color name="global_actions_grid_background">#ff202124</color>
+    <color name="global_actions_grid_background">#ff151618</color>
 
     <!-- The color of the background in the top part of QSCustomizer -->
-    <color name="qs_customize_background">#ff202124</color>
+    <color name="qs_customize_background">#ff151618</color>
 
     <!-- The color of the background in the bottom part of QSCustomizer -->
-    <color name="qs_customize_decoration">#ff28292d</color>
+    <color name="qs_customize_decoration">#ff1a1b1e</color>
 </resources>
