@@ -29,7 +29,7 @@
         <item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
         <item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
         <item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
-        <item name="android:panelColorBackground">@*android:color/primary_material_light</item>
+        <item name="android:panelColorBackground">@*android:color/primary_device_default_dark</item>
         <item name="android:textAppearanceListItem">@*android:style/TextAppearancePreference</item>
         <item name="android:textAppearanceListItemSmall">@*android:style/TextAppearancePreference</item>
     </style>
