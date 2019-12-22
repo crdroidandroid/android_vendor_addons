@@ -25,9 +25,9 @@
     <color name="notification_default_color_dark">#ffe5e5e5</color>
 
     <!-- The background color of a notification card. -->
-    <color name="notification_material_background_color">#ff151618</color>
+    <color name="notification_material_background_color">#ff151618</color> <!-- material_grey_900 -->
 
-     <color name="primary_material_dark">#ff151618</color> <!-- material_grey_900 -->
+    <color name="primary_material_dark">#ff151618</color> <!-- material_grey_900 -->
     <color name="primary_material_settings">#ff151618</color> <!-- material_grey_900 -->
     <color name="primary_dark_material_dark">#ff0f1012</color>
     <color name="primary_dark_material_settings">#ff1a1b1e</color> <!-- material_grey_850 -->
