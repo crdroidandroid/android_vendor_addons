@@ -30,6 +30,9 @@
     <!-- The color of the background in the grid of the Global Actions menu -->
     <color name="global_actions_grid_background">@*android:color/material_grey_900</color>
 
+    <!-- The color of the background in the separated list of the Global Actions menu -->
+    <color name="global_actions_separated_background">@*android:color/material_grey_850</color>
+
     <!-- The color of the background in the top part of QSCustomizer -->
     <color name="qs_customize_background">@*android:color/material_grey_900</color>
 
