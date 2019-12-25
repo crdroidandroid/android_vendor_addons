@@ -38,4 +38,6 @@
 
     <!-- The color of the background in the bottom part of QSCustomizer -->
     <color name="qs_customize_decoration">@*android:color/material_grey_850</color>
+
+    <color name="qs_tile_disabled_color">@*android:color/material_grey_600</color>
 </resources>
