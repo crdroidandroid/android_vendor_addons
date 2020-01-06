@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2019 crDroid Android Project
+     Copyright (C) 2016-2020 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,12 +15,18 @@
      limitations under the License.
 -->
 <resources>
-    <color name="accent_material_light">#ff4285f4</color>
-    <color name="accent_material_dark">#ff4285f4</color>
+    <color name="accent_material_light">#ff1a73e8</color>
+    <color name="accent_material_dark">#ff2581df</color>
+
+    <color name="error_color_material_light">#ffd93025</color>
+    <color name="error_color_material_dark">#ffe25142</color>
 
     <color name="timepicker_default_ampm_selected_background_color_material">#ff4285f4</color>
     <color name="timepicker_default_selector_color_material">#ff4285f4</color>
 
     <color name="datepicker_default_circle_background_color_material_light">#ff4285f4</color>
     <color name="datepicker_default_circle_background_color_material_dark">#ff4285f4</color>
+
+    <color name="material_grey_100">#fff8f9fa</color>
+    <color name="material_grey_50">#ffffffff</color>
 </resources>
