@@ -15,6 +15,10 @@ LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
+ifeq ($(EXTRA_FOD_ANIMATIONS),true)
+DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/fod
+endif
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/addons/prebuilt/system/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
