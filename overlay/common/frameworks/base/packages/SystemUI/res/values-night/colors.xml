@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2019 crDroid Android Project
+     Copyright (C) 2019-2020 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -40,4 +40,8 @@
     <color name="qs_customize_decoration">@*android:color/material_grey_850</color>
 
     <color name="qs_tile_disabled_color">@*android:color/material_grey_600</color>
+
+    <color name="notification_guts_info_button_color">@*android:color/accent_device_default_dark</color>
+    <color name="notification_guts_priority_button_content_color_selected">@*android:color/accent_device_default_dark</color>
+    <color name="notification_guts_priority_button_bg_stroke_color_selected">@*android:color/accent_device_default_dark</color>
 </resources>
