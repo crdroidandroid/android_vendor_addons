@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fonts-modification version="1">
 
+    <!-- Accuratist -->
+    <family customizationType="new-named-family" name="accuratist">
+        <font weight="400" style="normal">Accuratist.ttf</font>
+    </family>
+    <alias name="accuratist-light" to="accuratist" weight="300" />
+    <alias name="accuratist-medium" to="accuratist" weight="500" />
+    <alias name="accuratist-semi-bold" to="accuratist" weight="600" />
+    <alias name="accuratist-bold" to="accuratist" weight="700" />
+
     <!-- Aclonica -->
     <family customizationType="new-named-family" name="aclonica">
         <font weight="300" style="normal">Aclonica.ttf</font>
