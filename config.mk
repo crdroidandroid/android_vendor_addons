@@ -18,13 +18,13 @@ DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/common
 
 ifeq ($(EXTRA_FOD_ANIMATIONS),true)
-DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/fod
+DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod-animations
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/fod-animations
 endif
 
 ifeq ($(TARGET_HAS_FOD),true)
-DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay-fod
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay-fod
+DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod-icons
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/fod-icons
 endif
 
 # Include {Lato,Rubik} fonts
