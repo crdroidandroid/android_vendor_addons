@@ -27,6 +27,11 @@ DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay-fod
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay-fod
 endif
 
+ifeq ($(TARGET_HAS_ADAPTIVE_SLEEP),true)
+DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/adaptive_sleep
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/adaptive_sleep
+endif
+
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
