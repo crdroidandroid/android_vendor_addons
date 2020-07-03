@@ -175,6 +175,13 @@
     <alias name="reemkufi-semi-bold" to="reemkufi" weight="600" />
     <alias name="reemkufi-bold" to="reemkufi" weight="700" />
 
+    <!-- Roboto -->
+    <family customizationType="new-named-family" name="roboto">
+        <font weight="300" style="normal">RobotoCondensed-Regular.ttf</font>
+    </family>
+    <alias name="roboto-semi-bold" to="roboto" weight="600" />
+    <alias name="roboto-bold" to="roboto" weight="700" />
+
     <!-- Rosemary -->
     <family customizationType="new-named-family" name="rosemary">
         <font weight="300" style="normal">Rosemary-Regular.ttf</font>
