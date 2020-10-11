@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2020 crDroid Android Project
+     Copyright (C) 2016-2021 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -33,4 +33,6 @@
 
     <!-- Resolver/Chooser -->
     <color name="resolver_text_color_secondary_dark">#fff5f5f5</color>
+    <color name="chooser_chip_icon">@*android:color/accent_device_default</color>
+    <color name="personal_apps_suspension_notification_color">@*android:color/accent_device_default</color>
 </resources>
