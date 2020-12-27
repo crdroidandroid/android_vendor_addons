@@ -18,8 +18,8 @@ DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/common
 
 ifeq ($(EXTRA_FOD_ANIMATIONS),true)
-DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod-animations
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/fod-animations
+PRODUCT_PACKAGES += \
+    FodAnimationResources
 endif
 
 ifeq ($(TARGET_HAS_FOD),true)
