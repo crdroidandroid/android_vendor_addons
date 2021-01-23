@@ -17,6 +17,13 @@
 
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
     android:oneshot="false">
+    <item android:drawable="@drawable/fod_op_stripe_anim_00" android:duration="12" />
+    <item android:drawable="@drawable/fod_op_stripe_anim_01" android:duration="12" />
+    <item android:drawable="@drawable/fod_op_stripe_anim_02" android:duration="12" />
+    <item android:drawable="@drawable/fod_op_stripe_anim_03" android:duration="12" />
+    <item android:drawable="@drawable/fod_op_stripe_anim_04" android:duration="12" />
+    <item android:drawable="@drawable/fod_op_stripe_anim_05" android:duration="12" />
+    <item android:drawable="@drawable/fod_op_stripe_anim_06" android:duration="12" />
     <item android:drawable="@drawable/fod_op_stripe_anim_07" android:duration="12" />
     <item android:drawable="@drawable/fod_op_stripe_anim_08" android:duration="12" />
     <item android:drawable="@drawable/fod_op_stripe_anim_09" android:duration="12" />
@@ -36,24 +43,4 @@
     <item android:drawable="@drawable/fod_op_stripe_anim_23" android:duration="12" />
     <item android:drawable="@drawable/fod_op_stripe_anim_24" android:duration="12" />
     <item android:drawable="@drawable/fod_op_stripe_anim_25" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_26" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_27" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_28" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_29" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_30" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_31" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_32" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_33" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_34" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_35" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_36" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_37" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_38" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_39" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_40" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_41" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_42" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_43" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_44" android:duration="12" />
-    <item android:drawable="@drawable/fod_op_stripe_anim_45" android:duration="12" />
 </animation-list>
