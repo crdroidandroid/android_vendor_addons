@@ -1,0 +1,14 @@
+android_library {
+    name: "VolumePluginCommon",
+    static_libs: [
+        "SystemUIPluginLib",
+        "androidx.appcompat_appcompat",
+    ],
+    resource_dirs: [
+        "res",
+    ],
+    manifest: "AndroidManifest.xml",
+    srcs: ["src/**/*.java"],
+
+    aaptflags: ["--auto-add-overlay"],
+}

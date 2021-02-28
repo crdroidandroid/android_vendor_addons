@@ -1,0 +1,17 @@
+android_app {
+
+    name: "OreoPanel",
+
+    static_libs: ["VolumePluginCommon"],
+
+    resource_dirs: ["res"],
+
+    certificate: "platform",
+    optimize: {
+        enabled: false,
+    },
+    platform_apis: true,
+
+    srcs: ["src/**/*.java"],
+
+}
