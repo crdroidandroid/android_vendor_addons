@@ -18,7 +18,8 @@
     android:clipChildren="false"
     android:clipToPadding="false"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/volume_row_padding_bottom" >
+    android:paddingBottom="@dimen/volume_row_padding_bottom"
+    android:theme="@style/qs_theme">
 
     <TextView
         android:id="@+id/volume_row_header"

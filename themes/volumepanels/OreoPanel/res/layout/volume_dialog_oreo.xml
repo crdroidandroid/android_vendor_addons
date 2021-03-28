@@ -16,7 +16,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:paddingTop="@*android:dimen/status_bar_height"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:theme="@style/qs_theme">
 
     <LinearLayout
         android:id="@+id/volume_dialog"

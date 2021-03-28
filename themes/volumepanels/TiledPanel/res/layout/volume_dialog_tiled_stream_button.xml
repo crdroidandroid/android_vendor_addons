@@ -19,7 +19,8 @@
     android:layout_height="@dimen/volume_dialog_ringer_size"
     android:layout_width="@dimen/volume_dialog_ringer_size"
     android:clipChildren="false"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    android:theme="@style/qs_theme">
 
     <com.android.plugin.volume.common.AlphaOptimizedImageButton
         android:id="@+id/button"
