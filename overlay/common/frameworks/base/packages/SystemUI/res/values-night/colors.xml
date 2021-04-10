@@ -49,8 +49,8 @@
     <color name="biometric_dialog_accent">@*android:color/accent_device_default</color>
 
     <!-- Global screenshot actions -->
-    <color name="global_screenshot_button_icon">@*android:color/accent_device_default</color>
+    <color name="global_screenshot_button_icon">@*android:color/primary_dark_material_settings</color>
     <color name="global_screenshot_button_background">@*android:color/background_floating_device_default_dark</color>
-    <color name="global_screenshot_button_border">@*android:color/material_grey_600</color>
-    <color name="global_screenshot_dismiss_background">@*android:color/material_grey_900</color>
+    <color name="global_screenshot_button_border">@*android:color/primary_dark_material_settings</color>
+    <color name="global_screenshot_dismiss_background">@*android:color/primary_dark_material_settings</color>
 </resources>
