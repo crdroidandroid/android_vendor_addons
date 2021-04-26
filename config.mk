@@ -94,6 +94,26 @@ PRODUCT_PACKAGES += \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay
 
+
+# Signal / WiFi Icons
+PRODUCT_PACKAGES += \
+	BarsSignalOverlay \
+	BarsWiFiOverlay \
+	InsideSignalOverlay \
+	InsideWiFiOverlay \
+	RoundSignalOverlay \
+	RoundWiFiOverlay \
+	SneakySignalOverlay \
+	SneakyWiFiOverlay \
+	StrokeSignalOverlay \
+	StrokeWiFiOverlay \
+	WavySignalOverlay \
+	WavyWiFiOverlay \
+	XperiaSignalOverlay \
+	XperiaWiFiOverlay \
+	ZigZagSignalOverlay \
+	ZigZagWiFiOverlay
+
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
