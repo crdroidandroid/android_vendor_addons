@@ -1316,8 +1316,8 @@ public class VolumeDialogImpl extends PanelSideAware implements VolumeDialog {
         }
         boolean useActiveColoring = isActive && row.slider.isEnabled();
         final ColorStateList tint = useActiveColoring
-                ? Utils.getColorAccent(mContext)
-                : Utils.getColorAttr(mContext, android.R.attr.colorForeground);
+                ? Utils.getColorAccent(mSysUIContext)
+                : Utils.getColorAttr(mSysUIContext, android.R.attr.colorForeground);
         final int alpha = useActiveColoring
                 ? Color.alpha(tint.getDefaultColor())
                 : getAlphaAttr(android.R.attr.secondaryContentAlpha);
