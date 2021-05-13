@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2016 The Android Open Source Project
  * Copyright (C) 2020 The Potato Open Sauce Project
+ * Copyright (C) 2021 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of the License at
@@ -17,12 +18,15 @@ package com.android.plugin.volume.common;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.UserHandle;
 import android.provider.Settings;
+
+import lineageos.providers.LineageSettings;
 
 public abstract class PanelSideAware {
     protected boolean mPanelOnLeftSide = false;
@@ -41,14 +45,14 @@ public abstract class PanelSideAware {
             super(new Handler(Looper.getMainLooper()));
             mSysUIContext = sysUIContext;
             mLocalContext = localContext;
-	    mSysUIR = new SysUIR(localContext);
+            mSysUIR = new SysUIR(localContext);
             updateSideVar();
         }
 
         public void observe() {
             ContentResolver resolver = mLocalContext.getContentResolver();
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                "volume_panel_on_left"),
+            resolver.registerContentObserver(LineageSettings.Secure.getUriFor(
+                LineageSettings.Secure.VOLUME_PANEL_ON_LEFT),
                 false, this, UserHandle.USER_CURRENT);
         }
 
@@ -62,9 +66,9 @@ public abstract class PanelSideAware {
                 defaultValue = 0;
             }
 
-            int panelOnLeftSide = Settings.System.getIntForUser(
+            int panelOnLeftSide = LineageSettings.Secure.getIntForUser(
                 mLocalContext.getContentResolver(),
-                "volume_panel_on_left", defaultValue,
+                LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, defaultValue,
                 UserHandle.USER_CURRENT);
 
             mPanelOnLeftSide = panelOnLeftSide == 1;
@@ -72,9 +76,9 @@ public abstract class PanelSideAware {
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
-            if (uri.equals(Settings.System.getUriFor("volume_panel_on_left"))) {
-                 updateSideVar();
-		 onSideChange();
+            if (uri.equals(LineageSettings.Secure.getUriFor(LineageSettings.Secure.VOLUME_PANEL_ON_LEFT))) {
+                updateSideVar();
+                onSideChange();
             }
         }
     }
