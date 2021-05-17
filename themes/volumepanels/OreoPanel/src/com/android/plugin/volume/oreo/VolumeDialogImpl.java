@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2015 The Android Open Source Project
  * Copyright (C) 2020 The Potato Open Sauce Project
+ * Copyright (C) 2021 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -222,7 +223,6 @@ public class VolumeDialogImpl implements VolumeDialog {
         mWindowParams.flags &= ~WindowManager.LayoutParams.FLAG_DIM_BEHIND;
         mWindowParams.flags &= ~WindowManager.LayoutParams.FLAG_LAYOUT_INSET_DECOR;
         mWindowParams.flags |= WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
-                | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
                 | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
                 | WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
                 | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH
@@ -234,9 +234,11 @@ public class VolumeDialogImpl implements VolumeDialog {
 
         mDialog.setOnTouchListener((v, event) -> {
             if (mShowing) {
-                if (event.getAction() == MotionEvent.ACTION_OUTSIDE) {
-                    dismissH(Events.DISMISS_REASON_TOUCH_OUTSIDE);
-                    return true;
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_OUTSIDE:
+                    case MotionEvent.ACTION_DOWN:
+                        dismissH(Events.DISMISS_REASON_TOUCH_OUTSIDE);
+                        return true;
                 }
             }
             return false;
@@ -315,7 +317,7 @@ public class VolumeDialogImpl implements VolumeDialog {
         internalInsetsInfo.touchableRegion.setEmpty();
         internalInsetsInfo.setTouchableInsets(InternalInsetsInfo.TOUCHABLE_INSETS_REGION);
         int[] dialogViewLocation = new int[2];
-        mDialogView.getLocationOnScreen(dialogViewLocation);
+        mDialogView.getLocationInWindow(dialogViewLocation);
         internalInsetsInfo.touchableRegion.set(new Region(
             dialogViewLocation[0],
             dialogViewLocation[1],
@@ -481,7 +483,8 @@ public class VolumeDialogImpl implements VolumeDialog {
             row.icon.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Events.writeEvent(mContext, Events.EVENT_ICON_CLICK, row.stream, row.iconState);
+                    Events.writeEvent(Events.EVENT_ICON_CLICK, row.stream, row.iconState);
+                    rescheduleTimeoutH();
                     mController.setActiveStream(row.stream);
                     final boolean vmute = row.ss.level == row.ss.levelMin;
                     mController.setStreamVolume(stream,
@@ -511,7 +514,7 @@ public class VolumeDialogImpl implements VolumeDialog {
         mShowing = true;
         mDialog.getViewTreeObserver().addOnComputeInternalInsetsListener(mInsetsListener);
         mMotion.startShow();
-        Events.writeEvent(mContext, Events.EVENT_SHOW_DIALOG, reason, mKeyguard.isKeyguardLocked());
+        Events.writeEvent(Events.EVENT_SHOW_DIALOG, reason, mKeyguard.isKeyguardLocked());
         mController.notifyVisible(true);
     }
 
@@ -556,7 +559,8 @@ public class VolumeDialogImpl implements VolumeDialog {
                     R.string.volume_dialog_accessibility_dismissed_message));
             mAccessibilityMgr.sendAccessibilityEvent(event);
         }
-        Events.writeEvent(mContext, Events.EVENT_DISMISS_DIALOG, reason);
+        Events.writeEvent(Events.EVENT_DISMISS_DIALOG, reason);
+        mDialog.getViewTreeObserver().removeOnComputeInternalInsetsListener(mInsetsListener);
         mController.notifyVisible(false);
         synchronized (mSafetyWarningLock) {
             if (mSafetyWarning != null) {
@@ -651,7 +655,7 @@ public class VolumeDialogImpl implements VolumeDialog {
                         mController.setStreamVolume(AudioManager.STREAM_RING, 1);
                     }
                 }
-                Events.writeEvent(mContext, Events.EVENT_RINGER_TOGGLE, newRingerMode);
+                Events.writeEvent(Events.EVENT_RINGER_TOGGLE, newRingerMode);
                 incrementManualToggleCount();
                 updateRingerH();
                 provideTouchFeedbackH(newRingerMode);
@@ -717,8 +721,8 @@ public class VolumeDialogImpl implements VolumeDialog {
         Prefs.putInt(mSysUIContext, Prefs.Key.SEEN_RINGER_GUIDANCE_COUNT, seenToastCount);
     }
 
-    protected void updateRingerH() {
-        if (mState != null) {
+    private void updateRingerH() {
+        if (mRinger != null && mState != null) {
             final StreamState ss = mState.states.get(AudioManager.STREAM_RING);
             if (ss == null) {
                 return;
@@ -851,21 +855,28 @@ public class VolumeDialogImpl implements VolumeDialog {
             final VolumeRow row = mRows.get(i);
             if (row.ss == null || !row.ss.dynamic) continue;
             if (!mDynamic.get(row.stream)) {
-                mRows.remove(i);
-                mDialogRowsView.removeView(row.view);
+                removeRow(row);
+                mConfigurableTexts.remove(row.header);
             }
         }
     }
 
+    private void removeRow(VolumeRow volumeRow) {
+        mRows.remove(volumeRow);
+        mDialogRowsView.removeView(volumeRow.view);
+    }
+
     private void onStateChangedH(State state) {
-        final boolean animating = mMotion.isAnimating();
-        if (D.BUG) Log.d(TAG, "onStateChangedH animating=" + animating);
-        if (mState != null && state != null
+        if (D.BUG) Log.d(TAG, "onStateChangedH() state: " + state.toString());
+        if (mShowing && mState != null && state != null
+                && mState.ringerModeInternal != -1
                 && mState.ringerModeInternal != state.ringerModeInternal
                 && state.ringerModeInternal == AudioManager.RINGER_MODE_VIBRATE) {
             mController.vibrate(VibrationEffect.get(VibrationEffect.EFFECT_HEAVY_CLICK));
         }
         mState = state;
+        final boolean animating = mMotion.isAnimating();
+        if (D.BUG) Log.d(TAG, "onStateChangedH animating=" + animating);
         if (animating) {
             mPendingStateChanged = true;
             return;
@@ -913,15 +924,22 @@ public class VolumeDialogImpl implements VolumeDialog {
         final boolean isSystemStream = row.stream == AudioManager.STREAM_SYSTEM;
         final boolean isAlarmStream = row.stream == AudioManager.STREAM_ALARM;
         final boolean isMusicStream = row.stream == AudioManager.STREAM_MUSIC;
-        final boolean isMuted = row.ss.level == row.ss.levelMin;
-        final boolean isRingVibrate = isRingStream
-                && mState.ringerModeInternal == AudioManager.RINGER_MODE_VIBRATE;
+        final boolean isNotificationStream = row.stream == AudioManager.STREAM_NOTIFICATION;
+        final boolean isVibrate = mState.ringerModeInternal == AudioManager.RINGER_MODE_VIBRATE;
+        final boolean isRingVibrate = isRingStream && isVibrate;
         final boolean isRingSilent = isRingStream
                 && mState.ringerModeInternal == AudioManager.RINGER_MODE_SILENT;
+        final boolean isZenPriorityOnly = mState.zenMode == Global.ZEN_MODE_IMPORTANT_INTERRUPTIONS;
         final boolean isZenAlarms = mState.zenMode == Global.ZEN_MODE_ALARMS;
         final boolean isZenNone = mState.zenMode == Global.ZEN_MODE_NO_INTERRUPTIONS;
-        final boolean zenMuted = isZenAlarms ? (isRingStream || isSystemStream)
-                : isZenNone ? (isRingStream || isSystemStream || isAlarmStream || isMusicStream)
+        final boolean zenMuted =
+                isZenAlarms ? (isRingStream || isSystemStream || isNotificationStream)
+                : isZenNone ? (isRingStream || isSystemStream || isAlarmStream || isMusicStream || isNotificationStream)
+                : isZenPriorityOnly ? ((isAlarmStream && mState.disallowAlarms) ||
+                        (isMusicStream && mState.disallowMedia) ||
+                        (isRingStream && mState.disallowRinger) ||
+                        (isSystemStream && mState.disallowSystem))
+                : isVibrate ? isNotificationStream
                 : false;
 
         // update slider max
@@ -943,12 +961,11 @@ public class VolumeDialogImpl implements VolumeDialog {
         row.icon.setImageTintList(row.stream == mActiveStream ? mActiveSliderTint : mInactiveSliderTint);
         final int iconRes =
                 isRingVibrate ? mSysUIR.drawable("ic_volume_ringer_vibrate")
-                : isRingSilent || zenMuted ? row.iconMuteRes
-                : ss.routedToBluetooth ?
-                        (ss.muted ? mSysUIR.drawable("ic_volume_media_bt_mute")
-                                : mSysUIR.drawable("ic_volume_media_bt"))
-                : mAutomute && ss.level == 0 ? row.iconMuteRes
-                : isMuted ? row.iconMuteRes : row.iconRes;
+                        : isRingSilent || zenMuted ? row.iconMuteRes
+                                : ss.routedToBluetooth
+                                        ? isStreamMuted(ss) ? mSysUIR.drawable("ic_volume_media_bt_mute")
+                                                : mSysUIR.drawable("ic_volume_media_bt")
+                                        : isStreamMuted(ss) ? row.iconMuteRes : row.iconRes;
         Drawable iconResDrawable = mSysUIContext.getDrawable(iconRes);
         row.icon.setImageDrawable(iconResDrawable);
         row.iconState =
@@ -1008,6 +1025,10 @@ public class VolumeDialogImpl implements VolumeDialog {
         final int vlevel = row.ss.muted && (!isRingStream && !zenMuted) ? 0
                 : row.ss.level;
         updateVolumeRowSliderH(row, enableSlider, vlevel, maxChanged);
+    }
+
+    private boolean isStreamMuted(final StreamState streamState) {
+        return (mAutomute && streamState.level == streamState.levelMin) || streamState.muted;
     }
 
     private void updateVolumeRowSliderTintH(VolumeRow row, boolean isActive) {
@@ -1216,9 +1237,7 @@ public class VolumeDialogImpl implements VolumeDialog {
         public void onConfigurationChanged() {
             Configuration newConfig = mContext.getResources().getConfiguration();
             final int density = newConfig.densityDpi;
-            if(mDialog.isShown()){
-                mWindowManager.removeViewImmediate(mDialog);
-            }
+            if (mDialog.isShown()) mWindowManager.removeViewImmediate(mDialog);
             initDialog();
             if (density != mDensity) {
                 mDensity = density;
@@ -1269,7 +1288,7 @@ public class VolumeDialogImpl implements VolumeDialog {
         public void onClick(View v) {
             if (mExpandButtonAnimationRunning) return;
             final boolean newExpand = !mExpanded;
-            Events.writeEvent(mContext, Events.EVENT_EXPAND, newExpand);
+            Events.writeEvent(Events.EVENT_EXPAND, newExpand);
             updateExpandedH(newExpand, false /* dismissing */);
         }
     };
@@ -1331,7 +1350,7 @@ public class VolumeDialogImpl implements VolumeDialog {
                 if (mRow.requestedLevel != userLevel) {
                     mController.setStreamVolume(mRow.stream, userLevel);
                     mRow.requestedLevel = userLevel;
-                    Events.writeEvent(mContext, Events.EVENT_TOUCH_LEVEL_CHANGED, mRow.stream,
+                    Events.writeEvent(Events.EVENT_TOUCH_LEVEL_CHANGED, mRow.stream,
                             userLevel);
                 }
             }
@@ -1350,7 +1369,7 @@ public class VolumeDialogImpl implements VolumeDialog {
             mRow.tracking = false;
             mRow.userAttempt = SystemClock.uptimeMillis();
             final int userLevel = getImpliedLevel(seekBar, seekBar.getProgress());
-            Events.writeEvent(mContext, Events.EVENT_TOUCH_LEVEL_DONE, mRow.stream, userLevel);
+            Events.writeEvent(Events.EVENT_TOUCH_LEVEL_DONE, mRow.stream, userLevel);
             if (mRow.ss.level != userLevel) {
                 mHandler.sendMessageDelayed(mHandler.obtainMessage(H.RECHECK, mRow),
                         USER_ATTEMPT_GRACE_PERIOD);

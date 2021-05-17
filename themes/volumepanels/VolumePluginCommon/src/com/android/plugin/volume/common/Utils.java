@@ -23,6 +23,7 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
+import android.telephony.TelephonyManager;
 import android.view.View;
 import android.widget.TextView;
 
@@ -161,5 +162,14 @@ public class Utils {
         if (Objects.equals(emptyToNull(tv.getText()), emptyToNull(text))) return false;
         tv.setText(text);
         return true;
+    }
+
+    /**
+     * Return {@code true} if it is voice capable
+     */
+    public static boolean isVoiceCapable(Context context) {
+        final TelephonyManager telephony =
+                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        return telephony != null && telephony.isVoiceCapable();
     }
 }

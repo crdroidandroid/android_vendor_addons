@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2019 The Android Open Source Project
  * Copyright (C) 2020 The Potato Open Sauce Project
+ * Copyright (C) 2021 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -70,7 +71,7 @@ public class CaptionsToggleImageButton extends AlphaOptimizedImageButton {
         return state;
     }
 
-    public void setCaptionsEnabled(boolean areCaptionsEnabled) {
+    public Runnable setCaptionsEnabled(boolean areCaptionsEnabled) {
         this.mCaptionsEnabled = areCaptionsEnabled;
         Resources res;
 
@@ -88,10 +89,9 @@ public class CaptionsToggleImageButton extends AlphaOptimizedImageButton {
                         : res.getString(mSysUIR.string("volume_odi_captions_hint_enable")),
                 (view, commandArguments) -> tryToSendTapConfirmedEvent());
 
-        Drawable drawable = res.getDrawable(mCaptionsEnabled
+        return this.setImageResourceAsync(mCaptionsEnabled
                 ? mSysUIR.drawable("ic_volume_odi_captions")
                 : mSysUIR.drawable("ic_volume_odi_captions_disabled"));
-        this.setImageDrawable(drawable);
     }
 
     private boolean tryToSendTapConfirmedEvent() {
