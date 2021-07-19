@@ -55,7 +55,7 @@
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
                 android:padding="@dimen/volume_dialog_ringer_icon_padding"
-                android:tint="?android:attr/colorAccent"
+                android:tint="@color/accent_tint_color_selector"
                 android:layout_gravity="center"
                 android:soundEffectsEnabled="false" />
 
