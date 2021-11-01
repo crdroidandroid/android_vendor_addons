@@ -1,2 +1,0 @@
--keep @com.android.systemui.plugins.Requires public class *
--keep class javax.inject.** { *; }
