@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <bool name="config_maskMainBuiltInDisplayCutout">false</bool>
+    <bool name="config_fillMainBuiltInDisplayCutout">false</bool>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout"></string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation"></string>
+</resources>
