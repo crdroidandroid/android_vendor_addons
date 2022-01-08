@@ -187,6 +187,7 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
     crDroidThemesStub
 
 # Include {Lato,Rubik} fonts
