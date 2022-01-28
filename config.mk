@@ -40,6 +40,42 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     TurboPrebuilt
 
+# Fonts
+PRODUCT_PACKAGES += \
+    fonts_customization.xml \
+    AccuratistFont \
+    AclonicaFont \
+    Amarante \
+    BariolFont \
+    CagliostroFont \
+    CoconFont \
+    ComfortaaFont \
+    ComicSansFont \
+    CoolstoryFont \
+    ExotwoFont \
+    Fifa2018Font \
+    GoogleSansFont \
+    GrandHotelFont \
+    LatoFont \
+    LGSmartGothicFont \
+    LinotteFont \
+    NokiaPureFont \
+    NunitoFont \
+    OneplusSansFont \
+    OneplusSlateFont \
+    OswaldFont \
+    QuandoFont \
+    RedressedFont \
+    ReemKufiFont \
+    RobotoCondensedFont \
+    RosemaryFont \
+    RubikFont \
+    SamsungOneFont \
+    SonySketchFont \
+    StoropiaFont \
+    SurferFont \
+    UbuntuFont
+
 # Icon Packs
 PRODUCT_PACKAGES += \
     IconPackCircularAndroidOverlay \
@@ -103,6 +139,11 @@ PRODUCT_PACKAGES += \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay
 
+# Navbar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationOverlayHidden
 
 # Signal / WiFi Icons
 PRODUCT_PACKAGES += \
@@ -122,6 +163,10 @@ PRODUCT_PACKAGES += \
 	XperiaWiFiOverlay \
 	ZigZagSignalOverlay \
 	ZigZagWiFiOverlay
+
+# Themes
+PRODUCT_PACKAGES += \
+    crDroidThemesStub
 
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
