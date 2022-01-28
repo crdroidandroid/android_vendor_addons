@@ -1,6 +1,6 @@
 <!--
 /**
- * Copyright (c) 2019-2020, crDroid Android Project
+ * Copyright (c) 2019-2022, crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +16,6 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Headline / Body font Comic Sans overlay -->
+    <!-- Headline / Body font Google Sans overlay -->
     <string name="font_googlesans_overlay" translatable="false">Google Sans</string>
 </resources>

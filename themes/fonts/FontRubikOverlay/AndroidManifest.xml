@@ -1,5 +1,5 @@
 <!--
-    Copyright (c) 2020, crDroid Android Project
+    Copyright (c) 2020-2022, crDroid Android Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -28,6 +28,6 @@
         android:label="@string/font_rubik_overlay">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="rubik,rubik-medium,rubik-light,rubik-semi-bold,rubik-bold" />
+            android:value="rubik,rubik-medium,rubik-light,rubik-semi-bold,rubik-bold,rubik-regular" />
     </application>
 </manifest>
