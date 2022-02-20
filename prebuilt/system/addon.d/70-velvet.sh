@@ -2,15 +2,12 @@
 #
 # ADDOND_VERSION=2
 #
-# /system/addon.d/69-flame.sh
+# /system/addon.d/70-velvet.sh
 #
 . /tmp/backuptool.functions
 
 list_files() {
 cat <<EOF
-system_ext/etc/default-permissions/velvet-permissions.xml
-system_ext/etc/permissions/privapp-permissions-velvet.xml
-system_ext/etc/sysconfig/velvet.xml
 system_ext/priv-app/Velvet/Velvet.apk
 EOF
 }
@@ -70,22 +67,11 @@ case "$1" in
   ;;
   pre-backup)
     mount_extras
-    ui_print "******************************"
-    ui_print "- Backing up Velvet       "
-    ui_print "******************************"
-  ;;
-  post-backup)
-    ui_print "- Done"
   ;;
   pre-restore)
     mount_extras
-    ui_print "******************************"
-    ui_print "- Restoring Velvet        "
-    ui_print "******************************"
   ;;
   post-restore)
-    ui_print "- Done"
-    
     # Set permissions
     for i in $(list_files); do
       chown root:root "$SYS/$i"

@@ -36,8 +36,10 @@ PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/product/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nexus.xml \
     vendor/addons/prebuilt/product/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
+ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/addon.d/70-velvet.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/70-velvet.sh
+endif
 
 # Turbo Prebuilt package for Battery Estimates
 PRODUCT_PACKAGES += \
