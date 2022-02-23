@@ -1,5 +1,5 @@
 android_app {
-    name: "UdfpsResources",
+    name: "UdfpsIcons",
     platform_apis: true,
     resource_dirs: ["res"],
     certificate: "platform",
