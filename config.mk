@@ -19,12 +19,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/common
 
 ifeq ($(TARGET_HAS_UDFPS),true)
 PRODUCT_PACKAGES += \
-    UdfpsIcons
-
-ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
+    UdfpsIcons \
     UdfpsAnimations
-endif
 endif
 
 PRODUCT_COPY_FILES += \
