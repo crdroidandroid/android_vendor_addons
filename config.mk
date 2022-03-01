@@ -37,8 +37,9 @@ PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/addon.d/70-velvet.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/70-velvet.sh
 endif
 
-# Turbo Prebuilt package for Battery Estimates
+# Prebuilt packages for device features
 PRODUCT_PACKAGES += \
+    DevicePersonalizationPrebuiltPixel2021 \
     TurboPrebuilt
 
 # Fonts
