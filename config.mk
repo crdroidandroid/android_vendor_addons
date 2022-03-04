@@ -40,6 +40,7 @@ endif
 # Prebuilt packages for device features
 PRODUCT_PACKAGES += \
     DevicePersonalizationPrebuiltPixel2021 \
+    GoogleCameraGo \
     TurboPrebuilt
 
 # Fonts
