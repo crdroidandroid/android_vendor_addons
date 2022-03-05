@@ -23,7 +23,8 @@
     <allow-in-power-save package="com.google.android.gms" />
     <allow-in-data-usage-save package="com.google.android.gms" />
     <allow-unthrottled-location package="com.google.android.gms" />
-    <allow-ignore-location-settings package="com.google.android.gms" />
+    <allow-ignore-location-settings package="com.google.android.gms" attributionTag="com.google.android.gms.thunderbird" />
+    <allow-ignore-location-settings package="com.google.android.dialer" attributionTag="*" />
 
     <!-- OobConfig must always have network access to fetch enterprise and carrier lock config. -->
     <allow-in-power-save-except-idle package="com.google.android.apps.work.oobconfig" />
@@ -48,6 +49,12 @@
     <!-- If the volta app is pre-installed (for monitoring power use), let it do checkins. -->
     <allow-in-power-save package="com.google.android.volta" />
 
+    <!-- If GoogleCellBroadcastServiceModule is installed, let it run in the background -->
+    <allow-in-power-save package="com.google.android.cellbroadcastreceiver" />
+
+    <!-- If "Personal Safety" app is installed, let it run in the background -->
+    <allow-in-power-save package="com.google.android.apps.safetyhub" />
+
     <!-- If CarrierServices is installed, it must always have network access to
          reliably receive IMS messages. -->
     <allow-in-power-save package="com.google.android.ims" />
@@ -57,12 +64,14 @@
 
     <!-- Apps below are required on all GMS devices -->
     <app-link package="com.android.vending" />
+    <app-link package="com.google.android.gms" />
     <app-link package="com.google.android.apps.maps" />
     <app-link package="com.google.android.youtube" />
     <app-link package="com.google.android.apps.docs" />
     <app-link package="com.google.android.talk" />
     <app-link package="com.google.android.apps.photos" />
-    <app-link package="com.google.android.music" />
+    <app-link package="com.google.android.apps.youtube.music" />
+    <app-link package="com.google.android.googlequicksearchbox" />
 
     <!-- Apps below are optional on GMS devices -->
     <app-link package="com.google.android.apps.tycho" />
@@ -73,19 +82,8 @@
     <app-link package="com.google.android.talk" />
     <app-link package="com.google.android.videos" />
     <app-link package="com.google.android.calendar" />
-
-    <!-- These are the packages that are white-listed to be able to run as system user -->
-    <system-user-whitelisted-app package="com.android.vending" />
-    <system-user-whitelisted-app package="com.google.android.gms" />
-    <system-user-whitelisted-app package="com.google.android.gms.policy_auth" />
-    <system-user-whitelisted-app package="com.google.android.play.games" />
-    <system-user-whitelisted-app package="com.google.android.tts" />
-
-    <!-- These are the packages that are uninstalled for system user -->
-    <!-- Apps below are required on all GMS devices -->
-    <system-user-blacklisted-app package="com.google.android.googlequicksearchbox" />
-    <!-- Apps below are optional on GMS devices -->
-    <system-user-blacklisted-app package="com.google.android.launcher" />
+    <app-link package="com.google.android.apps.wallpaper" />
+    <app-link package="com.google.android.apps.tips" />
 
     <!-- Whitelist of what components are permitted as backup data transports.  The
          'service' attribute here is a flattened ComponentName string. -->
@@ -102,12 +100,14 @@
     <allow-association target="com.google.android.as" allowed="com.android.providers.media" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.telephony" />
     <allow-association target="com.google.android.as" allowed="com.android.systemui" />
-    <allow-association target="com.google.android.as" allowed="com.google.android.gms" />
-    <allow-association target="com.google.android.as" allowed="com.google.android.gsf" />
     <allow-association target="com.google.android.as" allowed="com.google.android.providers.media.module" />
+    <!-- AI services can bind to its open-source network component. -->
+    <allow-association target="com.google.android.as" allowed="com.google.android.as.oss" />
 
-	
-<!-- Specify the explicit set of other applications whose app data directories are
+    <!-- AI services open-source network component can only bind back to the core package. -->
+    <allow-association target="com.google.android.as.oss" allowed="com.google.android.as" />
+
+    <!-- Specify the explicit set of other applications whose app data directories are
         accessible by other applications. -->
     <app-data-isolation-whitelisted-app package="com.google.android.gms" />
 
