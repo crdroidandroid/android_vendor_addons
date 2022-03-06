@@ -40,7 +40,8 @@ endif
 # Prebuilt packages for device features
 PRODUCT_PACKAGES += \
     DevicePersonalizationPrebuiltPixel2021 \
-    TurboPrebuilt
+    TurboPrebuilt \
+    FlipendoPrebuilt
 
 # Fonts
 PRODUCT_PACKAGES += \
