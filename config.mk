@@ -39,6 +39,7 @@ endif
 
 # Prebuilt packages for device features
 PRODUCT_PACKAGES += \
+    DeviceIntelligenceNetworkPrebuilt \
     DevicePersonalizationPrebuiltPixel2021 \
     TurboPrebuilt \
     FlipendoPrebuilt
