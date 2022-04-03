@@ -41,6 +41,7 @@ endif
 PRODUCT_PACKAGES += \
     DeviceIntelligenceNetworkPrebuilt \
     DevicePersonalizationPrebuiltPixel2021 \
+    SettingsIntelligenceGooglePrebuilt \
     TurboPrebuilt \
     FlipendoPrebuilt
 
