@@ -10,7 +10,8 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
     required: [
-        "privapp_whitelist_com.google.android.settings.intelligence"
+        "privapp_whitelist_com.google.android.settings.intelligence",
+        "default-permissions_com.google.android.settings.intelligence"
     ],
 }
 
@@ -19,5 +20,13 @@ prebuilt_etc {
     product_specific: true,
     sub_dir: "permissions",
     src: "privapp_whitelist_com.google.android.settings.intelligence.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "default-permissions_com.google.android.settings.intelligence",
+    product_specific: true,
+    sub_dir: "default-permissions",
+    src: "default-permissions_com.google.android.settings.intelligence.xml",
     filename_from_src: true,
 }
