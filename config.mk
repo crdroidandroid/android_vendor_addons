@@ -53,6 +53,9 @@ BOARD_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/flipendo
 endif
 
+BOARD_SEPOLICY_DIRS += \
+   hardware/google/pixel-sepolicy/turbo_adapter
+
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
