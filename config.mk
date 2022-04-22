@@ -42,8 +42,15 @@ PRODUCT_PACKAGES += \
     DeviceIntelligenceNetworkPrebuilt \
     DevicePersonalizationPrebuiltPixel2021 \
     SettingsIntelligenceGooglePrebuilt \
-    TurboPrebuilt \
+    TurboPrebuilt
+
+ifneq ($(TARGET_DOESNT_LIKE_FLIPENDO),true)
+PRODUCT_PACKAGES += \
     FlipendoPrebuilt
+
+BOARD_SEPOLICY_DIRS += \
+    hardware/google/pixel-sepolicy/flipendo
+endif
 
 # Fonts
 PRODUCT_PACKAGES += \
