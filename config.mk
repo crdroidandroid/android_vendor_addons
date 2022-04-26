@@ -34,7 +34,8 @@ PRODUCT_COPY_FILES += \
 
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
-    vendor/addons/prebuilt/system/addon.d/70-velvet.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/70-velvet.sh
+    vendor/addons/prebuilt/system/addon.d/70-velvet.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/70-velvet.sh \
+    $(call find-copy-subdir-files,*,vendor/addons/prebuilt/product/usr/,$(TARGET_COPY_OUT_PRODUCT)/usr)
 endif
 
 # Prebuilt packages for device features
