@@ -211,7 +211,10 @@ PRODUCT_PACKAGES += \
     IconPackLornAndroidOverlay \
     IconPackLornSystemUIOverlay \
     IconPackPlumpySystemUIOverlay \
-    IconPackPlumpyAndroidOverlay
+    IconPackPlumpyAndroidOverlay \
+    IconPackXperiaAndroidOverlay \
+    IconPackXperiaSettingsOverlay \
+    IconPackXperiaSystemUIOverlay
 
 # Icon Shapes
 PRODUCT_PACKAGES += \
