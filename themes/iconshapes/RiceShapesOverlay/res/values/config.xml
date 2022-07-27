@@ -22,7 +22,7 @@
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
     <bool name="config_useRoundIcon">false</bool>
     <!-- Corner radius of system dialogs -->
-    <dimen name="config_dialogCornerRadius">32dp</dimen>
+    <dimen name="config_dialogCornerRadius">22dp</dimen>
     <dimen name="config_brightnessSliderWidth">48dp</dimen>
     <dimen name="config_brightnessSliderHeight">48dp</dimen>
     <dimen name="config_brightnessSliderRadius">24dp</dimen>
