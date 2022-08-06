@@ -178,10 +178,11 @@ PRODUCT_PACKAGES += \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
+    RohieIconMeowOverlay \
     DefaultButSquareOverlay \
+    DefaultButBouncyOverlay \
     GoogleShapesOverlay \
-    RiceShapesOverlay \
-    RohieIconMeowOverlay
+    RiceBallsOverlay
 
 # Navbar
 PRODUCT_PACKAGES += \

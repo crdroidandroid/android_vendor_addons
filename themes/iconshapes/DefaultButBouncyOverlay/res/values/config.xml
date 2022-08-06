@@ -21,10 +21,14 @@
     <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
     <bool name="config_useRoundIcon">false</bool>
-    <!-- Corner radius of system dialogs -->
-    <dimen name="config_dialogCornerRadius">22dp</dimen>
-    <dimen name="config_brightnessSliderWidth">48dp</dimen>
+    <!-- System shapes -->
+    <dimen name="config_dialogCornerRadius">28dp</dimen>
+    <dimen name="config_brightnessSliderWidth">4dp</dimen>
     <dimen name="config_brightnessSliderHeight">48dp</dimen>
     <dimen name="config_brightnessSliderRadius">24dp</dimen>
+    <dimen name="config_customBrightnessInsets">4dp</dimen>
+    <dimen name="config_customQSTileRadius">75dp</dimen>
+    <dimen name="config_customRoundedCornerThemes">32dp</dimen>
+    <dimen name="config_customSliderIconSize">20dp</dimen>
 </resources>
 

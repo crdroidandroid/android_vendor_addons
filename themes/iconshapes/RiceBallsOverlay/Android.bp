@@ -15,7 +15,7 @@
 //
 
 runtime_resource_overlay {
-    name: "RiceShapesOverlay",
-    theme: "RiceShapes",
+    name: "RiceBallsOverlay",
+    theme: "RiceBalls",
     product_specific: true,
 }
