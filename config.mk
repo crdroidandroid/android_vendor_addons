@@ -40,7 +40,7 @@ endif
 # Prebuilt packages for device features
 PRODUCT_PACKAGES += \
     DeviceIntelligenceNetworkPrebuilt \
-    DevicePersonalizationPrebuiltPixel2021 \
+    DevicePersonalizationPrebuiltPixel2020 \
     SettingsIntelligenceGooglePrebuilt \
     TurboPrebuilt
 
