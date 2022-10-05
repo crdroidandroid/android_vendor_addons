@@ -1,9 +1,0 @@
-android_app_import {
-	name: "FlipendoPrebuilt",
-	owner: "google",
-	apk: "Flipendo.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
