@@ -1,0 +1,9 @@
+android_app_import {
+	name: "OmniJaws",
+    system_ext_specific: true,
+	apk: "OmniJaws.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
