@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 crDroid Android Project
+# Copyright (C) 2018-2022 crDroid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,14 +14,6 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_SCREEN_WIDTH),)
-    $(warning TARGET_SCREEN_WIDTH is not set, using default value: 1080)
-    TARGET_SCREEN_WIDTH := 1080
-endif
-ifeq ($(TARGET_SCREEN_HEIGHT),)
-    $(warning TARGET_SCREEN_HEIGHT is not set, using default value: 1920)
-    TARGET_SCREEN_HEIGHT := 1920
-endif
 BOOTFPS := 25
 
 TARGET_GENERATED_BOOTANIMATION := $(TARGET_OUT_INTERMEDIATES)/BOOTANIMATION/bootanimation.zip
