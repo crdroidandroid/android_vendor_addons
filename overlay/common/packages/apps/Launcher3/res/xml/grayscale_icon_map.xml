@@ -123,6 +123,7 @@
     <icon drawable="@drawable/appbar" package="rk.android.app.appbar" />
     <icon drawable="@drawable/appcloner" package="com.applisto.appcloner.premium" />
     <icon drawable="@drawable/apple_music" package="com.apple.android.music" />
+    <icon drawable="@drawable/apple_music" package="org.lineageos.eleven" />
     <icon drawable="@drawable/application_inspector" package="com.ubqsoft.sec01" />
     <icon drawable="@drawable/appmgr_pro_3" package="com.a0soft.gphone.app2sd" />
     <icon drawable="@drawable/appmgr_pro_3" package="com.a0soft.gphone.app2sd.pro" />
@@ -546,9 +547,6 @@
     <icon drawable="@drawable/disneyplus" package="com.disneyplus.mea" />
     <icon drawable="@drawable/divisionresurgence" package="com.ubisoft.the.division.mobile.combat.shooting.open.world.rpg" />
     <icon drawable="@drawable/dmrc" package="com.sraoss.dmrc" />
-    <icon drawable="@drawable/documents" package="com.android.documentsui" />
-    <icon drawable="@drawable/documents" package="files.fileexplorer.filemanager" />
-    <icon drawable="@drawable/documents" package="me.zhanghai.android.files" />
     <icon drawable="@drawable/dodo_pizza" package="ru.dodopizza.app" />
     <icon drawable="@drawable/dolby" package="com.dolby" />
     <icon drawable="@drawable/dolby_on" package="com.dolby.dolby234" />
@@ -660,6 +658,7 @@
     <icon drawable="@drawable/figma" package="com.figma.mirror" />
     <icon drawable="@drawable/file_manager" package="com.alphainventor.filemanager" />
     <icon drawable="@drawable/files" package="com.amaze.filemanager" />
+    <icon drawable="@drawable/files" package="com.android.documentsui" />
     <icon drawable="@drawable/files" package="com.android.fileexplorer" />
     <icon drawable="@drawable/files" package="com.android.filemanager" />
     <icon drawable="@drawable/files" package="com.coloros.files" />
@@ -671,6 +670,8 @@
     <icon drawable="@drawable/files" package="com.sec.android.app.myfiles" />
     <icon drawable="@drawable/files" package="com.simplemobiletools.filemanager" />
     <icon drawable="@drawable/files" package="com.simplemobiletools.filemanager.pro" />
+    <icon drawable="@drawable/files" package="files.fileexplorer.filemanager" />
+    <icon drawable="@drawable/files" package="me.zhanghai.android.files" />
     <icon drawable="@drawable/files" package="org.aospstudio.files" />
     <icon drawable="@drawable/files_by_google" package="com.google.android.apps.nbu.files" />
     <icon drawable="@drawable/filmic_pro" package="com.filmic.filmicpro" />
@@ -1139,6 +1140,10 @@
     <icon drawable="@drawable/mi_fitness" package="com.xiaomi.wearable" />
     <icon drawable="@drawable/mi_freeform" package="com.sunshine.freeform" />
     <icon drawable="@drawable/mi_music" package="com.miui.player" />
+    <icon drawable="@drawable/mi_music" package="com.nomad88.nomadmusic" />
+    <icon drawable="@drawable/mi_music" package="com.oppo.music" />
+    <icon drawable="@drawable/mi_music" package="com.sec.android.app.music" />
+    <icon drawable="@drawable/mi_music" package="com.zionhuang.music" />
     <icon drawable="@drawable/mi_remote" package="com.duokan.phone.remotecontroller" />
     <icon drawable="@drawable/mi_video" package="com.miui.videoplayer" />
     <icon drawable="@drawable/mibudsm8" package="bz.zaa.mibudsm8" />
@@ -1568,11 +1573,6 @@
     <icon drawable="@drawable/samsung_max" package="com.opera.max.global" />
     <icon drawable="@drawable/samsung_max" package="com.opera.max.oem" />
     <icon drawable="@drawable/samsung_members" package="com.samsung.android.voc" />
-    <icon drawable="@drawable/samsung_music" package="com.nomad88.nomadmusic" />
-    <icon drawable="@drawable/samsung_music" package="com.oppo.music" />
-    <icon drawable="@drawable/samsung_music" package="com.sec.android.app.music" />
-    <icon drawable="@drawable/samsung_music" package="com.zionhuang.music" />
-    <icon drawable="@drawable/samsung_music" package="org.lineageos.eleven" />
     <icon drawable="@drawable/samsung_notes" package="com.samsung.android.app.notes" />
     <icon drawable="@drawable/samsung_videolibrary" package="com.samsung.android.videolist" />
     <icon drawable="@drawable/samulas" package="com.asis.samulas" />
