@@ -459,7 +459,6 @@
     <icon drawable="@drawable/compass" package="com.miui.compass" />
     <icon drawable="@drawable/compass" package="dev.synapsetech.compass" />
     <icon drawable="@drawable/connect" package="com.garmin.android.apps.connectmobile" />
-    <icon drawable="@drawable/contacts" package="com.android.contacts" />
     <icon drawable="@drawable/contacts" package="com.samsung.android.app.contacts" />
     <icon drawable="@drawable/contacts" package="com.simplemobiletools.contacts" />
     <icon drawable="@drawable/contacts" package="com.simplemobiletools.contacts.pro" />
@@ -521,9 +520,6 @@
     <icon drawable="@drawable/dialer" package="com.android.contacts.activities.DialtactsActivity" />
     <icon drawable="@drawable/dialer" package="com.android.contacts/com.android.contacts.DialtactsActivity" />
     <icon drawable="@drawable/dialer" package="com.android.contacts/com.android.contacts.DialtactsActivityAlias" />
-    <icon drawable="@drawable/dialer" package="com.android.dialer" />
-    <icon drawable="@drawable/dialer" package="com.android.incallui" />
-    <icon drawable="@drawable/dialer" package="com.android.phone" />
     <icon drawable="@drawable/dialer" package="com.asus.asusincallui" />
     <icon drawable="@drawable/dialer" package="com.asus.dialer" />
     <icon drawable="@drawable/dialer" package="com.chooloo.www.koler" />
@@ -826,6 +822,7 @@
     <icon drawable="@drawable/google_chrome_canary" package="com.chrome.canary" />
     <icon drawable="@drawable/google_chrome_dev" package="com.chrome.dev" />
     <icon drawable="@drawable/google_classroom" package="com.google.android.apps.classroom" />
+    <icon drawable="@drawable/google_contacts" package="com.android.contacts" />
     <icon drawable="@drawable/google_contacts" package="com.google.android.contacts" />
     <icon drawable="@drawable/google_docs" package="com.google.android.apps.docs.editors.docs" />
     <icon drawable="@drawable/google_drive" package="com.google.android.apps.docs" />
@@ -838,11 +835,15 @@
     <icon drawable="@drawable/google_keep" package="com.google.android.keep" />
     <icon drawable="@drawable/google_lens" package="com.google.ar.lens" />
     <icon drawable="@drawable/google_meet" package="com.google.android.apps.meetings" />
+    <icon drawable="@drawable/google_messages" package="com.android.messaging" />
     <icon drawable="@drawable/google_messages" package="com.google.android.apps.messaging" />
     <icon drawable="@drawable/google_news" package="com.google.android.apps.magazines" />
     <icon drawable="@drawable/google_one" package="com.google.android.apps.subscriptions.red" />
     <icon drawable="@drawable/google_opinion" package="com.google.android.apps.paidtasks" />
     <icon drawable="@drawable/google_pay" package="com.google.android.apps.nbu.paisa.user" />
+    <icon drawable="@drawable/google_phone" package="com.android.dialer" />
+    <icon drawable="@drawable/google_phone" package="com.android.incallui" />
+    <icon drawable="@drawable/google_phone" package="com.android.phone" />
     <icon drawable="@drawable/google_phone" package="com.google.android.dialer" />
     <icon drawable="@drawable/google_photos" package="com.google.android.apps.photos" />
     <icon drawable="@drawable/google_pixel_watch" package="com.google.android.apps.wear.companion" />
@@ -1126,7 +1127,6 @@
     <icon drawable="@drawable/mercado_libre" package="com.mercadolibre" />
     <icon drawable="@drawable/mercado_libre" package="com.mercadopago.wallet" />
     <icon drawable="@drawable/merge_war" package="com.wildsky.wildarmydraft" />
-    <icon drawable="@drawable/messages" package="com.android.messaging" />
     <icon drawable="@drawable/messages" package="com.android.mms" />
     <icon drawable="@drawable/messages" package="com.oneplus.mms" />
     <icon drawable="@drawable/messages" package="com.samsung.android.messaging" />
