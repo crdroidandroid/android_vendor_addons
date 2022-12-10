@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
     ClockFontCoconOverlay \
     ClockFontComfortaaOverlay \
     ClockFontComicSansOverlay \
+    ClockFontCookieRunOverlay \
     ClockFontCoolstoryOverlay \
     ClockFontExotwoOverlay \
     ClockFontFifa2018Overlay \
@@ -77,6 +78,7 @@ PRODUCT_PACKAGES += \
     FontCoconOverlay \
     FontComfortaaOverlay \
     FontComicSansOverlay \
+    FontCookieRunOverlay \
     FontCoolstoryOverlay \
     FontExotwoOverlay \
     FontFifa2018Overlay \

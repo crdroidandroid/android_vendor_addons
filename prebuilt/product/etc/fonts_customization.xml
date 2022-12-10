@@ -38,6 +38,13 @@
     <alias name="cagliostro-semi-bold" to="cagliostro" weight="600" />
     <alias name="cagliostro-bold" to="cagliostro" weight="700" />
 
+    <!-- CookieRun -->
+    <family customizationType="new-named-family" name="cookierun">
+        <font weight="400" style="normal">CookieRun-Regular.ttf</font>
+        <font weight="700" style="normal">CookieRun-Bold.ttf</font>
+    </family>
+    <alias name="cookierun-bold" to="cookierun" weight="700" />
+
     <!-- Cocon -->
     <family customizationType="new-named-family" name="cocon">
         <font weight="400" style="normal">Cocon.ttf</font>
