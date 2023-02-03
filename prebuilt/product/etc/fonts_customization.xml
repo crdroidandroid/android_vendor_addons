@@ -175,6 +175,26 @@
     <alias name="nokiapure-semi-bold" to="nokiapure" weight="600" />
     <alias name="nokiapure-bold" to="nokiapure" weight="700" />
 
+    <!-- Nothing Fonts -->
+    <family customizationType="new-named-family" name="nothingdot">
+        <font weight="400" style="normal" postScriptName="Ndot-55">NDot55Caps.otf</font>
+    </family>
+    <family customizationType="new-named-family" name="nothingdot57">
+        <font weight="400" style="normal" postScriptName="Ndot-57">NDot57Caps.otf</font>
+    </family>
+    <family customizationType="new-named-family" name="nothingdot57aligned">
+        <font weight="400" style="normal" postScriptName="Ndot-57-Aligned">Ndot-57-Aligned.otf</font>
+    </family>
+    <alias name="ndot" to="NDot55" />
+    <alias name="ndot57" to="NDot57" />
+    <alias name="ndot57-align" to="NDot57-Aligned" /> 
+
+    <!-- NothingDot -->
+    <family customizationType="new-named-family" name="pixelwars">
+        <font weight="400" style="normal" postScriptName="pixelwars">pixelwars.ttf</font>
+    </family>
+    <alias name="pixelwars" to="pixelwars" weight="400" />
+
     <!-- Nunito -->
     <family customizationType="new-named-family" name="nunito">
         <font weight="400" style="normal">Nunito-Regular.ttf</font>

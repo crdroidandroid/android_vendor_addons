@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2022 crDroid Android Project
+# Copyright (C) 2017-2023 crDroid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,7 @@ PRODUCT_PACKAGES += \
     ClockFontLGSmartGothicOverlay \
     ClockFontLinotteOverlay \
     ClockFontNokiaPureOverlay \
+    ClockFontNothingDotHeadlineOverlay \
     ClockFontNunitoOverlay \
     ClockFontOneplusSansOverlay \
     ClockFontOneplusSlateOverlay \
@@ -86,6 +87,8 @@ PRODUCT_PACKAGES += \
     FontLGSmartGothicOverlay \
     FontLinotteOverlay \
     FontNokiaPureOverlay \
+    FontNothingDotHeadlineOverlay \
+    FontNothingDotOverlay \
     FontNunitoOverlay \
     FontOneplusSansOverlay \
     FontOneplusSlateOverlay \
