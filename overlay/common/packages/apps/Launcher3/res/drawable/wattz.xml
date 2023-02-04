@@ -1,20 +1,30 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="192dp"
-    android:height="192dp"
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
     android:viewportWidth="50.8"
-    android:viewportHeight="50.8">
-  <path
-      android:pathData="M21.312,9.083l-3.27,0s-2.452,0 -2.452,2.447l0,31.004s0,2.448 2.452,2.448l14.717,0s2.452,0 2.452,-2.448L35.211,11.53s0,-2.447 -2.452,-2.447l-3.27,0L29.488,5.819l-8.176,0z"
-      android:strokeLineJoin="round"
-      android:strokeWidth="3.175"
-      android:fillColor="#00000000"
-      android:strokeColor="#000"
-      android:strokeLineCap="round"/>
-  <path
-      android:pathData="m27.035,15.61 l-7.358,14.687l4.088,0l0,10.607l7.358,-14.687l-4.088,0z"
-      android:strokeLineJoin="round"
-      android:strokeWidth="3.175"
-      android:fillColor="#00000000"
-      android:strokeColor="#000"
-      android:strokeLineCap="round"/>
+    android:viewportHeight="50.8"
+    android:width="192dp"
+    android:height="192dp">
+    <group
+        android:scaleX="1.03"
+        android:scaleY="1.0279"
+        android:translateX="-0.762"
+        android:translateY="-0.708">
+        <path
+            android:pathData="M21.431 9.525h-3.175s-2.381 0 -2.381 2.381v30.162s0 2.382 2.381 2.382h14.288s2.381 0 2.381 -2.382V11.906s0 -2.381 -2.381 -2.381h-3.175V6.35h-7.938z"
+            android:strokeColor="#000000"
+            android:strokeWidth="3.086"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+    <group
+        android:scaleX="1.03"
+        android:scaleY="1.0279"
+        android:translateX="-0.762"
+        android:translateY="-0.708">
+        <path
+            android:pathData="M26.987 15.875l-7.144 14.288h3.969v10.319l7.144 -14.288h-3.969z"
+            android:strokeColor="#000000"
+            android:strokeWidth="3.086"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
 </vector>

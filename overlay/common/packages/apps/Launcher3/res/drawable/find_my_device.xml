@@ -1,19 +1,16 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="192dp"
-    android:height="192dp"
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
     android:viewportWidth="192"
-    android:viewportHeight="192">
-  <path
-      android:pathData="M96,22C79.109,22 62.218,28.437 49.331,41.31C23.556,67.056 23.556,108.799 49.331,134.545C56.444,141.65 62.666,145.45 69.321,149.513L69.322,149.514L69.324,149.515C76.974,154.187 85.196,159.208 96,170C106.804,159.208 115.027,154.187 122.676,149.515L122.678,149.515C129.333,145.45 135.556,141.65 142.67,134.545C168.443,108.798 168.443,67.056 142.67,41.31C129.782,28.437 112.891,22 96,22Z"
-      android:strokeLineJoin="round"
-      android:strokeWidth="12"
-      android:fillColor="#00000000"
-      android:fillType="evenOdd"
-      android:strokeColor="#000000"/>
-  <path
-      android:pathData="M74,118V58C74,55.791 75.791,54 78,54H114C116.209,54 118,55.791 118,58V118C118,120.209 116.209,122 114,122H78C75.791,122 74,120.209 74,118Z"
-      android:strokeWidth="12"
-      android:fillColor="#00000000"
-      android:strokeColor="#000000"
-      android:strokeLineCap="round"/>
+    android:viewportHeight="192"
+    android:width="192dp"
+    android:height="192dp">
+    <path
+        android:pathData="M96 22c-16.89 0 -33.782 6.437 -46.67 19.31 -25.773 25.746 -25.773 67.489 0 93.235 7.114 7.105 13.336 10.905 19.99 14.968l0.002 0.001 0.002 0.001C76.974 154.187 85.196 159.208 96 170c10.804 -10.792 19.027 -15.813 26.676 -20.485h0.002c6.655 -4.065 12.878 -7.865 19.992 -14.97 25.773 -25.747 25.773 -67.489 0 -93.235C129.782 28.437 112.891 22 96 22Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M74 118V58a4 4 0 0 1 4 -4h36a4 4 0 0 1 4 4v60a4 4 0 0 1 -4 4H78a4 4 0 0 1 -4 -4Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
 </vector>

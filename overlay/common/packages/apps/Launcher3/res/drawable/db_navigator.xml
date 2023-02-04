@@ -1,18 +1,28 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="192dp"
-    android:height="192dp"
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
     android:viewportWidth="192"
-    android:viewportHeight="192">
-  <path
-      android:pathData="M155.193,44.107L36.812,44.107c-8.115,0 -14.81,6.695 -14.81,14.912l0,74.053c0,8.217 6.695,14.912 14.81,14.912l118.38,0c8.115,0 14.81,-6.695 14.81,-14.912l0,-74.155c0,-8.217 -6.695,-14.912 -14.81,-14.912z"
-      android:strokeLineJoin="round"
-      android:strokeWidth="12"
-      android:fillColor="#00000000"
-      android:strokeColor="#000"/>
-  <path
-      android:pathData="M46.753,65.157l0,61.677c27.997,0 37.634,-4.869 37.634,-31.65 0,-27.39 -13.593,-30.027 -37.533,-30.027zM109.95,65.461L109.95,126.428c28.099,0 35.301,-2.739 35.301,-15.825 0,-12.173 -11.868,-16.941 -35.301,-16.941 23.433,0 33.272,-1.014 33.272,-14.101 0,-13.188 -9.84,-14.101 -33.272,-14.101z"
-      android:strokeLineJoin="round"
-      android:strokeWidth="12"
-      android:fillColor="#00000000"
-      android:strokeColor="#000"/>
+    android:viewportHeight="192"
+    android:width="192dp"
+    android:height="192dp">
+    <group
+        android:scaleX="1.0144"
+        android:scaleY="1.01443"
+        android:translateX="-1.38"
+        android:translateY="-1.39">
+        <path
+            android:pathData="M154.35 44.85H37.65c-8 0 -14.6 6.6 -14.6 14.7v73c0 8.1 6.6 14.7 14.6 14.7h116.7c8 0 14.6 -6.6 14.6 -14.7v-73.1c0 -8.1 -6.6 -14.7 -14.6 -14.7z"
+            android:strokeColor="#000000"
+            android:strokeWidth="12"
+            android:strokeLineJoin="round" />
+    </group>
+    <group
+        android:scaleX="1.0144"
+        android:scaleY="1.01443"
+        android:translateX="-1.38"
+        android:translateY="-1.39">
+        <path
+            android:pathData="M47.45 65.6v60.8c27.6 0 37.1 -4.8 37.1 -31.2 0 -27 -13.4 -29.6 -37 -29.6zm62.3 0.3V126c27.7 0 34.8 -2.7 34.8 -15.6 0 -12 -11.7 -16.7 -34.8 -16.7 23.1 0 32.8 -1 32.8 -13.9 0 -13 -9.7 -13.9 -32.8 -13.9z"
+            android:strokeColor="#000000"
+            android:strokeWidth="12"
+            android:strokeLineJoin="round" />
+    </group>
 </vector>
