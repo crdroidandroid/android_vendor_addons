@@ -12,7 +12,7 @@
         android:pathData="M96 63.76A32.24 32.24 0 1 1 63.76 96 32.27 32.27 0 0 1 96 63.76m0 -8A40.24 40.24 0 1 0 136.24 96 40.25 40.25 0 0 0 96 55.76Z"
         android:fillColor="#000000" />
     <path
-        android:pathData="M82 86l14 10M96 96l21 -14"
+        android:pathData="M82 86l14 10m0 0l21 -14"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeMiterLimit="10"

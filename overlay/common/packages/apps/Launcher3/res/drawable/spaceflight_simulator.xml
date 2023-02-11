@@ -4,12 +4,12 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M67.5 154V92l6 -14 6 14v62h-12zM90.5 154V34l6 -14 6 14v120h-12zM113.5 154V92l6 -14 6 14v62h-12zM69.92 154l3.58 9.85 -4 8.15h8.45l-4.45 -8.15 4.45 -9.85M94.23 155.17l2.35 6.48 -2.63 5.35h5.55l-2.92 -5.35 2.92 -6.48M115.92 154l3.58 9.85 -4 8.15h8.45l-4.45 -8.15 4.45 -9.85"
+        android:pathData="M67.5 154V92l6 -14 6 14v62h-12zm23 0V34l6 -14 6 14v120h-12zm23 0V92l6 -14 6 14v62h-12zm-43.58 0l3.58 9.85 -4 8.15h8.45l-4.45 -8.15 4.45 -9.85m16.28 1.17l2.35 6.48 -2.63 5.35h5.55l-2.92 -5.35 2.92 -6.48m16.42 -1.17l3.58 9.85 -4 8.15h8.45l-4.45 -8.15 4.45 -9.85"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M79.45 131.5H90M103.45 131.5H114"
+        android:pathData="M79.45 131.5H90m13.45 0H114"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeMiterLimit="10" />

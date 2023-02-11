@@ -12,7 +12,7 @@
         android:strokeColor="#000000"
         android:strokeWidth="12" />
     <path
-        android:pathData="M60 76l40 40M100 76l-40 40"
+        android:pathData="M60 76l40 40m0 -40l-40 40"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round" />

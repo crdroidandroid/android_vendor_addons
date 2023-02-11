@@ -11,7 +11,7 @@
         android:strokeLineJoin="round"
         android:strokeMiterLimit="40.8" />
     <path
-        android:pathData="M71 63v64M121 63v64"
+        android:pathData="M71 63v64m50 -64v64"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

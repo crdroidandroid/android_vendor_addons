@@ -52,6 +52,7 @@
     <icon drawable="@drawable/airfrozen_disabler" package="me.yourbay.airfrozen" />
     <icon drawable="@drawable/airguard" package="de.seemoo.at_tracking_detection" />
     <icon drawable="@drawable/airguard" package="de.seemoo.at_tracking_detection.release" />
+    <icon drawable="@drawable/ajio" package="com.ril.ajio" />
     <icon drawable="@drawable/akbarsbank" package="ru.akbars.mobile" />
     <icon drawable="@drawable/alarmio" package="me.jfenn.alarmio" />
     <icon drawable="@drawable/alarmy" package="droom.sleepIfUCan" />
@@ -498,6 +499,7 @@
     <icon drawable="@drawable/compass" package="dev.synapsetech.compass" />
     <icon drawable="@drawable/connect" package="com.garmin.android.apps.connectmobile" />
     <icon drawable="@drawable/connect_iq" package="com.garmin.connectiq" />
+    <icon drawable="@drawable/contacts" package="com.bnyro.contacts" />
     <icon drawable="@drawable/contacts" package="com.samsung.android.app.contacts" />
     <icon drawable="@drawable/contacts" package="com.simplemobiletools.contacts" />
     <icon drawable="@drawable/contacts" package="com.simplemobiletools.contacts.pro" />
@@ -807,7 +809,7 @@
     <icon drawable="@drawable/fuelio" package="com.kajda.fuelio" />
     <icon drawable="@drawable/funimation" package="com.Funimation.FunimationNow" />
     <icon drawable="@drawable/fusewalls" package="com.fusionos.fusewalls" />
-    <icon drawable="@drawable/fx" package="nextapp.fx" />
+    <icon drawable="@drawable/fx_file_explorer" package="nextapp.fx" />
     <icon drawable="@drawable/fxxxs_given" package="rocks.poopjournal.fucksgiven" />
     <icon drawable="@drawable/gaana" package="com.gaana" />
     <icon drawable="@drawable/galaxy_store" package="com.sec.android.app.samsungapps" />
@@ -954,6 +956,7 @@
     <icon drawable="@drawable/google_podcasts" package="com.google.android.apps.podcasts" />
     <icon drawable="@drawable/google_sheets" package="com.google.android.apps.docs.editors.sheets" />
     <icon drawable="@drawable/google_slides" package="com.google.android.apps.docs.editors.slides" />
+    <icon drawable="@drawable/google_task_mate" package="com.google.android.apps.nbu.tinytask" />
     <icon drawable="@drawable/google_tasks" package="com.google.android.apps.tasks" />
     <icon drawable="@drawable/google_translate" package="com.google.android.apps.translate" />
     <icon drawable="@drawable/google_tv" package="com.google.android.videos" />
@@ -1098,7 +1101,7 @@
     <icon drawable="@drawable/jiomart" package="com.jpl.jiomart" />
     <icon drawable="@drawable/jiosaavn" package="com.jio.media.jiobeats" />
     <icon drawable="@drawable/jitsi" package="org.jitsi.meet" />
-    <icon drawable="@drawable/joey" package="o.o.joey" />
+    <icon drawable="@drawable/joey_reddit" package="o.o.joey" />
     <icon drawable="@drawable/joplin" package="net.cozic.joplin" />
     <icon drawable="@drawable/joyn" package="de.prosiebensat1digital.seventv" />
     <icon drawable="@drawable/json_genie" package="com.tuyware.jsongenie.premium" />
@@ -1165,6 +1168,9 @@
     <icon drawable="@drawable/kucoin" package="com.kubi.kucoin" />
     <icon drawable="@drawable/kuro_reader" package="br.com.kurotoshiro.leitor_manga" />
     <icon drawable="@drawable/kuro_reader_pro" package="br.com.kurotoshiro.leitor_manga_pro" />
+    <icon drawable="@drawable/kvaesitso" package="de.mm20.launcher2.debug" />
+    <icon drawable="@drawable/kvaesitso" package="de.mm20.launcher2.nightly" />
+    <icon drawable="@drawable/kvaesitso" package="de.mm20.launcher2.release" />
     <icon drawable="@drawable/kwai" package="com.kwai.video" />
     <icon drawable="@drawable/kwgt" package="org.kustom.widget" />
     <icon drawable="@drawable/kwork" package="ru.kwork.app" />
@@ -1245,7 +1251,6 @@
     <icon drawable="@drawable/marindeck" package="online.hisubway.marindeck" />
     <icon drawable="@drawable/mars" package="com.pomelogames.MarsGame" />
     <icon drawable="@drawable/mastodon" package="org.joinmastodon.android" />
-    <icon drawable="@drawable/mastodon" package="org.joinmastodon.android.sk" />
     <icon drawable="@drawable/material_catalog" package="androidx.compose.material.catalog" />
     <icon drawable="@drawable/material_catalog" package="com.numero.material_gallery" />
     <icon drawable="@drawable/material_catalog" package="io.material.catalog" />
@@ -1276,6 +1281,7 @@
     <icon drawable="@drawable/meesho" package="com.meesho.supply" />
     <icon drawable="@drawable/mega" package="mega.privacy.android.app" />
     <icon drawable="@drawable/megafon" package="ru.megafon.mlk" />
+    <icon drawable="@drawable/megalodon" package="org.joinmastodon.android.sk" />
     <icon drawable="@drawable/meinvodafone" package="com.VodafoneIreland.MyVodafone" />
     <icon drawable="@drawable/meinvodafone" package="com.appseleration.android.selfcare" />
     <icon drawable="@drawable/meinvodafone" package="com.emeint.android.myservices" />
@@ -1859,8 +1865,8 @@
     <icon drawable="@drawable/screencam" package="com.orpheusdroid.screenrecorder" />
     <icon drawable="@drawable/screeno" package="com.bytelogs.screenrecorder" />
     <icon drawable="@drawable/screenshot_tile_noroot" package="com.github.cvzi.screenshottile" />
-    <icon drawable="@drawable/sdmaid" package="eu.thedarken.sdm" />
-    <icon drawable="@drawable/sdmaid" package="eu.thedarken.sdm.unlocker" />
+    <icon drawable="@drawable/sd_maid" package="eu.thedarken.sdm" />
+    <icon drawable="@drawable/sd_maid" package="eu.thedarken.sdm.unlocker" />
     <icon drawable="@drawable/seal" package="com.junkfood.seal" />
     <icon drawable="@drawable/seedvault" package="com.stevesoltys.seedvault" />
     <icon drawable="@drawable/seguimientoescolar" package="com.ambikon.seguimientoescolar" />
@@ -1900,6 +1906,7 @@
     <icon drawable="@drawable/simpl_pay" package="com.simpl.android" />
     <icon drawable="@drawable/simple_calendar" package="com.simplemobiletools.calendar" />
     <icon drawable="@drawable/simple_calendar" package="com.simplemobiletools.calendar.pro" />
+    <icon drawable="@drawable/simple_gallery" package="com.bnyro.wallpaper" />
     <icon drawable="@drawable/simple_gallery" package="com.google.android.apps.wallpaper" />
     <icon drawable="@drawable/simple_gallery" package="com.pashapuma.pix.wallpapers" />
     <icon drawable="@drawable/simple_gallery" package="com.simplemobiletools.gallery" />
