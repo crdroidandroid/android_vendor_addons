@@ -83,6 +83,7 @@ PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
     FontGrandHotelOverlay \
     FontHarmonySansOverlay \
+    FontInterOverlay \
     FontLatoOverlay \
     FontLGSmartGothicOverlay \
     FontLinotteOverlay \
