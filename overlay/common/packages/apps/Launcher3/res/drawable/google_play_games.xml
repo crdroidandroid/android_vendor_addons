@@ -4,35 +4,17 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M29.56 78.961l-7.14 56.232c-1.441 11.347 12.302 18.085 20.39 9.997L70 118h52l27.19 27.19c8.088 8.088 21.831 1.35 20.39 -9.997l-7.14 -56.232C159.902 58.978 142.901 44 122.758 44H69.242C49.099 44 32.098 58.978 29.56 78.961Z"
+        android:pathData="M60.561 87.797a7.991 7.991 0 1 0 0 -15.982 7.991 7.991 0 0 0 0 15.982ZM76.756 103.581a7.99 7.99 0 1 0 0 -15.982 7.991 7.991 0 1 0 0 15.982ZM44.852 103.581a7.99 7.99 0 1 0 0 -15.982 7.991 7.991 0 1 0 0 15.982ZM60.405 119.555a7.991 7.991 0 1 0 0 -15.983 7.991 7.991 0 0 0 0 15.983Z"
+        android:fillColor="#000000" />
+    <path
+        android:pathData="M30.414 62.164H72.74s25.662 0.565 29.328 20.896l9.023 48.004M31.093 129.045l29.412 0.1 21.235 20.966"
         android:strokeColor="#000000"
         android:strokeWidth="12"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M66 69v12m0 12V81m0 0H54m12 0h12"
+        android:pathData="M154.673 109.933l-101.761 57.95C42.245 173.954 29 166.243 29 153.951V38.049c0 -12.292 13.245 -20.003 23.912 -13.932l101.761 57.95c10.787 6.142 10.787 21.714 0 27.856v0.01Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round" />
-    <path
-        android:pathData="M132 69A6 6 0 0 1 120 69A6 6 0 0 1 132 69Z"
-        android:fillColor="#000000" />
-    <path
-        android:pathData="M132 93A6 6 0 0 1 120 93A6 6 0 0 1 132 93Z"
-        android:fillColor="#000000" />
-    <group
-        android:rotation="90"
-        android:pivotX="138"
-        android:pivotY="81">
-        <path
-            android:pathData="M144 81A6 6 0 0 1 132 81A6 6 0 0 1 144 81Z"
-            android:fillColor="#000000" />
-    </group>
-    <group
-        android:rotation="90"
-        android:pivotX="114"
-        android:pivotY="81">
-        <path
-            android:pathData="M120 81A6 6 0 0 1 108 81A6 6 0 0 1 120 81Z"
-            android:fillColor="#000000" />
-    </group>
+        android:strokeMiterLimit="10" />
 </vector>

@@ -21,7 +21,7 @@
         android:strokeColor="#000000"
         android:strokeWidth="8" />
     <path
-        android:pathData="M42.153 79.642v29.069M60.346 79.642l0.016 29.069"
+        android:pathData="M42.153 79.642v29.069m18.193 -29.069l0.016 29.069"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeLineCap="round"
@@ -31,17 +31,17 @@
         android:strokeColor="#000000"
         android:strokeWidth="8" />
     <path
-        android:pathData="M83.479 108.711l-0.016 -14.534M73.276 79.642l10.187 14.535M93.698 79.642L83.463 94.177M106.163 108.679V95.813"
+        android:pathData="M83.479 108.711l-0.016 -14.534M73.276 79.642l10.187 14.535m10.235 -14.535L83.463 94.177m22.7 14.502V95.813"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M106.163 75.717v20.096M134.557 112.684V75.717"
+        android:pathData="M106.163 75.717v20.096m28.394 16.871V75.717"
         android:strokeColor="#000000"
         android:strokeWidth="8" />
     <path
-        android:pathData="M134.557 94.177l14.455 -0.16M134.557 108.678l14.455 0.001M134.854 79.722l14.456 -0.16"
+        android:pathData="M134.557 94.177l14.455 -0.16m-14.455 14.661l14.455 0.001m-14.158 -28.957l14.456 -0.16"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeLineCap="round" />
