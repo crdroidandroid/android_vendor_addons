@@ -40,8 +40,8 @@
 
     <!-- CookieRun -->
     <family customizationType="new-named-family" name="cookierun">
-        <font weight="400" style="normal">CookieRun-Regular.ttf</font>
-        <font weight="700" style="normal">CookieRun-Bold.ttf</font>
+        <font weight="400" style="normal">CookieRun-Regular.otf</font>
+        <font weight="700" style="normal">CookieRun-Bold.otf</font>
     </family>
     <alias name="cookierun-bold" to="cookierun" weight="700" />
 
