@@ -217,8 +217,7 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-    crDroidThemesStub
+    AndroidBlackThemeOverlay
 
 # Weather
 PRODUCT_PACKAGES += \
