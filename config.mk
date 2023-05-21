@@ -163,7 +163,6 @@ PRODUCT_PACKAGES += \
     IconShapeHeartOverlay \
     IconShapeHexagonOverlay \
     IconShapeLeafOverlay \
-    IconShapeMeowOverlay \
     IconShapePebbleOverlay \
     IconShapeRoundedHexagonOverlay \
     IconShapeRoundedRectOverlay \
