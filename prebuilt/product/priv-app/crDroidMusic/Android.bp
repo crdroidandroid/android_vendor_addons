@@ -24,4 +24,13 @@ android_app_import {
     },
     privileged: true,
     product_specific: true,
+    required: ["privapp_whitelist_com.crdroid.music"],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.crdroid.music",
+    product_specific: true,
+    src: "privapp_whitelist_com.crdroid.music.xml",
+    sub_dir: "permissions",
+    filename_from_src: true,
 }
