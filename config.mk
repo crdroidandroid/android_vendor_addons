@@ -35,41 +35,90 @@ PRODUCT_COPY_FILES += \
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
+    ClockFontACFilmstripOverlay \
     ClockFontAccuratistOverlay \
     ClockFontAclonicaOverlay \
+    ClockFontAlmonteSnowOverlay \
+    ClockFontAlphaCloudsOverlay \
+    ClockFontAlphaFlowersOverlay \
+    ClockFontAlphaWoodOverlay \
     ClockFontAmaranteOverlay \
+    ClockFontAmpad3D2Overlay \
     ClockFontBariolOverlay \
+    ClockFontBetsyFlanaganOverlay \
+    ClockFontBigCheeseOverlay \
+    ClockFontBrandayolqOverlay \
+    ClockFontBudmoJigglerOverlay \
+    ClockFontBunnyRabbitsOverlay \
+    ClockFontCFBadNewsOverlay \
+    ClockFontCFOneTwoTreesOverlay \
     ClockFontCagliostroOverlay \
+    ClockFontCatOverlay \
     ClockFontCoconOverlay \
     ClockFontComfortaaOverlay \
     ClockFontComicSansOverlay \
+    ClockFontConcentrateOverlay \
     ClockFontCookieRunOverlay \
     ClockFontCoolstoryOverlay \
+    ClockFontCrackmanOverlay \
+    ClockFontDiscoMidnightOverlay \
+    ClockFontEasterBunnyOverlay \
+    ClockFontEditPointsFilledOverlay \
+    ClockFontEditPointsOverlay \
+    ClockFontElriott2Overlay \
     ClockFontExotwoOverlay \
+    ClockFontFibographyOverlay \
     ClockFontFifa2018Overlay \
+    ClockFontFloorlightOverlay \
+    ClockFontGautsMotelUpperRightOverlay \
     ClockFontGoogleSansOverlay \
     ClockFontGrandHotelOverlay \
+    ClockFontHangedOverlay \
     ClockFontHarmonySansOverlay \
-    ClockFontLatoOverlay \
+    ClockFontHotSweatOverlay \
+    ClockFontKGOnlyHopeOverlay \
+    ClockFontKaramuruhOverlay \
+    ClockFontKingthingsOverlay \
     ClockFontLGSmartGothicOverlay \
+    ClockFontLMSCliffordOverlay \
+    ClockFontLatoOverlay \
     ClockFontLinotteOverlay \
+    ClockFontLittleBunnyOverlay \
+    ClockFontLowerAtmosphereOverlay \
+    ClockFontMessingLetternOverlay \
+    ClockFontMonbijouxClownpieceOverlay \
+    ClockFontNeonDiscoOverlay \
+    ClockFontNinjasOverlay \
     ClockFontNokiaPureOverlay \
     ClockFontNothingDotHeadlineOverlay \
     ClockFontNunitoOverlay \
     ClockFontOneplusSansOverlay \
     ClockFontOneplusSlateOverlay \
     ClockFontOswaldOverlay \
+    ClockFontPinewoodOverlay \
+    ClockFontPlaidEventOverlay \
+    ClockFontPlantsLettersOverlay \
     ClockFontQuandoOverlay \
+    ClockFontQuickSouthOverlay \
     ClockFontRedressedOverlay \
     ClockFontReemKufiOverlay \
+    ClockFontRemponkOverlay \
     ClockFontRobotoCondensedOverlay \
+    ClockFontRomantiquesOverlay \
     ClockFontRosemaryOverlay \
+    ClockFontRoundheadsOverlay \
     ClockFontRubikOverlay \
     ClockFontSamsungOneOverlay \
+    ClockFontScrapItUpOverlay \
     ClockFontSonySketchOverlay \
+    ClockFontSpaceGameOverlay \
+    ClockFontStandardHeaderOverlay \
     ClockFontStoropiaOverlay \
     ClockFontSurferOverlay \
+    ClockFontTh3machineOverlay \
     ClockFontUbuntuOverlay \
+    ClockFontVtksdura3dOverlay \
+    ClockFontZnikomitNo24Overlay \
     FontAccuratistOverlay \
     FontAclonicaOverlay \
     FontAmaranteOverlay \
@@ -85,8 +134,8 @@ PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
     FontGrandHotelOverlay \
     FontHarmonySansOverlay \
-    FontLatoOverlay \
     FontLGSmartGothicOverlay \
+    FontLatoOverlay \
     FontLinotteOverlay \
     FontNokiaPureOverlay \
     FontNothingDotHeadlineOverlay \
