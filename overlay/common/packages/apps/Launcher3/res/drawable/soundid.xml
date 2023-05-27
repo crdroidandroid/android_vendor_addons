@@ -5,8 +5,8 @@
     android:height="192dp">
     <group
         android:rotation="45"
-        android:translateX="131.08"
-        android:translateY="-25.23">
+        android:pivotX="95.995"
+        android:pivotY="145.613">
         <path
             android:pathData="M89 120.61H103A6 6 0 0 1 109 126.61V164.61A6 6 0 0 1 103 170.61H89A6 6 0 0 1 83 164.61V126.61A6 6 0 0 1 89 120.61Z"
             android:strokeColor="#000000"
@@ -19,8 +19,8 @@
         android:strokeWidth="12" />
     <group
         android:rotation="45"
-        android:translateX="60.92"
-        android:translateY="-54.3">
+        android:pivotX="96.006"
+        android:pivotY="46.387">
         <path
             android:pathData="M89 21.39H103A6 6 0 0 1 109 27.39V65.39A6 6 0 0 1 103 71.39H89A6 6 0 0 1 83 65.39V27.39A6 6 0 0 1 89 21.39Z"
             android:strokeColor="#000000"
