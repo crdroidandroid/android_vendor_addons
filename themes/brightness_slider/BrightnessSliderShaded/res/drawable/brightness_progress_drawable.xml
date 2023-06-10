@@ -6,7 +6,7 @@
         <layer-list>
             <item android:gravity="fill_horizontal|center">
                 <shape android:shape="rectangle">
-                    <corners android:radius="@dimen/qs_corner_radius" />
+                    <corners android:radius="24.0dip" />
                     <size android:height="48.0dip" />
                     <solid android:color="@*android:color/system_neutral2_0" />
                 </shape>
@@ -16,7 +16,7 @@
                 android:start="4.5dip"
                 android:end="4.5dip">
                 <shape android:shape="rectangle">
-                    <corners android:radius="@dimen/qs_corner_radius" />
+                    <corners android:radius="20.0dip" />
                     <size android:height="40.0dip" />
                     <gradient
                         android:centerColor="#00000000"

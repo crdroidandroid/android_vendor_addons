@@ -19,7 +19,7 @@
     <item android:id="@android:id/background"
         android:gravity="center_vertical|fill_horizontal">
         <shape android:tint="?android:attr/colorAccent" android:shape="rectangle" android:alpha="0.5">
-            <size android:height="@dimen/custom_rounded_slider_height" />
+            <size android:height="@dimen/rounded_slider_height" />
             <corners android:radius="@dimen/rounded_slider_corner_radius" />
             <solid android:color="@drawable/color_accent_alpha" />
         </shape>

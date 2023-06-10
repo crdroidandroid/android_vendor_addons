@@ -4,14 +4,14 @@
         android:id="@null"
         android:gravity="fill_horizontal|center">
         <shape android:shape="rectangle">
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="6.0dip" />
             <size android:height="12.0dip" />
             <solid android:color="?android:colorAccent" />
         </shape>
     </item>
     <item android:gravity="end|center">
         <shape android:shape="rectangle">
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="12.0dip" />
             <size
                 android:height="24.0dip"
                 android:width="12.0dip" />
@@ -22,7 +22,7 @@
         android:gravity="end|center"
         android:end="5.0dip">
         <shape android:shape="rectangle">
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="7.0dip" />
             <size
                 android:height="14.0dip"
                 android:width="2.0dip" />

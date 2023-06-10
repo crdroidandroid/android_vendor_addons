@@ -18,13 +18,13 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:priv-android="http://schemas.android.com/apk/prv/res/android"
     android:autoMirrored="true">
-    <item android:id="@+id/slider_foreground"
-        android:height="@dimen/slider_progress_height">
+    <item android:id="@null"
+        android:height="@dimen/rounded_slider_height">
         <shape>
-            <size android:height="@dimen/slider_progress_height" />
+            <size android:height="@dimen/rounded_slider_height" />
             <stroke android:width="2.5dp" android:color="?android:attr/colorAccent" />
             <solid android:color="@drawable/color_accent_alpha" />
-            <corners android:radius="@dimen/rounded_slider_corner_radius"/>
+            <corners android:radius="@dimen/rounded_slider_corner_radius" />
         </shape>
     </item>
 </layer-list>

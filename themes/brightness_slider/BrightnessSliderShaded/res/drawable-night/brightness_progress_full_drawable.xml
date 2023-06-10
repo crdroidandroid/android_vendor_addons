@@ -4,7 +4,7 @@
         android:id="@null"
         android:gravity="fill_horizontal|center">
         <shape android:shape="rectangle" android:tintMode="multiply">
-            <corners android:radius="@dimen/qs_corner_radius" />
+            <corners android:radius="24.0dip" />
             <size android:height="48.0dip" />
             <solid android:color="?android:colorAccent" />
         </shape>
@@ -14,7 +14,7 @@
         android:start="4.5dip"
         android:end="4.5dip">
         <shape android:shape="rectangle" android:tintMode="multiply">
-            <corners android:radius="@dimen/qs_corner_radius" />
+            <corners android:radius="20.0dip" />
             <size android:height="40.0dip" />
             <gradient
                 android:angle="270.0"

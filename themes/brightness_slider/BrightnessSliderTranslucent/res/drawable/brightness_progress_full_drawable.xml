@@ -23,7 +23,7 @@
         <shape>
             <size android:height="@dimen/rounded_slider_height" />
             <solid android:color="@drawable/color_accent_alpha" />
-            <corners android:radius="?android:attr/dialogCornerRadius"/>
+            <corners android:radius="@dimen/rounded_slider_corner_radius" />
         </shape>
     </item>
 </layer-list>

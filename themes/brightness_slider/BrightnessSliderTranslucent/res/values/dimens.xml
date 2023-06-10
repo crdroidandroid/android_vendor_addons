@@ -15,8 +15,8 @@
   ~ limitations under the License
   -->
   <resources>
-    <dimen name="rounded_slider_corner_radius">?android:attr/dialogCornerRadius</dimen>
-    <dimen name="rounded_slider_height">48dp</dimen>
-    <dimen name="brightness_mirror_height">48dp</dimen>
-    <dimen name="rounded_slider_background_rounded_corner">?android:attr/dialogCornerRadius</dimen>
+    <dimen name="rounded_slider_corner_radius">24.0dip</dimen>
+    <dimen name="rounded_slider_height">48.0dip</dimen>
+    <dimen name="brightness_mirror_height">48.0dip</dimen>
+    <dimen name="rounded_slider_background_rounded_corner">32.0dip</dimen>
 </resources>
