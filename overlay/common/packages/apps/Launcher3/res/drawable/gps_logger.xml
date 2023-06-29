@@ -56,36 +56,30 @@
             android:strokeLineJoin="bevel" />
     </group>
     <group
-        android:rotation="-45"
-        android:scaleX="1.12899"
-        android:scaleY="0.95208"
-        android:translateX="24.51494"
-        android:translateY="-4.216304">
-        <group
-            android:rotation="90">
-            <path
-                android:pathData="M31.34 15.15h17.798M31.34 17.995h17.798M31.34 20.84h17.798"
-                android:strokeColor="#000000"
-                android:strokeWidth="2.0416"
-                android:strokeLineCap="round"
-                android:strokeLineJoin="bevel" />
-        </group>
+        android:rotation="45"
+        android:scaleX="0.9520769"
+        android:scaleY="1.128995"
+        android:translateX="24.515"
+        android:translateY="-4.216">
+        <path
+            android:pathData="M31.34 15.15h17.798M31.34 17.995h17.798M31.34 20.84h17.798"
+            android:strokeColor="#000000"
+            android:strokeWidth="2.0416"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="bevel" />
     </group>
     <group
-        android:rotation="-45"
-        android:scaleX="1.12899"
-        android:scaleY="0.95208"
-        android:translateX="0.8368894"
-        android:translateY="-27.89443">
-        <group
-            android:rotation="90">
-            <path
-                android:pathData="M31.34 15.15h17.798M31.34 17.995h17.798M31.34 20.84h17.798"
-                android:strokeColor="#000000"
-                android:strokeWidth="2.0416"
-                android:strokeLineCap="round"
-                android:strokeLineJoin="bevel" />
-        </group>
+        android:rotation="45"
+        android:scaleX="0.9520769"
+        android:scaleY="1.128995"
+        android:translateX="0.837"
+        android:translateY="-27.894">
+        <path
+            android:pathData="M31.34 15.15h17.798M31.34 17.995h17.798M31.34 20.84h17.798"
+            android:strokeColor="#000000"
+            android:strokeWidth="2.0416"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="bevel" />
     </group>
     <group
         android:rotation="45"
