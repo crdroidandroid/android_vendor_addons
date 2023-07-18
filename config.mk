@@ -300,20 +300,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniJaws
 
-# Brightness slider styles
-PRODUCT_PACKAGES += \
-    BrightnessSliderAcunOverlay \
-    BrightnessSliderBangOverlay \
-    BrightnessSliderCyberpunkOverlay \
-    BrightnessSliderFilledOverlay \
-    BrightnessSliderLeafyOutlineOverlay \
-    BrightnessSliderMinimalThumbOverlay \
-    BrightnessSliderOutlineOverlay \
-    BrightnessSliderRoundedClipOverlay \
-    BrightnessSliderShadedOverlay \
-    BrightnessSliderThinOverlay \
-    BrightnessSliderTranslucentOverlay
-
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
