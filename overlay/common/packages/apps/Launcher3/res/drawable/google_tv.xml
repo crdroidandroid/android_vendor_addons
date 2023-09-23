@@ -10,12 +10,10 @@
     <path
         android:pathData="M57 74h78v44H57z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="12" />
     <path
-        android:pathData="M57 85V62c0 -11.046 8.954 -20 20 -20v0m48.5 32H150c11.046 0 20 8.954 20 20v0M65 118H42c-11.046 0 -20 -8.954 -20 -20v0m113 8v24c0 11.046 -8.954 20 -20 20v0"
+        android:pathData="M57 85V62a20 20 0 0 1 20 -20v0m48.5 32H150a20 20 0 0 1 20 20v0M65 118H42a20 20 0 0 1 -20 -20v0m113 8v24a20 20 0 0 1 -20 20v0"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
 </vector>

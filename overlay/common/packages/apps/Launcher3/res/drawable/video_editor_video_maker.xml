@@ -9,15 +9,14 @@
         android:strokeWidth="10"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M170 82H22v88h148V82ZM22 42v128M170 22L22 42v28l148 -20V22Z"
+        android:pathData="M170 82H22v88h148V82zM22 42v128M170 22L22 42v28l148 -20V22z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M69 105l16 8 -16 8m44 18H85s2 10 14 10 14 -10 14 -10Z"
+        android:pathData="M69 105l16 8 -16 8m44 18H85s2 10 14 10 14 -10 14 -10z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
 </vector>

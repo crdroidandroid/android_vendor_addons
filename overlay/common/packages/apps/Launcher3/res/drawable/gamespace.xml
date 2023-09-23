@@ -4,11 +4,11 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M22 52H170A6 6 0 0 1 176 58V133A6 6 0 0 1 170 139H22A6 6 0 0 1 16 133V58A6 6 0 0 1 22 52Z"
+        android:pathData="M16 52h160v87H16z"
         android:strokeColor="#000000"
         android:strokeWidth="24" />
     <path
-        android:pathData="M54 86V74H66V86V89H69H81V101H69H66V104V116H54V104V101H51H39V89H51H54V86Z"
+        android:pathData="M54 86V74h12v15h15v12H66v15H54v-15H39V89h15v-3z"
         android:strokeColor="#000000"
         android:strokeWidth="6" />
     <path

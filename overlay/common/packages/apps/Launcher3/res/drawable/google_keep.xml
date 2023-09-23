@@ -7,10 +7,10 @@
         android:pathData="M66 170h60"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
     <path
-        android:pathData="M96 22c-33.137 0 -60 26.863 -60 60 0 20.87 10.655 39.251 26.822 50h66.356C145.345 121.251 156 102.87 156 82c0 -33.137 -26.863 -60 -60 -60Z"
+        android:pathData="M96 22c-33.137 0 -60 26.863 -60 60 0 20.87 10.655 39.251 26.822 50h66.356C145.345 121.251 156 102.87 156 82a60 60 0 0 0 -60 -60z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineJoin="round" />

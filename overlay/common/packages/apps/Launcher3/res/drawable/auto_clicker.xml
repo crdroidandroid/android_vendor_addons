@@ -8,12 +8,11 @@
         android:strokeColor="#000000"
         android:strokeWidth="8" />
     <path
-        android:pathData="M46 106h-2c-8.837 0 -16 -7.163 -16 -16V38c0 -8.837 7.163 -16 16 -16h104c8.837 0 16 7.163 16 16v52c0 8.837 -7.163 16 -16 16h-43"
+        android:pathData="M46 106h-2a16 16 0 0 1 -16 -16V38a16 16 0 0 1 16 -16h104a16 16 0 0 1 16 16v52a16 16 0 0 1 -16 16h-43"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="12" />
     <path
-        android:pathData="M119 63L80 169m12 -32l27.5 -11M93 83l-22 60M60 71l-37 98m53 -91l-22 60m32 13.5l-48.5 -20L23 169h57l6 -17.5Z"
+        android:pathData="M119 63L80 169m12 -32l27.5 -11M93 83l-22 60M60 71l-37 98m53 -91l-22 60m32 13.5l-48.5 -20L23 169h57l6 -17.5z"
         android:strokeColor="#000000"
         android:strokeWidth="14"
         android:strokeLineCap="round"

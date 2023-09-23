@@ -3,21 +3,14 @@
     android:viewportHeight="192"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:translateX="16"
-        android:translateY="16">
-        <path
-            android:pathData="M52.175 61.481H36.743l6.173 -12.345h9.26c8.23 0 8.23 12.345 0 12.345zm37.038 0H73.78l6.173 -12.345h9.26c8.23 0 8.23 12.345 0 12.345zM83.04 86.173H67.608l6.172 -12.346h9.26c8.23 0 8.23 12.346 0 12.346zm-6.173 24.691H61.435l6.173 -12.345h9.259c8.23 0 8.23 12.345 0 12.345zm43.21 -33.95h-15.432l6.173 -12.346h9.26c8.23 0 8.23 12.346 0 12.346zm-6.173 24.691H98.472l6.173 -12.346h9.26c8.23 0 8.23 12.346 0 12.346zM49.09 86.173l-15.34 -0.29 6.08 -12.056h9.26c8.23 0 8.23 12.346 0 12.346z"
-            android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="10" />
-        <path
-            android:pathData="M154 80A74 74 0 0 1 6 80A74 74 0 0 1 154 80Z"
-            android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
+    <path
+        android:pathData="M68.175 77.481H52.743l6.173 -12.345h9.26c8.23 0 8.23 12.345 0 12.345zm37.038 0H89.78l6.173 -12.345h9.26c8.23 0 8.23 12.345 0 12.345zm-6.173 24.692H83.608l6.172 -12.346h9.26c8.23 0 8.23 12.346 0 12.346zm-6.173 24.691H77.435l6.173 -12.345h9.259c8.23 0 8.23 12.345 0 12.345zm43.21 -33.95h-15.432l6.173 -12.346h9.26c8.23 0 8.23 12.346 0 12.346zm-6.173 24.691h-15.432l6.173 -12.346h9.26c8.23 0 8.23 12.346 0 12.346zM65.09 102.173l-15.34 -0.29 6.08 -12.056h9.26c8.23 0 8.23 12.346 0 12.346z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M170 96A74 74 0 0 1 22 96A74 74 0 0 1 170 96Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineJoin="round" />
 </vector>

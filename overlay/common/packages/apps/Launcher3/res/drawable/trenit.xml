@@ -4,12 +4,13 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M157.339 116.524a3.133 3.133 0 1 0 -6.265 0.001 3.133 3.133 0 0 0 6.265 -0.001Zm-25.059 0a3.132 3.132 0 1 0 -6.263 0 3.132 3.132 0 0 0 6.263 0Z"
+        android:pathData="M157.339 116.524a3.133 3.133 0 1 0 -6.265 0.001 3.133 3.133 0 0 0 6.265 -0.001zm-25.059 0a3.132 3.132 0 1 0 -6.263 0 3.132 3.132 0 0 0 6.263 0z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M160 151H22v-27.507h32.106c24.19 0 47.446 -29.519 56.783 -42.963 2.753 -3.964 4.296 -6.53 4.296 -6.53h46.984S170 97.372 170 117.994 160 151 160 151Z"
+        android:pathData="M160 151H22v-27.507h32.106c24.19 0 47.446 -29.519 56.783 -42.963 2.753 -3.964 4.296 -6.53 4.296 -6.53h46.984S170 97.372 170 117.994 160 151 160 151z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
@@ -21,7 +22,7 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M163 71.79h-4.675m0 0L140.792 41m17.533 30.79h-27.273L114.299 41m26.493 0h-26.493m26.493 0h19.87m-46.363 0H103m11.299 0c2.602 17.877 -8.478 41.234 -12.799 54.5"
+        android:pathData="M163 71.79h-4.675L140.792 41m17.533 30.79h-27.273L114.299 41m26.493 0h-26.493m26.493 0h19.87m-46.363 0H103m11.299 0c2.602 17.877 -8.478 41.234 -12.799 54.5"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeLineCap="round"

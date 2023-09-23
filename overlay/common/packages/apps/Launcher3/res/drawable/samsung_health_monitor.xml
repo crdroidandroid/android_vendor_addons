@@ -3,14 +3,10 @@
     android:viewportHeight="50.8"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:translateY="0.53">
-        <path
-            android:pathData="M5.82 25.4h8.202l6.615 -16.669 8.467 32.28L35.492 25.4h9.487"
-            android:strokeColor="#000000"
-            android:strokeWidth="3.175"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="0" />
-    </group>
+    <path
+        android:pathData="M5.82 25.93h8.202l6.615 -16.669 8.467 32.28 6.388 -15.611h9.487"
+        android:strokeColor="#000000"
+        android:strokeWidth="3.175"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>

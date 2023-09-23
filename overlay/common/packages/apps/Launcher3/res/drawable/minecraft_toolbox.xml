@@ -6,12 +6,10 @@
     <path
         android:pathData="M103 74A7 7 0 0 1 89 74A7 7 0 0 1 103 74Z"
         android:strokeColor="#000000"
-        android:strokeWidth="14"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="14" />
     <path
-        android:pathData="M162 156V36a6 6 0 0 0 -6 -6H36a6 6 0 0 0 -6 6v120a6 6 0 0 0 6 6h120a6 6 0 0 0 6 -6ZM67 74H30m132 0h-37"
+        android:pathData="M162 156V36a6 6 0 0 0 -6 -6H36a6 6 0 0 0 -6 6v120a6 6 0 0 0 6 6h120a6 6 0 0 0 6 -6zM67 74H30m132 0h-37"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
 </vector>

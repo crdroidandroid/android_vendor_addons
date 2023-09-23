@@ -19,10 +19,12 @@
         android:pathData="M126 78A28 28 0 0 1 70 78A28 28 0 0 1 126 78Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
         android:pathData="M170 28A6 6 0 0 1 158 28A6 6 0 0 1 170 28Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
 </vector>

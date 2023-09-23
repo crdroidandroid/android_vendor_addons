@@ -4,9 +4,9 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M22 16H170A6 6 0 0 1 176 22V170A6 6 0 0 1 170 176H22A6 6 0 0 1 16 170V22A6 6 0 0 1 22 16Z"
+        android:pathData="M36 30H156A6 6 0 0 1 162 36V156A6 6 0 0 1 156 162H36A6 6 0 0 1 30 156V36A6 6 0 0 1 36 30Z"
         android:strokeColor="#000000"
-        android:strokeWidth="24" />
+        android:strokeWidth="12" />
     <path
         android:pathData="M136 132A12 12 0 0 1 112 132A12 12 0 0 1 136 132Z"
         android:fillColor="#000000" />

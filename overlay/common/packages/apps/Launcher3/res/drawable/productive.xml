@@ -7,21 +7,17 @@
         android:pathData="M82 36h87M82 156h87M82 96h87"
         android:strokeColor="#000000"
         android:strokeWidth="14"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M50 36A14 14 0 0 1 22 36A14 14 0 0 1 50 36Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="12" />
     <path
         android:pathData="M50 96A14 14 0 0 1 22 96A14 14 0 0 1 50 96Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="12" />
     <path
         android:pathData="M50 156A14 14 0 0 1 22 156A14 14 0 0 1 50 156Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="12" />
 </vector>

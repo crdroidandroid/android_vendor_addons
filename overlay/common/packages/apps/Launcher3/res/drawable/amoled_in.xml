@@ -3,13 +3,10 @@
     android:viewportHeight="50.8"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:translateX="0.42">
-        <path
-            android:pathData="M25.92 5.822L8.147 44.982m22.408 -28.985l-5.008 11.028h7.938l8.204 17.953m-24.409 0.005l4.591 -10.18h5.7l4.635 10.175"
-            android:strokeColor="#000000"
-            android:strokeWidth="3.175"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
+    <path
+        android:pathData="M26.34 5.822L8.567 44.982m22.408 -28.985l-5.008 11.028h7.938l8.204 17.953m-24.409 0.005l4.591 -10.18h5.7l4.635 10.175"
+        android:strokeColor="#000000"
+        android:strokeWidth="3.175"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>

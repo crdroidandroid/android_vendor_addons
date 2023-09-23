@@ -7,13 +7,11 @@
         android:pathData="M84 83h24m-20 26h16M80 96h32"
         android:strokeColor="#000000"
         android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M132 96A36 74 0 0 1 60 96A36 74 0 0 1 132 96Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="12" />
     <group
         android:rotation="-60"
         android:pivotX="96"
@@ -21,8 +19,7 @@
         <path
             android:pathData="M132 96A36 74 0 0 1 60 96A36 74 0 0 1 132 96Z"
             android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineJoin="round" />
+            android:strokeWidth="12" />
     </group>
     <group
         android:rotation="60"
@@ -31,7 +28,6 @@
         <path
             android:pathData="M132 96A36 74 0 0 1 60 96A36 74 0 0 1 132 96Z"
             android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineJoin="round" />
+            android:strokeWidth="12" />
     </group>
 </vector>

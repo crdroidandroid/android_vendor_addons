@@ -12,6 +12,7 @@
             android:pathData="M8 4A4 4 0 0 1 0 4A4 4 0 0 1 8 4Z"
             android:strokeColor="#000000"
             android:strokeWidth="8"
+            android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
     <group
@@ -23,6 +24,7 @@
             android:pathData="M8 4A4 4 0 0 1 0 4A4 4 0 0 1 8 4Z"
             android:strokeColor="#000000"
             android:strokeWidth="8"
+            android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
     <path
@@ -38,8 +40,9 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M170 128H38s-16 0 -16 -30 10 -64 10 -64h6V22h48v12h6s38 72 78 72v22Zm-86 16h86c-62 0 -74 26 -74 26H22v-16h8v-10h20v10h34v-10Z"
+        android:pathData="M170 128H38s-16 0 -16 -30 10 -64 10 -64h6V22h48v12h6s38 72 78 72v22zm-86 16h86c-62 0 -74 26 -74 26H22v-16h8v-10h20v10h34v-10z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
 </vector>

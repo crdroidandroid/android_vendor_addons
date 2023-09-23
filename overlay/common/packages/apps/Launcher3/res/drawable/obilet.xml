@@ -6,23 +6,23 @@
     <path
         android:pathData="M103 75A3 3 0 0 1 97 75A3 3 0 0 1 103 75Z"
         android:strokeColor="#000000"
-        android:strokeWidth="6" />
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
     <path
         android:pathData="M47 98A13 13 0 0 1 21 98A13 13 0 0 1 47 98Z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M87 98A13 13 0 0 1 61 98A13 13 0 0 1 87 98Z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M152 97a12.987 12.987 0 0 0 -3.808 -9.192A13 13 0 0 0 126 97v2a12.999 12.999 0 0 0 22.192 9.192"
         android:strokeColor="#000000"
         android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M60 71v40m54 -37v37m52 -37v37m-5 -24h10"
         android:strokeColor="#000000"

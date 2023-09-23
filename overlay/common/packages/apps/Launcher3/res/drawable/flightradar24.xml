@@ -3,36 +3,21 @@
     android:viewportHeight="50.8"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:scaleX="0.26458"
-        android:scaleY="0.26458">
-        <path
-            android:pathData="M96 22a74 74 0 0 0 -74 74 74 74 0 0 0 17.527 47.75L96 96l-9.717 73.28A74 74 0 0 0 96 170a74 74 0 0 0 74 -74 74 74 0 0 0 -74 -74z"
-            android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
-    <group
-        android:scaleX="0.26458"
-        android:scaleY="0.26458">
-        <path
-            android:pathData="M96 51.31A44.69 44.69 0 0 0 51.31 96a44.69 44.69 0 0 0 10.602 28.822L96 96l-5.871 44.275a44.69 44.69 0 0 0 5.871 0.414A44.69 44.69 0 0 0 140.69 96 44.69 44.69 0 0 0 96 51.31z"
-            android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
-    <group
-        android:scaleX="0.26458"
-        android:scaleY="0.26458">
-        <path
-            android:pathData="M96 72.484A23.515 23.515 0 0 0 72.484 96a23.515 23.515 0 0 0 5.565 15.178L96 96l-3.082 23.246a23.515 23.515 0 0 0 3.082 0.27A23.515 23.515 0 0 0 119.516 96 23.515 23.515 0 0 0 96 72.484z"
-            android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
+    <path
+        android:pathData="M25.4 5.82A19.579 19.579 0 0 0 5.82 25.4a19.579 19.579 0 0 0 4.638 12.633L25.4 25.4l-2.571 19.388a19.579 19.579 0 0 0 2.57 0.19A19.579 19.579 0 0 0 44.98 25.4 19.579 19.579 0 0 0 25.4 5.82z"
+        android:strokeColor="#000000"
+        android:strokeWidth="3.175"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M25.4 13.576A11.824 11.824 0 0 0 13.576 25.4a11.824 11.824 0 0 0 2.805 7.625L25.4 25.4l-1.554 11.714a11.824 11.824 0 0 0 1.554 0.11A11.824 11.824 0 0 0 37.224 25.4 11.824 11.824 0 0 0 25.4 13.576z"
+        android:strokeColor="#000000"
+        android:strokeWidth="3.175"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M25.4 19.178a6.222 6.222 0 0 0 -6.222 6.222 6.222 6.222 0 0 0 1.472 4.015L25.4 25.4l-0.816 6.15a6.222 6.222 0 0 0 0.816 0.072 6.222 6.222 0 0 0 6.222 -6.222 6.222 6.222 0 0 0 -6.222 -6.222z"
+        android:strokeColor="#000000"
+        android:strokeWidth="3.175"
+        android:strokeLineJoin="round" />
     <group
         android:scaleX="0.74269"
         android:scaleY="0.74269"
@@ -41,7 +26,6 @@
         <path
             android:pathData="M96 83.913A2.138 2.138 0 0 1 91.724 83.913A2.138 2.138 0 0 1 96 83.913Z"
             android:fillColor="#000000"
-            android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
     <group
@@ -52,7 +36,6 @@
         <path
             android:pathData="M96 83.913A2.138 2.138 0 0 1 91.724 83.913A2.138 2.138 0 0 1 96 83.913Z"
             android:fillColor="#000000"
-            android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
     <group
@@ -63,7 +46,6 @@
         <path
             android:pathData="M96 83.913A2.138 2.138 0 0 1 91.724 83.913A2.138 2.138 0 0 1 96 83.913Z"
             android:fillColor="#000000"
-            android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
     <group
@@ -74,7 +56,6 @@
         <path
             android:pathData="M96 83.913A2.138 2.138 0 0 1 91.724 83.913A2.138 2.138 0 0 1 96 83.913Z"
             android:fillColor="#000000"
-            android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
     <group
@@ -85,7 +66,6 @@
         <path
             android:pathData="M96 83.913A2.138 2.138 0 0 1 91.724 83.913A2.138 2.138 0 0 1 96 83.913Z"
             android:fillColor="#000000"
-            android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
 </vector>

@@ -7,11 +7,9 @@
         android:pathData="M97 71v50m24 -50v50m24 -30v10m24 -18v26"
         android:strokeColor="#000000"
         android:strokeWidth="14"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M73 96A25 25 0 0 1 23 96A25 25 0 0 1 73 96Z"
         android:strokeColor="#000000"
-        android:strokeWidth="14"
-        android:strokeLineJoin="round" />
+        android:strokeWidth="14" />
 </vector>

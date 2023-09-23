@@ -7,10 +7,10 @@
         android:pathData="M96 22l-11 85M22 96l63 11m11 63l-11 -63m85 -11l-85 11"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
     <path
-        android:pathData="M22 96l74 -74 74 74 -74 74 -74 -74Z"
+        android:pathData="M22 96l74 -74 74 74 -74 74 -74 -74z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineJoin="round" />

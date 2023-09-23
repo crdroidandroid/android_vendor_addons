@@ -4,9 +4,8 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M22 170h148m-148 0V22l148 148m-148 0l74 -74 74 -74v148"
+        android:pathData="M22 22v142a6 6 0 0 0 6 6h136a6 6 0 0 0 6 -6V22M24 168L170 22m-2 146L22 22"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
 </vector>

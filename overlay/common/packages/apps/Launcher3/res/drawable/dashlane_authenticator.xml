@@ -3,17 +3,9 @@
     android:viewportHeight="50.8"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:scaleX="0.97693"
-        android:scaleY="0.97693"
-        android:translateX="1.331"
-        android:translateY="0.267">
-        <path
-            android:pathData="M23.5 5.197L38.558 46.31h6.067L29.512 5.143Zm-7.475 7.693L28.05 46.255h6.066L21.766 12.89Zm1.245 15.49l-6.554 17.875H4.65l6.771 -17.82Z"
-            android:strokeColor="#000000"
-            android:strokeWidth="2.16665"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="1" />
-    </group>
+    <path
+        android:pathData="M24.289 5.344l14.71 40.165h5.928L30.162 5.29zm-7.303 7.516l11.748 32.595h5.926L22.595 12.86zm1.217 15.132L11.8 45.455H5.874l6.615 -17.409z"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.117"
+        android:strokeLineJoin="round" />
 </vector>

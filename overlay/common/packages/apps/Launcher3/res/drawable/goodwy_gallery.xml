@@ -11,24 +11,14 @@
         android:pathData="M171 96A27 27 0 0 1 117 96A27 27 0 0 1 171 96Z"
         android:strokeColor="#000000"
         android:strokeWidth="10" />
-    <group
-        android:rotation="90"
-        android:pivotX="96"
-        android:pivotY="48">
-        <path
-            android:pathData="M123 48A27 27 0 0 1 69 48A27 27 0 0 1 123 48Z"
-            android:strokeColor="#000000"
-            android:strokeWidth="10" />
-    </group>
-    <group
-        android:rotation="90"
-        android:pivotX="96"
-        android:pivotY="144">
-        <path
-            android:pathData="M123 144A27 27 0 0 1 69 144A27 27 0 0 1 123 144Z"
-            android:strokeColor="#000000"
-            android:strokeWidth="10" />
-    </group>
+    <path
+        android:pathData="M123 48A27 27 0 0 1 69 48A27 27 0 0 1 123 48Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="10" />
+    <path
+        android:pathData="M123 144A27 27 0 0 1 69 144A27 27 0 0 1 123 144Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="10" />
     <group
         android:rotation="45"
         android:pivotX="62.059"

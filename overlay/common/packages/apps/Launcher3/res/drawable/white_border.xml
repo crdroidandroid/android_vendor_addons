@@ -6,17 +6,17 @@
     <path
         android:pathData="M58 44A14 14 0 0 1 30 44A14 14 0 0 1 58 44Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12" />
+        android:strokeWidth="12"
+        android:strokeLineJoin="round" />
     <path
-        android:pathData="M70 66l-48 87h96L70 66Z"
+        android:pathData="M70 66l-48 87h96L70 66z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
         android:pathData="M56 153h114L113 50 87.82 95.5"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
 </vector>

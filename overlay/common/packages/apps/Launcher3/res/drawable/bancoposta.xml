@@ -4,15 +4,38 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M114.5 50.29h30.297C158.716 50.29 170 61.574 170 75.493v0c0 13.919 -11.284 25.203 -25.203 25.203H114.5"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M113.159 141.449V49.217h-11.797v92.232h11.797ZM21 93.332V46h31.555c13.07 0 23.666 10.596 23.666 23.666v0c0 13.07 -10.596 23.666 -23.666 23.666H33.271m-12.271 0v53.469h37.11c14.36 0 26 -11.641 26 -26v-1.468c0 -14.36 -11.64 -26 -26 -26H33.271m-12.271 0h12.271"
+        android:pathData="M56 94a21 21 0 1 0 0 -42"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M145 102a24.002 24.002 0 0 0 24 -24 24.003 24.003 0 0 0 -24 -24"
+        android:strokeColor="#000000"
+        android:strokeWidth="14"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M21 94h35"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M103 102h42"
+        android:strokeColor="#000000"
+        android:strokeWidth="14"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M56 52H27a6 6 0 0 0 -6 6v76a6 6 0 0 0 6 6h29"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M103 138V60a6 6 0 0 1 6 -6h38"
+        android:strokeColor="#000000"
+        android:strokeWidth="14"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M56 140a22.998 22.998 0 0 0 23 -23 22.998 22.998 0 0 0 -23 -23"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round" />
 </vector>

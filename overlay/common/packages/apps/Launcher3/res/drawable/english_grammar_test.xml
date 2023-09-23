@@ -5,6 +5,7 @@
     android:height="192dp">
     <path
         android:pathData="M38 169h116m0 -20v20M52 96h72M52 23v146M154 23v20M38 23h116"
+        android:fillColor="#000000"
         android:strokeColor="#000000"
         android:strokeWidth="14"
         android:strokeLineCap="round" />

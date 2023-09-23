@@ -9,21 +9,23 @@
         android:strokeWidth="12"
         android:strokeLineCap="round" />
     <path
-        android:pathData="M149 64A22 22 0 0 1 105 64A22 22 0 0 1 149 64Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M85 128A22 22 0 0 1 41 128A22 22 0 0 1 85 128Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M63 86c-12.15 0 -22 -9.85 -22 -22m0 0c0 -12.15 9.85 -22 22 -22s22 9.85 22 22H41Z"
+        android:pathData="M63 86a22 22 0 0 1 -22 -22m0 0c0 -12.15 9.85 -22 22 -22s22 9.85 22 22H41z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
         android:pathData="M85 150v-23M62 86c5.4 0 10.507 -1.26 15.042 -3.5"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M149 64A22 22 0 0 1 105 64A22 22 0 0 1 149 64Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M85 128A22 22 0 0 1 41 128A22 22 0 0 1 85 128Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round" />

@@ -4,7 +4,7 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M32 32s24 -10 64 -10 64 10 64 10v88c0 32 -58 50 -64 50s-64 -18 -64 -50V32Z"
+        android:pathData="M32 32s24 -10 64 -10 64 10 64 10v88c0 32 -58 50 -64 50s-64 -18 -64 -50V32z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineJoin="round" />
@@ -12,6 +12,6 @@
         android:pathData="M65 86l24 24 40 -40"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
 </vector>

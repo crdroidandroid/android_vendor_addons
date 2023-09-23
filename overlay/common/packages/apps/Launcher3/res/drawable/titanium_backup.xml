@@ -7,6 +7,7 @@
         android:pathData="M125 97A3 3 0 0 1 119 97A3 3 0 0 1 125 97Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
         android:pathData="M122 68H66m36 56H86m8 0V68m-28 8v-8m56 8v-8m0 56v-12M63.515 40.846A63.614 63.614 0 0 1 80 34.016L84 22h24l4 12.016a63.603 63.603 0 0 1 16.485 6.83"

@@ -7,19 +7,19 @@
         android:pathData="M34.4 121c-4.5 -9.2 -7.1 -19.5 -7.1 -30.4C27.3 52.8 58.1 22 96 22s68.7 30.8 68.7 68.7c0 10.9 -2.5 21.2 -7.1 30.4M142.4 40l15.8 -15.9M49.7 39.7L34.1 24.1"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeMiterLimit="10" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M67.7 141.5L96 170l27.4 -28.5L96 170v-57"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:strokeMiterLimit="10" />
+        android:strokeLineJoin="round" />
     <path
         android:pathData="M84.1 74.8A8.2 8.2 0 0 1 67.7 74.8A8.2 8.2 0 0 1 84.1 74.8Z"
-        android:fillColor="#000000" />
+        android:fillColor="#000000"
+        android:strokeLineCap="round" />
     <path
         android:pathData="M126.8 74.8A8.2 8.2 0 0 1 110.4 74.8A8.2 8.2 0 0 1 126.8 74.8Z"
-        android:fillColor="#000000" />
+        android:fillColor="#000000"
+        android:strokeLineCap="round" />
 </vector>

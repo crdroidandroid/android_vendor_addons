@@ -34,9 +34,9 @@
         android:strokeWidth="6"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M170 147v-32m-46 46v-14m0 0v-32s3.5 -2 12 -2c11.5 0 15 5.5 15 16s-4.5 18 -15 18h-12Zm-102 0V99m31 48v-22c0 -6 -3 -12 -10 -12s-21 8 -21 8"
+        android:pathData="M170 147v-32m-46 46v-14m0 0v-32s3.5 -2 12 -2c11.5 0 15 5.5 15 16s-4.5 18 -15 18h-12zm-102 0V99m31 48v-22c0 -6 -3 -12 -10 -12s-21 8 -21 8"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
 </vector>

@@ -9,27 +9,8 @@
         android:translateX="-0.661"
         android:translateY="-0.706">
         <path
-            android:pathData="M64 136q-8 16 -24 16 -8 16 24 16 24 0 24 -32m-56 16q-16 -40 8 -32"
+            android:pathData="M64 136q-8 16 -24 16 -8 16 24 16 24 0 24 -32m-56 16q-16 -40 8 -32m8 24q-16 -32 8 -64 -8 -16 8 -24 8 -32 40 -32t32 40q40 112 -48 96m40 0q8 8 24 8 32 0 -8 -24M88 44l4 4m16 0l4 -4"
             android:strokeColor="#000000"
-            android:strokeWidth="11.676"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-        <path
-            android:pathData="M48 144q-16 -32 8 -64 -8 -16 8 -24 8 -32 40 -32t32 40q40 112 -48 96"
-            android:strokeColor="#000000"
-            android:strokeWidth="11.676"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-        <path
-            android:pathData="M128 160q8 8 24 8 32 0 -8 -24M88 44l4 4"
-            android:strokeColor="#000000"
-            android:strokeWidth="11.676"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-        <path
-            android:pathData="M108 48l4 -4"
-            android:strokeColor="#000000"
-            android:strokeAlpha="0.996"
             android:strokeWidth="11.676"
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />

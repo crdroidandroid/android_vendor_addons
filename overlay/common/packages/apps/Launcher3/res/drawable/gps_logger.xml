@@ -3,58 +3,30 @@
     android:viewportHeight="50.8"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:rotation="45"
-        android:scaleX="0.92677"
-        android:scaleY="0.92677"
-        android:translateX="21.18952"
-        android:translateY="-2.536016">
-        <path
-            android:pathData="M22.744 2.446v2.16h-1.877V8.47H19.44v10.177h0.839v3.64h2.29v2.529h3.92v-2.529h2.29v-3.64h0.839V8.47H28.19V4.606h-1.877v-2.16zm-0.95 4.446h5.54m-7.251 3.591h9.089m-8.757 8.92h8.22"
-            android:strokeColor="#000000"
-            android:strokeWidth="1.71293"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
-    <group
-        android:rotation="45"
-        android:scaleX="1.129"
-        android:scaleY="1.129"
-        android:translateX="19.78252"
-        android:translateY="-8.679217">
-        <path
-            android:pathData="M23.373 13.5v3.387m2.999 -3.387v3.387"
-            android:strokeColor="#000000"
-            android:strokeWidth="1.40611"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="bevel" />
-    </group>
-    <group
-        android:rotation="45"
-        android:scaleX="0.92677"
-        android:scaleY="0.92677"
-        android:translateX="21.18952"
-        android:translateY="-2.536016">
-        <path
-            android:pathData="M24.55 33.4l-0.044 5.58"
-            android:strokeColor="#000000"
-            android:strokeWidth="1.712931"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="bevel" />
-    </group>
-    <group
-        android:rotation="45"
-        android:scaleX="0.92677"
-        android:scaleY="0.92677"
-        android:translateX="21.18952"
-        android:translateY="-2.536016">
-        <path
-            android:pathData="M22.609 40.082h3.838"
-            android:strokeColor="#000000"
-            android:strokeWidth="2.283908"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="bevel" />
-    </group>
+    <path
+        android:pathData="M34.491 13.972l-1.415 1.415 -1.23 -1.23 -2.532 2.532 -0.936 -0.935 -6.669 6.67 0.55 0.55 -2.385 2.385 1.5 1.5 -1.657 1.658 2.569 2.568 1.657 -1.657 1.5 1.5 2.386 -2.385 0.55 0.55 6.67 -6.669 -0.936 -0.936 2.532 -2.532 -1.23 -1.23 1.415 -1.416zm-3.536 2.29l3.63 3.631m-7.104 -2.398l5.956 5.956m-11.584 0.107l5.386 5.387"
+        android:strokeColor="#000000"
+        android:strokeWidth="1.588"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M27.664 20.757l-2.704 2.704m5.099 -0.31l-2.704 2.704"
+        android:strokeColor="#000000"
+        android:strokeWidth="1.587"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M15.39 35.44l-3.686 3.628"
+        android:strokeColor="#000000"
+        android:strokeWidth="1.588"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M9.739 38.547l2.515 2.515"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.117"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
     <group
         android:rotation="45"
         android:scaleX="0.9520769"
@@ -64,9 +36,9 @@
         <path
             android:pathData="M31.34 15.15h17.798M31.34 17.995h17.798M31.34 20.84h17.798"
             android:strokeColor="#000000"
-            android:strokeWidth="2.0416"
+            android:strokeWidth="2.042"
             android:strokeLineCap="round"
-            android:strokeLineJoin="bevel" />
+            android:strokeLineJoin="round" />
     </group>
     <group
         android:rotation="45"
@@ -77,21 +49,14 @@
         <path
             android:pathData="M31.34 15.15h17.798M31.34 17.995h17.798M31.34 20.84h17.798"
             android:strokeColor="#000000"
-            android:strokeWidth="2.0416"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="bevel" />
-    </group>
-    <group
-        android:rotation="45"
-        android:scaleX="0.92677"
-        android:scaleY="0.92677"
-        android:translateX="21.18952"
-        android:translateY="-2.536016">
-        <path
-            android:pathData="M17.375 33.071a7.153 7.153 0 0 1 14.305 0z"
-            android:strokeColor="#000000"
-            android:strokeWidth="2.28391"
+            android:strokeWidth="2.042"
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>
+    <path
+        android:pathData="M10.904 30.523a6.63 6.63 0 0 1 9.374 9.374z"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.117"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>

@@ -8,22 +8,12 @@
         android:pivotX="199.567"
         android:pivotY="86.693">
         <path
-            android:pathData="M172.753 -32.959c-17.667 17.667 -35.333 35.333 -56.5 44.167 -21.167 8.833 -45.833 8.833 -70.5 8.833"
+            android:pathData="M172.753 -32.959c-17.667 17.667 -35.333 35.333 -56.5 44.167 -21.167 8.833 -45.833 8.833 -70.5 8.833m0 0h35c12.334 0 25.666 0 41.167 8.835 15.501 8.834 33.166 26.499 50.833 44.165"
             android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="1" />
+            android:strokeWidth="12" />
         <path
             android:pathData="M193.753 20.041A74 74 0 0 1 45.753 20.041A74 74 0 0 1 193.753 20.041Z"
             android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="1" />
-        <path
-            android:pathData="M45.753 20.041h35c12.334 0 25.666 0 41.167 8.835 15.501 8.834 33.166 26.499 50.833 44.165"
-            android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="1" />
+            android:strokeWidth="12" />
     </group>
 </vector>

@@ -16,5 +16,6 @@
     <path
         android:pathData="M101.2 23l55.43 32a10.39 10.39 0 0 1 5.2 9v64a10.39 10.39 0 0 1 -5.2 9l-55.43 32a10.39 10.39 0 0 1 -10.39 0l-55.43 -32a10.39 10.39 0 0 1 -5.2 -9V64a10.39 10.39 0 0 1 5.2 -9l55.43 -32a10.39 10.39 0 0 1 10.39 0z"
         android:strokeColor="#000000"
-        android:strokeWidth="12" />
+        android:strokeWidth="12"
+        android:strokeLineJoin="round" />
 </vector>

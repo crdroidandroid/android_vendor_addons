@@ -5,15 +5,16 @@
     android:height="192dp">
     <path
         android:pathData="M38 83h30"
+        android:fillColor="#000000"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M16 107a8 8 0 1 1 16 0 8 8 0 1 1 -16 0"
-        android:fillColor="#000000" />
+        android:fillColor="#000000"
+        android:strokeLineCap="round" />
     <path
-        android:pathData="M96 34v124m28 -32l6.9 -18m39.1 18l-6.9 -18m0 0L147 66l-16.1 42m32.2 0h-32.2"
+        android:pathData="M96 34v124m28 -32l6.9 -18m39.1 18l-6.9 -18L147 66l-16.1 42m32.2 0h-32.2"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

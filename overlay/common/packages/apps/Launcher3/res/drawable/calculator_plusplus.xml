@@ -9,10 +9,9 @@
         android:translateX="-20.154"
         android:translateY="-25.515">
         <path
-            android:pathData="M105.52 96.115h18.58m-9.175 -10.896v20.645M135.226 96h18.58m-9.176 -10.896v20.645"
-            android:fillColor="#000000"
+            android:pathData="M105.52 96.115h18.58m-9.175 -10.896v20.645M135.226 96h18.58m-9.176 -10.896v20.645m-34.66 25.325a46.5 46.5 0 0 1 -65.028 -2.268 46.5 46.5 0 0 1 0.904 -65.061 46.5 46.5 0 0 1 65.066 -0.462"
             android:strokeColor="#000000"
-            android:strokeWidth="6.39129"
+            android:strokeWidth="6.391"
             android:strokeLineCap="round" />
     </group>
     <group
@@ -21,44 +20,9 @@
         android:translateX="-20.154"
         android:translateY="-25.515">
         <path
-            android:pathData="M109.97 131.074a46.5 46.5 0 0 1 -65.028 -2.268 46.5 46.5 0 0 1 0.904 -65.061 46.5 46.5 0 0 1 65.066 -0.462"
+            android:pathData="M98.293 119.899a29.718 30.269 0 0 1 -41.559 -1.477 29.718 30.269 0 0 1 0.578 -42.351 29.718 30.269 0 0 1 41.583 -0.301m11.213 -11.54l-11.24 11.469m0.229 43.355l10.322 11.47"
             android:strokeColor="#000000"
-            android:strokeWidth="6.39129"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
-    <group
-        android:scaleX="1.24937"
-        android:scaleY="1.25404"
-        android:translateX="-20.154"
-        android:translateY="-25.515">
-        <path
-            android:pathData="M98.293 119.899a29.718 30.269 0 0 1 -41.559 -1.477 29.718 30.269 0 0 1 0.578 -42.351 29.718 30.269 0 0 1 41.583 -0.301"
-            android:strokeColor="#000000"
-            android:strokeWidth="6.3913"
-            android:strokeLineCap="round" />
-    </group>
-    <group
-        android:scaleX="1.24937"
-        android:scaleY="1.25404"
-        android:translateX="-20.154"
-        android:translateY="-25.515">
-        <path
-            android:pathData="M110.108 64.23l-11.24 11.469"
-            android:strokeColor="#000000"
-            android:strokeWidth="6.39129"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
-    <group
-        android:scaleX="1.24937"
-        android:scaleY="1.25404"
-        android:translateX="-20.154"
-        android:translateY="-25.515">
-        <path
-            android:pathData="M99.097 119.054l10.322 11.47"
-            android:strokeColor="#000000"
-            android:strokeWidth="6.39129"
+            android:strokeWidth="6.391"
             android:strokeLineCap="round" />
     </group>
 </vector>

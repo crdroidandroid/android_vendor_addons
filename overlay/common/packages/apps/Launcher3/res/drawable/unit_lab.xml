@@ -3,17 +3,9 @@
     android:viewportHeight="50.8"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:scaleX="0.974"
-        android:scaleY="0.974"
-        android:translateX="0.166"
-        android:translateY="0.608">
-        <path
-            android:pathData="M31.123 5.425l-1.815 10.604h2.76s4.576 -0.145 3.087 3.959l-6.537 18.049s-1.017 3.341 -3.596 2.905c0 0 -2.47 -0.544 -1.67 -4.285l2.288 -9.77h-4.25s-2.905 0.073 -2.76 -3.558l0.872 -17.977 -4.975 0.073s-1.961 0.072 -1.961 2.578V34.37s-0.98 11.185 13.037 11.185c0 0 13.401 0.327 13.401 -11.367V7.567s0.218 -2.178 -2.687 -2.178z"
-            android:strokeColor="#000000"
-            android:strokeWidth="3.25972"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="1" />
-    </group>
+    <path
+        android:pathData="M30.48 5.892L28.712 16.22H31.4s4.457 -0.141 3.007 3.856l-6.367 17.58s-0.99 3.254 -3.503 2.83c0 0 -2.405 -0.53 -1.626 -4.174l2.228 -9.516H21s-2.829 0.071 -2.687 -3.466l0.849 -17.51 -4.846 0.072s-1.91 0.07 -1.91 2.51v25.682S11.451 44.98 25.103 44.98c0 0 13.053 0.318 13.053 -11.072V7.978s0.212 -2.121 -2.617 -2.121z"
+        android:strokeColor="#000000"
+        android:strokeWidth="3.175"
+        android:strokeLineJoin="round" />
 </vector>

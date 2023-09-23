@@ -15,16 +15,16 @@
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
         <path
-            android:pathData="M25.4 23.812v21.431l11.113 -29.369"
-            android:strokeColor="#000000"
-            android:strokeWidth="3.218"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-        <path
             android:pathData="M26.199 15.875A0.799 0.799 0 0 1 24.601 15.875A0.799 0.799 0 0 1 26.199 15.875Z"
             android:fillColor="#000000"
             android:strokeColor="#000000"
             android:strokeWidth="1.62"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M25.4 23.812v21.431l11.113 -29.369"
+            android:strokeColor="#000000"
+            android:strokeWidth="3.218"
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
     </group>

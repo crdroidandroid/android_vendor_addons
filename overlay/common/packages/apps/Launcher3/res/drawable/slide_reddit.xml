@@ -16,41 +16,13 @@
             <path
                 android:pathData="M118.228 80.716A25.915 25.915 0 0 1 66.398 80.716A25.915 25.915 0 0 1 118.228 80.716Z"
                 android:strokeColor="#000000"
-                android:strokeWidth="8.49603"
-                android:strokeLineCap="round"
-                android:strokeLineJoin="round" />
-        </group>
-        <group
-            android:scaleX="0.26458"
-            android:scaleY="0.26458">
-            <path
-                android:pathData="M80.318 169.787s-0.695 -4.662 0.434 -14.577c0.902 -7.93 3.332 -15.935 5.869 -22.026 3.05 -7.328 8.45 -16.122 8.45 -16.122"
-                android:strokeColor="#000000"
-                android:strokeWidth="9.99902"
+                android:strokeWidth="8.496"
                 android:strokeLineCap="round" />
         </group>
-        <group
-            android:scaleX="0.26458"
-            android:scaleY="0.26458"
-            android:translateX="0.542"
-            android:translateY="1.502">
-            <path
-                android:pathData="M88.23 63.64s-14.427 -0.539 -33.808 1.711c-19.254 2.235 -34.472 8.655 -34.472 8.655"
-                android:strokeColor="#000000"
-                android:strokeWidth="9.99902"
-                android:strokeLineCap="round" />
-        </group>
-        <group
-            android:scaleX="0.26458"
-            android:scaleY="0.26458"
-            android:translateX="-0.276"
-            android:translateY="-0.87">
-            <path
-                android:pathData="M87.544 110.817s-15.182 -0.918 -31.781 2.06c-21.903 3.928 -32.72 11.73 -32.72 11.73"
-                android:strokeColor="#000000"
-                android:strokeWidth="9.99902"
-                android:strokeLineCap="round"
-                android:strokeLineJoin="round" />
-        </group>
+        <path
+            android:pathData="M21.25 44.922s-0.183 -1.233 0.115 -3.857c0.239 -2.098 0.882 -4.216 1.553 -5.827 0.807 -1.939 2.236 -4.266 2.236 -4.266M23.886 18.34s-3.817 -0.143 -8.945 0.453c-5.094 0.59 -9.12 2.29 -9.12 2.29m17.065 7.367s-4.016 -0.243 -8.408 0.545c-5.795 1.04 -8.657 3.104 -8.657 3.104"
+            android:strokeColor="#000000"
+            android:strokeWidth="2.646"
+            android:strokeLineCap="round" />
     </group>
 </vector>

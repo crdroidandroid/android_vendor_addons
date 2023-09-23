@@ -12,12 +12,12 @@
         android:strokeColor="#000000"
         android:strokeWidth="12" />
     <path
+        android:pathData="M94 62A12 12 0 0 1 70 62A12 12 0 0 1 94 62Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12" />
+    <path
         android:pathData="M69.5 67c-9.833 4.833 -33 20.9 -45 42.5m97.5 -13c-14.333 4.333 -45.7 23.5 -56.5 65.5"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round" />
-    <path
-        android:pathData="M94 62A12 12 0 0 1 70 62A12 12 0 0 1 94 62Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
 </vector>

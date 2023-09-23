@@ -9,18 +9,14 @@
         android:strokeWidth="12"
         android:strokeLineCap="round" />
     <path
-        android:pathData="M105 138v-14m20 -18h-20v18m0 0h18m19 14v-32l13.5 22.5L170 106v32"
+        android:pathData="M105 138v-14m20 -18h-20v18h18m19 14v-32l13.5 22.5L170 106v32"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M63 54v20m83 -20v20M87 54v20m83 -20v20"
+        android:pathData="M63 54v20m83 -20v20M87 54v20m83 -20v20M63 74a12 12 0 0 0 24 0m59 0a12 12 0 1 0 24 0"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round" />
-    <path
-        android:pathData="M63 74a12 12 0 0 0 24 0m59 0a12 12 0 1 0 24 0"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
 </vector>

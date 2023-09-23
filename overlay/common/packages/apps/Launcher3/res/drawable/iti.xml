@@ -10,16 +10,16 @@
         android:pathData="M166 22A6 6 0 0 1 154 22A6 6 0 0 1 166 22Z"
         android:fillColor="#000000" />
     <path
-        android:pathData="M25 76c0 -6.627 5.373 -12 12 -12v106a6 6 0 1 1 -12 0V76Zm129 -17c6.627 0 12 5.373 12 12v99a6 6 0 1 1 -12 0V59Zm-78 8h42a6 6 0 1 1 0 12H76V67Z"
+        android:pathData="M124 168A6 6 0 0 1 112 168A6 6 0 0 1 124 168Z"
+        android:fillColor="#000000" />
+    <path
+        android:pathData="M25 76a12 12 0 0 1 12 -12v106a6 6 0 1 1 -12 0V76zm129 -17a12 12 0 0 1 12 12v99a6 6 0 1 1 -12 0V59zm-78 8h42a6 6 0 1 1 0 12H76V67z"
         android:fillColor="#000000" />
     <path
         android:pathData="M118 168c-18.984 4.293 -45 4.343 -45 -30v-4.5"
         android:strokeColor="#000000"
         android:strokeWidth="12" />
     <path
-        android:pathData="M124 168A6 6 0 0 1 112 168A6 6 0 0 1 124 168Z"
-        android:fillColor="#000000" />
-    <path
-        android:pathData="M67 38c0 -6.627 5.373 -12 12 -12v112H67V38Z"
+        android:pathData="M67 38a12 12 0 0 1 12 -12v112H67V38z"
         android:fillColor="#000000" />
 </vector>

@@ -3,15 +3,9 @@
     android:viewportHeight="192"
     android:width="192dp"
     android:height="192dp">
-    <group
-        android:translateX="24.27"
-        android:translateY="24">
-        <path
-            android:pathData="M84 6h54v54m0 24v54H84m-24 0H6V84m0 -24L5.46 6H60M45.243 45.243h53.514v53.514H45.243Z"
-            android:strokeColor="#000000"
-            android:strokeWidth="12"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="1" />
-    </group>
+    <path
+        android:pathData="M80 22H28a6 6 0 0 0 -6 6v52m58 90H28a6 6 0 0 1 -6 -6v-52m148 -32V28a6 6 0 0 0 -6 -6h-52m58 90v52a6 6 0 0 1 -6 6h-52m-44 -52V74a6 6 0 0 1 6 -6h44a6 6 0 0 1 6 6v44a6 6 0 0 1 -6 6H74a6 6 0 0 1 -6 -6z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
 </vector>

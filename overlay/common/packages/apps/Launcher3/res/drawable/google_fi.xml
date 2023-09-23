@@ -17,9 +17,8 @@
             android:strokeWidth="12" />
     </group>
     <path
-        android:pathData="M88 82H58c-11.046 0 -20 8.954 -20 20v46c0 7.732 6.268 14 14 14s14 -6.268 14 -14v-38h22c7.732 0 14 -6.268 14 -14s-6.268 -14 -14 -14Z"
+        android:pathData="M88 82H58a20 20 0 0 0 -20 20v46c0 7.732 6.268 14 14 14s14 -6.268 14 -14v-38h22c7.732 0 14 -6.268 14 -14s-6.268 -14 -14 -14z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
 </vector>
