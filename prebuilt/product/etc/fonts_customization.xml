@@ -283,11 +283,6 @@
         <font weight="300" style="normal">Kingthings.ttf</font>
     </family>
 
-    <!-- Klyukin -->
-    <family customizationType="new-named-family" name="Klyukin">
-        <font weight="300" style="normal">Klyukin.ttf</font>
-    </family>
-
     <!-- Lato -->
     <family customizationType="new-named-family" name="lato">
         <font weight="400" style="normal">Lato-Regular.ttf</font>
@@ -302,13 +297,6 @@
     <alias name="lato-medium" to="lato" weight="500" />
     <alias name="lato-semi-bold" to="lato" weight="600" />
     <alias name="lato-bold" to="lato" weight="700" />
-
-    <!-- LGSmartGothic -->
-    <family customizationType="new-named-family" name="lgsmartgothic">
-        <font weight="300" style="normal">LGSmartGothic.ttf</font>
-    </family>
-    <alias name="lgsmartgothic-semi-bold" to="lgsmartgothic" weight="600" />
-    <alias name="lgsmartgothic-bold" to="lgsmartgothic" weight="700" />
 
     <!-- Linotte -->
     <family customizationType="new-named-family" name="linotte">
@@ -510,13 +498,6 @@
     <family customizationType="new-named-family" name="Romantiques">
         <font weight="300" style="normal">Romantiques.ttf</font>
     </family>
-
-    <!-- Rosemary -->
-    <family customizationType="new-named-family" name="rosemary">
-        <font weight="300" style="normal">Rosemary-Regular.ttf</font>
-    </family>
-    <alias name="rosemary-semi-bold" to="rosemary" weight="600" />
-    <alias name="rosemary-bold" to="rosemary" weight="700" />
 
     <!-- Roundheads -->
     <family customizationType="new-named-family" name="Roundheads">
