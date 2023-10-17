@@ -33,9 +33,10 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-Calligraphy \
     SystemUIClocks-Flex \
     SystemUIClocks-Growth \
-    SystemUIClocks-Handwritten \
     SystemUIClocks-Inflate \
-    SystemUIClocks-NumOverlap
+    SystemUIClocks-Metro \
+    SystemUIClocks-NumOverlap \
+    SystemUIClocks-Weather
 
 # Fonts
 PRODUCT_PACKAGES += \
