@@ -252,6 +252,10 @@ PRODUCT_PACKAGES += \
     NavbarSammyOverlay \
     NavbarTecnoCamonOverlay
 
+# QS UI Style
+PRODUCT_PACKAGES += \
+    A11QSUI
+
 # Signal Icons
 PRODUCT_PACKAGES += \
     AquariumSignalOverlay \
