@@ -1,6 +1,6 @@
 <!--
 /**
- * Copyright (c) 2019-2022, crDroid Android Project
+ * Copyright (c) 2019-2023, crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,17 +17,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Name of a font family to use for body text. -->
-    <string name="config_bodyFontFamily" translatable="false">googlesans</string>
+    <string name="config_bodyFontFamily" translatable="false">google-sans-text</string>
     <!-- Name of a font family to use for medium body text. -->
-    <string name="config_bodyFontFamilyMedium" translatable="false">googlesans-medium</string>
+    <string name="config_bodyFontFamilyMedium" translatable="false">google-sans-text-medium</string>
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
-    <string name="config_headlineFontFamily" translatable="false">googlesans-medium</string>
+    <string name="config_headlineFontFamily">google-sans</string>
     <!-- Name of the font family used for system surfaces where the font should use medium weight -->
-    <string name="config_headlineFontFamilyMedium" translatable="false">googlesans-medium</string>
+    <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
     <!-- Allows setting custom fontFeatureSettings on specific text. -->
     <string name="config_headlineFontFeatureSettings">ss03</string>
     <!-- Name of a font family to use as light font. For theming purpose. -->
-    <string name="config_lightFontFamily" translatable="false">googlesans-light</string>
+    <string name="config_lightFontFamily" translatable="false">google-sans-text</string>
     <!-- Name of a font family to use as regular font. For theming purpose. -->
-    <string name="config_regularFontFamily" translatable="false">googlesans-regular</string>
+    <string name="config_regularFontFamily" translatable="false">google-sans</string>
 </resources>
