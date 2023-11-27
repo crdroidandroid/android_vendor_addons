@@ -10,9 +10,11 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M84 101A13 15 0 0 1 58 101A13 15 0 0 1 84 101Z"
-        android:fillColor="#000000" />
+        android:pathData="M77.5 101A6.5 8.5 0 0 1 64.5 101A6.5 8.5 0 0 1 77.5 101Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="14" />
     <path
-        android:pathData="M134 101A13 15 0 0 1 108 101A13 15 0 0 1 134 101Z"
-        android:fillColor="#000000" />
+        android:pathData="M127.5 101A6.5 8.5 0 0 1 114.5 101A6.5 8.5 0 0 1 127.5 101Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="14" />
 </vector>

@@ -47,7 +47,7 @@
         android:translateX="-21.285"
         android:translateY="13.866">
         <path
-            android:pathData="M350.938 -43.838a20 20 0 0 0 -14.143 5.858L365.08 -9.695a20 20 0 0 0 5.858 -14.143 20 20 0 0 0 -20 -20z"
+            android:pathData="M350.938 -43.838a20 20 0 0 0 -14.143 5.858L365.08 -9.695a20 20 0 0 0 -14.142 -34.143z"
             android:fillColor="#000000"
             android:strokeColor="#000000"
             android:strokeWidth="17.961"
@@ -55,7 +55,7 @@
             android:strokeLineJoin="round" />
     </group>
     <path
-        android:pathData="M10.079 6.151a3.535 3.535 0 0 0 -3.535 3.535 3.535 3.535 0 0 0 1.041 2.493l4.993 -4.992a3.535 3.535 0 0 0 -2.5 -1.036z"
+        android:pathData="M10.079 6.151a3.535 3.535 0 0 0 -2.494 6.028l4.993 -4.992a3.535 3.535 0 0 0 -2.5 -1.036z"
         android:fillColor="#000000"
         android:strokeColor="#000000"
         android:strokeWidth="3.175"

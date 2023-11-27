@@ -10,7 +10,7 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M160 46c-1.755 0 -3.48 0.462 -5 1.34l-68 41a10 10 0 0 0 0 17.32l68 39a9.997 9.997 0 0 0 13.66 -3.66 9.997 9.997 0 0 0 1.34 -5V56a9.997 9.997 0 0 0 -5 -8.66 10.001 10.001 0 0 0 -5 -1.34z"
+        android:pathData="M160 46c-1.755 0 -3.48 0.462 -5 1.34l-68 41a10 10 0 0 0 0 17.32l68 39a9.997 9.997 0 0 0 15 -8.66V56a10.001 10.001 0 0 0 -10 -10z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

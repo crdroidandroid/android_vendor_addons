@@ -4,39 +4,39 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M96 75A13 13 0 0 1 70 75A13 13 0 0 1 96 75Z"
+        android:pathData="M89 72A6 6 0 0 1 77 72A6 6 0 0 1 89 72Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M105 130A17 17 0 0 1 71 130A17 17 0 0 1 105 130Z"
+        android:pathData="M105 127A17 17 0 0 1 71 127A17 17 0 0 1 105 127Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M45 55A11 11 0 0 1 23 55A11 11 0 0 1 45 55Z"
+        android:pathData="M39 52A5 5 0 0 1 29 52A5 5 0 0 1 39 52Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
+        android:strokeWidth="10"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M127 37A9 9 0 0 1 109 37A9 9 0 0 1 127 37Z"
+        android:pathData="M123 34A5 5 0 0 1 113 34A5 5 0 0 1 123 34Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
+        android:strokeWidth="10"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M151 79A8 8 0 0 1 135 79A8 8 0 0 1 151 79Z"
+        android:pathData="M147 76A4 4 0 0 1 139 76A4 4 0 0 1 147 76Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
+        android:strokeWidth="8"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M173 99A3 3 0 0 1 167 99A3 3 0 0 1 173 99Z"
+        android:pathData="M173 96A3 3 0 0 1 167 96A3 3 0 0 1 173 96Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M170 147v-32m-46 46v-14m0 0v-32s3.5 -2 12 -2c11.5 0 15 5.5 15 16s-4.5 18 -15 18h-12zm-102 0V99m31 48v-22c0 -6 -3 -12 -10 -12s-21 8 -21 8"
+        android:pathData="M170 144v-32m-46 46v-14m0 0v-32s3.5 -2 12 -2c11.5 0 15 5.5 15 16s-4.5 18 -15 18h-12Zm-102 0V96m31 48v-22c0 -6 -3 -12 -10 -12s-21 8 -21 8"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineJoin="round"
-        android:strokeLineCap="round" />
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>

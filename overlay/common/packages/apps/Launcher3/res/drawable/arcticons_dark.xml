@@ -7,8 +7,7 @@
         android:pathData="M96 45v16m-44.167 9.5l13.856 8m74.478 -8l-13.856 8M96 87v18m0 26v16m30.311 -33.5l13.856 8m-74.477 -8l-13.857 8"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <path
         android:pathData="M69.966 77.261l23 -13.482a6 6 0 0 1 6.068 0l23 13.482A6 6 0 0 1 125 82.439v27.124c0 2.13 -1.129 4.1 -2.966 5.177l-23 13.482a5.997 5.997 0 0 1 -6.068 0l-23 -13.482A6 6 0 0 1 67 109.562V82.438a6 6 0 0 1 2.966 -5.177Z"
         android:strokeColor="#000000"
@@ -18,8 +17,7 @@
         android:pathData="M108 33A12 12 0 0 1 84 33A12 12 0 0 1 108 33Z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <group
         android:rotation="-60"
         android:pivotX="41.44"
@@ -28,8 +26,7 @@
             android:pathData="M53.44 64.5A12 12 0 0 1 29.44 64.5A12 12 0 0 1 53.44 64.5Z"
             android:strokeColor="#000000"
             android:strokeWidth="10"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
+            android:strokeLineCap="round" />
     </group>
     <group
         android:rotation="60"
@@ -39,15 +36,13 @@
             android:pathData="M162.56 64.5A12 12 0 0 1 138.56 64.5A12 12 0 0 1 162.56 64.5Z"
             android:strokeColor="#000000"
             android:strokeWidth="10"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
+            android:strokeLineCap="round" />
     </group>
     <path
         android:pathData="M108 159A12 12 0 0 1 84 159A12 12 0 0 1 108 159Z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineCap="round" />
     <group
         android:rotation="-60"
         android:pivotX="150.56"
@@ -56,8 +51,7 @@
             android:pathData="M162.56 127.5A12 12 0 0 1 138.56 127.5A12 12 0 0 1 162.56 127.5Z"
             android:strokeColor="#000000"
             android:strokeWidth="10"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
+            android:strokeLineCap="round" />
     </group>
     <group
         android:rotation="60"
@@ -67,7 +61,6 @@
             android:pathData="M53.441 127.5A12 12 0 0 1 29.441 127.5A12 12 0 0 1 53.441 127.5Z"
             android:strokeColor="#000000"
             android:strokeWidth="10"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
+            android:strokeLineCap="round" />
     </group>
 </vector>

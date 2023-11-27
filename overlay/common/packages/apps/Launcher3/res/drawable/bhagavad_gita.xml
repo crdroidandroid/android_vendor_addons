@@ -6,13 +6,10 @@
     <path
         android:pathData="M96 170c40.869 0 74 -33.131 74 -74 0 -40.87 -33.131 -74 -74 -74 -40.87 0 -74 33.13 -74 74 0 40.869 33.13 74 74 74Z"
         android:strokeColor="#000000"
-        android:strokeWidth="12" />
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
     <path
-        android:pathData="M73 86c6.627 0 12 -5.373 12 -12s-5.373 -12 -12 -12 -12 5.373 -12 12 5.373 12 12 12Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="10" />
-    <path
-        android:pathData="M107 133V69m24 64V69"
+        android:pathData="M73 86c6.627 0 12 -5.373 12 -12s-5.373 -12 -12 -12 -12 5.373 -12 12 5.373 12 12 12Zm34 47V69m24 64V69"
         android:strokeColor="#000000"
         android:strokeWidth="10"
         android:strokeLineCap="round" />
