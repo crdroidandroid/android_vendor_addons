@@ -4,7 +4,7 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M22 141h112a36 36 0 1 0 0 -72h-10V58a36.003 36.003 0 0 0 -22.223 -33.26 36.005 36.005 0 0 0 -39.233 7.804A36 36 0 0 0 52 58v112"
+        android:pathData="M22 141h112a36 36 0 1 0 0 -72h-10V58a36 36 0 0 0 -72 0v112"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

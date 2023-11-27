@@ -4,15 +4,33 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M19.843 86.35l46.57 19.248a24.441 24.433 0 0 1 15.211 -4.237l20.71 -30.007 -0.002 -0.424c0 -18.062 14.697 -32.756 32.767 -32.756 18.068 0 32.765 14.694 32.765 32.756s-14.697 32.758 -32.765 32.758a1.49 0.024 0 0 0 -0.745 -0.012l-29.536 21.067c0.016 0.383 0.03 0.774 0.03 1.163 0 13.559 -11.033 24.585 -24.595 24.585 -11.904 0 -21.858 -8.493 -24.113 -19.742l-33.303 -13.763"
+        android:pathData="M75 104l21.34 -28.762a20.999 20.999 0 0 1 35.509 -11.087 20.997 20.997 0 0 1 0 29.698 21 21 0 0 1 -11.936 5.948L91 121"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M122 79A5 5 0 0 1 112 79A5 5 0 0 1 122 79Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M90 120A16 16 0 0 1 58 120A16 16 0 0 1 90 120Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M31 102l43 18"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M36 30H156A6 6 0 0 1 162 36V156A6 6 0 0 1 156 162H36A6 6 0 0 1 30 156V36A6 6 0 0 1 36 30Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
-    <path
-        android:pathData="M153.59 70.928A19 19 0 0 1 115.59 70.928A19 19 0 0 1 153.59 70.928Z"
-        android:fillColor="#000000" />
-    <path
-        android:pathData="M94.583 125.906A14 14 0 0 1 66.583 125.906A14 14 0 0 1 94.583 125.906Z"
-        android:fillColor="#000000" />
 </vector>

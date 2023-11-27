@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <icons>
+    <icon drawable="@drawable/_k" package="com.copymanga.app" />
     <icon drawable="@drawable/a101_kapida" package="com.a101kapida.android" />
     <icon drawable="@drawable/a101_plus" package="com.a101.plus" />
     <icon drawable="@drawable/a12123" package="com.tmri.app.main" />
@@ -45,6 +46,7 @@
     <icon drawable="@drawable/adobe_fill_sign" package="com.adobe.fas" />
     <icon drawable="@drawable/adobe_photoshop_fix" package="com.adobe.adobephotoshopfix" />
     <icon drawable="@drawable/adobe_photoshop_mix" package="com.adobe.photoshopmix" />
+    <icon drawable="@drawable/adobe_premiere_rush" package="com.adobe.premiererush.videoeditor" />
     <icon drawable="@drawable/adobe_scan" package="com.adobe.scan.android" />
     <icon drawable="@drawable/adobe_sign" package="com.adobe.echosign" />
     <icon drawable="@drawable/adobe_xd" package="com.adobe.sparklerandroid" />
@@ -55,9 +57,11 @@
     <icon drawable="@drawable/afk_arena" package="com.lilithgame.hgame.gp" />
     <icon drawable="@drawable/aftership" package="com.aftership.AfterShip" />
     <icon drawable="@drawable/afwall" package="dev.ukanth.ufirewall" />
+    <icon drawable="@drawable/agario" package="com.miniclip.agar.io" />
     <icon drawable="@drawable/aha" package="ahaflix.tv" />
     <icon drawable="@drawable/ahpalm_10000" package="com.wondertek.ahPalm10000" />
     <icon drawable="@drawable/ai_chat" package="com.smartwidgetlabs.chatgpt" />
+    <icon drawable="@drawable/ai_life" package="com.huawei.smarthome" />
     <icon drawable="@drawable/aida64" package="com.finalwire.aida64" />
     <icon drawable="@drawable/aids" package="com.nick80835.add" />
     <icon drawable="@drawable/aidungeon" package="com.aidungeon" />
@@ -81,12 +85,14 @@
     <icon drawable="@drawable/alarmio" package="me.jfenn.alarmio" />
     <icon drawable="@drawable/alarmy" package="droom.sleepIfUCan" />
     <icon drawable="@drawable/albaraka" package="com.albarakaapp" />
+    <icon drawable="@drawable/alcodroid" package="org.M.alcodroid" />
     <icon drawable="@drawable/aldi_talk" package="de.eplus.mappecc.client.android.alditalk" />
+    <icon drawable="@drawable/alert" package="com.ukrainealarm" />
     <icon drawable="@drawable/alert_swiss" package="ch.admin.babs.alertswiss" />
     <icon drawable="@drawable/alfagift" package="com.alfamart.alfagift" />
     <icon drawable="@drawable/alfredcamera" package="com.ivuu" />
     <icon drawable="@drawable/algorithms_and_data_structures_course" package="com.iov.lordofalgorithms" />
-    <icon drawable="@drawable/alibaba" package="com.alibaba.intl.android.apps.poseidon" />
+    <icon drawable="@drawable/alibabacom" package="com.alibaba.intl.android.apps.poseidon" />
     <icon drawable="@drawable/alibank" package="com.mybank.android.phone" />
     <icon drawable="@drawable/aliexpress" package="com.alibaba.aliexpresshd" />
     <icon drawable="@drawable/aliexpress" package="ru.aliexpress.buyer" />
@@ -125,8 +131,10 @@
     <icon drawable="@drawable/amoled_in" package="in.amoled.darkawallpapers" />
     <icon drawable="@drawable/among_us" package="com.innersloth.spacemafia" />
     <icon drawable="@drawable/ampere" package="com.gombosdev.ampere" />
+    <icon drawable="@drawable/anddrop" package="com.neure.anddrop" />
     <icon drawable="@drawable/andftp" package="lysesoft.andftp" />
     <icon drawable="@drawable/andotp" package="org.shadowice.flocke.andotp" />
+    <icon drawable="@drawable/android_12_widget_pack" package="android12widget.kustom.pack" />
     <icon drawable="@drawable/android_auto" package="com.google.android.projection.gearhead" />
     <icon drawable="@drawable/android_ids" package="rk.android.app.androiddeviceids" />
     <icon drawable="@drawable/andronix" package="studio.com.techriz.andronix" />
@@ -143,6 +151,7 @@
     <icon drawable="@drawable/anime" package="aplicaciones.paleta.legionanimefull" />
     <icon drawable="@drawable/anime_scrap" package="com.talent.animescrap" />
     <icon drawable="@drawable/animeindo" package="me.onenrico.animeindo" />
+    <icon drawable="@drawable/animiru" package="xyz.Quickdev.Animiru.mi" />
     <icon drawable="@drawable/anitrend" package="com.mxt.anitrend" />
     <icon drawable="@drawable/anixart" package="com.swiftsoft.anixartd" />
     <icon drawable="@drawable/anixart" package="com.swiftsoft.anixartl" />
@@ -155,6 +164,7 @@
     <icon drawable="@drawable/another_notes_app" package="com.maltaisn.notes.sync" />
     <icon drawable="@drawable/another_widget" package="com.tommasoberlose.anotherwidget" />
     <icon drawable="@drawable/antar" package="com.satya.antar" />
+    <icon drawable="@drawable/antenaplay" package="ro.antenaplay.app" />
     <icon drawable="@drawable/antennapod" package="de.danoeh.antennapod" />
     <icon drawable="@drawable/antutu" package="com.antutu.ABenchMark" />
     <icon drawable="@drawable/antutu" package="com.antutu.benchmark.full" />
@@ -163,7 +173,8 @@
     <icon drawable="@drawable/anysoftkeyboard" package="com.menny.android.anysoftkeyboard" />
     <icon drawable="@drawable/anything_to_pip" package="com.vitolaminafra.imagetopip" />
     <icon drawable="@drawable/anytracker" package="com.shervinkoushan.anyTracker" />
-    <icon drawable="@drawable/anytype" package="com.anytypeio.anytype" />
+    <icon drawable="@drawable/anytype" package="io.anytype.app" />
+    <icon drawable="@drawable/anytype_legacy" package="com.anytypeio.anytype" />
     <icon drawable="@drawable/anywhere" package="com.absinthe.anywhere_" />
     <icon drawable="@drawable/aov" package="com.ngame.allstar.eu" />
     <icon drawable="@drawable/apex_legends" package="com.ea.gp.apexlegendsmobilefps" />
@@ -176,6 +187,7 @@
     <icon drawable="@drawable/app_inspector" package="com.jgba.appinspector" />
     <icon drawable="@drawable/app_launcher" package="com.simplemobiletools.applauncher" />
     <icon drawable="@drawable/app_list_detector" package="icu.nullptr.applistdetector" />
+    <icon drawable="@drawable/app_locker_master" package="com.vnsolutions.fastappslocker" />
     <icon drawable="@drawable/app_lounge" package="foundation.e.apps" />
     <icon drawable="@drawable/app_manager" package="cz.seeq.prog.android.packageviewer" />
     <icon drawable="@drawable/app_manager" package="io.github.muntashirakon.AppManager" />
@@ -186,6 +198,7 @@
     <icon drawable="@drawable/app_vault" package="com.mi.android.globalminusscreen" />
     <icon drawable="@drawable/appbar" package="rk.android.app.appbar" />
     <icon drawable="@drawable/appcloner" package="com.applisto.appcloner.premium" />
+    <icon drawable="@drawable/appdrop" package="com.bulk.uninstall" />
     <icon drawable="@drawable/apple_music" package="com.apple.android.music" />
     <icon drawable="@drawable/application_inspector" package="com.ubqsoft.sec01" />
     <icon drawable="@drawable/applications_info" package="com.majeur.applicationsinfo" />
@@ -197,6 +210,7 @@
     <icon drawable="@drawable/appvalencia" package="es.valencia.lanzadera" />
     <icon drawable="@drawable/appy_weather" package="appyweather.appyweather" />
     <icon drawable="@drawable/aptoide" package="cm.aptoide.pt" />
+    <icon drawable="@drawable/apus" package="com.apusapps.launcher" />
     <icon drawable="@drawable/apx" package="com.saxena.apx" />
     <icon drawable="@drawable/aqua_mail" package="org.kman.AquaMail" />
     <icon drawable="@drawable/aquadroid" package="io.github.z3r0c00l_2k.aquadroid" />
@@ -205,10 +219,13 @@
     <icon drawable="@drawable/arc" package="com.quadren.arc" />
     <icon drawable="@drawable/arcaea" package="moe.low.arc" />
     <icon drawable="@drawable/arcticons_dark" package="com.donnnno.arcticons" />
+    <icon drawable="@drawable/arcticons_you" package="com.donnnno.arcticons.you" />
     <icon drawable="@drawable/ard_mediathek" package="de.swr.avp.ard" />
+    <icon drawable="@drawable/arena_kuota" package="com.arenakuota.mobile" />
     <icon drawable="@drawable/argovpn" package="com.filtershekanha.argovpn" />
     <icon drawable="@drawable/aria2app" package="com.gianlu.aria2app" />
     <icon drawable="@drawable/arp" package="cn.arp.app.newarp.releaseAuth2Production" />
+    <icon drawable="@drawable/artifact" package="ai.nokto.wire" />
     <icon drawable="@drawable/artstation" package="com.ballistiq.artstation" />
     <icon drawable="@drawable/aruba" package="it.aruba.pec.mobile" />
     <icon drawable="@drawable/asana" package="com.asana.app" />
@@ -217,28 +234,33 @@
     <icon drawable="@drawable/asos" package="com.asos.app" />
     <icon drawable="@drawable/aspect_pro" package="com.andrewkhandr.aspectpro" />
     <icon drawable="@drawable/asphalt_9" package="com.gameloft.android.ANMP.GloftA9HM" />
+    <icon drawable="@drawable/astracrypt" package="com.nevidimka655.astracrypt" />
     <icon drawable="@drawable/asus_gallery" package="com.asus.gallery" />
     <icon drawable="@drawable/asus_router" package="com.asus.aihome" />
     <icon drawable="@drawable/asus_weather" package="com.asus.weathertime" />
     <icon drawable="@drawable/atb360" package="az.azerturkbank.atb360" />
     <icon drawable="@drawable/ath_movil" package="com.evertec.athmovil.android" />
     <icon drawable="@drawable/athan" package="com.athan" />
+    <icon drawable="@drawable/ather" package="com.athermobileapp" />
     <icon drawable="@drawable/atlas_vpn" package="com.atlasvpn.free.android.proxy.secure" />
     <icon drawable="@drawable/ato" package="au.gov.ato.ATOTax" />
     <icon drawable="@drawable/atome" package="my.atome.paylater" />
     <icon drawable="@drawable/atomic" package="com.jlindemann.science" />
     <icon drawable="@drawable/attapoll" package="com.requapp.requ" />
     <icon drawable="@drawable/audible" package="com.audible.application" />
+    <icon drawable="@drawable/audio_recorder" package="com.dimowner.audiorecorder" />
     <icon drawable="@drawable/audiofx" package="org.lineageos.audiofx" />
     <icon drawable="@drawable/audiomack" package="com.audiomack" />
     <icon drawable="@drawable/aurora_droid" package="com.aurora.adroid" />
     <icon drawable="@drawable/aurora_store" package="com.aurora.store" />
+    <icon drawable="@drawable/aurora_store" package="com.aurora.store.nightly" />
     <icon drawable="@drawable/ausweisapp2" package="com.governikus.ausweisapp2" />
     <icon drawable="@drawable/ausweisapp2" package="com.governikus.ausweisapp2.dev" />
     <icon drawable="@drawable/auth" package="io.ente.auth" />
     <icon drawable="@drawable/authenticator_pro" package="me.jmh.authenticatorpro" />
     <icon drawable="@drawable/authy" package="com.authy.authy" />
     <icon drawable="@drawable/auto_brightness_tile" package="p4nd4.autobrightness" />
+    <icon drawable="@drawable/auto_change_wallpaper" package="viet.dev.apps.autochangewallpaper" />
     <icon drawable="@drawable/auto_clicker" package="com.truedevelopersstudio.automatictap.autoclicker" />
     <icon drawable="@drawable/auto_cursor" package="eu.toneiv.cursor" />
     <icon drawable="@drawable/auto_notification" package="com.joaomgcd.autonotification" />
@@ -251,6 +273,7 @@
     <icon drawable="@drawable/automate" package="com.llamalab.automate" />
     <icon drawable="@drawable/automation" package="com.jens.automation2" />
     <icon drawable="@drawable/autosync" package="com.ttxapps.drivesync" />
+    <icon drawable="@drawable/autosync_file_sync" package="com.ttxapps.autosync" />
     <icon drawable="@drawable/autotagger" package="com.serg.chuprin.tageditor" />
     <icon drawable="@drawable/autotools" package="com.joaomgcd.autotools" />
     <icon drawable="@drawable/auxio" package="org.oxycblt.auxio" />
@@ -261,6 +284,7 @@
     <icon drawable="@drawable/avee_player" package="com.daaw.avee" />
     <icon drawable="@drawable/aves_gallery" package="deckers.thibault.aves" />
     <icon drawable="@drawable/aves_gallery" package="deckers.thibault.aves.libre" />
+    <icon drawable="@drawable/avg_antivirus" package="com.antivirus" />
     <icon drawable="@drawable/aviasales" package="ru.aviasales" />
     <icon drawable="@drawable/aviata" package="kz.glatis.aviata" />
     <icon drawable="@drawable/avito" package="com.avito.android" />
@@ -271,11 +295,14 @@
     <icon drawable="@drawable/axisnet" package="com.axis.net" />
     <icon drawable="@drawable/azcecll" package="com.bakcell.carrierapp.portal" />
     <icon drawable="@drawable/azerisiq" package="az.azerishiq.mobile" />
+    <icon drawable="@drawable/b612" package="com.linecorp.b612.android" />
     <icon drawable="@drawable/b_maniac" package="it.mirko.beta" />
     <icon drawable="@drawable/babbel" package="com.babbel.mobile.android.en" />
     <icon drawable="@drawable/backdrops" package="com.backdrops.wallpapers" />
     <icon drawable="@drawable/background_eraser" package="com.handycloset.android.eraser" />
     <icon drawable="@drawable/background_eraser_remove_bg" package="photoeditor.cutout.backgrounderaser" />
+    <icon drawable="@drawable/backgrounds" package="com.ogqcorp.bgh" />
+    <icon drawable="@drawable/badoo" package="com.badoo.mobile" />
     <icon drawable="@drawable/baidu_ime" package="com.baidu.input" />
     <icon drawable="@drawable/baidu_map" package="com.baidu.BaiduMap" />
     <icon drawable="@drawable/baidu_netdisk" package="com.baidu.netdisk" />
@@ -290,8 +317,8 @@
     <icon drawable="@drawable/banabikurye" package="hemengetir.client.tr" />
     <icon drawable="@drawable/banco_azteca" package="com.bancoazteca.bienestarazteca" />
     <icon drawable="@drawable/banco_azteca" package="mx.com.bancoazteca.bazdigitalmovil" />
-    <icon drawable="@drawable/banco_estado" package="net.veritran.becl.prod" />
     <icon drawable="@drawable/banco_sabadell" package="net.inverline.bancosabadell.officelocator.android" />
+    <icon drawable="@drawable/bancoestado" package="net.veritran.becl.prod" />
     <icon drawable="@drawable/bancoposta" package="posteitaliane.posteapp.appbpol" />
     <icon drawable="@drawable/bandbond" package="se.droid.bandbond" />
     <icon drawable="@drawable/bandcamp" package="com.bandcamp.android" />
@@ -303,13 +330,20 @@
     <icon drawable="@drawable/bank_jago" package="com.jago.digitalbanking" />
     <icon drawable="@drawable/bankid" package="com.bankid.bus" />
     <icon drawable="@drawable/banque_pop" package="fr.banquepopulaire.cyberplus" />
+    <icon drawable="@drawable/bar_and_bench" package="com.barandbench" />
+    <icon drawable="@drawable/barclays_bank" package="com.barclaycard.germany" />
+    <icon drawable="@drawable/barclays_bank" package="com.barclays.android.barclaysmobilebanking" />
     <icon drawable="@drawable/barinsta" package="me.austinhuang.instagrabber" />
     <icon drawable="@drawable/basecamp" package="com.basecamp.bc3" />
+    <icon drawable="@drawable/battery_charge_limit" package="com.slash.batterychargelimit" />
     <icon drawable="@drawable/battery_guru" package="com.paget96.batteryguru" />
+    <icon drawable="@drawable/battery_widget" package="com.lstapps.batterywidget" />
+    <icon drawable="@drawable/batteryone" package="com.oneapps.batteryone" />
     <icon drawable="@drawable/battle_prime" package="com.blitzteam.battleprime" />
     <icon drawable="@drawable/battlegrounds_india" package="com.pubg.imobile" />
     <icon drawable="@drawable/battlenet_authenticator" package="com.blizzard.bma" />
     <icon drawable="@drawable/bayernapp" package="de.baystmd.bayernapp" />
+    <icon drawable="@drawable/bb" package="br.com.bb.android" />
     <icon drawable="@drawable/bbc_bitesize" package="uk.co.bbc.bitesize" />
     <icon drawable="@drawable/bbc_iplayer" package="bbc.iplayer.android" />
     <icon drawable="@drawable/bbc_news" package="bbc.mobile.news.uk" />
@@ -317,11 +351,13 @@
     <icon drawable="@drawable/bbc_sport" package="uk.co.bbc.android.sportdomestic" />
     <icon drawable="@drawable/bbc_weather" package="bbc.mobile.weather" />
     <icon drawable="@drawable/bbdaily" package="com.raincan.android.hybrid" />
+    <icon drawable="@drawable/bc_services_card" package="ca.bc.gov.id.servicescard" />
     <icon drawable="@drawable/bca_mobile" package="com.bca" />
     <icon drawable="@drawable/bcv_mobile" package="ch.bcv.mobile.android" />
     <icon drawable="@drawable/be_u" package="com.bankislam.beu" />
     <icon drawable="@drawable/beaker" package="air.thix.sciencesense.beaker" />
     <icon drawable="@drawable/beats" package="com.apple.bnd" />
+    <icon drawable="@drawable/beautyplus" package="com.commsource.beautyplus" />
     <icon drawable="@drawable/beautyxt" package="dev.soupslurpr.beautyxt" />
     <icon drawable="@drawable/beeline" package="kz.beeline.odp" />
     <icon drawable="@drawable/beep_sade" package="com.beep.beepmedclient" />
@@ -332,6 +368,7 @@
     <icon drawable="@drawable/bereal" package="com.bereal.ft" />
     <icon drawable="@drawable/bergfex" package="com.bergfex.mobile.android" />
     <icon drawable="@drawable/berichtenbox" package="nl.rijksoverheid.mbb.pub" />
+    <icon drawable="@drawable/best_buy" package="com.bestbuy.android" />
     <icon drawable="@drawable/better_internet_tiles" package="be.casperverswijvelt.unifiedinternetqs" />
     <icon drawable="@drawable/better_untis" package="com.sapuseven.untis" />
     <icon drawable="@drawable/bettercounter" package="org.kde.bettercounter" />
@@ -343,6 +380,7 @@
     <icon drawable="@drawable/bhagavad_gita" package="com.wirelessalien.android.bhagavadgita" />
     <icon drawable="@drawable/bhim" package="com.upi.axispay" />
     <icon drawable="@drawable/bhim" package="in.org.npci.upiapp" />
+    <icon drawable="@drawable/bibit" package="com.bibit.bibitid" />
     <icon drawable="@drawable/bible" package="ua.mybible" />
     <icon drawable="@drawable/bible_study" package="net.bible.android.activity" />
     <icon drawable="@drawable/bigbasket" package="com.bigbasket.mobileapp" />
@@ -366,6 +404,8 @@
     <icon drawable="@drawable/birday" package="com.minar.birday" />
     <icon drawable="@drawable/bitdefender" package="com.bitdefender.antivirus" />
     <icon drawable="@drawable/bitdefender_security" package="com.bitdefender.security" />
+    <icon drawable="@drawable/bitexen_global" package="com.bitexenglobal.exchangeapp" />
+    <icon drawable="@drawable/bitmask" package="se.leap.bitmaskclient" />
     <icon drawable="@drawable/bitmoji" package="com.bitstrips.imoji" />
     <icon drawable="@drawable/bitrix24" package="com.bitrix24.android" />
     <icon drawable="@drawable/bittorrent" package="com.bittorrent.client" />
@@ -396,13 +436,18 @@
     <icon drawable="@drawable/bloons_td_6" package="com.ninjakiwi.bloonstd6" />
     <icon drawable="@drawable/blue_shield" package="com.blueshieldca.prod" />
     <icon drawable="@drawable/bluebubbles" package="com.bluebubbles.messaging" />
+    <icon drawable="@drawable/bluetooth_keyboard_mouse" package="io.appground.blek" />
     <icon drawable="@drawable/blutv" package="com.dsmart.blu.android" />
     <icon drawable="@drawable/bmi_calculator" package="com.appovo.bmicalculator" />
+    <icon drawable="@drawable/bmo_digital_banking" package="com.bmoharris.digital" />
+    <icon drawable="@drawable/bnc" package="ca.bnc.android" />
     <icon drawable="@drawable/bni_mobile" package="src.com.bni" />
     <icon drawable="@drawable/boat_crest" package="com.coveiot.android.boat" />
     <icon drawable="@drawable/boat_hearables" package="com.boAt.hearables" />
     <icon drawable="@drawable/bob" package="de.radiobob.radio" />
+    <icon drawable="@drawable/bob_world" package="com.bankofbaroda.mconnect" />
     <icon drawable="@drawable/bocmbci" package="com.chinamworld.bocmbci" />
+    <icon drawable="@drawable/bofa" package="com.infonow.bofa" />
     <icon drawable="@drawable/boi" package="com.bankofireland.mobilebanking" />
     <icon drawable="@drawable/bolt" package="ee.mtakso.client" />
     <icon drawable="@drawable/bolt_courier" package="com.bolt.deliverycourier" />
@@ -410,6 +455,7 @@
     <icon drawable="@drawable/bolt_food" package="com.bolt.deliveryclient" />
     <icon drawable="@drawable/bolt_restaurant" package="com.bolt.deliveryproviderapp" />
     <icon drawable="@drawable/bombsquad" package="net.froemling.bombsquad" />
+    <icon drawable="@drawable/bombsquad_remote" package="net.froemling.bsremote" />
     <icon drawable="@drawable/book_reader" package="com.github.axet.bookreader" />
     <icon drawable="@drawable/booking" package="com.booking" />
     <icon drawable="@drawable/bookmate" package="com.bookmate" />
@@ -418,6 +464,7 @@
     <icon drawable="@drawable/bookmyshow" package="com.bt.bms.id" />
     <icon drawable="@drawable/bookmyshow" package="com.bt.bms.lk" />
     <icon drawable="@drawable/bookmyshow" package="com.bt.bms.mmx" />
+    <icon drawable="@drawable/booksy" package="net.booksy.customer" />
     <icon drawable="@drawable/boom_and_megaboom" package="com.logitech.ueboom" />
     <icon drawable="@drawable/boom_beach" package="com.supercell.boombeach" />
     <icon drawable="@drawable/boorusphere" package="io.chaldeaprjkt.boorusphere" />
@@ -426,7 +473,9 @@
     <icon drawable="@drawable/boosted" package="com.boostedproductivity.app" />
     <icon drawable="@drawable/bootboi" package="com.elektropepi.bootboi" />
     <icon drawable="@drawable/borealis" package="com.unvoid.borealis" />
+    <icon drawable="@drawable/bose_connect" package="com.bose.monet" />
     <icon drawable="@drawable/bose_music" package="com.bose.bosemusic" />
+    <icon drawable="@drawable/botim" package="im.thebot.messenger" />
     <icon drawable="@drawable/boursorama" package="com.boursorama.android.clients" />
     <icon drawable="@drawable/bouygues_telecom" package="fr.bouyguestelecom.ecm.android" />
     <icon drawable="@drawable/box" package="com.box.android" />
@@ -434,6 +483,11 @@
     <icon drawable="@drawable/bper_banca" package="it.gruppobper.ams.android.bper" />
     <icon drawable="@drawable/br24" package="de.br.sep.news.br24" />
     <icon drawable="@drawable/bradesco" package="com.bradesco" />
+    <icon drawable="@drawable/brain_out" package="com.mind.quiz.brain.out" />
+    <icon drawable="@drawable/brain_test" package="com.unicostudio.braintest" />
+    <icon drawable="@drawable/brain_test_2" package="com.unicostudio.braintest2new" />
+    <icon drawable="@drawable/brain_test_3" package="com.unicostudio.braintest3" />
+    <icon drawable="@drawable/brain_test_4" package="com.unicostudio.braintest4" />
     <icon drawable="@drawable/brainly" package="co.brainly" />
     <icon drawable="@drawable/brave_beta_browser" package="com.brave.browser_beta" />
     <icon drawable="@drawable/brave_browser" package="com.brave.browser" />
@@ -458,7 +512,6 @@
     <icon drawable="@drawable/bsi_mobile" package="com.bsm.activity2" />
     <icon drawable="@drawable/bsnl_ftth_usage" package="com.rrapplabs.bsnldatausage" />
     <icon drawable="@drawable/bsnl_selfcare" package="com.digital.bsnl.selfcare" />
-    <icon drawable="@drawable/btmouse" package="io.appground.blek" />
     <icon drawable="@drawable/bubbleunp" package="com.bubblesoft.android.bubbleupnp" />
     <icon drawable="@drawable/buckwheat" package="com.danilkinkin.buckwheat" />
     <icon drawable="@drawable/buienradar" package="com.supportware.Buienradar" />
@@ -468,24 +521,40 @@
     <icon drawable="@drawable/bundle" package="com.dwarfplanet.bundle" />
     <icon drawable="@drawable/bundled_notes" package="com.xaviertobin.noted" />
     <icon drawable="@drawable/burger_king" package="air.com.unit9.bkFrApp" />
+    <icon drawable="@drawable/burger_king" package="bo.burgerking" />
+    <icon drawable="@drawable/burger_king" package="burgerking.com.br.appandroid" />
     <icon drawable="@drawable/burger_king" package="burgerking.id.android" />
+    <icon drawable="@drawable/burger_king" package="com.ajvierci.burgerking" />
+    <icon drawable="@drawable/burger_king" package="com.app.burgerking" />
     <icon drawable="@drawable/burger_king" package="com.bk.ch" />
     <icon drawable="@drawable/burger_king" package="com.burgerking.kingfinder" />
+    <icon drawable="@drawable/burger_king" package="com.burgerking.morocco" />
     <icon drawable="@drawable/burger_king" package="com.burgerking.turk" />
+    <icon drawable="@drawable/burger_king" package="com.burgerking.uae" />
     <icon drawable="@drawable/burger_king" package="com.burgerkingcz" />
     <icon drawable="@drawable/burger_king" package="com.burgerkingpl" />
     <icon drawable="@drawable/burger_king" package="com.burgerkingqatar.android" />
+    <icon drawable="@drawable/burger_king" package="com.bzbs.burgerking" />
+    <icon drawable="@drawable/burger_king" package="com.crazycake.burgerkingchile" />
     <icon drawable="@drawable/burger_king" package="com.dom.burgerking" />
     <icon drawable="@drawable/burger_king" package="com.emn8.mobilem8.nativeapp.bk" />
+    <icon drawable="@drawable/burger_king" package="com.emn8.mobilem8.nativeapp.bkca" />
+    <icon drawable="@drawable/burger_king" package="com.emn8.mobilem8.nativeapp.bkuk" />
     <icon drawable="@drawable/burger_king" package="com.expremio.burgerking" />
     <icon drawable="@drawable/burger_king" package="com.frakton.burgerking" />
+    <icon drawable="@drawable/burger_king" package="com.loyaltyplant.partner.burgerkingrussia" />
     <icon drawable="@drawable/burger_king" package="com.nosmk.burgerking" />
     <icon drawable="@drawable/burger_king" package="com.proacit.burgerkingcolombia" />
     <icon drawable="@drawable/burger_king" package="com.skylinedynamics.bk" />
     <icon drawable="@drawable/burger_king" package="com.smt.BurgerKing" />
+    <icon drawable="@drawable/burger_king" package="com.smt.BurguerKing" />
     <icon drawable="@drawable/burger_king" package="com.spoonstream.bklebanon" />
     <icon drawable="@drawable/burger_king" package="com.tapston.burgerking" />
+    <icon drawable="@drawable/burger_king" package="com.tapstonapp.bkkz" />
     <icon drawable="@drawable/burger_king" package="com.tillster.bk_kw_mobile" />
+    <icon drawable="@drawable/burger_king" package="com.tillster.bk_philippines" />
+    <icon drawable="@drawable/burger_king" package="com.whopper" />
+    <icon drawable="@drawable/burger_king" package="fi.restel.bk.android" />
     <icon drawable="@drawable/burger_king" package="ie.whopper.android" />
     <icon drawable="@drawable/burger_king" package="in.burgerking.android" />
     <icon drawable="@drawable/burger_king" package="it.burgerking.android" />
@@ -493,8 +562,11 @@
     <icon drawable="@drawable/burger_king" package="kr.co.burgerkinghybrid" />
     <icon drawable="@drawable/burger_king" package="led.android.burgerkingisrael" />
     <icon drawable="@drawable/burger_king" package="ni.burgerking" />
+    <icon drawable="@drawable/burger_king" package="ph.burgerking" />
+    <icon drawable="@drawable/burger_king" package="pl.burgerking.android" />
     <icon drawable="@drawable/burger_king" package="ru.burgerking" />
     <icon drawable="@drawable/burger_king" package="se.burgerking.ordersapp" />
+    <icon drawable="@drawable/burger_king" package="za.co.wigroup.burgerking" />
     <icon drawable="@drawable/business_calendar" package="com.appgenix.bizcal" />
     <icon drawable="@drawable/busuu" package="com.busuu.android.enc" />
     <icon drawable="@drawable/button_mapper" package="flar2.homebutton" />
@@ -505,6 +577,7 @@
     <icon drawable="@drawable/caffine" package="moe.zhs.caffeine" />
     <icon drawable="@drawable/cainiao" package="com.cainiao.wireless" />
     <icon drawable="@drawable/caixa" package="br.com.gabba.Caixa" />
+    <icon drawable="@drawable/caixadirecta" package="cgd.pt.caixadirectaparticulares" />
     <icon drawable="@drawable/cake_wallet" package="com.cakewallet.cake_wallet" />
     <icon drawable="@drawable/calces" package="advanced.scientific.calculator.calc991.plus" />
     <icon drawable="@drawable/calculator" package="com.android.bbkcalculator" />
@@ -521,6 +594,7 @@
     <icon drawable="@drawable/calculator" package="com.sec.android.app.popupcalculator" />
     <icon drawable="@drawable/calculator" package="com.simplemobiletools.calculator" />
     <icon drawable="@drawable/calculator_plus" package="com.gigaworks.tech.calculator" />
+    <icon drawable="@drawable/calculator_plus" package="com.transsion.calculator" />
     <icon drawable="@drawable/calculator_plusplus" package="org.solovyev.android.calculator" />
     <icon drawable="@drawable/calendar" package="com.coloros.calendar" />
     <icon drawable="@drawable/calendar" package="com.motorola.cn.calendar" />
@@ -590,7 +664,6 @@
     <icon drawable="@drawable/camera" package="com.oplus.camera" />
     <icon drawable="@drawable/camera" package="com.oppo.camera" />
     <icon drawable="@drawable/camera" package="com.samsung.android.biometrics.service" />
-    <icon drawable="@drawable/camera" package="com.samsung.android.ruler" />
     <icon drawable="@drawable/camera" package="com.samsung.android.scan3d" />
     <icon drawable="@drawable/camera" package="com.sec.android.app.camera" />
     <icon drawable="@drawable/camera" package="com.shamim.cam" />
@@ -606,21 +679,30 @@
     <icon drawable="@drawable/camera" package="org.lineageos.aperture" />
     <icon drawable="@drawable/camera" package="org.lineageos.selfie" />
     <icon drawable="@drawable/camera" package="org.lineageos.snap" />
+    <icon drawable="@drawable/camera360" package="vStudio.Android.Camera360" />
+    <icon drawable="@drawable/camera_date_folders" package="de.kromke.andreas.cameradatefolders" />
     <icon drawable="@drawable/camera_roll" package="us.koller.cameraroll" />
     <icon drawable="@drawable/cameraconnect" package="jp.co.canon.ic.cameraconnect" />
     <icon drawable="@drawable/camo" package="com.reincubate.camo" />
     <icon drawable="@drawable/campfire" package="com.nianticlabs.campfire" />
     <icon drawable="@drawable/camscanner" package="com.intsig.camscanner" />
+    <icon drawable="@drawable/candycamera" package="com.joeware.android.gpulumera" />
     <icon drawable="@drawable/canl" package="com.canlidoviz" />
     <icon drawable="@drawable/canva" package="com.canva.editor" />
     <icon drawable="@drawable/canvas_student" package="com.instructure.candroid" />
     <icon drawable="@drawable/capcut" package="com.lemon.lvoverseas" />
     <icon drawable="@drawable/capital_one" package="com.konylabs.capitalone" />
+    <icon drawable="@drawable/captivemgr" package="tech.evlsoc.captivemgr" />
     <icon drawable="@drawable/cardboard" package="com.google.samples.apps.cardboarddemo" />
     <icon drawable="@drawable/careem" package="com.careem.acma" />
+    <icon drawable="@drawable/carlcare" package="com.transsion.carlcare" />
     <icon drawable="@drawable/carnet" package="com.spisoft.quicknote" />
+    <icon drawable="@drawable/carousell" package="com.thecarousell.Carousell" />
+    <icon drawable="@drawable/carrot" package="com.grailr.carrotweather" />
     <icon drawable="@drawable/carteira_de_trabalho_digital" package="br.gov.dataprev.carteiradigital" />
+    <icon drawable="@drawable/carteira_digital_de_transito" package="br.gov.serpro.cnhe" />
     <icon drawable="@drawable/cartogram" package="com.round_tower.app.android.wallpaper.cartogram" />
+    <icon drawable="@drawable/cash_app" package="com.squareup.cash" />
     <icon drawable="@drawable/castro" package="com.itemstudio.castro" />
     <icon drawable="@drawable/cat_and_soup" package="com.hidea.cat" />
     <icon drawable="@drawable/catalyst" package="com.catalyst" />
@@ -629,6 +711,7 @@
     <icon drawable="@drawable/catogram" package="org.nift4.catox" />
     <icon drawable="@drawable/catogram" package="ua.itaysonlab.messenger" />
     <icon drawable="@drawable/cats" package="com.zeptolab.cats.google" />
+    <icon drawable="@drawable/caustic" package="com.singlecellsoftware.caustic" />
     <icon drawable="@drawable/ccc_aio" package="ccc71.at.free" />
     <icon drawable="@drawable/ccleaner" package="com.piriform.ccleaner" />
     <icon drawable="@drawable/cdek" package="com.logistic.sdek" />
@@ -644,6 +727,7 @@
     <icon drawable="@drawable/chargelab" package="co.chargelab" />
     <icon drawable="@drawable/chargemap" package="com.chargemap_beta.android" />
     <icon drawable="@drawable/chase" package="com.chase.sig.android" />
+    <icon drawable="@drawable/chase_uk" package="com.chase.intl" />
     <icon drawable="@drawable/chatgpt" package="com.openai.chatgpt" />
     <icon drawable="@drawable/chatsen" package="com.chatsen.chatsen" />
     <icon drawable="@drawable/cheapflights" package="com.cf.flightsearch" />
@@ -652,6 +736,7 @@
     <icon drawable="@drawable/cheogram" package="com.cheogram.android" />
     <icon drawable="@drawable/chess" package="com.chess" />
     <icon drawable="@drawable/chess_aifactory" package="uk.co.aifactory.chessfree" />
+    <icon drawable="@drawable/chime" package="com.onedebit.chime" />
     <icon drawable="@drawable/china3s" package="com.china3s.android" />
     <icon drawable="@drawable/chinatelecom" package="com.ct.client" />
     <icon drawable="@drawable/chinaunion" package="com.sinovatech.unicom.ui" />
@@ -660,11 +745,15 @@
     <icon drawable="@drawable/chrono" package="quebec.artm.chrono" />
     <icon drawable="@drawable/chsiapp" package="cn.com.chsi.chsiapp" />
     <icon drawable="@drawable/church_tools" package="tools.church.app" />
+    <icon drawable="@drawable/chwazi" package="com.tendadigital.chwaziApp" />
+    <icon drawable="@drawable/cibc" package="com.cibc.android.mobi" />
+    <icon drawable="@drawable/cic" package="com.cic_prod.bad" />
     <icon drawable="@drawable/ciceksepeti" package="com.ciceksepeti.ciceksepeti" />
     <icon drawable="@drawable/cifra_club_academy" package="com.studiosol.cifraclub.academy" />
     <icon drawable="@drawable/cifra_club_metronome" package="com.studiosol.metronomo" />
     <icon drawable="@drawable/cifra_club_tuner" package="com.studiosol.afinadorlite" />
     <icon drawable="@drawable/ciliplayer" package="com.magicmagnet" />
+    <icon drawable="@drawable/cimb_bank_ph" package="com.cimbph.app2022" />
     <icon drawable="@drawable/cinexplore" package="com.fidloo.cinexplore" />
     <icon drawable="@drawable/circle_k" package="com.circlekeurope.android" />
     <icon drawable="@drawable/citibank_mobile" package="com.citi.citimobile" />
@@ -673,17 +762,25 @@
     <icon drawable="@drawable/citra" package="org.citra.emu" />
     <icon drawable="@drawable/cittamobi" package="br.com.cittabus" />
     <icon drawable="@drawable/citymapper" package="com.citymapper.app.release" />
-    <icon drawable="@drawable/clash" package="com.github.kr328.clash" />
+    <icon drawable="@drawable/clash_for_android" package="com.github.ccg.clasha" />
+    <icon drawable="@drawable/clash_for_android" package="com.github.kr328.clash" />
+    <icon drawable="@drawable/clash_for_android" package="com.github.kr328.clash.foss" />
+    <icon drawable="@drawable/clash_for_android" package="com.github.kr328.clashr" />
+    <icon drawable="@drawable/clash_meta" package="com.github.metacubex.clash.meta" />
     <icon drawable="@drawable/clash_mini" package="com.supercell.clashmini" />
     <icon drawable="@drawable/clash_of_clans" package="com.supercell.clashofclans" />
     <icon drawable="@drawable/clash_quest" package="com.supercell.clashquest" />
     <icon drawable="@drawable/clash_royale" package="com.supercell.clashroyale" />
+    <icon drawable="@drawable/cleanemail" package="email.clean.android" />
     <icon drawable="@drawable/clear" package="com.clearme.clearapp" />
+    <icon drawable="@drawable/clearscanner" package="com.indymobileapp.document.scanner" />
     <icon drawable="@drawable/clefs" package="com.crazyootka.clefs" />
     <icon drawable="@drawable/clevnote" package="com.dencreak.esmemo" />
+    <icon drawable="@drawable/click_up" package="air.com.ssdsoftwaresolutions.clickuz" />
     <icon drawable="@drawable/clickassistant" package="com.rise.automatic.autoclicker.clicker" />
     <icon drawable="@drawable/clima" package="cco.prestosole.clima" />
     <icon drawable="@drawable/clima" package="co.prestosole.clima" />
+    <icon drawable="@drawable/clip_stack" package="com.catchingnow.tinyclipboardmanager" />
     <icon drawable="@drawable/clipeus" package="me.lucky.clipeus" />
     <icon drawable="@drawable/clipious" package="com.github.lamarios.clipious" />
     <icon drawable="@drawable/clipto" package="com.wb.clipboard.pro" />
@@ -698,7 +795,9 @@
     <icon drawable="@drawable/clock" package="com.oneplus.deskclock" />
     <icon drawable="@drawable/clock" package="com.sec.android.app.clockpackage" />
     <icon drawable="@drawable/clock" package="com.simplemobiletools.clock" />
+    <icon drawable="@drawable/clock" package="com.transsion.deskclock" />
     <icon drawable="@drawable/clone_phone" package="com.coloros.backuprestore" />
+    <icon drawable="@drawable/clone_phone" package="com.transsion.letswitch" />
     <icon drawable="@drawable/cloudstream" package="com.lagradost.cloudstream3" />
     <icon drawable="@drawable/cloudstream" package="com.lagradost.cloudstream3.prerelease" />
     <icon drawable="@drawable/cloudstream" package="com.lagradost.cloudstream3.prerelease.debug" />
@@ -725,12 +824,15 @@
     <icon drawable="@drawable/coinvero" package="com.candlestick" />
     <icon drawable="@drawable/coinvero" package="com.candlestick_app" />
     <icon drawable="@drawable/collabora_office" package="com.collabora.libreoffice" />
+    <icon drawable="@drawable/collage_maker_gridart" package="photoeditor.layout.collagemaker" />
     <icon drawable="@drawable/color_picker" package="gmikhail.colorpicker" />
     <icon drawable="@drawable/color_puzzle" package="com.color.puzzle.i.love.hue.blendoku.game" />
+    <icon drawable="@drawable/colornote" package="com.socialnmobile.dictapps.notepad.color.note" />
     <icon drawable="@drawable/colorwaver" package="com.mrousavy.colorwaver" />
     <icon drawable="@drawable/combined" package="de.peterge.combined" />
     <icon drawable="@drawable/comdirect" package="de.comdirect.app" />
     <icon drawable="@drawable/comdirect_phototan" package="com.comdirect.phototan" />
+    <icon drawable="@drawable/comeco_teo" package="com.comeco.teo" />
     <icon drawable="@drawable/comic_geeks" package="com.LeagueofComicGeeks.app2" />
     <icon drawable="@drawable/comicscreen" package="com.viewer.comicscreen" />
     <icon drawable="@drawable/commbank" package="com.commbank.netbank" />
@@ -739,9 +841,11 @@
     <icon drawable="@drawable/compass" package="com.coloros.compass2" />
     <icon drawable="@drawable/compass" package="com.miui.compass" />
     <icon drawable="@drawable/compass" package="com.motorola.cn.compass" />
+    <icon drawable="@drawable/compass" package="com.transsion.compass" />
     <icon drawable="@drawable/compass" package="dev.synapsetech.compass" />
     <icon drawable="@drawable/compass_rapps" package="apps.r.compass" />
     <icon drawable="@drawable/compass_school_manager" package="com.jdlf.compass" />
+    <icon drawable="@drawable/compendium" package="ch.documed.kompendium" />
     <icon drawable="@drawable/conectesus" package="br.gov.datasus.cnsdigital" />
     <icon drawable="@drawable/confirmtkt" package="com.confirmtkt.lite" />
     <icon drawable="@drawable/congstar" package="de.congstar.meincongstar" />
@@ -751,15 +855,17 @@
     <icon drawable="@drawable/conta_digital_ifood" package="br.com.movilepay.banking.application" />
     <icon drawable="@drawable/contacts" package="com.asus.contacts" />
     <icon drawable="@drawable/contacts" package="com.bnyro.contacts" />
-    <icon drawable="@drawable/contacts" package="com.samsung.android.app.contacts" />
     <icon drawable="@drawable/contacts" package="com.simplemobiletools.contacts" />
     <icon drawable="@drawable/contacts" package="com.simplemobiletools.contacts.pro" />
+    <icon drawable="@drawable/contacts" package="de.ritscher.simplemobiletools.contacts.pro" />
     <icon drawable="@drawable/continente_siga" package="pt.continente.ContinenteSiga" />
     <icon drawable="@drawable/conversations" package="eu.siacs.conversations" />
+    <icon drawable="@drawable/converter_now" package="com.ferrarid.converterpro" />
     <icon drawable="@drawable/coolapk" package="com.coolapk.market" />
     <icon drawable="@drawable/coolblue" package="eu.coolblue.shop" />
     <icon drawable="@drawable/coolors" package="co.coolors.android" />
     <icon drawable="@drawable/coppel" package="mx.com.miapp" />
+    <icon drawable="@drawable/copy" package="com.weberdo.apps.copy" />
     <icon drawable="@drawable/corona_tracing" package="de.corona.tracing" />
     <icon drawable="@drawable/corona_warn" package="de.rki.coronawarnapp" />
     <icon drawable="@drawable/coronacheck" package="nl.rijksoverheid.ctr.holder" />
@@ -770,7 +876,7 @@
     <icon drawable="@drawable/covid_cert" package="ch.admin.bag.covidcertificate.wallet" />
     <icon drawable="@drawable/covpass" package="de.rki.covpass.app" />
     <icon drawable="@drawable/cpu_info" package="com.kgurgul.cpuinfo" />
-    <icon drawable="@drawable/cpu_throttle" package="skynet.cputhrottlingtest" />
+    <icon drawable="@drawable/cpu_throttling_test" package="skynet.cputhrottlingtest" />
     <icon drawable="@drawable/cpu_z" package="com.cpuid.cpu_z" />
     <icon drawable="@drawable/crazy_taxi_classic" package="com.sega.CrazyTaxiplayhaven" />
     <icon drawable="@drawable/creative" package="com.kubix.creative" />
@@ -779,11 +885,13 @@
     <icon drawable="@drawable/credit_mutuel" package="com.cm_prod.bad" />
     <icon drawable="@drawable/cricbuzz" package="com.cricbuzz.android" />
     <icon drawable="@drawable/cromite" package="org.cromite.cromite" />
+    <icon drawable="@drawable/crontosign_swiss" package="com.cronto.crontosign.swiss" />
     <icon drawable="@drawable/crossy_road" package="com.yodo1.crossyroad" />
     <icon drawable="@drawable/crunchyroll" package="com.crunchyroll.crunchyroid" />
     <icon drawable="@drawable/crypto" package="co.mona.android" />
     <icon drawable="@drawable/crypto" package="com.kokoschka.michael.crypto" />
     <icon drawable="@drawable/crypto_prices" package="de.cloneapps.crypto_prices" />
+    <icon drawable="@drawable/cryptomator" package="org.cryptomator" />
     <icon drawable="@drawable/ctrip" package="ctrip.android.view" />
     <icon drawable="@drawable/cult_fit" package="fit.cure.android" />
     <icon drawable="@drawable/curiosity_stream" package="com.curiosity.curiositystream" />
@@ -793,11 +901,14 @@
     <icon drawable="@drawable/cx_file_explorer" package="com.cxinventor.file.explorer" />
     <icon drawable="@drawable/cyberghost" package="de.mobileconcepts.cyberghost" />
     <icon drawable="@drawable/cyclers" package="com.umotional.bikeapp" />
+    <icon drawable="@drawable/cymera" package="com.cyworld.camera" />
     <icon drawable="@drawable/cytoid" package="cme.tigerhix.cytoid" />
     <icon drawable="@drawable/cytoid" package="me.tigerhix.cytoid" />
     <icon drawable="@drawable/cytus2" package="com.rayark.cytus2" />
+    <icon drawable="@drawable/daijisho" package="com.magneticchen.daijishou" />
     <icon drawable="@drawable/daily_wallpaper_from_bing" package="tan_devos.dailywallpaperfrombing" />
     <icon drawable="@drawable/dailyhunt" package="com.eterno" />
+    <icon drawable="@drawable/dailyobjects" package="com.dailyobjects" />
     <icon drawable="@drawable/dana" package="id.dana" />
     <icon drawable="@drawable/dankchat" package="com.flxrs.dankchat" />
     <icon drawable="@drawable/dante" package="at.shockbytes.dante" />
@@ -821,6 +932,7 @@
     <icon drawable="@drawable/db_navigator" package="com.deutschebahn.app.android" />
     <icon drawable="@drawable/db_navigator" package="de.hafas.android.db" />
     <icon drawable="@drawable/deadcells" package="com.playdigious.deadcells.mobile" />
+    <icon drawable="@drawable/deadhash" package="com.codedead.deadhash" />
     <icon drawable="@drawable/dealabs" package="com.dealabs.apps.android" />
     <icon drawable="@drawable/decathlon" package="com.evamall.evacustomer" />
     <icon drawable="@drawable/deck_shop" package="pro.deckshop.app" />
@@ -836,17 +948,21 @@
     <icon drawable="@drawable/delivery_club" package="com.deliveryclub" />
     <icon drawable="@drawable/delta_icons" package="website.leifs.delta" />
     <icon drawable="@drawable/denizbank" package="com.denizbank.mobildeniz" />
+    <icon drawable="@drawable/dennik_n" package="sk.dennikn.dennikn" />
     <icon drawable="@drawable/denon_avr" package="com.dmholdings.DenonAVRRemote" />
     <icon drawable="@drawable/der_spiegel" package="de.spiegel.android.app.spon" />
     <icon drawable="@drawable/designer_tools" package="com.scheffsblend.designertools" />
+    <icon drawable="@drawable/desjardins" package="com.desjardins.mobile" />
     <icon drawable="@drawable/desk_clock" package="com.best.deskclock" />
     <icon drawable="@drawable/desmos" package="com.desmos.calculator" />
+    <icon drawable="@drawable/desmos_scientific_calculator" package="com.desmos.scientific" />
     <icon drawable="@drawable/destiny_two_companion" package="com.bungieinc.bungiemobile" />
     <icon drawable="@drawable/deutschlandcard" package="de.deutschlandcard.app" />
     <icon drawable="@drawable/dev_assistant" package="com.appsisle.developerassistant" />
     <icon drawable="@drawable/dev_assistant" package="com.appsisle.developerassistantx" />
     <icon drawable="@drawable/dev_tools" package="cn.trinea.android.developertools" />
     <icon drawable="@drawable/devcheck" package="flar2.devcheck" />
+    <icon drawable="@drawable/devialet" package="io.dvlt.blaze" />
     <icon drawable="@drawable/deviantart" package="com.deviantart.android.damobile" />
     <icon drawable="@drawable/device_care" package="com.samsung.android.lool" />
     <icon drawable="@drawable/device_help" package="com.motorola.genie" />
@@ -854,6 +970,11 @@
     <icon drawable="@drawable/device_info_hw" package="ru.andr7e.deviceinfohw" />
     <icon drawable="@drawable/device_info_hw" package="ru.andr7e.deviceinfohw.pro" />
     <icon drawable="@drawable/dexcom_g6" package="com.dexcom.g6.region6.mgdl" />
+    <icon drawable="@drawable/dfndr_enterprise" package="com.psafe.dfndr_enterprise" />
+    <icon drawable="@drawable/dfndr_performance" package="com.psafe.cleaner" />
+    <icon drawable="@drawable/dfndr_security" package="com.psafe.msuite" />
+    <icon drawable="@drawable/dfndr_vault" package="com.psafe.stash" />
+    <icon drawable="@drawable/dfndr_vpn" package="com.psafe.vpn" />
     <icon drawable="@drawable/dhl" package="de.dhl.paket" />
     <icon drawable="@drawable/diablo_immortal" package="com.blizzard.diablo.immortal" />
     <icon drawable="@drawable/dialer" package="com.android.contacts.activities.DialtactsActivity" />
@@ -870,6 +991,7 @@
     <icon drawable="@drawable/dialer" package="com.sonymobile.android.dialer" />
     <icon drawable="@drawable/dialer" package="com.truecaller" />
     <icon drawable="@drawable/dialer" package="jp.ad.iij.miodial" />
+    <icon drawable="@drawable/dice" package="fr.sevenpixels.dice" />
     <icon drawable="@drawable/dict_cc" package="cc.dict.dictcc" />
     <icon drawable="@drawable/dict_cc" package="cc.dict.dictccplus" />
     <icon drawable="@drawable/dictionary_com" package="com.dictionary" />
@@ -886,12 +1008,14 @@
     <icon drawable="@drawable/diia" package="ua.gov.diia.app" />
     <icon drawable="@drawable/dimmer" package="giraffine.dimmer" />
     <icon drawable="@drawable/dineout" package="com.dineout.book" />
-    <icon drawable="@drawable/dinero_viettel" package="com.bplus.vtpay" />
+    <icon drawable="@drawable/diohub" package="com.felix.diohub" />
     <icon drawable="@drawable/disconnect" package="com.porg.blocker" />
     <icon drawable="@drawable/discord" package="com.aliucord" />
     <icon drawable="@drawable/discord" package="com.discord" />
     <icon drawable="@drawable/discord" package="dev.beefers.vendetta" />
     <icon drawable="@drawable/discord_themer" package="com.aliucord.themer" />
+    <icon drawable="@drawable/discover" package="com.discoverfinancial.mobile" />
+    <icon drawable="@drawable/discoveryplus" package="com.discovery.discoveryplus.mobile" />
     <icon drawable="@drawable/discoveryplus" package="com.discovery.dplay" />
     <icon drawable="@drawable/discreet_launcher" package="com.vincent_falzon.discreetlauncher" />
     <icon drawable="@drawable/disk_info" package="com.drhowdydoo.diskinfo" />
@@ -900,6 +1024,7 @@
     <icon drawable="@drawable/disney_star_plus" package="com.disney.starplus" />
     <icon drawable="@drawable/disneyplus" package="com.disney.disneyplus" />
     <icon drawable="@drawable/disneyplus" package="com.disneyplus.mea" />
+    <icon drawable="@drawable/ditmm" package="dev.corruptedark.diditakemymeds" />
     <icon drawable="@drawable/dito" package="com.mydito" />
     <icon drawable="@drawable/divisionresurgence" package="com.ubisoft.the.division.mobile.combat.shooting.open.world.rpg" />
     <icon drawable="@drawable/divvydiary" package="com.divvydiary.twa" />
@@ -914,11 +1039,12 @@
     <icon drawable="@drawable/dodo_pizza" package="ru.dodopizza.app" />
     <icon drawable="@drawable/dolap" package="com.dolap.android" />
     <icon drawable="@drawable/dolby" package="com.dolby" />
-    <icon drawable="@drawable/dolby_on" package="com.dolby.dolby234" />
-    <icon drawable="@drawable/dolbyatmos" package="com.atmos.daxappui" />
-    <icon drawable="@drawable/dolbyatmos" package="com.dolby.daxappui" />
-    <icon drawable="@drawable/dolbyatmos" package="com.oneplus.sound.tuner" />
-    <icon drawable="@drawable/dolbyatmos" package="com.oplus.sound.tuner" />
+    <icon drawable="@drawable/dolby" package="com.dolby.dolby234" />
+    <icon drawable="@drawable/dolby_atmos" package="com.atmos.daxappui" />
+    <icon drawable="@drawable/dolby_atmos" package="com.dolby.daxappui" />
+    <icon drawable="@drawable/dolby_atmos" package="com.oneplus.sound.tuner" />
+    <icon drawable="@drawable/dolby_atmos" package="com.oplus.sound.tuner" />
+    <icon drawable="@drawable/dolby_atmos_moto" package="com.motorola.dolby.dolbyui" />
     <icon drawable="@drawable/dolphin_emulator" package="org.dolphinemu.dolphinemu" />
     <icon drawable="@drawable/domestika" package="org.domestika" />
     <icon drawable="@drawable/dominos" package="by.mc.dominos.com" />
@@ -946,6 +1072,7 @@
     <icon drawable="@drawable/dooz" package="io.github.yamin8000.dooz" />
     <icon drawable="@drawable/doppelreim" package="com.double_rhyme.hoenickf.doppelreim" />
     <icon drawable="@drawable/douban" package="com.douban.frodo" />
+    <icon drawable="@drawable/doublegis" package="ru.dublgis.dgismobile" />
     <icon drawable="@drawable/dove_icons" package="com.jndapp.dove.dark.iconpack" />
     <icon drawable="@drawable/dove_icons" package="com.jndapp.dove.iconpack" />
     <icon drawable="@drawable/dove_icons" package="com.jndapp.dove.light.iconpack" />
@@ -957,6 +1084,7 @@
     <icon drawable="@drawable/dreamlab" package="au.com.vodafone.dreamlabapp" />
     <icon drawable="@drawable/drinkable" package="com.moimob.drinkable" />
     <icon drawable="@drawable/drip" package="com.drip" />
+    <icon drawable="@drawable/drive_on" package="jp.showa_shell_dmp.shellpass" />
     <icon drawable="@drawable/drivedroid" package="com.softwarebakery.drivedroid" />
     <icon drawable="@drawable/drm_info" package="com.androidfung.drminfo" />
     <icon drawable="@drawable/droidcam" package="com.dev47apps.droidcam" />
@@ -964,16 +1092,17 @@
     <icon drawable="@drawable/droidcamx" package="com.dev47apps.droidcamx" />
     <icon drawable="@drawable/droidhole" package="com.jgeek00.droid_hole" />
     <icon drawable="@drawable/droidify" package="com.looker.droidify" />
+    <icon drawable="@drawable/droidrec" package="com.yakovlevegor.DroidRec" />
     <icon drawable="@drawable/drom" package="ru.farpost.dromfilter" />
     <icon drawable="@drawable/drone_deploy" package="com.dronedeploy.beta" />
     <icon drawable="@drawable/dropbox" package="com.dropbox.android" />
     <icon drawable="@drawable/dropout" package="com.collegehumor.chdropout" />
+    <icon drawable="@drawable/drops" package="org.yoki.android.buienalarm" />
     <icon drawable="@drawable/drops" package="org.yoki.android.drops" />
     <icon drawable="@drawable/drtv" package="dk.dr.webplayer" />
     <icon drawable="@drawable/dso" package="com.dirror.music" />
     <icon drawable="@drawable/dsu_sideloader" package="vegabobo.dsusideloader" />
     <icon drawable="@drawable/dual" package="com.Seabaa.Dual" />
-    <icon drawable="@drawable/dublgis" package="ru.dublgis.dgismobile" />
     <icon drawable="@drawable/duckduckgo" package="com.duckduckgo.mobile.android" />
     <icon drawable="@drawable/duelyst" package="net.distantmelody.application.duelyst" />
     <icon drawable="@drawable/dunzo" package="com.dunzo.user" />
@@ -990,6 +1119,8 @@
     <icon drawable="@drawable/earthquake_network" package="com.finazzi.distquake" />
     <icon drawable="@drawable/easer" package="ryey.easer" />
     <icon drawable="@drawable/easer" package="ryey.easer.beta" />
+    <icon drawable="@drawable/easter_eggs" package="com.dede.android_eggs" />
+    <icon drawable="@drawable/easycash" package="com.fintopia.idnEasycash.google" />
     <icon drawable="@drawable/easypaisa" package="pk.com.telenor.phoenix" />
     <icon drawable="@drawable/easypark" package="net.easypark.android" />
     <icon drawable="@drawable/eatsure" package="com.done.faasos" />
@@ -1005,17 +1136,19 @@
     <icon drawable="@drawable/edge_gestures" package="com.ss.edgegestures" />
     <icon drawable="@drawable/edison_mail" package="com.easilydo.mail" />
     <icon drawable="@drawable/edupage" package="air.org.edupage" />
+    <icon drawable="@drawable/edx" package="org.edx.mobile" />
     <icon drawable="@drawable/efootball_pes" package="jp.konami.pesam" />
     <icon drawable="@drawable/egov" package="kz.mobile.mgov" />
     <icon drawable="@drawable/ehviewer" package="moe.tarsin.ehviewer" />
+    <icon drawable="@drawable/eid_me" package="ca.bluink.eid_me_and" />
     <icon drawable="@drawable/eight_ball_pool" package="com.miniclip.eightballpool" />
     <icon drawable="@drawable/ekatalog" package="net.nadavi.ekmobile" />
-    <icon drawable="@drawable/eksi_sozluk" package="com.drdisagree.iconify" />
     <icon drawable="@drawable/eksi_sozluk" package="com.eksiteknoloji.eksisozluk" />
     <icon drawable="@drawable/ele_me" package="me.ele" />
     <icon drawable="@drawable/electron" package="com.mahersafadi.electron" />
     <icon drawable="@drawable/element" package="im.vector.app" />
-    <icon drawable="@drawable/element_x" package="io.element.android.x.debug" />
+    <icon drawable="@drawable/element_x" package="io.element.android.x" />
+    <icon drawable="@drawable/element_x_debug" package="io.element.android.x.debug" />
     <icon drawable="@drawable/eljurstudent" package="com.eljur.client" />
     <icon drawable="@drawable/ella" package="rocks.poopjournal.Ella" />
     <icon drawable="@drawable/emanat" package="mpay.emanat" />
@@ -1041,33 +1174,40 @@
     <icon drawable="@drawable/epicgames" package="com.epicgames.portal" />
     <icon drawable="@drawable/epik" package="com.snowcorp.epik" />
     <icon drawable="@drawable/erste_hilfe" package="com.cube.gdpc.che" />
-    <icon drawable="@drawable/es_explorer" package="com.estrongs.android.pop" />
+    <icon drawable="@drawable/es_file_explorer" package="com.estrongs.android.pop" />
     <icon drawable="@drawable/esewa" package="com.f1soft.esewa" />
     <icon drawable="@drawable/esfera" package="br.com.vcesfera" />
     <icon drawable="@drawable/esp" package="com.ashwhale.sepush.eskom" />
     <icon drawable="@drawable/espn" package="com.espn.score_center" />
     <icon drawable="@drawable/etabib" package="az.gov.etabib" />
+    <icon drawable="@drawable/eternity" package="eu.toldi.infinityforlemmy" />
     <icon drawable="@drawable/etesync" package="com.etesync.syncadapter" />
     <icon drawable="@drawable/etoro" package="com.etoro.openbook" />
     <icon drawable="@drawable/etsy_seller" package="com.etsy.butter.sell_on_etsy" />
+    <icon drawable="@drawable/euclidea" package="com.hil_hk.euclidea" />
     <icon drawable="@drawable/eufy_clean" package="com.eufylife.smarthome" />
     <icon drawable="@drawable/eufy_security" package="com.oceanwing.battery.cam" />
     <icon drawable="@drawable/eventbrite" package="com.eventbrite.attendee" />
     <icon drawable="@drawable/eventim" package="de.eventim.mobile.app.Android" />
     <icon drawable="@drawable/evernote" package="com.evernote" />
     <icon drawable="@drawable/every_proxy" package="com.gorillasoftware.everyproxy" />
+    <icon drawable="@drawable/everycircuit" package="com.everycircuit.free" />
     <icon drawable="@drawable/evmap" package="net.vonforst.evmap" />
     <icon drawable="@drawable/evoland" package="air.com.shirogames.evoland12" />
     <icon drawable="@drawable/evoland2" package="com.playdigious.evoland2" />
     <icon drawable="@drawable/evoxpapers" package="org.evolutionx.papers" />
     <icon drawable="@drawable/evpass" package="ch.evpass.evpass" />
+    <icon drawable="@drawable/ex_kernel_manager" package="flar2.exkernelmanager" />
+    <icon drawable="@drawable/exodus" package="org.eu.exodus_privacy.exodusprivacy" />
     <icon drawable="@drawable/expedia" package="com.expedia.bookings" />
     <icon drawable="@drawable/expressvpn" package="com.expressvpn.vpn" />
     <icon drawable="@drawable/exteragram" package="com.exteragram.messenger" />
     <icon drawable="@drawable/exteragram" package="com.exteragram.messenger.beta" />
     <icon drawable="@drawable/exterax" package="com.moegram.messenger" />
+    <icon drawable="@drawable/extirpater" package="us.spotco.extirpater" />
     <icon drawable="@drawable/ezlink" package="com.Daylight.EzLinkAndroid" />
     <icon drawable="@drawable/f1" package="com.softpauer.f1timingapp2014.basic" />
+    <icon drawable="@drawable/f1_mobile_racing" package="com.codemasters.F1Mobile" />
     <icon drawable="@drawable/f_dot_lux" package="com.justgetflux.flux" />
     <icon drawable="@drawable/f_droid_basic" package="org.fdroid.basic" />
     <icon drawable="@drawable/fabulous" package="co.thefabulous.app" />
@@ -1077,6 +1217,7 @@
     <icon drawable="@drawable/facebook_lcr" package="com.facebook.katpro" />
     <icon drawable="@drawable/facelapse" package="io.skripi.facelapse" />
     <icon drawable="@drawable/facer" package="com.jeremysteckling.facerrel" />
+    <icon drawable="@drawable/faceshow" package="com.picastory.ins.editor" />
     <icon drawable="@drawable/fairemail" package="eu.faircode.email" />
     <icon drawable="@drawable/fake_location" package="com.lerist.fakelocation" />
     <icon drawable="@drawable/fallout_shelter" package="com.bethsoft.falloutshelter" />
@@ -1085,12 +1226,15 @@
     <icon drawable="@drawable/familypark" package="com.intermaps.familypark" />
     <icon drawable="@drawable/fancade" package="com.martinmagni.fancade" />
     <icon drawable="@drawable/fandom" package="com.fandom.app" />
+    <icon drawable="@drawable/fast" package="com.netflix.Speedtest" />
     <icon drawable="@drawable/fasthub" package="com.fastaccess.github" />
     <icon drawable="@drawable/fasthub" package="com.fastaccess.github.debug" />
     <icon drawable="@drawable/fasthub_re" package="com.fastaccess.github.revival" />
     <icon drawable="@drawable/fasting" package="bodyfast.zero.fastingtracker.weightloss" />
     <icon drawable="@drawable/fastmail" package="com.fastmail.app" />
+    <icon drawable="@drawable/fastvid" package="fb.video.downloader" />
     <icon drawable="@drawable/fave" package="com.pinelabs.fave" />
+    <icon drawable="@drawable/fcitx5_for_android" package="org.fcitx.fcitx5.android" />
     <icon drawable="@drawable/fdroid" package="org.fdroid.fdroid" />
     <icon drawable="@drawable/fedilab" package="app.fedilab.android" />
     <icon drawable="@drawable/feedback" package="com.google.android.apps.betterbug" />
@@ -1104,6 +1248,7 @@
     <icon drawable="@drawable/fenbi" package="com.fenbi.android.servant" />
     <icon drawable="@drawable/ff7fs" package="com.square_enix.android_googleplay.ff7fsww" />
     <icon drawable="@drawable/ffreedom_app" package="com.wealthdoctor" />
+    <icon drawable="@drawable/ffshare" package="com.caydey.ffshare" />
     <icon drawable="@drawable/ffupdater" package="de.marmaro.krt.ffupdater" />
     <icon drawable="@drawable/fgames_radar" package="de.apuri.free.games" />
     <icon drawable="@drawable/fgts" package="br.gov.caixa.fgts.trabalhador" />
@@ -1114,6 +1259,7 @@
     <icon drawable="@drawable/fig" package="com.fig" />
     <icon drawable="@drawable/figma" package="com.figma.mirror" />
     <icon drawable="@drawable/file_manager_plus" package="com.alphainventor.filemanager" />
+    <icon drawable="@drawable/filen" package="io.filen.app" />
     <icon drawable="@drawable/files" package="com.android.documentsui" />
     <icon drawable="@drawable/files" package="com.android.fileexplorer" />
     <icon drawable="@drawable/files" package="com.android.filemanager" />
@@ -1127,6 +1273,7 @@
     <icon drawable="@drawable/files" package="com.sec.android.app.myfiles" />
     <icon drawable="@drawable/files" package="com.simplemobiletools.filemanager" />
     <icon drawable="@drawable/files" package="com.simplemobiletools.filemanager.pro" />
+    <icon drawable="@drawable/files" package="com.transsion.filemanagerx" />
     <icon drawable="@drawable/files" package="files.fileexplorer.filemanager" />
     <icon drawable="@drawable/files" package="me.zhanghai.android.files" />
     <icon drawable="@drawable/files" package="org.aospstudio.files" />
@@ -1144,6 +1291,7 @@
     <icon drawable="@drawable/fine_lock" package="yuh.yuh.finelock" />
     <icon drawable="@drawable/fing" package="com.overlook.android.fing" />
     <icon drawable="@drawable/fingerprint" package="ro.andreimircius.remotefingerauth" />
+    <icon drawable="@drawable/fire_tv" package="com.amazon.storm.lightning.client.aosp" />
     <icon drawable="@drawable/firefox" package="org.mozilla.fennec_fdroid" />
     <icon drawable="@drawable/firefox" package="org.mozilla.firefox" />
     <icon drawable="@drawable/firefox_beta" package="org.mozilla.firefox_beta" />
@@ -1165,15 +1313,18 @@
     <icon drawable="@drawable/flasher" package="com.tneb.tangedco" />
     <icon drawable="@drawable/flashlight" package="com.simplemobiletools.flashlight" />
     <icon drawable="@drawable/flashlight" package="rocks.poopjournal.flashy" />
+    <icon drawable="@drawable/flashlight_led" package="com.devuni.flashlight" />
     <icon drawable="@drawable/flashlight_tiramisu" package="com.pdb82.flashlighttiramisu" />
     <icon drawable="@drawable/flashscore" package="eu.livesport.FlashScore_com" />
     <icon drawable="@drawable/flashscore" package="eu.livesport.MyScore_ru" />
+    <icon drawable="@drawable/flat_equalizer" package="com.jazibkhan.equalizer" />
     <icon drawable="@drawable/flightradar24" package="com.flightradar24free" />
     <icon drawable="@drawable/flip_id" package="id.flip" />
     <icon drawable="@drawable/flipboard" package="flipboard.app" />
     <icon drawable="@drawable/flipkart" package="com.flipkart.android" />
     <icon drawable="@drawable/flipkz" package="kz.flip.mobile" />
     <icon drawable="@drawable/flo" package="com.flo.ayakkabi" />
+    <icon drawable="@drawable/flo_period" package="org.iggymedia.periodtracker" />
     <icon drawable="@drawable/floatplane" package="com.floatplane.floatplane" />
     <icon drawable="@drawable/florisboard" package="dev.patrickgold.florisboard" />
     <icon drawable="@drawable/florisboard" package="dev.patrickgold.florisboard.beta" />
@@ -1189,6 +1340,7 @@
     <icon drawable="@drawable/flycast" package="com.flycast.emulator" />
     <icon drawable="@drawable/fm_radio" package="com.android.fmradio" />
     <icon drawable="@drawable/fm_radio" package="com.caf.fmradio" />
+    <icon drawable="@drawable/fm_radio" package="com.funbase.xradio" />
     <icon drawable="@drawable/fm_radio" package="com.miui.fm" />
     <icon drawable="@drawable/fm_radio" package="com.motorola.fmplayer" />
     <icon drawable="@drawable/fm_radio" package="com.radio.fmradio" />
@@ -1200,7 +1352,9 @@
     <icon drawable="@drawable/foldersync_pro" package="dk.tacit.android.foldersync.lite" />
     <icon drawable="@drawable/fontviewer" package="com.sacredfigstudio.fontviewerplus" />
     <icon drawable="@drawable/fontweight" package="fontweight.adjustment" />
+    <icon drawable="@drawable/foodie" package="com.linecorp.foodcam.android" />
     <icon drawable="@drawable/foodpanda" package="com.global.foodpanda.android" />
+    <icon drawable="@drawable/fora" package="ua.fora.android" />
     <icon drawable="@drawable/forecastie" package="cz.martykan.forecastie" />
     <icon drawable="@drawable/forest" package="cc.forestapp" />
     <icon drawable="@drawable/forms" package="de.daywalk3r666.forms" />
@@ -1222,16 +1376,20 @@
     <icon drawable="@drawable/franco_servicely" package="com.franco.servicely" />
     <icon drawable="@drawable/free" package="com.samsung.android.app.spage" />
     <icon drawable="@drawable/free_download_manager" package="org.freedownloadmanager.fdm" />
+    <icon drawable="@drawable/free_fire" package="com.dts.freefiremax" />
+    <icon drawable="@drawable/free_fire" package="com.dts.freefireth" />
     <icon drawable="@drawable/freecharge" package="com.freecharge.android" />
-    <icon drawable="@drawable/freefire" package="com.dts.freefireth" />
-    <icon drawable="@drawable/freefire_max" package="com.dts.freefiremax" />
     <icon drawable="@drawable/freelancer" package="com.freelancer.android.messenger" />
     <icon drawable="@drawable/freelancer_upwork" package="com.upwork.android.apps.client" />
     <icon drawable="@drawable/freenet_mobilfunk" package="de.md.meinmd" />
     <icon drawable="@drawable/freeotp" package="org.liberty.android.freeotpplus" />
+    <icon drawable="@drawable/frequaw" package="com.jujinkim.frequaw" />
     <icon drawable="@drawable/frequency_generator" package="com.luxdelux.frequencygenerator" />
+    <icon drawable="@drawable/freshwalls" package="com.techburner.freshwalls" />
     <icon drawable="@drawable/fritter" package="com.jonjomckay.fritter" />
     <icon drawable="@drawable/frolomuse" package="com.frolo.musp" />
+    <icon drawable="@drawable/frost" package="com.pitchedapps.frost" />
+    <icon drawable="@drawable/fruit_ninja" package="com.halfbrick.fruitninja" />
     <icon drawable="@drawable/fruit_ninja" package="com.halfbrick.fruitninjafree" />
     <icon drawable="@drawable/fscb" package="com.bocharov.xposed.fscb" />
     <icon drawable="@drawable/ft" package="com.ft.news" />
@@ -1244,11 +1402,13 @@
     <icon drawable="@drawable/fxxxs_given" package="rocks.poopjournal.fucksgiven" />
     <icon drawable="@drawable/gaana" package="com.gaana" />
     <icon drawable="@drawable/gadgetbridge" package="nodomain.freeyourgadget.gadgetbridge" />
+    <icon drawable="@drawable/gaia_gps" package="com.trailbehind.android.gaiagps.pro" />
     <icon drawable="@drawable/galaxy_store" package="com.sec.android.app.samsungapps" />
     <icon drawable="@drawable/galaxy_themes" package="com.samsung.android.themestore" />
     <icon drawable="@drawable/gallery" package="com.android.gallery3d" />
     <icon drawable="@drawable/gallery" package="com.coloros.gallery3d" />
     <icon drawable="@drawable/gallery" package="com.dot.gallery" />
+    <icon drawable="@drawable/gallery" package="com.gallery20" />
     <icon drawable="@drawable/gallery" package="com.huawei.photos" />
     <icon drawable="@drawable/gallery" package="com.miui.gallery" />
     <icon drawable="@drawable/gallery" package="com.motorola.cn.gallery" />
@@ -1281,6 +1441,7 @@
     <icon drawable="@drawable/garmin_drive" package="com.garmin.android.apps.gecko" />
     <icon drawable="@drawable/garmin_explore" package="com.garmin.android.apps.explore" />
     <icon drawable="@drawable/garmin_messenger" package="com.garmin.android.apps.messenger" />
+    <icon drawable="@drawable/gasbuddy" package="gbis.gbandroid" />
     <icon drawable="@drawable/gator" package="com.mitigator.gator" />
     <icon drawable="@drawable/gboard" package="com.google.android.inputmethod.latin" />
     <icon drawable="@drawable/gcash" package="com.globe.gcash.android" />
@@ -1325,7 +1486,9 @@
     <icon drawable="@drawable/genius" package="com.genius.android" />
     <icon drawable="@drawable/genshin_impact" package="com.miHoYo.GenshinImpact" />
     <icon drawable="@drawable/genshin_impact" package="com.miHoYo.Yuanshen" />
+    <icon drawable="@drawable/genshin_impact_cloud" package="com.hoyoverse.cloudgames.GenshinImpact" />
     <icon drawable="@drawable/geogebra_calculator_suite" package="org.geogebra.android.calculator.suite" />
+    <icon drawable="@drawable/geoguessr" package="com.geoguessr.app" />
     <icon drawable="@drawable/geometric_weather" package="wangdaye.com.geometricweather" />
     <icon drawable="@drawable/geometry_dash" package="com.robtopx.geometrydashmeltdown" />
     <icon drawable="@drawable/geometry_dash" package="com.robtopx.geometrydashsubzero" />
@@ -1349,6 +1512,8 @@
     <icon drawable="@drawable/giffgaff" package="com.giffgaffmobile.controller" />
     <icon drawable="@drawable/github" package="com.github.android" />
     <icon drawable="@drawable/gitnex" package="org.mian.gitnex" />
+    <icon drawable="@drawable/gkb_bank" package="com.netcetera.android.mbanking.gkb" />
+    <icon drawable="@drawable/gkd" package="li.songe.gkd" />
     <icon drawable="@drawable/gkld" package="com.maidu.gkld" />
     <icon drawable="@drawable/glassdoor" package="com.glassdoor.app" />
     <icon drawable="@drawable/glasswire" package="com.glasswire.android" />
@@ -1366,6 +1531,9 @@
     <icon drawable="@drawable/gmail" package="com.google.android.gm.lite" />
     <icon drawable="@drawable/gmm" package="be.appstrakt.gmm2010" />
     <icon drawable="@drawable/go_bank_islam" package="com.iexceed.CBS" />
+    <icon drawable="@drawable/go_keyboard_lite" package="com.jb.gokeyboard" />
+    <icon drawable="@drawable/go_launcher_z" package="com.gau.go.launcherex" />
+    <icon drawable="@drawable/goart" package="com.everimaging.goart" />
     <icon drawable="@drawable/gojek" package="com.gojek.app" />
     <icon drawable="@drawable/good_lock" package="com.samsung.android.goodlock" />
     <icon drawable="@drawable/good_pizza_great_pizza" package="com.tapblaze.pizzabusiness" />
@@ -1390,6 +1558,7 @@
     <icon drawable="@drawable/google_chrome_canary" package="com.chrome.canary" />
     <icon drawable="@drawable/google_chrome_dev" package="com.chrome.dev" />
     <icon drawable="@drawable/google_classroom" package="com.google.android.apps.classroom" />
+    <icon drawable="@drawable/google_cloud" package="com.google.android.apps.cloudconsole" />
     <icon drawable="@drawable/google_contacts" package="com.android.contacts" />
     <icon drawable="@drawable/google_contacts" package="com.google.android.contacts" />
     <icon drawable="@drawable/google_contacts" package="mDisplayId" />
@@ -1434,6 +1603,7 @@
     <icon drawable="@drawable/google_tv" package="com.google.android.videos" />
     <icon drawable="@drawable/google_voice" package="com.google.android.apps.googlevoice" />
     <icon drawable="@drawable/google_wallet" package="com.google.android.apps.walletnfcrel" />
+    <icon drawable="@drawable/gopay" package="com.gojek.gopay" />
     <icon drawable="@drawable/gopro_quik" package="com.gopro.smarty" />
     <icon drawable="@drawable/gos_uslugi" package="ru.rostel" />
     <icon drawable="@drawable/gosund" package="com.gosund.smart" />
@@ -1443,15 +1613,19 @@
     <icon drawable="@drawable/govee_home" package="com.govee.home" />
     <icon drawable="@drawable/gps_logger" package="com.mendhak.gpslogger" />
     <icon drawable="@drawable/gps_test" package="com.chartcross.gpstest" />
+    <icon drawable="@drawable/gpstest" package="com.android.gpstest" />
     <icon drawable="@drawable/grab" package="com.grabtaxi.driver2" />
     <icon drawable="@drawable/grab" package="com.grabtaxi.passenger" />
     <icon drawable="@drawable/graded" package="com.NightDreamGames.Grade.ly" />
     <icon drawable="@drawable/grammarly" package="com.grammarly.android.keyboard" />
+    <icon drawable="@drawable/gramotnee" package="com.gramotnee.orpho" />
     <icon drawable="@drawable/grapheneos_apps" package="app.grapheneos.apps" />
     <icon drawable="@drawable/grapheneos_auditor" package="app.attestation.auditor" />
     <icon drawable="@drawable/grapheneos_pdf" package="app.grapheneos.pdfviewer" />
     <icon drawable="@drawable/grapheneos_pdf" package="app.grapheneos.pdfviewer.play" />
+    <icon drawable="@drawable/graphie" package="com.pavelrekun.graphie" />
     <icon drawable="@drawable/graphing_calc" package="org.geogebra.android" />
+    <icon drawable="@drawable/grasshopper" package="com.area120.grasshopper" />
     <icon drawable="@drawable/green_pass" package="com.michaeltroger.gruenerpass" />
     <icon drawable="@drawable/greenify" package="com.oasisfeng.greenify" />
     <icon drawable="@drawable/greenify" package="com.oasisfeng.greenify.pro" />
@@ -1467,8 +1641,8 @@
     <icon drawable="@drawable/grundgesetz" package="de.bpb.grundgesetz" />
     <icon drawable="@drawable/gta_iii" package="com.rockstar.gta3" />
     <icon drawable="@drawable/gta_lcs" package="com.rockstargames.gtalcs" />
+    <icon drawable="@drawable/gta_sa" package="com.rockstargames.gtasa" />
     <icon drawable="@drawable/gta_vc" package="com.rockstargames.gtavc" />
-    <icon drawable="@drawable/gtasa" package="com.rockstargames.gtasa" />
     <icon drawable="@drawable/gtc" package="com.bancacel.bancacelweb2" />
     <icon drawable="@drawable/guarda" package="com.crypto.multiwallet" />
     <icon drawable="@drawable/guardian" package="com.guardian" />
@@ -1477,6 +1651,7 @@
     <icon drawable="@drawable/guitartuna" package="com.ovelin.guitartuna" />
     <icon drawable="@drawable/gumslinger" package="se.itatake.gumslinger" />
     <icon drawable="@drawable/guotai" package="com.guotai.dazhihui" />
+    <icon drawable="@drawable/gymkeeper" package="com.kg.app.sportdiary" />
     <icon drawable="@drawable/habitica" package="com.habitrpg.android.habitica" />
     <icon drawable="@drawable/habitnow" package="com.habitnow" />
     <icon drawable="@drawable/hacki" package="com.jiaqifeng.hacki" />
@@ -1488,9 +1663,9 @@
     <icon drawable="@drawable/hamburger" package="de.freehamburger" />
     <icon drawable="@drawable/hangouts" package="com.google.android.talk" />
     <icon drawable="@drawable/happn" package="com.ftw_and_co.happn" />
+    <icon drawable="@drawable/harmonoid" package="com.alexmercerind.harmonoid" />
     <icon drawable="@drawable/hay_day" package="com.supercell.hayday" />
     <icon drawable="@drawable/hbo_max" package="com.hbo.hbonow" />
-    <icon drawable="@drawable/hcr" package="com.fingersoft.hillclimb" />
     <icon drawable="@drawable/hdfc" package="com.enstage.wibmo.hdfc" />
     <icon drawable="@drawable/hdfc" package="com.hdfc.cbx" />
     <icon drawable="@drawable/hdfc" package="com.snapwork.hdfc" />
@@ -1510,6 +1685,7 @@
     <icon drawable="@drawable/hevy" package="com.hevy" />
     <icon drawable="@drawable/hex_installer" package="project.vivid.hex.bodhi" />
     <icon drawable="@drawable/hexamove" package="jp.co.roland.vmoda.hexamove.editor" />
+    <icon drawable="@drawable/hey" package="com.basecamp.hey" />
     <icon drawable="@drawable/heymelody" package="com.heytap.headset" />
     <icon drawable="@drawable/heytap_cloud" package="com.heytap.cloud" />
     <icon drawable="@drawable/heytap_music" package="com.heytap.music" />
@@ -1520,6 +1696,9 @@
     <icon drawable="@drawable/hide_navbar" package="com.ivianuu.hidenavbar" />
     <icon drawable="@drawable/hidive" package="com.hidive.android" />
     <icon drawable="@drawable/hijri_calendar" package="com.kodelokus.hijri" />
+    <icon drawable="@drawable/hike" package="com.bsb.hike" />
+    <icon drawable="@drawable/hill_climb_2" package="com.fingersoft.hcr2" />
+    <icon drawable="@drawable/hill_climb_racing" package="com.fingersoft.hillclimb" />
     <icon drawable="@drawable/hinge" package="co.hinge.app" />
     <icon drawable="@drawable/hishoot" package="com.hishoot2i" />
     <icon drawable="@drawable/hit" package="com.lionwood.nitwrap" />
@@ -1532,6 +1711,7 @@
     <icon drawable="@drawable/homecredit" package="kz.homecredit.ibank" />
     <icon drawable="@drawable/homeworker" package="info.xolf.homeworker" />
     <icon drawable="@drawable/honkai_impact_3" package="com.miHoYo.bh3oversea" />
+    <icon drawable="@drawable/honkai_star_rail" package="com.HoYoverse.hkrpgoversea" />
     <icon drawable="@drawable/hopi" package="com.boynergrup.hopi" />
     <icon drawable="@drawable/hotels_com" package="com.hcom.android" />
     <icon drawable="@drawable/hotlink" package="my.com.maxis.hotlink.production" />
@@ -1543,19 +1723,26 @@
     <icon drawable="@drawable/howl" package="com.looker.howlmusic" />
     <icon drawable="@drawable/hoyolab" package="com.mihoyo.hoyolab" />
     <icon drawable="@drawable/hsbc" package="tr.com.hsbc.hsbcturkey" />
+    <icon drawable="@drawable/http_custom" package="xyz.easypro.httpcustom" />
     <icon drawable="@drawable/http_injector" package="com.evozi.injector" />
     <icon drawable="@drawable/huabancesu" package="com.huawei.genexcloud.speedtest" />
+    <icon drawable="@drawable/huawei_appgallery" package="com.huawei.appmarket" />
     <icon drawable="@drawable/huawei_health" package="com.huawei.health" />
     <icon drawable="@drawable/huda" package="com.hudaapp.android" />
     <icon drawable="@drawable/hue" package="com.philips.lighting.hue2" />
+    <icon drawable="@drawable/huebsch" package="com.alliancelaundry.app.huebsch" />
+    <icon drawable="@drawable/huji_cam" package="kr.co.manhole.hujicam" />
     <icon drawable="@drawable/hulu" package="com.hulu.plus" />
     <icon drawable="@drawable/human_resources" package="de.human_resources" />
+    <icon drawable="@drawable/hydroqubec" package="com.hydroquebec.mf_android" />
+    <icon drawable="@drawable/hypatia" package="us.spotco.malwarescanner" />
     <icon drawable="@drawable/hype" package="it.hype.app" />
     <icon drawable="@drawable/hypehype" package="com.frogmind.hypehype" />
     <icon drawable="@drawable/i2p" package="net.i2p.android.router" />
     <icon drawable="@drawable/i_love_hue" package="com.zutgames.ilovehue" />
     <icon drawable="@drawable/i_love_hue_too" package="com.zutgames.ilovehue2" />
     <icon drawable="@drawable/iakaun" package="com.epf.main" />
+    <icon drawable="@drawable/ibetter" package="com.clover.ibetter" />
     <icon drawable="@drawable/ibispaint_x" package="jp.ne.ibis.ibispaintx.app" />
     <icon drawable="@drawable/ibkr" package="atws.app" />
     <icon drawable="@drawable/icaller" package="info.icaller" />
@@ -1563,7 +1750,9 @@
     <icon drawable="@drawable/ice_box" package="com.catchingnow.icebox" />
     <icon drawable="@drawable/iceraven" package="io.github.forkmaintainers.iceraven" />
     <icon drawable="@drawable/icon_pack_studio" package="ginlemon.iconpackstudio" />
+    <icon drawable="@drawable/icon_pusher" package="dev.southpaw.iconpusher" />
     <icon drawable="@drawable/icon_request" package="de.kaiserdragon.iconrequest" />
+    <icon drawable="@drawable/iconify" package="com.drdisagree.iconify" />
     <icon drawable="@drawable/idfc" package="com.fiserv.IDFCMerchantServices" />
     <icon drawable="@drawable/idfc" package="com.fss.idfcpsp" />
     <icon drawable="@drawable/idfc" package="com.idfcfirstbank.optimus" />
@@ -1576,11 +1765,31 @@
     <icon drawable="@drawable/ifood" package="br.com.brainweb.ifood" />
     <icon drawable="@drawable/ifttt" package="com.ifttt.ifttt" />
     <icon drawable="@drawable/iherb" package="com.iherb" />
+    <icon drawable="@drawable/iitc_mobile" package="org.exarhteam.iitc_mobile" />
+    <icon drawable="@drawable/ikea" package="com.ikea.alfuttaim.store" />
+    <icon drawable="@drawable/ikea" package="com.ikea.egypt.store" />
+    <icon drawable="@drawable/ikea" package="com.ikea.ikano.store" />
+    <icon drawable="@drawable/ikea" package="com.ikea.inter.jo.com" />
+    <icon drawable="@drawable/ikea" package="com.ikea.inter.kw.com" />
+    <icon drawable="@drawable/ikea" package="com.ikea.inter.ma.com" />
+    <icon drawable="@drawable/ikea" package="com.ikea.ksa.kompis" />
+    <icon drawable="@drawable/ikea" package="com.ikea.oman.store" />
+    <icon drawable="@drawable/ikea" package="com.ikea.qatar.store" />
+    <icon drawable="@drawable/ikea" package="com.ingka.ikea.app" />
+    <icon drawable="@drawable/ikea" package="com.magiclick.ikea" />
+    <icon drawable="@drawable/ikea" package="ee.ikea.app.android" />
+    <icon drawable="@drawable/ikea" package="hk.ikea.android" />
+    <icon drawable="@drawable/ikea" package="id.co.ikea.android" />
+    <icon drawable="@drawable/ikea" package="is.ikea.app.android" />
+    <icon drawable="@drawable/ikea" package="lt.ikea.app.android" />
+    <icon drawable="@drawable/ikea" package="lv.ikea.app.android" />
+    <icon drawable="@drawable/ikea" package="tw.com.ikea.android" />
     <icon drawable="@drawable/ikea_home_smart" package="com.ikea.inter.homesmart.system2" />
     <icon drawable="@drawable/ikea_home_smart" package="com.ikea.tradfri.lighting" />
     <icon drawable="@drawable/iko" package="pl.pkobp.iko" />
     <icon drawable="@drawable/image_resizer" package="ru.tech.imageresizershrinker" />
     <icon drawable="@drawable/imagepipe" package="de.kaffeemitkoffein.imagepipe" />
+    <icon drawable="@drawable/imagin" package="com.imaginbank.app" />
     <icon drawable="@drawable/imdb" package="com.imdb.mobile" />
     <icon drawable="@drawable/ime" package="com.iMe.android" />
     <icon drawable="@drawable/imgur" package="com.imgur.mobile" />
@@ -1596,24 +1805,43 @@
     <icon drawable="@drawable/imobile" package="com.icicibank.m2i" />
     <icon drawable="@drawable/imobile" package="com.newgen.nemf.icici.app" />
     <icon drawable="@drawable/imobile" package="com.servo.icici.oapnxt.assisted" />
+    <icon drawable="@drawable/imou_life" package="com.mm.android.smartlifeiot" />
+    <icon drawable="@drawable/inaturalist" package="org.inaturalist.android" />
     <icon drawable="@drawable/indeed" package="com.indeed.android.jobsearch" />
     <icon drawable="@drawable/indrive" package="sinet.startup.inDriver" />
     <icon drawable="@drawable/infinite_painter" package="com.brakefield.painter" />
     <icon drawable="@drawable/infinitode_2" package="com.prineside.tdi2" />
     <icon drawable="@drawable/infinity_for_reddit" package="ml.docilealligator.infinityforreddit" />
     <icon drawable="@drawable/infinity_loop" package="com.balysv.loop" />
+    <icon drawable="@drawable/info_tb" package="ro.stbsa" />
+    <icon drawable="@drawable/ing" package="com.comarch.security.mobilebanking" />
+    <icon drawable="@drawable/ing" package="com.ing.banking" />
+    <icon drawable="@drawable/ing" package="com.ing.lu.mobile" />
+    <icon drawable="@drawable/ing" package="com.ing.mobile" />
+    <icon drawable="@drawable/ing" package="com.ingbanktr.ingmobil" />
+    <icon drawable="@drawable/ing" package="de.ingdiba.bankingapp" />
+    <icon drawable="@drawable/ing" package="it.ingdirect.app" />
+    <icon drawable="@drawable/ing" package="lu.ing.mying.app" />
+    <icon drawable="@drawable/ing" package="lu.ing.myingpro" />
+    <icon drawable="@drawable/ing" package="ro.ing.mobile.banking.android.activity" />
+    <icon drawable="@drawable/ing" package="www.ingdirect.nativeframe" />
     <icon drawable="@drawable/ingress" package="com.nianticproject.ingress" />
     <icon drawable="@drawable/innertune" package="com.zionhuang.music" />
     <icon drawable="@drawable/innertune" package="com.zionhuang.music.debug" />
     <icon drawable="@drawable/inoreader" package="com.innologica.inoreader" />
+    <icon drawable="@drawable/inpost" package="pl.inpost.inmobile" />
     <icon drawable="@drawable/inpost" package="pl.inpost.mobile" />
     <icon drawable="@drawable/inshorts" package="com.nis.app" />
     <icon drawable="@drawable/inshot" package="com.camerasideas.instashot" />
+    <icon drawable="@drawable/insight_timer" package="com.spotlightsix.zentimerlite2" />
+    <icon drawable="@drawable/insquare" package="mobi.charmer.quicksquarenew" />
+    <icon drawable="@drawable/instabridge" package="com.instabridge.android" />
     <icon drawable="@drawable/instaddr" package="air.kukulive.mailnow" />
     <icon drawable="@drawable/instagram" package="com.instagram.android" />
     <icon drawable="@drawable/instagram" package="com.instagram.lite" />
     <icon drawable="@drawable/instagram" package="com.instander.android" />
     <icon drawable="@drawable/instagram" package="com.instapro.android" />
+    <icon drawable="@drawable/installerx" package="com.rosan.installer.x" />
     <icon drawable="@drawable/instapaper" package="com.instapaper.android" />
     <icon drawable="@drawable/insular" package="com.oasisfeng.island.fdroid" />
     <icon drawable="@drawable/inter" package="br.com.Inter.CDPro" />
@@ -1625,12 +1853,15 @@
     <icon drawable="@drawable/inware" package="com.evo.inware" />
     <icon drawable="@drawable/io" package="it.pagopa.io.app" />
     <icon drawable="@drawable/iosxpc_walls" package="com.iosxpc.wallpapers" />
+    <icon drawable="@drawable/ip_tools" package="com.ddm.iptools" />
     <icon drawable="@drawable/iplus" package="pl.plus.plusonline" />
     <icon drawable="@drawable/irctc" package="cris.org.in.prs.ima" />
     <icon drawable="@drawable/iriun_webcam" package="com.jacksoftw.webcam" />
     <icon drawable="@drawable/irobot" package="com.irobot.home" />
     <icon drawable="@drawable/iscep" package="com.pozitron.iscep" />
     <icon drawable="@drawable/island" package="com.oasisfeng.island" />
+    <icon drawable="@drawable/istanbulkart" package="com.belbim.istanbulkart" />
+    <icon drawable="@drawable/itao_cartoes" package="com.itaucard.activity" />
     <icon drawable="@drawable/itau" package="com.itau" />
     <icon drawable="@drawable/itax" package="com.ld.itax_pro_android" />
     <icon drawable="@drawable/iti" package="com.itau.iti" />
@@ -1640,6 +1871,7 @@
     <icon drawable="@drawable/ixigo_trains" package="com.ixigo.train.ixitrain" />
     <icon drawable="@drawable/izly" package="fr.smoney.android.izly.REC" />
     <icon drawable="@drawable/j2me_loader" package="ru.playsoftware.j2meloader" />
+    <icon drawable="@drawable/jabra_sound" package="com.jabra.moments" />
     <icon drawable="@drawable/jakdojade" package="com.citynav.jakdojade.pl.android" />
     <icon drawable="@drawable/jamboard" package="com.google.android.apps.jam" />
     <icon drawable="@drawable/jami" package="cx.ring" />
@@ -1663,8 +1895,12 @@
     <icon drawable="@drawable/jiotv" package="com.jio.jioplay.tv" />
     <icon drawable="@drawable/jira" package="com.atlassian.android.jira.core" />
     <icon drawable="@drawable/jitsi" package="org.jitsi.meet" />
+    <icon drawable="@drawable/jmcomic2" package="com.jiaohua_browser" />
+    <icon drawable="@drawable/joann" package="com.fifthfinger.clients.joann" />
     <icon drawable="@drawable/jobstreet" package="com.jobstreet.jobstreet" />
     <icon drawable="@drawable/joey_reddit" package="o.o.joey" />
+    <icon drawable="@drawable/joom" package="com.joom" />
+    <icon drawable="@drawable/joox" package="com.tencent.ibg.joox" />
     <icon drawable="@drawable/joplin" package="net.cozic.joplin" />
     <icon drawable="@drawable/journal" package="com.intelligentchange.fiveminutejournal" />
     <icon drawable="@drawable/joyn" package="de.prosiebensat1digital.seventv" />
@@ -1698,6 +1934,7 @@
     <icon drawable="@drawable/just_eat" package="uk.takeaway.android" />
     <icon drawable="@drawable/just_player" package="com.brouken.player" />
     <icon drawable="@drawable/justalk" package="com.juphoon.justalk" />
+    <icon drawable="@drawable/justauthme" package="me.justauth.app.android" />
     <icon drawable="@drawable/justweather" package="com.jjewuz.justweather" />
     <icon drawable="@drawable/juventus" package="com.juventus.app.android" />
     <icon drawable="@drawable/jw_library" package="org.jw.jwlibrary.mobile" />
@@ -1706,6 +1943,7 @@
     <icon drawable="@drawable/kahoot" package="no.mobitroll.kahoot.android" />
     <icon drawable="@drawable/kaiteki" package="moe.craftplacer.kaiteki" />
     <icon drawable="@drawable/kakaotalk" package="com.kakao.talk" />
+    <icon drawable="@drawable/kanton_internet" package="com.kantoninternet.customer" />
     <icon drawable="@drawable/kapitalbank" package="uz.kapitalbank.kbonline" />
     <icon drawable="@drawable/kapk" package="org.kustom.apkmaker" />
     <icon drawable="@drawable/kartaview" package="com.telenav.streetview" />
@@ -1728,6 +1966,7 @@
     <icon drawable="@drawable/kernel_su" package="me.weishu.kernelsu" />
     <icon drawable="@drawable/keyboard" package="com.simplemobiletools.keyboard" />
     <icon drawable="@drawable/keyboard" package="space.takashima.keypo" />
+    <icon drawable="@drawable/keylimba" package="com.dvdfu.keylimba" />
     <icon drawable="@drawable/keypass" package="com.yogeshpaliyal.keypass" />
     <icon drawable="@drawable/kfc" package="com.aamra.kfc.bd.kfc_bd" />
     <icon drawable="@drawable/kfc" package="com.by.kfc" />
@@ -1785,6 +2024,8 @@
     <icon drawable="@drawable/kickstarter" package="com.kickstarter.kickstarter" />
     <icon drawable="@drawable/kid3" package="net.sourceforge.kid3" />
     <icon drawable="@drawable/kids_space" package="com.google.android.apps.kids.home" />
+    <icon drawable="@drawable/kijiji" package="com.ebay.kijiji.ca" />
+    <icon drawable="@drawable/kik" package="kik.android" />
     <icon drawable="@drawable/kimcy_screen_recorder" package="com.kimcy929.screenrecorder" />
     <icon drawable="@drawable/kindle" package="com.amazon.kindle" />
     <icon drawable="@drawable/kinemaster" package="com.nexstreaming.app.kinemasterfree" />
@@ -1794,6 +2035,7 @@
     <icon drawable="@drawable/kite" package="com.zerodha.kite3" />
     <icon drawable="@drawable/kiwi_browser" package="com.kiwibrowser.browser" />
     <icon drawable="@drawable/kiwi_browser" package="com.kiwibrowser.browser.dev" />
+    <icon drawable="@drawable/kiwibank" package="nz.co.kiwibank.mobile" />
     <icon drawable="@drawable/kizzy" package="com.my.kizzy" />
     <icon drawable="@drawable/kkp_mobile" package="com.kkp.kkpmobile" />
     <icon drawable="@drawable/klarmobilde" package="de.klarmobil.kundenservice" />
@@ -1814,6 +2056,7 @@
     <icon drawable="@drawable/komoot" package="de.komoot.android" />
     <icon drawable="@drawable/konele" package="ee.ioc.phon.android.speak" />
     <icon drawable="@drawable/kore" package="org.xbmc.kore" />
+    <icon drawable="@drawable/koreader" package="org.koreader.launcher.fdroid" />
     <icon drawable="@drawable/kotak_bank" package="com.msf.kbank.mobile" />
     <icon drawable="@drawable/kotatsu" package="org.koitharu.kotatsu" />
     <icon drawable="@drawable/koton" package="com.koton.app" />
@@ -1836,10 +2079,13 @@
     <icon drawable="@drawable/kwork" package="ru.kwork.app" />
     <icon drawable="@drawable/la_wallet" package="gov.la.omv.lawallet" />
     <icon drawable="@drawable/labcoat" package="com.commit451.gitlab" />
+    <icon drawable="@drawable/ladb" package="com.draco.ladb" />
     <icon drawable="@drawable/lalafo" package="com.lalafo" />
     <icon drawable="@drawable/lamoda" package="com.lamoda.lite" />
     <icon drawable="@drawable/landbank" package="com.landbank.mobilebanking" />
+    <icon drawable="@drawable/landrop" package="app.landrop.landrop_flutter" />
     <icon drawable="@drawable/laptop_tycoon" package="com.roasterygames.laptoptycoon" />
+    <icon drawable="@drawable/lark_player" package="com.dywx.larkplayer" />
     <icon drawable="@drawable/last_fm" package="fm.last.android" />
     <icon drawable="@drawable/lastpass" package="com.lastpass.lpandroid" />
     <icon drawable="@drawable/lawnchair" package="app.lawnchair" />
@@ -1849,6 +2095,7 @@
     <icon drawable="@drawable/lawnicons" package="app.lawnchair.lawnicons.light" />
     <icon drawable="@drawable/lazada" package="com.lazada.android" />
     <icon drawable="@drawable/lbry" package="io.lbry.browser" />
+    <icon drawable="@drawable/league" package="life.league" />
     <icon drawable="@drawable/leboncoin" package="fr.leboncoin" />
     <icon drawable="@drawable/legado" package="io.legado.app.release" />
     <icon drawable="@drawable/legends_of_runeterra" package="com.riotgames.legendsofruneterra" />
@@ -1856,6 +2103,7 @@
     <icon drawable="@drawable/lemuroid" package="com.swordfish.lemuroid" />
     <icon drawable="@drawable/lens_distortions" package="com.lensdistortions.ld" />
     <icon drawable="@drawable/lensa" package="com.lensa.app" />
+    <icon drawable="@drawable/lenskart" package="com.lenskart.app" />
     <icon drawable="@drawable/leo" package="org.leo.android.dict" />
     <icon drawable="@drawable/leo_bank" package="com.ftfarm.leo" />
     <icon drawable="@drawable/leroy_merlin" package="ru.leroymerlin.mobile" />
@@ -1863,6 +2111,8 @@
     <icon drawable="@drawable/letgo" package="com.abtnprojects.ambatana" />
     <icon drawable="@drawable/letterboxd" package="com.letterboxd.letterboxd" />
     <icon drawable="@drawable/lewdfi" package="eu.ctwoon.lewdfi" />
+    <icon drawable="@drawable/lex" package="us.personals" />
+    <icon drawable="@drawable/lexica" package="com.serwylo.lexica" />
     <icon drawable="@drawable/lg_thinq" package="com.lgeha.nuts" />
     <icon drawable="@drawable/lg_tv_plus" package="com.lge.app1" />
     <icon drawable="@drawable/libby" package="com.overdrive.mobile.android.libby" />
@@ -1883,10 +2133,12 @@
     <icon drawable="@drawable/lightleap" package="com.lightpricks.quickshot" />
     <icon drawable="@drawable/lightroom" package="com.adobe.lrmobile" />
     <icon drawable="@drawable/lightstart" package="com.wpengapp.lightstart" />
+    <icon drawable="@drawable/likee" package="video.like" />
     <icon drawable="@drawable/likewise" package="com.Likewise.apps.Likewise" />
     <icon drawable="@drawable/limbo" package="com.playdead.limbo.full" />
     <icon drawable="@drawable/lime" package="com.limebike" />
     <icon drawable="@drawable/line" package="jp.naver.line.android" />
+    <icon drawable="@drawable/line_man" package="com.linecorp.linemanth" />
     <icon drawable="@drawable/linex" package="com.jndapp.line.x.iconpack" />
     <icon drawable="@drawable/lingodeer" package="com.lingodeer" />
     <icon drawable="@drawable/linkedin" package="com.linkedin.android" />
@@ -1903,6 +2155,7 @@
     <icon drawable="@drawable/litiaotiao" package="hello.litiaotiao.app" />
     <icon drawable="@drawable/litmatch" package="com.litatom.app" />
     <icon drawable="@drawable/litres_audio" package="ru.litres.android.audio" />
+    <icon drawable="@drawable/live2dviewerex" package="com.pavostudio.live2dviewerex" />
     <icon drawable="@drawable/live_transcribe" package="com.google.audio.hearing.visualization.accessibility.scribe" />
     <icon drawable="@drawable/livechartme" package="me.livechart.android" />
     <icon drawable="@drawable/livin_by_mandiri" package="id.bmri.livin" />
@@ -1936,6 +2189,7 @@
     <icon drawable="@drawable/lyb_kernel_manager" package="com.lybxlpsv.kernelmanager" />
     <icon drawable="@drawable/m365_tools" package="app.peretti.m365tools" />
     <icon drawable="@drawable/ma7fazty" package="com.emeint.android.mwallet.alexbank" />
+    <icon drawable="@drawable/maadhaar" package="in.gov.uidai.mAadhaarPlus" />
     <icon drawable="@drawable/macrodroid" package="com.arlosoft.macrodroid" />
     <icon drawable="@drawable/mae" package="com.maybank2u.life" />
     <icon drawable="@drawable/magic_arena" package="com.wizards.mtga" />
@@ -1959,6 +2213,7 @@
     <icon drawable="@drawable/malody" package="me.mugzone.malody" />
     <icon drawable="@drawable/malwarebytes" package="org.malwarebytes.antimalware" />
     <icon drawable="@drawable/manipal_hospitals" package="com.manipal.manipalhospitals" />
+    <icon drawable="@drawable/manual_cam" package="com.lensesdev.manual.camera.pro" />
     <icon drawable="@drawable/mapillary" package="com.mapillary.app" />
     <icon drawable="@drawable/maps" package="com.google.android.apps.maps" />
     <icon drawable="@drawable/maps" package="com.google.android.apps.mapslite" />
@@ -1967,6 +2222,7 @@
     <icon drawable="@drawable/marindeck" package="online.hisubway.marindeck" />
     <icon drawable="@drawable/mario_kart_tour" package="com.nintendo.zaka" />
     <icon drawable="@drawable/markdown_mathjax" package="app.web.mochix9905.markdownmathjax" />
+    <icon drawable="@drawable/markor" package="net.gsantner.markor" />
     <icon drawable="@drawable/marks" package="com.scoremarks.marks" />
     <icon drawable="@drawable/marktplaats" package="nl.marktplaats.android" />
     <icon drawable="@drawable/marrow" package="com.marrow" />
@@ -1991,14 +2247,18 @@
     <icon drawable="@drawable/mbank" package="pl.mbank" />
     <icon drawable="@drawable/mbank" package="sk.mbank" />
     <icon drawable="@drawable/mc_four" package="com.gameloft.android.ANMP.GloftM4HM" />
+    <icon drawable="@drawable/mcafee_security" package="com.wsandroid.suite" />
     <icon drawable="@drawable/mcdonalds" package="com.mcdonalds.app" />
     <icon drawable="@drawable/mcdonalds" package="com.mcdonalds.gma.cn" />
     <icon drawable="@drawable/mcdonalds" package="com.mcdonalds.gma.hongkong" />
     <icon drawable="@drawable/mcdonalds" package="com.mcdonalds.mobileapp" />
+    <icon drawable="@drawable/mcdonalds" package="com.mcdonalds.superapp" />
     <icon drawable="@drawable/mcdonalds" package="de.mcdonalds.mcdonaldsinfoapp" />
     <icon drawable="@drawable/mcdonalds" package="il.co.inmanage.mcdonalds" />
     <icon drawable="@drawable/mcdonalds" package="jp.co.mcdonalds.android" />
     <icon drawable="@drawable/mcdonalds" package="pt.mcdonalds" />
+    <icon drawable="@drawable/mcdoplus" package="com.md.mcdonalds.gomcdo" />
+    <icon drawable="@drawable/mcfit" package="com.mysports.branded.mcfit" />
     <icon drawable="@drawable/mdgram" package="org.telegram.mdgram" />
     <icon drawable="@drawable/mdgramyou" package="org.telegram.mdgramyou" />
     <icon drawable="@drawable/media_station_x" package="de.benzac.msx" />
@@ -2015,6 +2275,7 @@
     <icon drawable="@drawable/megacable" package="mx.com.megacable" />
     <icon drawable="@drawable/megafon" package="ru.megafon.mlk" />
     <icon drawable="@drawable/megalodon" package="org.joinmastodon.android.sk" />
+    <icon drawable="@drawable/megasync" package="com.ttxapps.megasync" />
     <icon drawable="@drawable/meinvodafone" package="com.VodafoneIreland.MyVodafone" />
     <icon drawable="@drawable/meinvodafone" package="com.appseleration.android.selfcare" />
     <icon drawable="@drawable/meinvodafone" package="com.emeint.android.myservices" />
@@ -2029,12 +2290,14 @@
     <icon drawable="@drawable/melonds" package="me.magnum.melonds" />
     <icon drawable="@drawable/memoria" package="com.memoria.photos.gallery" />
     <icon drawable="@drawable/memorydetector" package="io.github.huskydg.memorydetector" />
+    <icon drawable="@drawable/memrise" package="com.memrise.android.memrisecompanion" />
     <icon drawable="@drawable/menetrendapp" package="hu.donmade.menetrend.budapest" />
     <icon drawable="@drawable/meo_remote" package="pt.ptinovacao.iad.meoremote" />
     <icon drawable="@drawable/mercado_libre" package="com.mercadolibre" />
     <icon drawable="@drawable/mercado_pago" package="com.mercadopago.wallet" />
     <icon drawable="@drawable/merge_war" package="com.wildsky.wildarmydraft" />
     <icon drawable="@drawable/merriam_webster_dictionary" package="com.merriamwebster" />
+    <icon drawable="@drawable/message_plus" package="com.mezo" />
     <icon drawable="@drawable/messages" package="com.android.mms" />
     <icon drawable="@drawable/messages" package="com.oneplus.mms" />
     <icon drawable="@drawable/messages" package="com.samsung.android.messaging" />
@@ -2051,6 +2314,8 @@
     <icon drawable="@drawable/meteo_swiss" package="ch.admin.meteoswiss" />
     <icon drawable="@drawable/meteoipma" package="pt.ipma.meteo" />
     <icon drawable="@drawable/meteoroloji" package="tr.gov.mgm.meteorolojihavadurumu" />
+    <icon drawable="@drawable/metro_flex" package="ridewithvia.metroflexseattle" />
+    <icon drawable="@drawable/mgit" package="com.manichord.mg" />
     <icon drawable="@drawable/mhrs" package="tr.gov.saglik.MHRSMOBIL" />
     <icon drawable="@drawable/mi_browser" package="com.mi.globalbrowser" />
     <icon drawable="@drawable/mi_carpeta_ciudadana" package="es.gob.carpeta" />
@@ -2069,6 +2334,7 @@
     <icon drawable="@drawable/mi_music" package="remix.myplayer" />
     <icon drawable="@drawable/mi_remote" package="com.duokan.phone.remotecontroller" />
     <icon drawable="@drawable/mi_security" package="com.miui.securitycenter" />
+    <icon drawable="@drawable/mi_store" package="com.mi.global.shop" />
     <icon drawable="@drawable/mi_video" package="com.miui.videoplayer" />
     <icon drawable="@drawable/mi_wifi" package="com.xiaomi.router" />
     <icon drawable="@drawable/mibudsm8" package="bz.zaa.mibudsm8" />
@@ -2100,11 +2366,13 @@
     <icon drawable="@drawable/microsoft_teams" package="com.microsoft.teams" />
     <icon drawable="@drawable/microsoft_todo" package="com.microsoft.todos" />
     <icon drawable="@drawable/microsoft_word" package="com.microsoft.office.word" />
+    <icon drawable="@drawable/mictosoft_swiftkey_keyboard_beta" package="com.touchtype.swiftkey.beta" />
     <icon drawable="@drawable/midi_player" package="net.volcanomobile.midiplayer" />
     <icon drawable="@drawable/mifare_classic_tool" package="de.syss.MifareClassicTool" />
     <icon drawable="@drawable/mighty_doom" package="com.bethsoft.ubu" />
     <icon drawable="@drawable/migros" package="com.inomera.sm" />
     <icon drawable="@drawable/migros_money" package="com.migrosmagazam" />
+    <icon drawable="@drawable/migros_shop" package="ch.migros.app" />
     <icon drawable="@drawable/mijn_hr" package="com.hogeschoolrotterdam.student" />
     <icon drawable="@drawable/milanote" package="com.milanote.milanoteApp" />
     <icon drawable="@drawable/millenicom" package="com.solidict.millenicom" />
@@ -2112,6 +2380,7 @@
     <icon drawable="@drawable/mimo" package="com.getmimo" />
     <icon drawable="@drawable/mind_tracker" package="com.fedosov.mindtracker" />
     <icon drawable="@drawable/mindicator" package="com.mobond.mindicator" />
+    <icon drawable="@drawable/mindustry" package="io.anuke.mindustry" />
     <icon drawable="@drawable/minecraft" package="com.mojang.minecraftpe" />
     <icon drawable="@drawable/minecraft_toolbox" package="io.mrarm.mctoolbox" />
     <icon drawable="@drawable/minesweeper" package="Draziw.Button.Mines" />
@@ -2131,6 +2400,7 @@
     <icon drawable="@drawable/mitime" package="com.xiaomi.mitime" />
     <icon drawable="@drawable/miui_services_feedback" package="com.miui.miservice" />
     <icon drawable="@drawable/miupv" package="es.upv.miUpv" />
+    <icon drawable="@drawable/mivo" package="ins.story.unfold" />
     <icon drawable="@drawable/mixplorer" package="com.mixplorer" />
     <icon drawable="@drawable/mixplorer" package="com.mixplorer.beta" />
     <icon drawable="@drawable/mixplorer" package="com.mixplorer.silver" />
@@ -2142,17 +2412,23 @@
     <icon drawable="@drawable/mobiles_bezahlen" package="com.s_payment.mobiles_bezahlen" />
     <icon drawable="@drawable/mobilism" package="demigos.com.mobilism" />
     <icon drawable="@drawable/mobills" package="br.com.gerenciadorfinanceiro.controller" />
+    <icon drawable="@drawable/mobiuz" package="uz.mobiuz.mobiservice" />
+    <icon drawable="@drawable/mobywatel" package="pl.nask.mobywatel" />
     <icon drawable="@drawable/modo" package="com.playdigital.modo" />
     <icon drawable="@drawable/moelist" package="com.axiel7.moelist" />
     <icon drawable="@drawable/moey" package="pt.moey.app" />
+    <icon drawable="@drawable/moises" package="ai.moises" />
     <icon drawable="@drawable/moj" package="in.mohalla.video" />
+    <icon drawable="@drawable/moj_orange" package="pl.orange.mojeorange" />
     <icon drawable="@drawable/mojo" package="video.mojo" />
     <icon drawable="@drawable/molly" package="im.molly.app" />
+    <icon drawable="@drawable/molly" package="im.molly.app.unifiedpush" />
     <icon drawable="@drawable/momo" package="com.mservice.momotransfer" />
     <icon drawable="@drawable/momo_test" package="io.github.vvb2060.mahoshojo" />
     <icon drawable="@drawable/momox" package="de.momox" />
     <icon drawable="@drawable/monect" package="com.monect.portable" />
     <icon drawable="@drawable/monerujo" package="com.m2049r.xmrwallet" />
+    <icon drawable="@drawable/money_dashboard" package="com.mdb.mdbandroidneon" />
     <icon drawable="@drawable/money_lover" package="com.bookmark.money" />
     <icon drawable="@drawable/money_manager" package="com.realbyteapps.moneymanagerfree" />
     <icon drawable="@drawable/moneycontrol" package="com.divum.MoneyControl" />
@@ -2162,18 +2438,19 @@
     <icon drawable="@drawable/mooc" package="com.netease.edu.ucmooc" />
     <icon drawable="@drawable/moodle" package="com.moodle.moodlemobile" />
     <icon drawable="@drawable/moon_reader" package="com.flyersoft.moonreader" />
-    <icon drawable="@drawable/moon_reader" package="com.flyersoft.moonreaderp" />
+    <icon drawable="@drawable/moon_reader_pro" package="com.flyersoft.moonreaderp" />
     <icon drawable="@drawable/moonlight" package="com.limelight" />
     <icon drawable="@drawable/moovit" package="com.tranzmate" />
     <icon drawable="@drawable/morelenet" package="at.xtools.morele.net" />
     <icon drawable="@drawable/morse" package="rocks.poopjournal.morse" />
+    <icon drawable="@drawable/morsemania" package="net.countrymania.morse" />
     <icon drawable="@drawable/moshidon" package="org.joinmastodon.android.moshinda" />
     <icon drawable="@drawable/moto" package="com.motorola.moto" />
-    <icon drawable="@drawable/moto_audio" package="com.motorola.dolby.dolbyui" />
     <icon drawable="@drawable/moto_gametime" package="com.motorola.gamemode" />
     <icon drawable="@drawable/moto_interactive_wallpaper" package="com.motorola.livewallpaper3" />
     <icon drawable="@drawable/moto_notifications" package="com.motorola.ccc.notification" />
     <icon drawable="@drawable/moveinsync" package="com.moveinsync.ets" />
+    <icon drawable="@drawable/movie_lab" package="com.movielab.mobile" />
     <icon drawable="@drawable/moviebase" package="com.moviebase" />
     <icon drawable="@drawable/movies_anywhere" package="com.moviesanywhere.goo" />
     <icon drawable="@drawable/movistar" package="com.movistarmx.mx.app" />
@@ -2182,16 +2459,20 @@
     <icon drawable="@drawable/mpatcher" package="ru.maximoff.sheller" />
     <icon drawable="@drawable/mplayer" package="com.mplayer.streamcast" />
     <icon drawable="@drawable/mpv_android" package="is.xyz.mpv" />
+    <icon drawable="@drawable/mrepo" package="com.sanmer.mrepo" />
     <icon drawable="@drawable/mt_manager" package="bin.mt.plus" />
     <icon drawable="@drawable/mt_manager_canary" package="bin.mt.plus.canary" />
     <icon drawable="@drawable/mtix" package="lds.cinema21" />
     <icon drawable="@drawable/mts" package="ru.mts.mymts" />
     <icon drawable="@drawable/mull" package="us.spotco.fennec_dos" />
     <icon drawable="@drawable/mullvad_vpn" package="net.mullvad.mullvadvpn" />
+    <icon drawable="@drawable/mumbai_one" package="com.mmrda.mumbaione" />
     <icon drawable="@drawable/mupdf_viewer" package="com.artifex.mupdf.viewer.app" />
     <icon drawable="@drawable/musescore" package="com.musescore.playerlite" />
     <icon drawable="@drawable/music_player" package="com.github.anrimian.musicplayer" />
+    <icon drawable="@drawable/music_player_inshot" package="musicplayer.musicapps.music.mp3player" />
     <icon drawable="@drawable/music_speed_changer" package="com.smp.musicspeed" />
+    <icon drawable="@drawable/musiccast" package="com.yamaha.av.musiccastcontroller" />
     <icon drawable="@drawable/musicolet" package="in.krosbits.musicolet" />
     <icon drawable="@drawable/musify" package="com.adam.aslfms" />
     <icon drawable="@drawable/musify" package="com.gokadzev.musify" />
@@ -2201,10 +2482,12 @@
     <icon drawable="@drawable/muviz_edge" package="com.sparkine.muvizedge" />
     <icon drawable="@drawable/muzei" package="net.nurik.roman.muzei" />
     <icon drawable="@drawable/mvgo" package="de.mvg.more" />
+    <icon drawable="@drawable/mvvapp" package="com.mdv.companion" />
     <icon drawable="@drawable/mwalls" package="com.theveloper.mwalls.app" />
     <icon drawable="@drawable/mxbc" package="com.mxbc.mxsa" />
     <icon drawable="@drawable/my48" package="ie.months.my48" />
     <icon drawable="@drawable/my_bsnl_tunes" package="com.onmobile.rbt.bsnl" />
+    <icon drawable="@drawable/my_calendar" package="com.popularapp.periodcalendar" />
     <icon drawable="@drawable/my_fitness_pal" package="com.myfitnesspal.android" />
     <icon drawable="@drawable/my_fritz" package="de.avm.android.myfritz2" />
     <icon drawable="@drawable/my_learning" package="com.crossknowledge.learnguided" />
@@ -2226,6 +2509,7 @@
     <icon drawable="@drawable/mycloud" package="com.swisscom.mycloud" />
     <icon drawable="@drawable/mydealz" package="com.tippingcanoe.mydealz" />
     <icon drawable="@drawable/mydigicel" package="com.digicel.selfcare.mobile" />
+    <icon drawable="@drawable/myedenred" package="com.edenred.eq.myedenred" />
     <icon drawable="@drawable/mygate" package="com.mygate.user" />
     <icon drawable="@drawable/mygori" package="com.goriacqua.app" />
     <icon drawable="@drawable/mygov_az" package="az.gov.my" />
@@ -2250,15 +2534,20 @@
     <icon drawable="@drawable/namma_yatri" package="in.juspay.nammayatri" />
     <icon drawable="@drawable/nat_geo_tv" package="com.natgeo.tv" />
     <icon drawable="@drawable/national_test_abhyas" package="com.abhyas.nta.com" />
+    <icon drawable="@drawable/nationwide_bank" package="co.uk.Nationwide.Mobile" />
+    <icon drawable="@drawable/naukricom" package="naukriApp.appModules.login" />
     <icon drawable="@drawable/naver_dictionary" package="com.nhn.android.naverdic" />
     <icon drawable="@drawable/naver_map" package="com.nhn.android.nmap" />
     <icon drawable="@drawable/navy_federal" package="com.navyfederal.android" />
+    <icon drawable="@drawable/nawgati" package="in.cng.ecoconnect" />
     <icon drawable="@drawable/nayapay" package="com.nayapay.app" />
     <icon drawable="@drawable/nc_passwords" package="de.jbservices.nc_passwords_app" />
     <icon drawable="@drawable/ncalc" package="com.duy.calculator.free" />
+    <icon drawable="@drawable/nearby_share" package="com.cooliehat.nearbyshare" />
     <icon drawable="@drawable/nebula" package="tv.standard.nebula" />
     <icon drawable="@drawable/nebula_astrology" package="genesis.nebula" />
     <icon drawable="@drawable/negentwee" package="nl.negentwee" />
+    <icon drawable="@drawable/nekobox" package="moe.nb4a" />
     <icon drawable="@drawable/nekogram" package="nekox.messenger" />
     <icon drawable="@drawable/nekogram" package="tw.nekomimi.nekogram" />
     <icon drawable="@drawable/nekome" package="com.chesire.nekome" />
@@ -2268,6 +2557,9 @@
     <icon drawable="@drawable/neo_store" package="com.machiav3lli.fdroid" />
     <icon drawable="@drawable/neo_store" package="com.machiav3lli.fdroid.neo" />
     <icon drawable="@drawable/neon" package="br.com.neon" />
+    <icon drawable="@drawable/neon_bank" package="com.neonbanking.app" />
+    <icon drawable="@drawable/nequi_colombia" package="com.nequi.MobileApp" />
+    <icon drawable="@drawable/nequi_panama" package="pa.com.nequi.MobileApp" />
     <icon drawable="@drawable/neshan" package="org.rajman.neshan.traffic.tehran.navigator" />
     <icon drawable="@drawable/nest" package="com.nest.android" />
     <icon drawable="@drawable/net_analyzer" package="net.techet.netanalyzerlite.an" />
@@ -2310,6 +2602,7 @@
     <icon drawable="@drawable/nga" package="gov.pianzong.androidnga" />
     <icon drawable="@drawable/niagara_launcher" package="bitpit.launcher" />
     <icon drawable="@drawable/nicegram" package="app.nicegram" />
+    <icon drawable="@drawable/nico_video" package="jp.nicovideo.android" />
     <icon drawable="@drawable/niconico" package="jp.co.dwango.nicocas" />
     <icon drawable="@drawable/nike" package="com.nike.omega" />
     <icon drawable="@drawable/nike_training_club" package="com.nike.ntc" />
@@ -2318,6 +2611,7 @@
     <icon drawable="@drawable/nine_dash" package="adriandp.ninedash" />
     <icon drawable="@drawable/ninegag" package="com.ninegag.android.app" />
     <icon drawable="@drawable/ninenine" package="com.taxis99" />
+    <icon drawable="@drawable/ning" package="de.csicar.ning" />
     <icon drawable="@drawable/nintendo_switch_online" package="com.nintendo.znca" />
     <icon drawable="@drawable/nitter" package="com.plexer0.nitter" />
     <icon drawable="@drawable/niyo_global" package="finance.global.travel.niyo" />
@@ -2343,13 +2637,17 @@
     <icon drawable="@drawable/notes" package="com.miui.notes" />
     <icon drawable="@drawable/notes" package="com.motorola.stylus" />
     <icon drawable="@drawable/notes" package="com.oneplus.note" />
+    <icon drawable="@drawable/notes" package="com.transsion.notebook" />
     <icon drawable="@drawable/notesnook" package="com.streetwriters.notesnook" />
     <icon drawable="@drawable/notewise" package="com.yygg.note.app" />
-    <icon drawable="@drawable/nothing_butwalls" package="com.dev.nothingbutwalls.app" />
     <icon drawable="@drawable/nothing_camera" package="com.nothing.camera" />
-    <icon drawable="@drawable/nothing_soundrecorder" package="com.nothing.soundrecorder" />
+    <icon drawable="@drawable/nothing_recorder" package="com.nothing.soundrecorder" />
+    <icon drawable="@drawable/nothing_weather" package="com.nothing.weather" />
     <icon drawable="@drawable/nothing_x" package="com.nothing.smartcenter" />
+    <icon drawable="@drawable/nothingbutwalls" package="com.dev.nothingbutwalls.app" />
+    <icon drawable="@drawable/notification_history_log" package="com.ikvaesolutions.notificationhistorylog" />
     <icon drawable="@drawable/notification_manager" package="rk.android.app.notificationhistory" />
+    <icon drawable="@drawable/notification_widget" package="com.kuma.notificationwidget" />
     <icon drawable="@drawable/notify_for_miband" package="com.mc.miband1" />
     <icon drawable="@drawable/notion" package="notion.id" />
     <icon drawable="@drawable/noto" package="com.noto" />
@@ -2387,8 +2685,10 @@
     <icon drawable="@drawable/odysee" package="com.odysee.app" />
     <icon drawable="@drawable/odysee" package="com.odysee.floss" />
     <icon drawable="@drawable/oebb" package="at.oebb.ts" />
+    <icon drawable="@drawable/offerup" package="com.offerup" />
     <icon drawable="@drawable/offi_stations" package="de.schildbach.oeffi" />
     <icon drawable="@drawable/office_suite" package="com.mobisystems.office" />
+    <icon drawable="@drawable/official_twrp_app" package="me.twrp.twrpapp" />
     <icon drawable="@drawable/offline_podcast_app" package="fm.player" />
     <icon drawable="@drawable/ofox" package="com.fordownloads.orangefox" />
     <icon drawable="@drawable/ohhi" package="com.q42.ohhi" />
@@ -2397,6 +2697,7 @@
     <icon drawable="@drawable/ok" package="ru.ok.android" />
     <icon drawable="@drawable/okko" package="ru.more.play" />
     <icon drawable="@drawable/okta_verify" package="com.okta.android.auth" />
+    <icon drawable="@drawable/okx" package="com.okinc.okex.gp" />
     <icon drawable="@drawable/ola_cabs" package="com.olacabs.customer" />
     <icon drawable="@drawable/ola_cabs" package="com.olacabs.lite" />
     <icon drawable="@drawable/ola_electric" package="com.olaelectric.companion" />
@@ -2422,6 +2723,7 @@
     <icon drawable="@drawable/olx" package="ro.mercador" />
     <icon drawable="@drawable/olx" package="ua.slando" />
     <icon drawable="@drawable/omnivore" package="app.omnivore.omnivore" />
+    <icon drawable="@drawable/one_for_wall" package="one4studio.wallpaper.one4wall" />
     <icon drawable="@drawable/one_gallery" package="app.galleryx" />
     <icon drawable="@drawable/one_hand_operation" package="com.samsung.android.sidegesturepad" />
     <icon drawable="@drawable/onedotonedotonedotone" package="com.cloudflare.onedotonedotonedotone" />
@@ -2429,19 +2731,24 @@
     <icon drawable="@drawable/onefootball" package="de.motain.iliga" />
     <icon drawable="@drawable/onepassword" package="com.agilebits.onepassword" />
     <icon drawable="@drawable/onepassword" package="com.onepassword.android" />
+    <icon drawable="@drawable/oneplus_care" package="oneplus.consumer.android" />
     <icon drawable="@drawable/oneplus_clone_phone" package="com.oneplus.backuprestore" />
     <icon drawable="@drawable/oneplus_community" package="net.oneplus.forums" />
+    <icon drawable="@drawable/onestop" package="com.swciitg.onestop2" />
     <icon drawable="@drawable/only_office" package="com.onlyoffice.documents" />
+    <icon drawable="@drawable/only_one" package="com.onlyone.onlyonestarter" />
     <icon drawable="@drawable/onstream" package="com.onstream.android" />
     <icon drawable="@drawable/onvista" package="de.onvista.ovone" />
     <icon drawable="@drawable/open_link_with" package="com.tasomaniac.openwith" />
     <icon drawable="@drawable/open_link_with" package="com.tasomaniac.openwith.floss" />
     <icon drawable="@drawable/openapk" package="com.dkanada.openapk" />
+    <icon drawable="@drawable/openbank" package="es.openbank.mobile" />
     <icon drawable="@drawable/openboard" package="org.dslul.openboard.inputmethod.latin" />
     <icon drawable="@drawable/openfoodfacts" package="openfoodfacts.github.scrachx.openfood" />
     <icon drawable="@drawable/openfoodfacts" package="org.openfoodfacts.scanner" />
     <icon drawable="@drawable/openhab" package="org.openhab.habdroid" />
     <icon drawable="@drawable/openkeychain" package="org.sufficientlysecure.keychain" />
+    <icon drawable="@drawable/openreads" package="software.mdev.bookstracker" />
     <icon drawable="@drawable/openrectv" package="jp.co.cyber_z.openrecviewapp" />
     <icon drawable="@drawable/openscale" package="com.health.openscale" />
     <icon drawable="@drawable/opentracks" package="de.dennisguse.opentracks" />
@@ -2463,6 +2770,8 @@
     <icon drawable="@drawable/orbot" package="org.torproject.android" />
     <icon drawable="@drawable/organic_maps" package="app.organicmaps" />
     <icon drawable="@drawable/orgzly" package="com.orgzly" />
+    <icon drawable="@drawable/orlen_vitay" package="pl.orlen.vitay" />
+    <icon drawable="@drawable/oscope" package="org.sbaudio.oscope" />
     <icon drawable="@drawable/osm_dashboard" package="de.storchp.opentracks.osmplugin" />
     <icon drawable="@drawable/osmand" package="net.osmand" />
     <icon drawable="@drawable/osmand_plus" package="net.osmand.plus" />
@@ -2474,6 +2783,7 @@
     <icon drawable="@drawable/oujo" package="com.ikn.oujo" />
     <icon drawable="@drawable/overdrop" package="widget.dd.com.overdrop.free" />
     <icon drawable="@drawable/overdrop" package="widget.dd.com.overdrop.pro" />
+    <icon drawable="@drawable/overload" package="cloud.pablos.overload" />
     <icon drawable="@drawable/ovinfo" package="cz.mafra.jizdnirady" />
     <icon drawable="@drawable/ovinfo" package="nl.skywave.ovinfo" />
     <icon drawable="@drawable/ovo" package="ovo.id" />
@@ -2501,6 +2811,7 @@
     <icon drawable="@drawable/paperless" package="com.quinncasey.paperless_share" />
     <icon drawable="@drawable/paperless" package="de.astubenbord.paperless_mobile" />
     <icon drawable="@drawable/paperless" package="eu.bauerj.paperless_app" />
+    <icon drawable="@drawable/papers" package="com.wallpapers.papers" />
     <icon drawable="@drawable/papertag" package="com.digitalbore.papertag" />
     <icon drawable="@drawable/parabox" package="com.ojhdtapp.parabox" />
     <icon drawable="@drawable/parallel_space" package="com.lbe.parallel.intl" />
@@ -2516,6 +2827,7 @@
     <icon drawable="@drawable/passport_parking_canada" package="ca.passportparking.mobile.passportcanada" />
     <icon drawable="@drawable/password_safe_manager" package="com.reneph.passwordsafe" />
     <icon drawable="@drawable/password_store" package="dev.msfjarvis.aps" />
+    <icon drawable="@drawable/patchwork" package="com.digidiced.pxwrelease" />
     <icon drawable="@drawable/patreon" package="com.patreon.android" />
     <icon drawable="@drawable/pay_sphera" package="ru.nskes.paysphera" />
     <icon drawable="@drawable/payback" package="de.payback.client.android" />
@@ -2531,11 +2843,14 @@
     <icon drawable="@drawable/paytm" package="net.one97.paytm" />
     <icon drawable="@drawable/paytm_insider" package="in.insider.consumer" />
     <icon drawable="@drawable/pcloud" package="com.pcloud.pcloud" />
+    <icon drawable="@drawable/pdf_converter" package="swati4star.createpdf" />
     <icon drawable="@drawable/pdf_doc_scan" package="com.littletrickster.scanner" />
     <icon drawable="@drawable/pdf_viewer" package="com.saverio.pdfviewer" />
     <icon drawable="@drawable/peacock" package="com.peacocktv.peacockandroid" />
     <icon drawable="@drawable/pencil" package="com.simplemobiletools.draw" />
     <icon drawable="@drawable/pencil" package="com.simplemobiletools.draw.pro" />
+    <icon drawable="@drawable/penta" package="com.getpenta.app" />
+    <icon drawable="@drawable/penup" package="com.sec.penup" />
     <icon drawable="@drawable/peopay" package="softax.pekao.powerpay" />
     <icon drawable="@drawable/pepper" package="com.tippingcanoe.pepperpl" />
     <icon drawable="@drawable/periodic_table" package="mendeleev.redlime" />
@@ -2547,7 +2862,11 @@
     <icon drawable="@drawable/petal_maps" package="com.huawei.maps.app" />
     <icon drawable="@drawable/pexels" package="com.pexels.app" />
     <icon drawable="@drawable/pharmeasy" package="com.phonegap.rxpal" />
+    <icon drawable="@drawable/phigros" package="com.PigeonGames.Phigros" />
+    <icon drawable="@drawable/phoenix" package="com.transsion.phoenix" />
+    <icon drawable="@drawable/phone_clone" package="com.hicloud.android.clone" />
     <icon drawable="@drawable/phone_manager" package="com.coloros.phonemanager" />
+    <icon drawable="@drawable/phone_master" package="com.transsion.phonemaster" />
     <icon drawable="@drawable/phone_probe" package="com.x1y9.probe" />
     <icon drawable="@drawable/phonepe" package="com.phonepe.app" />
     <icon drawable="@drawable/phonetrack" package="net.eneiluj.nextcloud.phonetrack" />
@@ -2566,9 +2885,11 @@
     <icon drawable="@drawable/photoroom" package="com.photoroom.app" />
     <icon drawable="@drawable/photoscan" package="com.google.android.apps.photos.scanner" />
     <icon drawable="@drawable/photoshop_express" package="com.adobe.psmobile" />
+    <icon drawable="@drawable/photoshot" package="com.vyroai.photoeditorone" />
     <icon drawable="@drawable/phototan" package="ch.raiffeisen.phototan" />
     <icon drawable="@drawable/phototune" package="com.vyroai.photoenhancer" />
     <icon drawable="@drawable/phub" package="com.app.pornhub" />
+    <icon drawable="@drawable/phyphox" package="de.rwth_aachen.phyphox" />
     <icon drawable="@drawable/physics_wallah" package="xyz.penpencil.physicswala" />
     <icon drawable="@drawable/pi" package="com.blockchainvault" />
     <icon drawable="@drawable/piano" package="com.bilkon.easypiano" />
@@ -2581,6 +2902,7 @@
     <icon drawable="@drawable/pigments" package="com.sorincovor.pigments" />
     <icon drawable="@drawable/pikabu" package="ru.pikabu.android" />
     <icon drawable="@drawable/pikpak" package="com.pikcloud.pikpak" />
+    <icon drawable="@drawable/piktures" package="com.diune.pictures" />
     <icon drawable="@drawable/pillars" package="com.pillars.pillars" />
     <icon drawable="@drawable/pincredible" package="com.cyb3rko.pincredible" />
     <icon drawable="@drawable/pinduoduo" package="com.xunmeng.pinduoduo" />
@@ -2591,11 +2913,13 @@
     <icon drawable="@drawable/pinterest" package="com.pinterest" />
     <icon drawable="@drawable/pinterest" package="com.pinterest.twa" />
     <icon drawable="@drawable/pipepipe" package="InfinityLoop1309.NewPipeEnhanced" />
+    <icon drawable="@drawable/pix_material_you" package="com.pashapuma.pix.material.you.dark" />
     <icon drawable="@drawable/pix_you_cornflower_dark_icons" package="com.arjunarora.pix_you_cornflower_dark_icons" />
     <icon drawable="@drawable/pixapencil" package="com.therealbluepandabear.pixapencil" />
     <icon drawable="@drawable/pixel_buds" package="com.google.android.apps.wearables.maestro.companion" />
     <icon drawable="@drawable/pixel_clock_widgets" package="twelve.clock.mibrahim" />
     <icon drawable="@drawable/pixel_gun_3d" package="com.pixel.gun3d" />
+    <icon drawable="@drawable/pixel_icon_pack" package="ru.pt.iconpack.pixel" />
     <icon drawable="@drawable/pixel_mods" package="com.metris.xposed.pmods" />
     <icon drawable="@drawable/pixel_search" package="rk.android.app.pixelsearch" />
     <icon drawable="@drawable/pixel_tips" package="com.google.android.apps.tips" />
@@ -2612,6 +2936,12 @@
     <icon drawable="@drawable/pizza_hut" package="com.devsence.pizzahut" />
     <icon drawable="@drawable/pizza_hut" package="com.expremio.pizzahutcipru" />
     <icon drawable="@drawable/pizza_hut" package="com.nanoequipment.pizzahut" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut.app" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut.app.vn" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut.canada" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut.chile" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut.ecuador" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.germany" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.jeddah" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.kh" />
@@ -2619,16 +2949,20 @@
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.malaysia" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.ng" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.oman" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut.ph" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.phd" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.qatar" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahut.rsa" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahut.za" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahutapp" />
     <icon drawable="@drawable/pizza_hut" package="com.pizzahutguyana.android" />
+    <icon drawable="@drawable/pizza_hut" package="com.pizzahutpl" />
     <icon drawable="@drawable/pizza_hut" package="com.socialsnack.pizzahutcr" />
     <icon drawable="@drawable/pizza_hut" package="com.yum.pizzahut" />
     <icon drawable="@drawable/pizza_hut" package="eu.beeple.topbrandspizzahut.users" />
     <icon drawable="@drawable/pizza_hut" package="jp.pizzahut.aorder" />
     <icon drawable="@drawable/pizza_hut" package="net.bonee.pizzaHut" />
+    <icon drawable="@drawable/pizza_hut" package="nz.co.pizzahut" />
     <icon drawable="@drawable/pizza_hut" package="pra.hizzahut.com.sv" />
     <icon drawable="@drawable/pizza_hut" package="pt.wingman.pizzahut" />
     <icon drawable="@drawable/pizza_hut" package="se.leeroygroup.pizzahut" />
@@ -2644,14 +2978,19 @@
     <icon drawable="@drawable/playit" package="com.playit.videoplayer" />
     <icon drawable="@drawable/playstation" package="com.scee.psxandroid" />
     <icon drawable="@drawable/playsuisse" package="ch.srgssr.playsuisse.tv" />
+    <icon drawable="@drawable/playtomic" package="com.playtomic" />
     <icon drawable="@drawable/plex" package="com.plexapp.android" />
     <icon drawable="@drawable/plex_dash" package="tv.plex.labs.dash" />
     <icon drawable="@drawable/plexamp" package="tv.plex.labs.plexamp" />
+    <icon drawable="@drawable/plum" package="com.withplum.app" />
     <icon drawable="@drawable/pluma" package="qijaz221.android.rss.reader" />
     <icon drawable="@drawable/plus_messenger" package="org.telegram.plus" />
     <icon drawable="@drawable/pluto_tv" package="tv.pluto.android" />
     <icon drawable="@drawable/pluvia" package="com.spicychair.weather" />
+    <icon drawable="@drawable/pluxee" package="com.sodexo.cwc.ro" />
+    <icon drawable="@drawable/pnb_one" package="com.Version1" />
     <icon drawable="@drawable/pnc" package="com.pnc.ecommerce.mobile" />
+    <icon drawable="@drawable/po_pixel" package="com.teenageengineering.pocketoperatorforpixel" />
     <icon drawable="@drawable/pocket" package="com.ideashower.readitlater.pro" />
     <icon drawable="@drawable/pocket_casts" package="au.com.shiftjelly.pocketcasts" />
     <icon drawable="@drawable/pocket_casts" package="au.com.shiftyjelly.pocketcasts" />
@@ -2660,6 +2999,7 @@
     <icon drawable="@drawable/pocket_fm" package="com.radio.pocketfm" />
     <icon drawable="@drawable/pocket_paint" package="org.catrobat.paintroid" />
     <icon drawable="@drawable/pocketbook" package="com.obreey.reader" />
+    <icon drawable="@drawable/podcast_addict" package="com.bambuna.podcastaddict" />
     <icon drawable="@drawable/pojavlauncher" package="net.kdt.pojavlaunch" />
     <icon drawable="@drawable/poke_genie" package="com.cjin.pokegenie.standard" />
     <icon drawable="@drawable/pokemon_go" package="com.nianticlabs.pokemongo" />
@@ -2682,12 +3022,14 @@
     <icon drawable="@drawable/power" package="com.kieronquinn.app.classicpowermenu" />
     <icon drawable="@drawable/power_bi" package="com.microsoft.powerbim" />
     <icon drawable="@drawable/poweramp_equalizer" package="com.maxmpz.equalizer" />
+    <icon drawable="@drawable/poweramp_full_unlocker" package="com.maxmpz.audioplayer.unlock" />
     <icon drawable="@drawable/powerdirector" package="com.cyberlink.powerdirector.DRA140225_01" />
     <icon drawable="@drawable/powerschool" package="com.powerschool.portal" />
     <icon drawable="@drawable/powertube" package="ussr.razar.youtube_dl" />
     <icon drawable="@drawable/powertunnel" package="io.github.krlvm.powertunnel.android" />
     <icon drawable="@drawable/ppsspp" package="org.ppsspp.ppsspp" />
     <icon drawable="@drawable/ppsspp" package="org.ppsspp.ppssppgold" />
+    <icon drawable="@drawable/premise" package="com.premise.android.prod" />
     <icon drawable="@drawable/printer" package="com.brother.mfc.brprint" />
     <icon drawable="@drawable/printer" package="com.dynamixsoftware.printershare" />
     <icon drawable="@drawable/printer" package="com.hp.android.printservice" />
@@ -2727,6 +3069,7 @@
     <icon drawable="@drawable/ps_camera" package="com.adobe.lens.android" />
     <icon drawable="@drawable/ps_remote_play" package="com.playstation.remoteplay" />
     <icon drawable="@drawable/psiphon" package="com.psiphon3.subscription" />
+    <icon drawable="@drawable/psono" package="com.psono.psono" />
     <icon drawable="@drawable/pttavm" package="com.pttem.epttavm" />
     <icon drawable="@drawable/pu" package="com.xyhui" />
     <icon drawable="@drawable/pubg" package="com.pubg.newstate" />
@@ -2734,6 +3077,7 @@
     <icon drawable="@drawable/puhutv" package="com.dogusdigital.puhutv" />
     <icon drawable="@drawable/pulse_music" package="com.hardcodecoder.pulse" />
     <icon drawable="@drawable/puma" package="com.puma.ecom.app" />
+    <icon drawable="@drawable/punto" package="com.punto.punto" />
     <icon drawable="@drawable/purple_tv" package="tv.orange" />
     <icon drawable="@drawable/pushbullet" package="com.pushbullet.android" />
     <icon drawable="@drawable/pyaterochka" package="ru.pyaterochka.app.browser" />
@@ -2746,6 +3090,7 @@
     <icon drawable="@drawable/qksms" package="com.moez.QKSMS" />
     <icon drawable="@drawable/qnb_finansbank" package="com.finansbank.mobile.cepsube" />
     <icon drawable="@drawable/qobuz" package="com.qobuz.music" />
+    <icon drawable="@drawable/qooapp" package="com.qooapp.qoohelper" />
     <icon drawable="@drawable/qoqa" package="ch.alpsoft.qoqa.ui" />
     <icon drawable="@drawable/qq" package="com.tencent.mobileqq" />
     <icon drawable="@drawable/qr_droid" package="la.droid.qr" />
@@ -2759,6 +3104,7 @@
     <icon drawable="@drawable/qr_reader" package="org.barcodescanner" />
     <icon drawable="@drawable/quark" package="com.quark.browser" />
     <icon drawable="@drawable/quick_calculation" package="io.github.subhamtyagi.quickcalculation" />
+    <icon drawable="@drawable/quick_measure" package="com.samsung.android.ruler" />
     <icon drawable="@drawable/quick_novel" package="com.lagradost.quicknovel" />
     <icon drawable="@drawable/quickedit" package="com.rhmsoft.edit" />
     <icon drawable="@drawable/quickedit" package="com.rhmsoft.edit.pro" />
@@ -2767,10 +3113,12 @@
     <icon drawable="@drawable/quickvpn" package="com.lipisoft.quickvpn" />
     <icon drawable="@drawable/quillnote" package="org.qosp.notes" />
     <icon drawable="@drawable/quillpad" package="io.github.quillpad" />
+    <icon drawable="@drawable/quinyx" package="quinyx.mobile" />
     <icon drawable="@drawable/quizduel" package="se.maginteractive.quizduel2" />
     <icon drawable="@drawable/quizlet" package="com.quizlet.quizletandroid" />
     <icon drawable="@drawable/quora" package="com.quora.android" />
     <icon drawable="@drawable/quote_unquote" package="com.github.jameshnsears.quoteunquote" />
+    <icon drawable="@drawable/quotex" package="io.quotex" />
     <icon drawable="@drawable/quran" package="com.andi.alquran.bangla" />
     <icon drawable="@drawable/quran" package="com.andi.alquran.en" />
     <icon drawable="@drawable/quran" package="com.andi.alquran.francais" />
@@ -2781,12 +3129,15 @@
     <icon drawable="@drawable/rabo_wallet" package="nl.rabowallet" />
     <icon drawable="@drawable/rabobank" package="nl.rabomobiel" />
     <icon drawable="@drawable/radarbot" package="com.vialsoft.radarbot_free" />
+    <icon drawable="@drawable/radio_garden" package="com.jonathanpuckey.radiogarden" />
+    <icon drawable="@drawable/radioplay" package="fi.bauermedia.rpf" />
     <icon drawable="@drawable/radiosnet" package="br.com.radios.radiosmobile.radiosnet" />
     <icon drawable="@drawable/rahat_market" package="frazex.com.inloya.rahat" />
     <icon drawable="@drawable/raiffeisen_bank" package="ru.raiffeisennews" />
     <icon drawable="@drawable/raiffeisen_e_banking" package="ch.raiffeisen.android" />
     <icon drawable="@drawable/raiffeisen_twint" package="ch.raiffeisen.twint" />
     <icon drawable="@drawable/railbound" package="com.Afterburn.Railbound" />
+    <icon drawable="@drawable/railcard" package="com.raildeliverygroup.railcard" />
     <icon drawable="@drawable/railway_12306" package="com.MobileTicket" />
     <icon drawable="@drawable/rain" package="com.yoshi.rain" />
     <icon drawable="@drawable/raindrop" package="io.raindrop.raindropio" />
@@ -2800,6 +3151,7 @@
     <icon drawable="@drawable/rboard" package="de.dertyp7214.rboardthememanager" />
     <icon drawable="@drawable/read_chan" package="com.deezus.pchan" />
     <icon drawable="@drawable/read_era" package="org.readera" />
+    <icon drawable="@drawable/read_era_premium" package="org.readera.premium" />
     <icon drawable="@drawable/read_you" package="me.ash.reader" />
     <icon drawable="@drawable/readfriend_lite" package="info.ebstudio.bookviewer.free" />
     <icon drawable="@drawable/readwise" package="com.readwise" />
@@ -2815,10 +3167,10 @@
     <icon drawable="@drawable/recorder" package="com.oneplus.soundrecorder" />
     <icon drawable="@drawable/recorder" package="com.sec.android.app.voicenote" />
     <icon drawable="@drawable/recorder" package="com.simplemobiletools.voicerecorder" />
+    <icon drawable="@drawable/recorder" package="com.transsion.soundrecorder" />
     <icon drawable="@drawable/recorder" package="com.vivo.soundrecorder" />
     <icon drawable="@drawable/recorder" package="org.calyxos.recorder" />
     <icon drawable="@drawable/recorder" package="org.lineageos.recorder" />
-    <icon drawable="@drawable/recorder_s" package="com.dimowner.audiorecorder" />
     <icon drawable="@drawable/red_moon" package="com.jmstudios.redmoon" />
     <icon drawable="@drawable/redbus" package="in.redbus.android" />
     <icon drawable="@drawable/reddit" package="com.devgary.ready" />
@@ -2827,6 +3179,8 @@
     <icon drawable="@drawable/reev_chroma" package="com.reevchroma.grabsterstudios" />
     <icon drawable="@drawable/reev_dark" package="com.reevdark.grabsterstudios" />
     <icon drawable="@drawable/reev_pro" package="com.reevpro.grabsterstudios" />
+    <icon drawable="@drawable/reigns" package="com.devolver.reigns" />
+    <icon drawable="@drawable/rekado" package="com.pavelrekun.rekado" />
     <icon drawable="@drawable/relay" package="free.reddit.news" />
     <icon drawable="@drawable/relay" package="reddit.news" />
     <icon drawable="@drawable/reminder_pro" package="alarm.clock.calendar.reminder" />
@@ -2842,13 +3196,15 @@
     <icon drawable="@drawable/resplash" package="com.b_lam.resplash" />
     <icon drawable="@drawable/resso" package="com.moonvideo.android.resso" />
     <icon drawable="@drawable/rethink" package="com.celzero.bravedns" />
-    <icon drawable="@drawable/retouch" package="com.advasoft.touchretouch" />
+    <icon drawable="@drawable/retouch_advasoft" package="com.advasoft.touchretouch" />
+    <icon drawable="@drawable/retrica" package="com.venticake.retrica" />
     <icon drawable="@drawable/retro_music" package="code.name.monkey.retromusic" />
     <icon drawable="@drawable/retro_music" package="io.github.muntashirakon.Music" />
     <icon drawable="@drawable/retro_music" package="io.github.muntashirakon.Music.debug" />
     <icon drawable="@drawable/retroarch" package="com.retroarch" />
     <icon drawable="@drawable/retroarch" package="com.retroarch.aarch64" />
     <icon drawable="@drawable/revanced_extended" package="app.rvx.android.youtube" />
+    <icon drawable="@drawable/revanced_extended" package="yt.rvx.noname.exe" />
     <icon drawable="@drawable/reverso_context" package="com.softissimo.reverso.context" />
     <icon drawable="@drawable/revolt" package="chat.revolt.app.twa" />
     <icon drawable="@drawable/revolt" package="com.revolt" />
@@ -2873,6 +3229,7 @@
     <icon drawable="@drawable/rocketeng" package="com.edpanda.words" />
     <icon drawable="@drawable/rockman_x_dive" package="tw.com.capcom.rxd" />
     <icon drawable="@drawable/roku" package="com.roku.remote" />
+    <icon drawable="@drawable/roll_twenty" package="net.roll20.player" />
     <icon drawable="@drawable/root_browser" package="com.jrummy.root.browserfree" />
     <icon drawable="@drawable/root_checker" package="com.joeykrim.rootcheck" />
     <icon drawable="@drawable/root_explorer" package="com.speedsoftware.rootexplorer" />
@@ -2883,13 +3240,19 @@
     <icon drawable="@drawable/rr3" package="com.ea.games.r3_row" />
     <icon drawable="@drawable/rrb_je_app" package="com.edurev.rrbje" />
     <icon drawable="@drawable/rtl" package="de.rtli.tvnow" />
+    <icon drawable="@drawable/ruler" package="fr.ecp.ruler.app" />
+    <icon drawable="@drawable/ruler_app" package="net.kosev.rulering" />
     <icon drawable="@drawable/russia_vpn" package="vpn.russia_tap2free" />
+    <icon drawable="@drawable/russian_language_quiz" package="com.yugyd.russianlanguagequiz" />
     <icon drawable="@drawable/russian_post" package="com.octopod.russianpost.client.android" />
+    <icon drawable="@drawable/russian_spelling" package="com.greenkeycompany.exam" />
     <icon drawable="@drawable/rustdesk" package="com.carriez.flutter_hbb" />
     <icon drawable="@drawable/rustore" package="ru.vk.store" />
     <icon drawable="@drawable/ruthless_launcher" package="shubh.ruthless" />
     <icon drawable="@drawable/rutube" package="ru.rutube.app" />
     <icon drawable="@drawable/rvk" package="koeln.kvb.ticket.rvkapp" />
+    <icon drawable="@drawable/rvx_manager" package="app.rvx.manager.flutter" />
+    <icon drawable="@drawable/rxlocal" package="com.newtechsys.rxlocalmobile" />
     <icon drawable="@drawable/ryanair" package="com.ryanair.cheapflights" />
     <icon drawable="@drawable/s_idcheck" package="com.entersekt.authapp.sparkasse" />
     <icon drawable="@drawable/s_invest" package="com.starfinanz.mobile.android.invest" />
@@ -2903,11 +3266,19 @@
     <icon drawable="@drawable/saikou" package="ani.saikou.beta" />
     <icon drawable="@drawable/salat" package="com.greentech.salatbn" />
     <icon drawable="@drawable/salesforce" package="com.salesforce.chatter" />
+    <icon drawable="@drawable/salt_player" package="com.salt.music" />
     <icon drawable="@drawable/sams_club" package="com.rfi.sams.android" />
+    <icon drawable="@drawable/samsung_cloud" package="com.samsung.android.scloud" />
+    <icon drawable="@drawable/samsung_contacts" package="com.samsung.android.app.contacts" />
+    <icon drawable="@drawable/samsung_contacts" package="com.samsung.android.contacts" />
     <icon drawable="@drawable/samsung_email" package="com.android.email" />
     <icon drawable="@drawable/samsung_email" package="com.samsung.android.email.provider" />
+    <icon drawable="@drawable/samsung_finder" package="com.samsung.android.app.galaxyfinder" />
+    <icon drawable="@drawable/samsung_flow" package="com.samsung.android.galaxycontinuity" />
+    <icon drawable="@drawable/samsung_game_plugins" package="com.samsung.android.game.gamelab" />
     <icon drawable="@drawable/samsung_global_goals" package="com.samsung.sree" />
     <icon drawable="@drawable/samsung_health" package="com.sec.android.app.shealth" />
+    <icon drawable="@drawable/samsung_health_monitor" package="com.samsung.android.shealthmonitor" />
     <icon drawable="@drawable/samsung_health_monitor" package="com.sec.android.shealthmonitors" />
     <icon drawable="@drawable/samsung_internet_browser" package="com.sec.android.app.sbrowser" />
     <icon drawable="@drawable/samsung_internet_browser_beta" package="com.sec.android.app.sbrowser.beta" />
@@ -2917,10 +3288,17 @@
     <icon drawable="@drawable/samsung_members" package="com.samsung.android.voc" />
     <icon drawable="@drawable/samsung_music" package="com.sec.android.app.music" />
     <icon drawable="@drawable/samsung_notes" package="com.samsung.android.app.notes" />
+    <icon drawable="@drawable/samsung_pass" package="com.samsung.android.samsungpass" />
+    <icon drawable="@drawable/samsung_pay" package="com.samsung.android.spay" />
     <icon drawable="@drawable/samsung_pay_mini" package="com.samsung.android.spaymini" />
     <icon drawable="@drawable/samsung_reminder" package="com.samsung.android.app.reminder" />
+    <icon drawable="@drawable/samsung_routines" package="com.samsung.android.app.routines" />
     <icon drawable="@drawable/samsung_secure_folder" package="com.samsung.knox.securefolder" />
     <icon drawable="@drawable/samsung_shop" package="com.samsung.ecomm" />
+    <icon drawable="@drawable/samsung_shop" package="com.samsung.shop" />
+    <icon drawable="@drawable/samsung_sound_assistant" package="com.samsung.android.soundassistant" />
+    <icon drawable="@drawable/samsung_theme_park" package="com.samsung.android.themedesigner" />
+    <icon drawable="@drawable/samsung_tv_plus" package="com.samsung.android.tvplus" />
     <icon drawable="@drawable/samsung_video_library" package="com.samsung.android.videolist" />
     <icon drawable="@drawable/samsung_weather" package="com.sec.android.daemonapp" />
     <icon drawable="@drawable/samulas" package="com.asis.samulas" />
@@ -2932,14 +3310,17 @@
     <icon drawable="@drawable/saucenao" package="com.luk.saucenao" />
     <icon drawable="@drawable/savee" package="it.savee.app" />
     <icon drawable="@drawable/savefrom_helper" package="com.example.savefromNex" />
+    <icon drawable="@drawable/savertuner" package="s1m.savertuner" />
     <icon drawable="@drawable/sbb_mobile" package="ch.sbb.mobile.android.b2c" />
     <icon drawable="@drawable/sber" package="ru.sberbankmobile" />
     <icon drawable="@drawable/sber_mega_market" package="ru.goods.marketplace" />
     <icon drawable="@drawable/sbi_rewardz" package="com.freedomrewardz" />
     <icon drawable="@drawable/sc_india" package="air.app.scb.breeze.android.main.in.prod" />
     <icon drawable="@drawable/scalable_capital" package="capital.scalable.droid" />
+    <icon drawable="@drawable/scanner" package="com.transsion.scanningrecharger" />
     <icon drawable="@drawable/scanner" package="com.xiaomi.scanner" />
     <icon drawable="@drawable/scb_easy" package="com.scb.phone" />
+    <icon drawable="@drawable/scene5" package="com.omarea.vtools" />
     <icon drawable="@drawable/scene_plus" package="com.scene.mobile" />
     <icon drawable="@drawable/schildichat" package="de.spiritcroc.riotx" />
     <icon drawable="@drawable/schoolplanner" package="daldev.android.gradehelper" />
@@ -2952,18 +3333,24 @@
     <icon drawable="@drawable/screen_dimmer" package="com.github.ericytsang.screenfilter.app.android" />
     <icon drawable="@drawable/screen_master" package="pro.capture.screenshot" />
     <icon drawable="@drawable/screen_recorder" package="com.miui.screenrecorder" />
+    <icon drawable="@drawable/screen_recorder_naveensingh" package="com.linuxauthority.screenrecorder" />
     <icon drawable="@drawable/screencam" package="com.orpheusdroid.screenrecorder" />
     <icon drawable="@drawable/screeno" package="com.bytelogs.screenrecorder" />
     <icon drawable="@drawable/screenshot_tile_noroot" package="com.github.cvzi.screenshottile" />
+    <icon drawable="@drawable/scruff" package="com.appspot.scruffapp" />
     <icon drawable="@drawable/scummvm" package="org.scummvm.scummvm" />
     <icon drawable="@drawable/sd_maid" package="eu.thedarken.sdm" />
     <icon drawable="@drawable/sd_maid" package="eu.thedarken.sdm.unlocker" />
     <icon drawable="@drawable/sd_maid_se" package="eu.darken.sdmse" />
+    <icon drawable="@drawable/sdui" package="com.sdui.sdui" />
     <icon drawable="@drawable/seal" package="com.junkfood.seal" />
     <icon drawable="@drawable/search_by_image" package="com.thinkfree.searchbyimage" />
+    <icon drawable="@drawable/sectograph" package="prox.lab.calclock" />
     <icon drawable="@drawable/secure_56" package="com.secure56.app" />
+    <icon drawable="@drawable/securego_plus" package="de.fiduciagad.securego.wl" />
     <icon drawable="@drawable/seedvault" package="com.stevesoltys.seedvault" />
     <icon drawable="@drawable/seguimientoescolar" package="com.ambikon.seguimientoescolar" />
+    <icon drawable="@drawable/send_files_to_tv" package="com.yablio.sendfilestotv" />
     <icon drawable="@drawable/sendit" package="com.fullsenders.sendit" />
     <icon drawable="@drawable/sennheiser_smart_control" package="com.sennheiser.control" />
     <icon drawable="@drawable/sense" package="com.f0x1d.sense" />
@@ -2980,12 +3367,15 @@
     <icon drawable="@drawable/settings" package="com.android.settings" />
     <icon drawable="@drawable/seven" package="se.perigee.android.seven" />
     <icon drawable="@drawable/seven_eleven" package="asuk.com.android.app" />
+    <icon drawable="@drawable/seven_zipper" package="org.joa.zipperplus7" />
     <icon drawable="@drawable/sgk" package="ru.sibgenco.general" />
     <icon drawable="@drawable/shadow_fight_2" package="com.nekki.shadowfight" />
     <icon drawable="@drawable/shadowsocks" package="com.github.shadowsocks" />
     <icon drawable="@drawable/share" package="com.hengye.share" />
     <icon drawable="@drawable/share_me" package="com.xiaomi.midrop" />
     <icon drawable="@drawable/share_me" package="com.xiaomi.midrop.SplashScreen" />
+    <icon drawable="@drawable/share_now" package="com.car2go" />
+    <icon drawable="@drawable/sharechat" package="in.mohalla.sharechat" />
     <icon drawable="@drawable/shareit" package="com.lenovo.anyshare.gps" />
     <icon drawable="@drawable/shareit" package="shareit.lite" />
     <icon drawable="@drawable/shattered_pixel_dungeon" package="com.shatteredpixel.shatteredpixeldungeon" />
@@ -2993,6 +3383,7 @@
     <icon drawable="@drawable/shein" package="com.zzkko" />
     <icon drawable="@drawable/shelly" package="allterco.bg.shelly" />
     <icon drawable="@drawable/shelter" package="net.typeblog.shelter" />
+    <icon drawable="@drawable/shikimori_app" package="com.gnoemes.shikimori" />
     <icon drawable="@drawable/shiori" package="com.miraisoft.shiori" />
     <icon drawable="@drawable/shiori" package="com.starryai" />
     <icon drawable="@drawable/shizuku" package="moe.shizuku.privileged.api" />
@@ -3006,8 +3397,8 @@
     <icon drawable="@drawable/shopee" package="com.shopee.tw" />
     <icon drawable="@drawable/shopee" package="com.shopee.vn" />
     <icon drawable="@drawable/shopify_shop" package="com.shopify.arrive" />
+    <icon drawable="@drawable/shopsy" package="com.flipkart.shopsy" />
     <icon drawable="@drawable/shopsy" package="com.shopsy.shopsyapp" />
-    <icon drawable="@drawable/shopsy_in" package="com.flipkart.shopsy" />
     <icon drawable="@drawable/shortcut_creator" package="com.x7890.shortcutcreator" />
     <icon drawable="@drawable/shortcut_maker" package="rk.android.app.shortcutmaker" />
     <icon drawable="@drawable/shosetsu" package="app.shosetsu.android.fdroid" />
@@ -3043,12 +3434,15 @@
     <icon drawable="@drawable/simply_bank" package="kz.simply" />
     <icon drawable="@drawable/simply_wall_st" package="com.simplywallst.app" />
     <icon drawable="@drawable/simplytranslate" package="com.simplytranslate_mobile" />
+    <icon drawable="@drawable/simsimi" package="com.ismaker.android.simsimi" />
     <icon drawable="@drawable/singabus" package="sg.cotton.singabus" />
     <icon drawable="@drawable/sked" package="com.sked.core" />
     <icon drawable="@drawable/sketchbook" package="com.adsk.sketchbook" />
+    <icon drawable="@drawable/skiff_mail" package="com.skemailmobileapp" />
     <icon drawable="@drawable/skiline" package="cc.skiline.android" />
     <icon drawable="@drawable/skillshare" package="com.skillshare.Skillshare" />
     <icon drawable="@drawable/skip_ads" package="com.plustwo.skipads" />
+    <icon drawable="@drawable/skit" package="com.pavelrekun.skit" />
     <icon drawable="@drawable/skit_premium___apps_manager" package="com.pavelrekun.skit.premium" />
     <icon drawable="@drawable/skred" package="mobi.skred.app" />
     <icon drawable="@drawable/sky_children_of_the_light" package="com.tgc.sky.android" />
@@ -3063,13 +3457,17 @@
     <icon drawable="@drawable/sliceit" package="indwin.c3.shareapp" />
     <icon drawable="@drawable/slide_reddit" package="me.ccrama.redditslide" />
     <icon drawable="@drawable/slidebox" package="co.slidebox" />
+    <icon drawable="@drawable/slitherio" package="air.com.hypah.io.slither" />
     <icon drawable="@drawable/slowly" package="com.slowlyapp" />
+    <icon drawable="@drawable/smallcase" package="com.smallcase.android" />
     <icon drawable="@drawable/smart_audiobook_player" package="ak.alizandro.smartaudiobookplayer" />
     <icon drawable="@drawable/smart_autoclicker" package="com.buzbuz.smartautoclicker" />
     <icon drawable="@drawable/smart_gigalife" package="com.smart.consumer.app" />
+    <icon drawable="@drawable/smart_life" package="com.tuya.smartlife" />
     <icon drawable="@drawable/smart_switch" package="com.sec.android.easyMover" />
     <icon drawable="@drawable/smartbank" package="com.tallium.eubank.smartbank" />
     <icon drawable="@drawable/smarthz" package="com.naprzod.smarthertz" />
+    <icon drawable="@drawable/smartid" package="com.smart_id" />
     <icon drawable="@drawable/smartpack_kernel_manager" package="com.smartpack.kernelmanager" />
     <icon drawable="@drawable/smartpack_kernel_manager" package="com.smartpack.kernelmanager.pro" />
     <icon drawable="@drawable/smartpack_kernel_manager" package="com.smartpack.kernelmanager.release" />
@@ -3079,10 +3477,13 @@
     <icon drawable="@drawable/smash" package="com.smashco.smash" />
     <icon drawable="@drawable/smash_hit" package="com.mediocre.smashhit" />
     <icon drawable="@drawable/sms_backup_restore" package="com.riteshsahu.SMSBackupRestore" />
+    <icon drawable="@drawable/sms_import_export" package="com.github.tmo1.sms_ie" />
     <icon drawable="@drawable/sms_organizer" package="com.github.tianma8023.xposed.smscode" />
     <icon drawable="@drawable/sms_organizer" package="com.microsoft.android.smsorganizer" />
     <icon drawable="@drawable/smudgess" package="com.gng.smudgess" />
+    <icon drawable="@drawable/smule" package="com.smule.singandroid" />
     <icon drawable="@drawable/smzdm" package="com.smzdm.client.android" />
+    <icon drawable="@drawable/snackvideo" package="com.kwai.bulldog" />
     <icon drawable="@drawable/snake_vs_block" package="com.bentostudio.ballsvsblocks" />
     <icon drawable="@drawable/snapchat" package="com.snapchat.android" />
     <icon drawable="@drawable/snapdeal" package="com.snapdeal.main" />
@@ -3098,10 +3499,11 @@
     <icon drawable="@drawable/sobriety" package="com.katiearose.sobriety" />
     <icon drawable="@drawable/socl" package="com.ijsoft.socl" />
     <icon drawable="@drawable/socmark" package="com.nasoft.socmark" />
-    <icon drawable="@drawable/sofa_score" package="com.sofascore.results" />
+    <icon drawable="@drawable/sofascore" package="com.sofascore.results" />
     <icon drawable="@drawable/solarweb" package="com.fronius.solarweb" />
     <icon drawable="@drawable/solid_explorer" package="pl.solidexplorer2" />
     <icon drawable="@drawable/solitaires" package="com.anoshenko.android.solitaires" />
+    <icon drawable="@drawable/solo_launcher" package="home.solo.launcher.free" />
     <icon drawable="@drawable/sololearn" package="com.sololearn" />
     <icon drawable="@drawable/sonic" package="com.gameloft.android.ANMP.GloftICHM" />
     <icon drawable="@drawable/sonic" package="com.sega.sonic1px" />
@@ -3114,8 +3516,16 @@
     <icon drawable="@drawable/sonic" package="com.sega.sprint" />
     <icon drawable="@drawable/sonic" package="com.sonicjump.sonicjump" />
     <icon drawable="@drawable/sonos" package="com.sonos.acr2" />
+    <icon drawable="@drawable/sony_cinema_pro" package="com.sonymobile.cinemapro" />
+    <icon drawable="@drawable/sony_email" package="com.sonymobile.email" />
+    <icon drawable="@drawable/sony_game_enhancer" package="com.sonymobile.gameenhancer" />
+    <icon drawable="@drawable/sony_liv" package="com.sonyliv" />
     <icon drawable="@drawable/sony_music" package="com.sonyericsson.music" />
     <icon drawable="@drawable/sony_music_center" package="com.sony.songpal" />
+    <icon drawable="@drawable/sony_music_pro" package="jp.co.sony.mc.musicpro" />
+    <icon drawable="@drawable/sony_photography_pro" package="com.sonymobile.photopro" />
+    <icon drawable="@drawable/sony_sketch" package="com.sonymobile.sketch" />
+    <icon drawable="@drawable/sony_support" package="com.sonymobile.support" />
     <icon drawable="@drawable/soul" package="com.mycompany.app.soulbrowser" />
     <icon drawable="@drawable/soul_knight" package="com.ChillyRoom.DungeonShooter" />
     <icon drawable="@drawable/sound_ampilifer" package="com.google.android.accessibility.soundamplifier" />
@@ -3125,6 +3535,7 @@
     <icon drawable="@drawable/soundbound" package="in.shabinder.soundbound" />
     <icon drawable="@drawable/soundcloud" package="com.soundcloud.android" />
     <icon drawable="@drawable/soundcore" package="com.oceanwing.soundcore" />
+    <icon drawable="@drawable/soundhound" package="com.melodis.midomiMusicIdentifier.freemium" />
     <icon drawable="@drawable/soundid" package="com.sonarworks.soundid.mobile" />
     <icon drawable="@drawable/soundpeats" package="com.thirtydays.headset" />
     <icon drawable="@drawable/sova_five" package="re.sova.five" />
@@ -3132,6 +3543,7 @@
     <icon drawable="@drawable/spark_email" package="com.readdle.spark" />
     <icon drawable="@drawable/sparkasse" package="com.starfinanz.smob.android.sfinanzstatus" />
     <icon drawable="@drawable/spectra" package="com.mahersafadi.spectra" />
+    <icon drawable="@drawable/spectroid" package="org.intoorbit.spectrum" />
     <icon drawable="@drawable/speedtest_by_ookla" package="org.zwanoo.android.speedtest" />
     <icon drawable="@drawable/spells_list_5e" package="com.delsorboilario.dnd" />
     <icon drawable="@drawable/spike" package="com.pingapp.app" />
@@ -3141,24 +3553,32 @@
     <icon drawable="@drawable/spotiflyer" package="com.shabinder.spotiflyer" />
     <icon drawable="@drawable/spotify" package="com.spotify.lite" />
     <icon drawable="@drawable/spotify" package="com.spotify.music" />
+    <icon drawable="@drawable/spotify" package="com.spotify.musix" />
+    <icon drawable="@drawable/spotify_artists" package="com.spotify.s4a" />
+    <icon drawable="@drawable/spotify_podcasters" package="fm.anchor.android" />
     <icon drawable="@drawable/spotube" package="oss.krtirtho.spotube" />
     <icon drawable="@drawable/spowlo" package="com.bobbyesp.spowlo" />
     <icon drawable="@drawable/spritpreise" package="org.woheller69.spritpreise" />
+    <icon drawable="@drawable/square_home" package="com.ss.squarehome2" />
     <icon drawable="@drawable/square_inpic" package="com.studio8apps.instasizenocrop" />
     <icon drawable="@drawable/squawker" package="org.ca.squawker" />
     <icon drawable="@drawable/squircle" package="com.blacksquircle.ui" />
     <icon drawable="@drawable/sram_axs" package="com.sram.armyknife" />
+    <icon drawable="@drawable/sse" package="com.bandainamcoent.imas_millionlive_theaterdays" />
     <icon drawable="@drawable/stack" package="me.tylerbwong.stack" />
     <icon drawable="@drawable/standard_notes" package="com.standardnotes" />
+    <icon drawable="@drawable/star_walk_2" package="com.vitotechnology.StarWalk2Free" />
     <icon drawable="@drawable/starbucks" package="com.starbucks.cn" />
     <icon drawable="@drawable/starhub_app" package="com.starhub.csselfhelp" />
     <icon drawable="@drawable/stark_hantel" package="se.virtualtrainer.dumbbell" />
+    <icon drawable="@drawable/starling" package="com.starlingbank.android" />
+    <icon drawable="@drawable/starth" package="me.liaoheng.wallpaper" />
     <icon drawable="@drawable/starwalk" package="com.vitotechnology.StarWalk" />
-    <icon drawable="@drawable/starwalk" package="com.vitotechnology.StarWalk2Free" />
     <icon drawable="@drawable/starwarsheroes" package="com.ea.game.starwarscapital_row" />
     <icon drawable="@drawable/state_of_survival" package="com.kingsgroup.sos" />
     <icon drawable="@drawable/stats_fm" package="dev.netlob.spotistats" />
     <icon drawable="@drawable/stay_awake" package="org.hatapps.stayawake" />
+    <icon drawable="@drawable/stay_fit_gym" package="ro.stayfit" />
     <icon drawable="@drawable/stealth" package="com.cosmos.unreddit" />
     <icon drawable="@drawable/stealth_player" package="com.appsbyusman.stealthaudioplayer" />
     <icon drawable="@drawable/steam" package="com.valvesoftware.android.steam.community" />
@@ -3185,11 +3605,12 @@
     <icon drawable="@drawable/street_fighter_iv_ce" package="jp.co.capcom.sf4ce" />
     <icon drawable="@drawable/streetcomplete" package="de.westnordost.streetcomplete" />
     <icon drawable="@drawable/streetcomplete" package="de.westnordost.streetcomplete.expert" />
+    <icon drawable="@drawable/streetmeasure" package="de.westnordost.streetmeasure" />
     <icon drawable="@drawable/streets_of_rage_4" package="com.playdigious.sor4" />
     <icon drawable="@drawable/stremio" package="com.stremio.one" />
     <icon drawable="@drawable/strong_workout_tracker" package="io.strongapp.strong" />
     <icon drawable="@drawable/student_beans" package="com.studentbeans.studentbeans" />
-    <icon drawable="@drawable/stuff_widget" package="com.stuff.todo" />
+    <icon drawable="@drawable/stuff_to_do" package="com.stuff.todo" />
     <icon drawable="@drawable/styx_browser" package="com.jamal2367.styx" />
     <icon drawable="@drawable/subito" package="it.subito" />
     <icon drawable="@drawable/substratum" package="projekt.substratum" />
@@ -3203,13 +3624,17 @@
     <icon drawable="@drawable/super_mario_run" package="com.nintendo.zara" />
     <icon drawable="@drawable/super_retro_mega_wars" package="com.serwylo.retrowars" />
     <icon drawable="@drawable/super_status_bar" package="com.tombayley.statusbar" />
+    <icon drawable="@drawable/superbeam" package="com.majedev.superbeam" />
     <icon drawable="@drawable/superfreezz" package="superfreeze.tool.android" />
     <icon drawable="@drawable/superimage" package="com.zhenxiang.superimage" />
+    <icon drawable="@drawable/supertuxkart" package="org.supertuxkart.stk" />
     <icon drawable="@drawable/surfshark" package="com.surfshark.vpnclient.android" />
     <icon drawable="@drawable/survival_manual" package="org.ligi.survivalmanual" />
+    <icon drawable="@drawable/svplayer" package="com.svpteam.svp" />
     <icon drawable="@drawable/swapper" package="com.allakore.swapper" />
     <icon drawable="@drawable/sweatcoin" package="in.sweatco.app" />
     <icon drawable="@drawable/sweech" package="com.sweech" />
+    <icon drawable="@drawable/sweet_selfie" package="com.cam001.selfie" />
     <icon drawable="@drawable/swift_backup" package="org.swiftapps.swiftbackup" />
     <icon drawable="@drawable/swiggy" package="in.swiggy.android" />
     <icon drawable="@drawable/swish" package="se.bankgirot.swish" />
@@ -3217,10 +3642,13 @@
     <icon drawable="@drawable/swissid" package="com.swisssign.swissid.mobile" />
     <icon drawable="@drawable/switchguide" package="com.daydream.sn" />
     <icon drawable="@drawable/symfonium" package="app.symfonik.music.player" />
+    <icon drawable="@drawable/symphony" package="io.github.zyrouge.symphony" />
     <icon drawable="@drawable/sync" package="com.laurencedawson.reddit_sync" />
     <icon drawable="@drawable/sync" package="com.laurencedawson.reddit_sync.dev" />
     <icon drawable="@drawable/sync" package="com.laurencedawson.reddit_sync.pro" />
+    <icon drawable="@drawable/sync_for_lemmy" package="io.syncapps.lemmy_sync" />
     <icon drawable="@drawable/syncthing" package="com.github.catfriend1.syncthingandroid" />
+    <icon drawable="@drawable/syncthing" package="com.github.catfriend1.syncthingandroid.debug" />
     <icon drawable="@drawable/syncthing" package="com.nutomic.syncthingandroid" />
     <icon drawable="@drawable/systemui_tuner" package="com.zacharee1.systemuituner" />
     <icon drawable="@drawable/sysuitunernoads" package="org.aospstudio.systemtuner" />
@@ -3239,6 +3667,7 @@
     <icon drawable="@drawable/talon" package="com.klinker.android.twitter_l" />
     <icon drawable="@drawable/tandem" package="net.tandem" />
     <icon drawable="@drawable/tangerine" package="ca.tangerine.clients.banking.app" />
+    <icon drawable="@drawable/tango" package="com.sgiggle.production" />
     <icon drawable="@drawable/taobao" package="com.taobao.taobao" />
     <icon drawable="@drawable/taopiaopiao" package="com.taobao.movie.android" />
     <icon drawable="@drawable/tap_az" package="org.tapaz.android" />
@@ -3250,6 +3679,7 @@
     <icon drawable="@drawable/taptap" package="com.kieronquinn.app.taptap" />
     <icon drawable="@drawable/taptap" package="com.taptap.global" />
     <icon drawable="@drawable/target" package="com.lasoo.android.target" />
+    <icon drawable="@drawable/target" package="com.target.ui" />
     <icon drawable="@drawable/targobank" package="com.targo_prod.bad" />
     <icon drawable="@drawable/tarteel" package="com.mmmoussa.iqra" />
     <icon drawable="@drawable/taskbar" package="com.farmerbb.taskbar" />
@@ -3294,8 +3724,10 @@
     <icon drawable="@drawable/temp_mail" package="com.tempmail" />
     <icon drawable="@drawable/tempest" package="com.weatherflow.smartweather" />
     <icon drawable="@drawable/tencentmeeting" package="com.tencent.wemeet.app" />
+    <icon drawable="@drawable/tenda_wifi" package="com.tenda.router.app" />
     <icon drawable="@drawable/teo" package="com.eightbitlab.teo" />
     <icon drawable="@drawable/terabox" package="com.dubox.drive" />
+    <icon drawable="@drawable/terminal_emulator" package="jackpal.androidterm" />
     <icon drawable="@drawable/termius" package="com.server.auditor.ssh.client" />
     <icon drawable="@drawable/termux" package="com.termux" />
     <icon drawable="@drawable/termux" package="com.termux.api" />
@@ -3308,6 +3740,7 @@
     <icon drawable="@drawable/tesla" package="com.teslamotors.tesla" />
     <icon drawable="@drawable/testbook" package="com.testbook.tbapp" />
     <icon drawable="@drawable/testbook" package="com.testbook.tbapp.rrbjeme" />
+    <icon drawable="@drawable/testy" package="com.robertlevonyan.testy" />
     <icon drawable="@drawable/tether" package="com.tplink.tether" />
     <icon drawable="@drawable/tetris" package="com.n3twork.tetris" />
     <icon drawable="@drawable/teufel" package="com.raumfeld.android.controller" />
@@ -3321,9 +3754,12 @@
     <icon drawable="@drawable/thanox" package="github.tornaco.android.thanos" />
     <icon drawable="@drawable/thanox" package="github.tornaco.android.thanos.pro" />
     <icon drawable="@drawable/the_battle_cats" package="jp.co.ponos.battlecatsen" />
+    <icon drawable="@drawable/the_couple" package="com.ibillstudio.thedaycouple" />
     <icon drawable="@drawable/the_economist" package="com.economist.lamarr" />
     <icon drawable="@drawable/the_guardian_editions" package="com.guardian.editions" />
+    <icon drawable="@drawable/the_race" package="com.theracemadialtd.therace" />
     <icon drawable="@drawable/the_souled_store" package="com.thesouledstore" />
+    <icon drawable="@drawable/the_weather_channel" package="com.weather.Weather" />
     <icon drawable="@drawable/theathletic" package="com.theathletic" />
     <icon drawable="@drawable/themed_icon_calendar_31" package="com.android.calendar" />
     <icon drawable="@drawable/themed_icon_calendar_31" package="com.blackberry.calendar" />
@@ -3354,6 +3790,8 @@
     <icon drawable="@drawable/threes" package="vo.threes.free" />
     <icon drawable="@drawable/thumper" package="com.Drool.ThumperPocketEdition" />
     <icon drawable="@drawable/thunder" package="com.hjiangsu.thunder" />
+    <icon drawable="@drawable/tice" package="app.tice.TICE.production" />
+    <icon drawable="@drawable/ticketmaster" package="com.ticketmaster.mobile.android.na" />
     <icon drawable="@drawable/ticketmaster" package="com.ticketmaster.tickets.international" />
     <icon drawable="@drawable/ticktick" package="cn.ticktick.task" />
     <icon drawable="@drawable/ticktick" package="com.ticktick.task" />
@@ -3392,6 +3830,7 @@
     <icon drawable="@drawable/tinkoff_accounting" package="ru.tinkoff.accounting" />
     <icon drawable="@drawable/tinkoff_invest" package="ru.tinkoff.investing" />
     <icon drawable="@drawable/tinkoff_mobile" package="ru.tinkoff.mvno" />
+    <icon drawable="@drawable/tinkoff_work" package="ru.tinkoff.twork" />
     <icon drawable="@drawable/tiny_weather_forecast" package="de.kaffeemitkoffein.tinyweatherforecastgermany" />
     <icon drawable="@drawable/tipico" package="de.tipico.games" />
     <icon drawable="@drawable/tipico" package="tipico.sports" />
@@ -3402,12 +3841,14 @@
     <icon drawable="@drawable/tk" package="de.tk.tkapp" />
     <icon drawable="@drawable/tmg" package="me.thedise.tmg" />
     <icon drawable="@drawable/to_dont" package="rocks.poopjournal.todont" />
+    <icon drawable="@drawable/todai_easy_japanese" package="mobi.eup.jpnews" />
     <icon drawable="@drawable/today_weather" package="mobi.lockdown.weather" />
     <icon drawable="@drawable/todo_mate" package="com.undefined.mate" />
     <icon drawable="@drawable/todoist" package="com.todoist" />
     <icon drawable="@drawable/todus" package="cu.todus.android" />
     <icon drawable="@drawable/toffee" package="com.banglalink.toffee" />
     <icon drawable="@drawable/togetherprice" package="com.togetherprice" />
+    <icon drawable="@drawable/toi" package="com.toi.reader.activities" />
     <icon drawable="@drawable/tokopedia" package="com.tokopedia.tkpd" />
     <icon drawable="@drawable/tolino" package="com.mytolino.app" />
     <icon drawable="@drawable/tonkeeper" package="com.ton_keeper" />
@@ -3433,18 +3874,25 @@
     <icon drawable="@drawable/tradingview" package="com.tradingview.tradingviewapp" />
     <icon drawable="@drawable/traewelldroid" package="de.hbch.traewelling" />
     <icon drawable="@drawable/trail_sense" package="com.kylecorry.trail_sense" />
+    <icon drawable="@drawable/trailforks" package="com.pinkbike.trailforks" />
     <icon drawable="@drawable/train_timetable_italy" package="org.paoloconte.treni_lite" />
     <icon drawable="@drawable/trakt" package="tv.trakt.trakt" />
+    <icon drawable="@drawable/transistor_radio" package="org.y20k.transistor" />
     <icon drawable="@drawable/transit" package="com.thetransitapp.droid" />
+    <icon drawable="@drawable/transitdb" package="ca.transitdb.mobile.android" />
     <icon drawable="@drawable/translate_you" package="com.bnyro.translate" />
+    <icon drawable="@drawable/translate_you" package="com.bnyro.translate.nf" />
     <icon drawable="@drawable/transportr" package="de.grobox.liberario" />
     <icon drawable="@drawable/treble_info" package="tk.hack5.treblecheck" />
     <icon drawable="@drawable/trello" package="com.trello" />
     <icon drawable="@drawable/trendyol" package="trendyol.com" />
     <icon drawable="@drawable/trenit" package="eu.baroncelli.oraritrenitalia" />
     <icon drawable="@drawable/trenitalia" package="com.lynxspa.prontotreno" />
+    <icon drawable="@drawable/tricky_words" package="com.unicostudio.trickywords" />
+    <icon drawable="@drawable/tricount" package="com.tribab.tricount.android" />
     <icon drawable="@drawable/tricount" package="com.trilab.tricount.android" />
     <icon drawable="@drawable/trime" package="com.osfans.trime" />
+    <icon drawable="@drawable/trivia_crack" package="com.etermax.preguntados.lite" />
     <icon drawable="@drawable/trivory" package="com.terrenprogramming.riderapp" />
     <icon drawable="@drawable/truemoney" package="th.co.truemoney.wallet" />
     <icon drawable="@drawable/truephone" package="com.hb.dialer.free" />
@@ -3460,6 +3908,7 @@
     <icon drawable="@drawable/tumblr" package="com.tumblr" />
     <icon drawable="@drawable/tune_in_radio" package="radiotime.player" />
     <icon drawable="@drawable/tune_in_radio" package="tunein.player" />
+    <icon drawable="@drawable/tuner_pitched" package="com.stonekick.tuner" />
     <icon drawable="@drawable/tunerly" package="com.tunerly" />
     <icon drawable="@drawable/tunnelbear" package="com.tunnelbear.android" />
     <icon drawable="@drawable/turbo_az" package="org.turboaz.android" />
@@ -3474,7 +3923,9 @@
     <icon drawable="@drawable/tuya" package="com.tuya.smart" />
     <icon drawable="@drawable/tv_remote_control" package="remote.control.tv.universal.forall.roku" />
     <icon drawable="@drawable/tv_time" package="com.tozelabs.tvshowtime" />
+    <icon drawable="@drawable/tva_plus" package="tv.accedo.ott.flow.tva.quebecor" />
     <icon drawable="@drawable/twelve_club" package="com.twelve.club" />
+    <icon drawable="@drawable/twentyfourpay" package="com.twentyfourpay" />
     <icon drawable="@drawable/twewy" package="com.square_enix.android_googleplay.subarashikikonosekai_solo" />
     <icon drawable="@drawable/twidere" package="com.twidere.twiderex" />
     <icon drawable="@drawable/twidere" package="org.mariotaku.twidere" />
@@ -3484,8 +3935,6 @@
     <icon drawable="@drawable/twitch" package="tv.twitch.android.app" />
     <icon drawable="@drawable/twitch" package="tv.twitch.bttvandroid.app" />
     <icon drawable="@drawable/twitch" package="tv.twitchmod.android.app" />
-    <icon drawable="@drawable/twitter" package="com.twitter.android" />
-    <icon drawable="@drawable/twitter" package="com.twitter.android.lite" />
     <icon drawable="@drawable/two_dots" package="com.weplaydots.twodotsandroid" />
     <icon drawable="@drawable/two_zero_four_eight" package="apps.r.twothousandfortyeight" />
     <icon drawable="@drawable/two_zero_four_eight" package="com.androbaby.game2048" />
@@ -3497,6 +3946,7 @@
     <icon drawable="@drawable/two_zero_four_eight" package="game2048.b2048game.twozerofoureight2048.game" />
     <icon drawable="@drawable/twofas_auth" package="com.twofasapp" />
     <icon drawable="@drawable/txd_tool" package="com.viseksoftware.txdw" />
+    <icon drawable="@drawable/u_jing" package="com.midea.vm.washer" />
     <icon drawable="@drawable/uala" package="ar.com.bancar.uala" />
     <icon drawable="@drawable/ubank" package="az.unibank.mbanking" />
     <icon drawable="@drawable/uber" package="com.ubercab" />
@@ -3529,6 +3979,7 @@
     <icon drawable="@drawable/underlords" package="com.valvesoftware.underlords" />
     <icon drawable="@drawable/underway" package="nyc.underway.underway" />
     <icon drawable="@drawable/undok" package="com.frontier_silicon.fsirc.dok2" />
+    <icon drawable="@drawable/unexpected_keyboard" package="juloo.keyboard2" />
     <icon drawable="@drawable/uniciv" package="com.unciv.app" />
     <icon drawable="@drawable/unico" package="net.pluservice.unicoc" />
     <icon drawable="@drawable/unidays" package="com.myunidays" />
@@ -3537,6 +3988,7 @@
     <icon drawable="@drawable/unionpay" package="com.unionpay" />
     <icon drawable="@drawable/unit_converter_ultimate" package="com.physphil.android.unitconverterultimate" />
     <icon drawable="@drawable/unit_lab" package="com.samruston.converter" />
+    <icon drawable="@drawable/unitto" package="com.sadellie.unitto" />
     <icon drawable="@drawable/universal_copy" package="com.camel.corp.universalcopy" />
     <icon drawable="@drawable/uniwhere" package="lu.gian.uniwhere" />
     <icon drawable="@drawable/uno" package="com.matteljv.uno" />
@@ -3560,6 +4012,7 @@
     <icon drawable="@drawable/urent" package="ru.urentbike.app" />
     <icon drawable="@drawable/url_checker" package="com.trianguloy.urlchecker" />
     <icon drawable="@drawable/url_radio" package="com.jamal2367.urlradio" />
+    <icon drawable="@drawable/usaa" package="com.usaa.mobile.android.usaa" />
     <icon drawable="@drawable/usagedirect" package="godau.fynn.usagedirect" />
     <icon drawable="@drawable/usbcamera" package="com.Endoscope.scope" />
     <icon drawable="@drawable/usbcamera" package="com.shenyaocn.android.usbcamera" />
@@ -3576,10 +4029,13 @@
     <icon drawable="@drawable/vakif_katilim" package="com.vakifkatilim.mobil" />
     <icon drawable="@drawable/vakifbank" package="com.vakifbank.mobile" />
     <icon drawable="@drawable/valetudo" package="cloud.valetudo.companion" />
+    <icon drawable="@drawable/vampire_survivors" package="com.poncle.vampiresurvivors" />
     <icon drawable="@drawable/vanced_manager" package="com.vanced.manager" />
     <icon drawable="@drawable/vanced_manager" package="com.vanced.manager.origin" />
     <icon drawable="@drawable/vanced_youtube_music" package="com.vanced.android.apps.youtube.music" />
+    <icon drawable="@drawable/vanguard" package="com.vanguard" />
     <icon drawable="@drawable/variable_font_test" package="moe.echo.variablefonttest" />
+    <icon drawable="@drawable/vaulty" package="com.theronrogers.vaultyfree" />
     <icon drawable="@drawable/vector_asset_creator" package="com.inglesdivino.vectorassetcreator" />
     <icon drawable="@drawable/vendetta_manager" package="dev.beefers.vendetta.manager" />
     <icon drawable="@drawable/venmo" package="com.venmo" />
@@ -3598,11 +4054,13 @@
     <icon drawable="@drawable/viddit" package="aculix.viddit.downloader" />
     <icon drawable="@drawable/video_compressor" package="com.videoconverter.videocompressor" />
     <icon drawable="@drawable/video_converter_compressor" package="com.inverseai.video_converter" />
+    <icon drawable="@drawable/video_editor_movie_maker" package="com.xvideostudio.videoeditor" />
     <icon drawable="@drawable/video_editor_video_maker" package="com.movisoftnew.videoeditor" />
     <icon drawable="@drawable/video_mp3_converter" package="com.fundevs.app.mediaconverter" />
     <icon drawable="@drawable/video_to_mp3_converter" package="mp3videoconverter.videotomp3.videotomp3converter" />
     <icon drawable="@drawable/video_tv_sideview" package="com.sony.tvsideview.phone" />
     <icon drawable="@drawable/videos" package="com.heytap.yoli" />
+    <icon drawable="@drawable/viettel_money" package="com.bplus.vtpay" />
     <icon drawable="@drawable/viewpoints" package="com.facebook.viewpoints" />
     <icon drawable="@drawable/viewranger" package="com.augmentra.viewranger.android" />
     <icon drawable="@drawable/vimpay" package="net.petafuel.mobile.vimpay" />
@@ -3619,6 +4077,7 @@
     <icon drawable="@drawable/vivacut" package="com.videoeditorpro.android" />
     <icon drawable="@drawable/vivaldi" package="com.vivaldi.browser" />
     <icon drawable="@drawable/vivaldi" package="com.vivaldi.browser.snapshot" />
+    <icon drawable="@drawable/vivavideo" package="com.quvideo.xiaoying" />
     <icon drawable="@drawable/vivo" package="br.com.vivo" />
     <icon drawable="@drawable/vivo_easy" package="br.com.vivo.vivoeasy" />
     <icon drawable="@drawable/vk_calls" package="com.vk.calls" />
@@ -3636,6 +4095,7 @@
     <icon drawable="@drawable/voice_recorder" package="com.splendapps.voicerec" />
     <icon drawable="@drawable/volume_booster_goodev" package="com.goodev.volume.booster" />
     <icon drawable="@drawable/volume_styles" package="com.tombayley.volumepanel" />
+    <icon drawable="@drawable/voot" package="com.tv.v18.viola" />
     <icon drawable="@drawable/vote_info" package="ch.bk.voteinfo" />
     <icon drawable="@drawable/voter_helpline" package="com.eci.citizen" />
     <icon drawable="@drawable/vpn_govpn" package="com.free.vpn.turbo.fast.secure.govpn" />
@@ -3643,9 +4103,10 @@
     <icon drawable="@drawable/vpnclientpro" package="it.colucciweb.vpnclientpro" />
     <icon drawable="@drawable/vr_securego" package="de.fiducia.smartphone.android.securego.vr" />
     <icon drawable="@drawable/vr_securego_plus" package="de.fiduciagad.securego.vr" />
+    <icon drawable="@drawable/vridge" package="com.riftcat.vridge2" />
     <icon drawable="@drawable/vsco" package="com.vsco.cam" />
     <icon drawable="@drawable/vtb_online" package="ru.vtb24.mobilebanking.android" />
-    <icon drawable="@drawable/vtosters" package="com.vtosters.lite" />
+    <icon drawable="@drawable/vtlite" package="com.vtosters.lite" />
     <icon drawable="@drawable/vuetube" package="com.Frontesque.vuetube" />
     <icon drawable="@drawable/vuetube" package="com.Frontesque.youtube" />
     <icon drawable="@drawable/vyom" package="com.infrasoft.uboi" />
@@ -3655,6 +4116,7 @@
     <icon drawable="@drawable/waifupx" package="dg.waifu.walls" />
     <icon drawable="@drawable/waistline" package="com.waist.line" />
     <icon drawable="@drawable/wake_on_lan" package="co.uk.mrwebb.wakeonlan" />
+    <icon drawable="@drawable/wakeonlan" package="de.florianisme.wakeonlan" />
     <icon drawable="@drawable/wakeup_schedule" package="com.suda.yzune.wakeupschedule" />
     <icon drawable="@drawable/wall_x" package="com.stresscodes.wallp" />
     <icon drawable="@drawable/wall_x" package="net.xblacky.wallx" />
@@ -3668,6 +4130,7 @@
     <icon drawable="@drawable/wallipop" package="com.arrow.wallpapers.wallipop" />
     <icon drawable="@drawable/wallique" package="dev.introdructor.wallique.app" />
     <icon drawable="@drawable/wallme_wallpaper" package="com.alaory.wallmewallpaper" />
+    <icon drawable="@drawable/wallpaper_changer" package="de.j4velin.wallpaperChanger" />
     <icon drawable="@drawable/wallpaper_engine" package="io.wallpaperengine.weclient" />
     <icon drawable="@drawable/wallsweets" package="com.lazr.wallsweets" />
     <icon drawable="@drawable/walmart" package="com.walmart.android" />
@@ -3689,6 +4152,7 @@
     <icon drawable="@drawable/weather" package="com.coloros.weather2" />
     <icon drawable="@drawable/weather" package="com.meizu.flyme.weather" />
     <icon drawable="@drawable/weather" package="com.miui.weather2" />
+    <icon drawable="@drawable/weather" package="com.rlk.weathers" />
     <icon drawable="@drawable/weather" package="net.oneplus.weather" />
     <icon drawable="@drawable/weather" package="org.omnirom.omnijaws" />
     <icon drawable="@drawable/weather" package="org.secuso.privacyfriendlyweather" />
@@ -3697,6 +4161,7 @@
     <icon drawable="@drawable/weatherwise" package="com.mgprojects.weatherwise" />
     <icon drawable="@drawable/web_video_caster" package="com.instantbits.cast.webvideo" />
     <icon drawable="@drawable/webdemail" package="de.web.mobile.android.mail" />
+    <icon drawable="@drawable/webex_meet" package="com.cisco.webex.meetings" />
     <icon drawable="@drawable/webmoney" package="com.webmoney.my" />
     <icon drawable="@drawable/webnovel" package="com.qidian.Int.reader" />
     <icon drawable="@drawable/webnovel" package="com.webnovel.lite" />
@@ -3707,7 +4172,9 @@
     <icon drawable="@drawable/weibo" package="com.sina.weibocare" />
     <icon drawable="@drawable/weibo" package="com.sina.weibolite" />
     <icon drawable="@drawable/weibo" package="com.weico.international" />
+    <icon drawable="@drawable/wells_fargo" package="com.wf.wellsfargomobile" />
     <icon drawable="@drawable/werstreamt_es" package="de.wse.werstreamt.es" />
+    <icon drawable="@drawable/wetherspoon" package="com.wetherspoon.orderandpay" />
     <icon drawable="@drawable/wetter_online" package="de.wetteronline.wetterapp" />
     <icon drawable="@drawable/wetter_online" package="de.wetteronline.wetterapppro" />
     <icon drawable="@drawable/weverse_shop" package="co.benx.weply" />
@@ -3719,6 +4186,8 @@
     <icon drawable="@drawable/whatsapp" package="com.whatsapp" />
     <icon drawable="@drawable/whatsapp" package="com.yowhatsapp" />
     <icon drawable="@drawable/whatsapp_business" package="com.whatsapp.w4b" />
+    <icon drawable="@drawable/whatsapp_web_to_go" package="io.kuenzler.whatsappwebtogo" />
+    <icon drawable="@drawable/whatsauto" package="com.guibais.whatsauto" />
     <icon drawable="@drawable/where_is_my_train" package="com.whereismytrain.android" />
     <icon drawable="@drawable/whisk" package="com.foodient.whisk" />
     <icon drawable="@drawable/white_border" package="com.vector123.whiteborder" />
@@ -3726,11 +4195,14 @@
     <icon drawable="@drawable/whoosh" package="com.punicapp.whoosh" />
     <icon drawable="@drawable/widepapers" package="com.lagguy.widepapers" />
     <icon drawable="@drawable/wienmobil" package="at.wienerlinien.wienmobillab" />
+    <icon drawable="@drawable/wifi_map" package="io.wifimap.wifimap" />
+    <icon drawable="@drawable/wifi_master" package="com.halo.wifikey.wifilocating" />
     <icon drawable="@drawable/wifi_moho" package="cn.com.ruijie.magicbox" />
     <icon drawable="@drawable/wifi_moho" package="com.ruijie.wifim" />
     <icon drawable="@drawable/wifi_pcds" package="com.wmos.main" />
     <icon drawable="@drawable/wifi_pro_ftp_server" package="com.medhaapps.wififtpserver.pro" />
     <icon drawable="@drawable/wifianalyzer" package="com.vrem.wifianalyzer" />
+    <icon drawable="@drawable/wifiman" package="com.ubnt.usurvey" />
     <icon drawable="@drawable/wikipedia" package="org.wikipedia" />
     <icon drawable="@drawable/wild_rift" package="com.riotgames.league.wildrift" />
     <icon drawable="@drawable/wild_rift" package="com.riotgames.league.wildriftvn" />
@@ -3743,10 +4215,14 @@
     <icon drawable="@drawable/wireguard" package="com.wireguard.android" />
     <icon drawable="@drawable/wise" package="com.transferwise.android" />
     <icon drawable="@drawable/wish" package="com.contextlogic.wish" />
+    <icon drawable="@drawable/wish_explorer" package="com.wishexplorer" />
     <icon drawable="@drawable/wizz_air" package="com.wizzair.WizzAirApp" />
     <icon drawable="@drawable/wo_mic" package="com.wo.voice2" />
+    <icon drawable="@drawable/wolframalpha" package="com.wolfram.android.alphapro" />
+    <icon drawable="@drawable/wolframalpha_classic" package="com.wolfram.android.alpha" />
     <icon drawable="@drawable/wolt" package="com.wolt.android" />
     <icon drawable="@drawable/woo" package="pt.nostech.fera" />
+    <icon drawable="@drawable/woocer" package="com.woocer.woocommerceapp" />
     <icon drawable="@drawable/woocommerce" package="com.woocommerce.android" />
     <icon drawable="@drawable/woodbox" package="com.One.WoodenLetter" />
     <icon drawable="@drawable/wordpress" package="org.wordpress.android" />
@@ -3756,28 +4232,35 @@
     <icon drawable="@drawable/work_shift_calendar" package="com.lrhsoft.shiftercalendar" />
     <icon drawable="@drawable/workday" package="com.workday.workdroidapp" />
     <icon drawable="@drawable/worktracker" package="onedroid.worktracker" />
+    <icon drawable="@drawable/worldbox" package="com.mkarpenko.worldbox" />
     <icon drawable="@drawable/wps_office" package="cn.wps.moffice_eng" />
     <icon drawable="@drawable/wps_office_lite" package="cn.wps.moffice_i18n" />
     <icon drawable="@drawable/wps_pdf" package="cn.wps.pdf" />
     <icon drawable="@drawable/wsdot" package="gov.wa.wsdot.android.wsdot" />
-    <icon drawable="@drawable/wulkanowy" package="io.github.wulkanowy" />
+    <icon drawable="@drawable/wulkanowy_dzienniczek" package="io.github.wulkanowy" />
     <icon drawable="@drawable/wunderfind" package="com.hf.findlostdevice" />
     <icon drawable="@drawable/wynk_music" package="com.bsbportal.music" />
+    <icon drawable="@drawable/x" package="com.twitter.android" />
+    <icon drawable="@drawable/x" package="com.twitter.android.lite" />
     <icon drawable="@drawable/xbox" package="com.microsoft.xboxone.smartglass" />
     <icon drawable="@drawable/xbox" package="com.microsoft.xboxone.smartglass.beta" />
     <icon drawable="@drawable/xbox_game_pass" package="com.gamepass" />
     <icon drawable="@drawable/xbox_game_pass" package="com.gamepass.beta" />
     <icon drawable="@drawable/xda" package="com.xda.labs" />
     <icon drawable="@drawable/xda" package="com.xda.labs.play" />
+    <icon drawable="@drawable/xender" package="cn.xender" />
     <icon drawable="@drawable/xenowerk" package="com.pixelbite.mutant" />
     <icon drawable="@drawable/xhs" package="com.xingin.xhs" />
     <icon drawable="@drawable/xiaodash" package="m365.xiaodash.scooter" />
     <icon drawable="@drawable/xiaoheihe" package="com.max.xiaoheihe" />
     <icon drawable="@drawable/xiaolian" package="com.xiaolian.prometheus" />
+    <icon drawable="@drawable/xiaomi_earbuds" package="com.mi.earphone" />
+    <icon drawable="@drawable/xiaomi_games" package="com.xiaomi.glgm" />
     <icon drawable="@drawable/ximiui" package="com.xiaomiui.downloader" />
     <icon drawable="@drawable/xingtu" package="com.xt.retouch" />
     <icon drawable="@drawable/xinshang" package="me.gkd.xs.ps" />
     <icon drawable="@drawable/xiqueer" package="com.kingosoft.activity_kb_common" />
+    <icon drawable="@drawable/xkom" package="pl.xkom" />
     <icon drawable="@drawable/xmanager" package="com.xc3fff0e.xmanager" />
     <icon drawable="@drawable/xmind" package="net.xmind.doughnut" />
     <icon drawable="@drawable/xodo_pdf" package="com.xodo.pdf.reader" />
@@ -3794,11 +4277,13 @@
     <icon drawable="@drawable/xumm" package="com.xrpllabs.xumm" />
     <icon drawable="@drawable/xunlei" package="com.xunlei.downloadprovider" />
     <icon drawable="@drawable/xvii" package="com.twoeightnine.root.xvii" />
+    <icon drawable="@drawable/yahoo_finance" package="com.yahoo.mobile.client.android.finance" />
     <icon drawable="@drawable/yahoo_mail" package="com.yahoo.mobile.client.android.mail" />
     <icon drawable="@drawable/yandex" package="ru.yandex.searchplugin" />
     <icon drawable="@drawable/yandex_browser" package="com.yandex.browser" />
     <icon drawable="@drawable/yandex_disk" package="ru.yandex.disk" />
     <icon drawable="@drawable/yandex_eda" package="ru.foodfox.client" />
+    <icon drawable="@drawable/yandex_keyboard" package="ru.yandex.androidkeyboard" />
     <icon drawable="@drawable/yandex_mail" package="ru.yandex.mail" />
     <icon drawable="@drawable/yandex_maps" package="ru.yandex.yandexmaps" />
     <icon drawable="@drawable/yandex_market" package="ru.beru.android" />
@@ -3810,6 +4295,7 @@
     <icon drawable="@drawable/yandex_translate" package="ru.yandex.translate" />
     <icon drawable="@drawable/yango" package="com.yandex.yango" />
     <icon drawable="@drawable/yanosik" package="pl.neptis.yanosik.mobi.android" />
+    <icon drawable="@drawable/yasan_launcher" package="yasan.space.mnml.ai.launcher" />
     <icon drawable="@drawable/yasnac" package="rikka.safetynetchecker" />
     <icon drawable="@drawable/yazio" package="com.yazio.android" />
     <icon drawable="@drawable/yeelight" package="com.yeelight.cherry" />
@@ -3821,6 +4307,7 @@
     <icon drawable="@drawable/yettel" package="rs.telenor.mymenu" />
     <icon drawable="@drawable/ykb" package="com.ykb.android" />
     <icon drawable="@drawable/yolink" package="com.yosmart.yolink" />
+    <icon drawable="@drawable/yono_lite_sbi" package="com.sbi.SBIFreedomPlus" />
     <icon drawable="@drawable/yono_sbi" package="com.sbi.lotusintouch" />
     <icon drawable="@drawable/yoo_money" package="ru.yoo.money" />
     <icon drawable="@drawable/yota" package="ru.yota.android" />
@@ -3831,11 +4318,14 @@
     <icon drawable="@drawable/youku" package="com.youku.phone" />
     <icon drawable="@drawable/yousee_play" package="yiuo.mobile.tv" />
     <icon drawable="@drawable/yousician" package="com.yousician.yousician" />
+    <icon drawable="@drawable/youth_tb" package="ro.stbsa.ticketing" />
     <icon drawable="@drawable/youtube" package="com.google.android.youtube" />
+    <icon drawable="@drawable/youtube_go" package="com.google.android.apps.youtube.mango" />
     <icon drawable="@drawable/youtube_kids" package="com.google.android.apps.youtube.kids" />
     <icon drawable="@drawable/youtube_music" package="app.revanced.android.apps.youtube.music" />
     <icon drawable="@drawable/youtube_music" package="app.rvx.android.apps.youtube.music" />
     <icon drawable="@drawable/youtube_music" package="com.google.android.apps.youtube.music" />
+    <icon drawable="@drawable/youtube_music" package="ytm.rvx.noname.exe" />
     <icon drawable="@drawable/youtube_revanced" package="app.revanced.android.youtube" />
     <icon drawable="@drawable/youtube_revanced" package="app.revanced.manager.flutter" />
     <icon drawable="@drawable/youtube_revanced" package="com.gold.android.youtube" />
@@ -3868,6 +4358,7 @@
     <icon drawable="@drawable/zepp" package="com.huami.watch.hmwatchmanager" />
     <icon drawable="@drawable/zepp_life" package="com.xiaomi.hm.health" />
     <icon drawable="@drawable/zepto" package="com.zeptoconsumerapp" />
+    <icon drawable="@drawable/zero" package="com.zerofasting.zero" />
     <icon drawable="@drawable/zeronet" package="net.mkg20001.zeronet" />
     <icon drawable="@drawable/zeus" package="com.zeus.app" />
     <icon drawable="@drawable/zeus" package="zeuscroatia.app" />
@@ -3880,6 +4371,9 @@
     <icon drawable="@drawable/ziraat_mobile" package="com.ziraat.ziraatmobil" />
     <icon drawable="@drawable/zkb_banking" package="ch.zkb.slv.mobile.client.android" />
     <icon drawable="@drawable/zlib" package="com.positron_it.zlib" />
+    <icon drawable="@drawable/zoho_crm" package="com.zoho.crm" />
+    <icon drawable="@drawable/zoho_mail" package="com.zoho.mail" />
+    <icon drawable="@drawable/zoiper" package="com.zoiper.android.app" />
     <icon drawable="@drawable/zomato" package="com.application.zomato" />
     <icon drawable="@drawable/zoom" package="us.zoom.videomeetings" />
     <icon drawable="@drawable/zulip" package="com.zulipmobile" />

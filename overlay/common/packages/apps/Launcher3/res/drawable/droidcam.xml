@@ -7,11 +7,25 @@
         android:pathData="M118 130A22 22 0 0 1 74 130A22 22 0 0 1 118 130Z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
         android:pathData="M96 127A3 3 0 0 1 90 127A3 3 0 0 1 96 127Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M82 55A3 3 0 0 1 76 55A3 3 0 0 1 82 55Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M116 55A3 3 0 0 1 110 55A3 3 0 0 1 116 55Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
         android:pathData="M35 91v48m121 -48v48"
@@ -26,22 +40,7 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M82 55A3 3 0 0 1 76 55A3 3 0 0 1 82 55Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="6"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M116 55A3 3 0 0 1 110 55A3 3 0 0 1 116 55Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="6"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M138 70H54c1.514 -8.906 10.216 -36 42 -36s40.486 27.094 42 36Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M74 37L64 22m55 15l10 -15M60 90h72a6 6 0 0 1 6 6v68a6 6 0 0 1 -6 6H60a6 6 0 0 1 -6 -6V96a6 6 0 0 1 6 -6Z"
+        android:pathData="M138 70H54c1.514 -8.906 10.216 -36 42 -36s40.486 27.094 42 36ZM74 37L64 22m55 15l10 -15M60 90h72a6 6 0 0 1 6 6v68a6 6 0 0 1 -6 6H60a6 6 0 0 1 -6 -6V96a6 6 0 0 1 6 -6Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

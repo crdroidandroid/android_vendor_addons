@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="192"
+    android:viewportHeight="192"
+    android:width="192dp"
+    android:height="192dp">
+    <path
+        android:pathData="M121 131h24l7 -22 -12 6 -7 -12 -7 12 -12 -6z"
+        android:strokeColor="#000000"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M95.423 168H165a6 6 0 0 0 6 -6V74.371c-31.952 -7.107 -48.537 -7.215 -75.577 0V168Zm0 0H27a6 6 0 0 1 -6 -6V74.371"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M94 163c-21.47 -10.753 -27.98 -15.89 -50 -12.552V62.906c21.75 -8.587 28.27 -6.188 50 9.463"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M21 74c8.392 -2.632 23.488 -5.171 22.988 0"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M138.841 31.775a0.402 0.402 0 0 1 -0.483 -0.118 0.403 0.403 0 0 1 -0.014 -0.497 18.138 18.138 0 0 1 7.069 -5.585c9.17 -4.083 19.93 0.047 24.013 9.217 4.081 9.17 -0.048 19.93 -9.218 24.012a18.1 18.1 0 0 1 -9.047 1.498 0.4 0.4 0 0 1 -0.114 -0.778c0.041 -0.02 0.082 -0.039 0.124 -0.057 7.355 -3.275 10.564 -12.138 7.162 -19.78 -3.402 -7.64 -12.136 -11.186 -19.492 -7.912Zm-58.254 2.556c-5.577 0 -10.097 4.52 -10.097 10.096 0 -5.576 -4.52 -10.096 -10.096 -10.096 5.576 0 10.096 -4.52 10.096 -10.096 0 5.576 4.52 10.096 10.097 10.096ZM39.192 48.466c-5.576 0 -10.096 4.52 -10.096 10.096 0 -5.576 -4.52 -10.096 -10.096 -10.096 5.576 0 10.096 -4.52 10.096 -10.096 0 5.576 4.52 10.096 10.096 10.096Zm86.827 9.086c-5.576 0 -10.096 4.52 -10.096 10.097 0 -5.577 -4.52 -10.097 -10.096 -10.097 5.576 0 10.096 -4.52 10.096 -10.096 0 5.576 4.52 10.096 10.096 10.096Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

@@ -7,8 +7,8 @@
         android:pathData="M96 52v32m32 -32v32"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
     <path
         android:pathData="M34 132a6 6 0 0 0 6 6h18a6 6 0 0 1 6 6v26l32 -32h24l38 -38V28a6 6 0 0 0 -6 -6H52L34 40v92Z"
         android:strokeColor="#000000"

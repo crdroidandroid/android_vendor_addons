@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="192"
+    android:viewportHeight="192"
+    android:width="192dp"
+    android:height="192dp">
+    <path
+        android:pathData="M96 170l-16 -25 -32 14 4 -33 -30 -6 22 -24 -22 -24 30 -6 -4 -38 35 16 13 -22m0 148l16 -25 32 14 -4 -33 30 -6 -22 -24 22 -24 -30 -6 4 -38 -35 16 -13 -22"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M74.031 65.54l21.757 7.736 21.756 -7.737 -0.635 23.083 14.081 18.301 -22.149 6.529 -13.053 19.047 -13.054 -19.047 -22.15 -6.529 14.082 -18.301 -0.635 -23.083Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M96 96V74m0 22l-13 17m13 -17l13 17M96 96l-21 -8m21 8l21 -8"
+        android:strokeColor="#000000"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

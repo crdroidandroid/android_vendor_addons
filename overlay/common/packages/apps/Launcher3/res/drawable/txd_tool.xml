@@ -4,12 +4,7 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M42 30H150C157 30 162 35 162 42V85L140 64L111 94L80.9999 64L51.9999 94L29.9999 73V42C29.9999 35 34 30 42 30Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M51.9999 128L29.9999 107V150C29.9999 157 35 162 41.9999 162H150C157 162 162 157 162 150L162 119L140 98L111 128L80.9999 98L51.9999 128Z"
+        android:pathData="M42 30h108c7 0 12 5 12 12v43l-22 -21 -29 30 -30 -30 -29 30 -22 -21V42c0 -7 4 -12 12 -12Zm10 98l-22 -21v43c0 7 5 12 12 12h108c7 0 12 -5 12 -12v-31l-22 -21 -29 30 -30 -30z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineJoin="round" />

@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="192"
+    android:viewportHeight="192"
+    android:width="192dp"
+    android:height="192dp">
+    <path
+        android:pathData="M134 78V64a6 6 0 0 0 -6 -6H36a6 6 0 0 0 -6 6v100a6 6 0 0 0 6 6h92a6 6 0 0 0 6 -6v-14"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M100 40A18 18 0 0 1 64 40A18 18 0 0 1 100 40Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M66 114A18 18 0 0 1 30 114A18 18 0 0 1 66 114Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M134 78h10s0 16 16 12l10 14c-7 3 -7 10 -7 10m-29 36h10s0 -16 16 -12l10 -14c-7 -3 -7 -10 -7 -10m-29 -36h-10s0 16 -16 12l-10 14c7 3 7 10 7 10m29 36h-10s0 -16 -16 -12l-10 -14c7 -3 7 -10 7 -10"
+        android:strokeColor="#000000"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M139 114A5 5 0 0 1 129 114A5 5 0 0 1 139 114Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>
