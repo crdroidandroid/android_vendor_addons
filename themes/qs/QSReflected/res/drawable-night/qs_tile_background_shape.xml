@@ -20,9 +20,9 @@
             <item>
                 <shape android:tintMode="multiply">
                     <gradient
-                        android:angle="270.0"
-                        android:endColor="?android:colorSecondary"
-                        android:startColor="?android:colorPrimary" />
+                        android:angle="0.0"
+                        android:endColor="@*android:color/system_accent2_200"
+                        android:startColor="@*android:color/system_accent1_400" />
                     <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
                 </shape>
             </item>
