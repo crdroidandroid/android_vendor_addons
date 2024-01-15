@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- A11 QS style -->  
+    <dimen name="custom_qs_panel_padding_top">20dp</dimen>
     <dimen name="qs_tile_height">96dp</dimen>
     <dimen name="qs_tile_margin_horizontal">20dp</dimen>
     <dimen name="qs_customize_internal_side_paddings">6dp</dimen>
