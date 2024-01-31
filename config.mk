@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2023 crDroid Android Project
+# Copyright (C) 2017-2024 crDroid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +16,11 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/common
+
+ifeq ($(TARGET_HAS_UDFPS),true)
+PRODUCT_PACKAGES += \
+    UdfpsAnimations
+endif
 
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/product/etc/permissions/com.android.angle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.angle.xml \
