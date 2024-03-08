@@ -20,7 +20,7 @@
         android:versionCode="1"
         android:versionName="1.0">
     <overlay android:targetPackage="android"
-        android:category="com.android.internal.navigation_bar_mode"
+        android:category="com.android.internal.navigation_bar_hidden_mode"
         android:priority="1"/>
 
     <application android:label="@string/navigation_bar_length_hidden" android:hasCode="false"/>
