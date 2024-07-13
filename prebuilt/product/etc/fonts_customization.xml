@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fonts-modification version="1">
 
+    <!-- IOS -->
+    <family customizationType="new-named-family" name="ios">
+        <font weight="300" style="normal">ios.ttf</font>
+    </family>
+    
+    <!-- Hercules -->
+    <family customizationType="new-named-family" name="hercules">
+        <font weight="300" style="normal">hercules-text.ttf</font>
+    </family>
+    
+    <!-- Slim -->
+    <family customizationType="new-named-family" name="slim">
+        <font weight="300" style="normal">slim.ttf</font>
+    </family>
+
     <!-- Accuratist -->
     <family customizationType="new-named-family" name="accuratist">
         <font weight="400" style="normal">Accuratist.ttf</font>
