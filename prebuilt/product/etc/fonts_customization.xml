@@ -901,6 +901,14 @@
     <alias name="nokiapure-semi-bold" to="nokiapure" weight="600" />
     <alias name="nokiapure-bold" to="nokiapure" weight="700" />
 
+    <!-- Nothing -->
+    <family customizationType="new-named-family" name="subway">
+        <font weight="300" style="normal">subway.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="ntype82">
+        <font weight="300" style="normal">ntype82.ttf</font>
+    </family>
+
     <!-- Nothing Fonts -->
     <family customizationType="new-named-family" name="nothingdot">
         <font weight="400" style="normal" postScriptName="Ndot-55">NDot55Caps.otf</font>
