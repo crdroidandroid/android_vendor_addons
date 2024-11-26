@@ -101,6 +101,7 @@ PRODUCT_PACKAGES += \
     ClockFontLowerAtmosphereOverlay \
     ClockFontMessingLetternOverlay \
     ClockFontMonbijouxClownpieceOverlay \
+    ClockFontMotorola \
     ClockFontNeonDiscoOverlay \
     ClockFontNinjasOverlay \
     ClockFontNokiaPureOverlay \
