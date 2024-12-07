@@ -1064,6 +1064,22 @@
         <font weight="300" style="normal">Romantiques.ttf</font>
     </family>
 
+    <!-- Rookery -->
+    <family name="Rookery-Regular" customizationType="new-named-family">
+        <font weight="400" style="normal" postScriptName="RookeryNew-Regular">
+            Rookery-Regular.otf
+        </font>
+        <font weight="500" style="normal" postScriptName="RookeryNew-Medium">
+            Rookery-Medium.otf
+        </font>
+        <font weight="700" style="normal" postScriptName="RookeryNew-Bold">
+            Rookery-Bold.otf
+        </font>
+        <font weight="400" style="italic" postScriptName="Rookery-Italic">
+            Rookery-Italic.otf
+        </font>
+    </family>
+
     <!-- Roundheads -->
     <family customizationType="new-named-family" name="Roundheads">
         <font weight="300" style="normal">Roundheads.ttf</font>
