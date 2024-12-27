@@ -54,11 +54,11 @@
     <color name="primary_device_default_dark">#000000</color>
     <color name="primary_device_default_settings">#000000</color>
 
-    <color name="system_surface_bright_dark">#171717</color>
-    <color name="system_surface_container_dark">#000000</color>
-    <color name="system_surface_container_high_dark">#171717</color>
-    <color name="system_surface_container_highest_dark">#191919</color>
-    <color name="system_surface_container_low_dark">#000000</color>
-    <color name="system_surface_container_lowest_dark">#000000</color>
-    <color name="system_surface_dim_dark">#000000</color>
+    <color name="system_surface_bright_dark">#212121</color> <!-- Brightest dark -->
+    <color name="system_surface_container_highest_dark">#1B1B1B</color> <!-- Slightly darker -->
+    <color name="system_surface_container_high_dark">#171717</color> <!-- A bit darker -->
+    <color name="system_surface_container_dark">#000000</color> <!-- Blacked out as it is used as a background color in system apps -->
+    <color name="system_surface_container_low_dark">#0F0F0F</color> <!-- Close to dim -->
+    <color name="system_surface_dim_dark">#0C0C0C</color> <!-- Darker still -->
+    <color name="system_surface_container_lowest_dark">#080808</color> <!-- Deepest dark -->
 </resources>
