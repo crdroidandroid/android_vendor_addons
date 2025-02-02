@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2025 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Accent TwoTone notification color-->
+    <color name="qs_color_inactive">@*android:color/system_neutral2_10</color>
+</resources>

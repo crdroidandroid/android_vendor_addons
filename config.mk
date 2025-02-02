@@ -275,6 +275,22 @@ PRODUCT_PACKAGES += \
     NavbarSammyOverlay \
     NavbarTecnoCamonOverlay
 
+# Notification Themes
+PRODUCT_PACKAGES += \
+    NotifCyberPunk \
+    NotifDuoline \
+    NotifFluid \
+    NotifIOS \
+    NotifLayers
+
+# Power Menu Themes
+PRODUCT_PACKAGES += \
+    PowerCyberPunk \
+    PowerDuoline \
+    PowerFluid \
+    PowerIOS \
+    PowerLayers
+
 # QS UI Style
 PRODUCT_PACKAGES += \
     A11QSUI \
