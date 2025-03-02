@@ -1,5 +1,0 @@
-java_import {
-    name: "vendor.aac.hardware.richtap.vibrator",
-    jars: ["lib/vendorAacHardwareRichtapVibrator.jar"],
-    sdk_version: "current",
-}
