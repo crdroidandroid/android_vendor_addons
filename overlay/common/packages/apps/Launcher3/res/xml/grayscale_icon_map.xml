@@ -1249,7 +1249,6 @@
     <icon drawable="@drawable/camera" package="com.motorola.cameraone" />
     <icon drawable="@drawable/camera" package="com.motorola.odm.camera3" />
     <icon drawable="@drawable/camera" package="com.ngcam.camera" />
-    <icon drawable="@drawable/camera" package="com.oneplus.camera" />
     <icon drawable="@drawable/camera" package="com.ontim.camera2" />
     <icon drawable="@drawable/camera" package="com.oplus.camera" />
     <icon drawable="@drawable/camera" package="com.oppo.camera" />
@@ -2668,7 +2667,6 @@
     <icon drawable="@drawable/gallery" package="com.huawei.photos" />
     <icon drawable="@drawable/gallery" package="com.miui.gallery" />
     <icon drawable="@drawable/gallery" package="com.motorola.cn.gallery" />
-    <icon drawable="@drawable/gallery" package="com.oneplus.gallery" />
     <icon drawable="@drawable/gallery" package="com.oplus.gallery" />
     <icon drawable="@drawable/gallery" package="com.oppo.gallery3d" />
     <icon drawable="@drawable/gallery" package="com.sec.android.gallery3d" />
@@ -5517,6 +5515,7 @@
     <icon drawable="@drawable/pixelfed" package="com.pixelfed" />
     <icon drawable="@drawable/pixelful_icons" package="com.ciaostudio.pixeliconpack" />
     <icon drawable="@drawable/pixelify_gphotos" package="balti.xposed.pixelifygooglephotos" />
+    <icon drawable="@drawable/pixelify_gphotos" package="com.oneplus.gallery" />
     <icon drawable="@drawable/pixellab" package="com.imaginstudio.imagetools.pixellab" />
     <icon drawable="@drawable/pixels" package="com.tribalfs.pixels" />
     <icon drawable="@drawable/pixels_icons" package="com.jndapp.pixel.pie.iconpack" />
@@ -7219,6 +7218,7 @@
     <icon drawable="@drawable/timeplanner" package="ru.aleshin.timeplanner" />
     <icon drawable="@drawable/times_of_india" package="com.toi.reader.activities" />
     <icon drawable="@drawable/timestamp_camera" package="com.jeyluta.timestampcamerafree" />
+    <icon drawable="@drawable/timestamp_camera" package="com.oneplus.camera" />
     <icon drawable="@drawable/timetable" package="com.gabrielittner.timetable" />
     <icon drawable="@drawable/timetree" package="works.jubilee.timetree" />
     <icon drawable="@drawable/timezone_fun" package="com.teegloyalty.timezone" />
