@@ -260,14 +260,6 @@ PRODUCT_PACKAGES += \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay
 
-# Navbar
-PRODUCT_PACKAGES += \
-    GesturalNavigationNarrowSpace \
-    GesturalNavigationNoHint \
-    GesturalNavigationNoSpace \
-    GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium
-
 # Navbar styles
 PRODUCT_PACKAGES += \
     NavbarAndroidOverlay \
