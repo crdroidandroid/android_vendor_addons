@@ -86,6 +86,7 @@ PRODUCT_PACKAGES += \
     ClockFontFifa2018Overlay \
     ClockFontFloorlightOverlay \
     ClockFontGautsMotelUpperRightOverlay \
+    ClockFontGoogleSansFlexOverlay \
     ClockFontGrandHotelOverlay \
     ClockFontHangedOverlay \
     ClockFontHarmonySansOverlay \
@@ -146,6 +147,7 @@ PRODUCT_PACKAGES += \
     FontExotwoOverlay \
     FontFifa2018Overlay \
     FontGrandHotelOverlay \
+    FontGoogleSansFlexOverlay \
     FontHarmonySansOverlay \
     FontLatoOverlay \
     FontLinotteOverlay \
