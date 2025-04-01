@@ -67,4 +67,17 @@ $(BOOTANIMATION_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
 	$(hide) ln -sf bootanimation.zip $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(BOOTANIMATION_SYMLINK)
+BOOTANIMATION_OEM_SYMLINK := $(TARGET_OUT_OEM)/media/bootanimation.zip
+$(BOOTANIMATION_OEM_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /product/media/bootanimation.zip $@
+
+BOOTANIMATION_OEM_DARK_SYMLINK := $(TARGET_OUT_OEM)/media/bootanimation-dark.zip
+$(BOOTANIMATION_OEM_DARK_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /product/media/bootanimation.zip $@
+
+ALL_DEFAULT_INSTALLED_MODULES += \
+    $(BOOTANIMATION_SYMLINK) \
+    $(BOOTANIMATION_OEM_SYMLINK) \
+    $(BOOTANIMATION_OEM_DARK_SYMLINK)
