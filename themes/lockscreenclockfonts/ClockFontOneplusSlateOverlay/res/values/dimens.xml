@@ -1,6 +1,6 @@
 <!--
 /**
- * Copyright (c) 2023 crDroid Android Project
+ * Copyright (c) 2025 AxionAOSP Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Default line spacing multiplier between hours and minutes of the keyguard clock -->
-    <item name="keyguard_clock_line_spacing_scale" type="dimen" format="float">.9</item>
+    <item name="keyguard_clock_line_spacing_scale" type="dimen" format="float">.8</item>
 </resources>
