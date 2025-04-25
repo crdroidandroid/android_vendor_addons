@@ -1,0 +1,23 @@
+<!--
+/**
+ * Copyright © 2017 IBM Corp. with Reserved Font Name "Plex"
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.
+ * This license is available here: https://github.com/IBM/plex/blob/master/LICENSE.txt
+ * and is also available with a FAQ at: http://scripts.sil.org/OFL
+ */
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.theme.font.ibmplex">
+
+    <overlay
+        android:category="android.theme.customization.font"
+        android:priority="600"
+        android:targetPackage="android" />
+
+    <application
+        android:label="@string/font_plex_sans_overlay">
+        <meta-data
+            android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
+            android:value="ibm-plex-sans,ibm-plex-sans-regular,ibm-plex-sans-medium,ibm-plex-sans-bold" />
+    </application>
+</manifest>
