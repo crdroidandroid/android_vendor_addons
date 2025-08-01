@@ -4,15 +4,15 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M71 96a3 3 0 1 0 -6 0 3 3 0 0 0 6 0"
+        android:pathData="M72 96a3 3 0 1 0 -6 0 3 3 0 0 0 6 0"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M131 107V85a6 6 0 0 0 -6 -6H57a6 6 0 0 0 -6 6v22a6 6 0 0 0 6 6h68a6 6 0 0 0 6 -6m14 -27l-10.543 12.049a6 6 0 0 0 0 7.902L145 112"
+        android:pathData="M132 109V83a6 6 0 0 0 -6 -6H56a6 6 0 0 0 -6 6v26a6 6 0 0 0 6 6h70a6 6 0 0 0 6 -6m14 -29l-10.543 12.049a6 6 0 0 0 0 7.902L146 112"
         android:strokeColor="#000000"
-        android:strokeWidth="8"
+        android:strokeWidth="10"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path

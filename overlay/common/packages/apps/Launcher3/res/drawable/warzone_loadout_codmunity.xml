@@ -4,13 +4,13 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M96 170l-60.038 -35.261A5.999 5.999 0 0 1 33 129.566V62.434a6 6 0 0 1 2.962 -5.173L96 22m0 148l60.039 -35.261a6 6 0 0 0 2.961 -5.173V62.434a6.001 6.001 0 0 0 -2.961 -5.173L96 22"
+        android:pathData="M96 170l-60.038 -35.261A6 6 0 0 1 33 129.566V62.434a6 6 0 0 1 2.962 -5.173L96 22m0 148l60.039 -35.261a6 6 0 0 0 2.961 -5.173V62.434a6 6 0 0 0 -2.961 -5.173L96 22"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M34 107l62 37m62 -59L96 48m0 96l42 -25.065V96m0 0l-38.566 21.132a7.228 7.228 0 0 1 -6.868 0L54 96l38.566 -21.132a7.23 7.23 0 0 1 6.868 0L138 96ZM96 48L54 73.064V96"
+        android:pathData="M34 107l62 37m62 -59L96 48m0 96l42 -25.065V96m0 0l-38.566 21.132a7.23 7.23 0 0 1 -6.868 0L54 96l38.566 -21.132a7.23 7.23 0 0 1 6.868 0zM96 48L54 73.064V96"
         android:strokeColor="#000000"
         android:strokeWidth="10"
         android:strokeLineCap="round"

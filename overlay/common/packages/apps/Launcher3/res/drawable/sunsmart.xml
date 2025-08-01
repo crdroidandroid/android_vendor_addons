@@ -4,33 +4,27 @@
     android:width="192dp"
     android:height="192dp">
     <group
-        android:scaleX="0.9863104"
-        android:scaleY="0.9863525"
-        android:translateX="0.0389027"
-        android:translateY="0.0391767">
-        <group
-            android:scaleX="1.01942"
-            android:scaleY="1.01942"
-            android:translateX="-19.247"
-            android:translateY="-14.292">
-            <path
-                android:pathData="M20.097 14.71l0.396 0.296m-0.89 1.738l0.489 -0.071m0.599 1.856l0.295 -0.395m1.74 0.889l-0.071 -0.49"
-                android:strokeColor="#000000"
-                android:strokeWidth="0.417709"
-                android:strokeLineCap="round"
-                android:strokeLineJoin="round" />
-        </group>
-        <group
-            android:scaleX="1.01942"
-            android:scaleY="1.01942"
-            android:translateX="-19.247"
-            android:translateY="-14.292">
-            <path
-                android:pathData="M23.809 17.218a1.65 1.65 0 0 1 -2.316 -0.242 1.639 1.639 0 0 1 0.243 -2.309"
-                android:strokeColor="#000000"
-                android:strokeWidth="0.417709"
-                android:strokeLineCap="round"
-                android:strokeLineJoin="round" />
-        </group>
+        android:scaleX="1.00546"
+        android:scaleY="1.0055"
+        android:translateX="-18.945"
+        android:translateY="-14.058">
+        <path
+            android:pathData="M20.097 14.71l0.396 0.296m-0.89 1.738l0.489 -0.071m0.599 1.856l0.295 -0.395m1.74 0.889l-0.071 -0.49"
+            android:strokeColor="#000000"
+            android:strokeWidth="0.417709"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+    <group
+        android:scaleX="1.00546"
+        android:scaleY="1.0055"
+        android:translateX="-18.945"
+        android:translateY="-14.058">
+        <path
+            android:pathData="M23.809 17.218a1.65 1.65 0 0 1 -2.316 -0.242 1.64 1.64 0 0 1 0.243 -2.309"
+            android:strokeColor="#000000"
+            android:strokeWidth="0.417709"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
     </group>
 </vector>

@@ -4,7 +4,7 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M143.335 64.665a32.998 32.998 0 0 1 -5.001 50.773 32.994 32.994 0 0 1 -36.668 0 32.998 32.998 0 0 1 -5 -50.773"
+        android:pathData="M143.335 61.666a32.998 32.998 0 0 1 -5.001 50.772 32.99 32.99 0 0 1 -36.668 0 33 33 0 0 1 -14.032 -33.876 33 33 0 0 1 9.031 -16.896"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
@@ -16,25 +16,25 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M124 88A4 4 0 0 1 116 88A4 4 0 0 1 124 88Z"
+        android:pathData="M124 85A4 4 0 0 1 116 85A4 4 0 0 1 124 85Z"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M111 138A3 3 0 0 1 105 138A3 3 0 0 1 111 138Z"
+        android:pathData="M112 137A3 3 0 0 1 106 137A3 3 0 0 1 112 137Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M135 138A3 3 0 0 1 129 138A3 3 0 0 1 135 138Z"
+        android:pathData="M134 137A3 3 0 0 1 128 137A3 3 0 0 1 134 137Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M87 87v59"
+        android:pathData="M87 84v62"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
@@ -46,7 +46,7 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M153 87v59M45 72c23 -17.09 75 -92.487 75 -17.09M120 170l-33 -24m33 24l33 -24M35 166l52 -20m-52 20s7.675 -13.467 17.66 -30.5L47 127c2.579 -4.221 19 -26 19 -26l3.33 -18.17 27.34 -18.21"
+        android:pathData="M153 84v62M45 72c23 -17.09 75 -92.487 75 -17.09M120 170l-33 -24m33 24l33 -24M35 166l52 -20m-52 19.999s7.675 -13.467 17.66 -30.5l-5.66 -8.5c2.579 -4.221 19 -26 19 -26l3.33 -18.17 27.34 -21.21"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

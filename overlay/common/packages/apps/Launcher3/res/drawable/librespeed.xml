@@ -4,39 +4,27 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M96 42v54"
-        android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M63 135v-6h6v6zm20 0v-6h6v6zm20 0v-6h6v6zm20 0v-6h6v6z"
-        android:strokeColor="#000000"
-        android:strokeWidth="6"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M138.501 107.388a44.004 44.004 0 0 0 -61.962 -50.85 44 44 0 0 0 -23.04 50.85"
+        android:pathData="M96 42v54m42.501 11.384a44 44 0 0 0 -14.591 -45.396 44 44 0 0 0 -47.37 -5.454 44 44 0 0 0 -23.04 50.85"
         android:strokeColor="#000000"
         android:strokeWidth="10"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M170 96A74 74 0 0 1 22 96A74 74 0 0 1 170 96Z"
+        android:pathData="M96 170c40.869 0 74 -33.131 74 -74s-33.131 -74 -74 -74 -74 33.13 -74 74 33.13 74 74 74"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
-    <group
-        android:rotation="-0"
-        android:scaleX="-1"
-        android:translateX="101"
-        android:translateY="91">
-        <path
-            android:pathData="M10 5A5 5 0 0 1 0 5A5 5 0 0 1 10 5Z"
-            android:strokeColor="#000000"
-            android:strokeWidth="10"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
+    <path
+        android:pathData="M96 101a5 5 0 1 1 0 -10 5 5 0 0 1 0 10"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M60 133a4 4 0 1 1 0 -8 4 4 0 0 1 0 8m24 0a4 4 0 1 1 0 -8 4 4 0 0 1 0 8m24 0a4 4 0 1 1 0 -8 4 4 0 0 1 0 8m24 0a4 4 0 1 1 0 -8 4 4 0 0 1 0 8"
+        android:strokeColor="#000000"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>

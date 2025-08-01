@@ -4,9 +4,9 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M55 64v24m42 -24v24"
+        android:pathData="M47 61v30m58 -30v30"
         android:strokeColor="#000000"
-        android:strokeWidth="8"
+        android:strokeWidth="10"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
@@ -19,24 +19,11 @@
         android:pathData="M130 76A54 54 0 0 1 22 76A54 54 0 0 1 130 76Z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M85 76A9 12 0 0 1 67 76A9 12 0 0 1 85 76Z"
+        android:pathData="M87 76A11 15 0 0 1 65 76A11 15 0 0 1 87 76Z"
         android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M43 76A9 12 0 0 1 25 76A9 12 0 0 1 43 76Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M127 76A9 12 0 0 1 109 76A9 12 0 0 1 127 76Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="8"
+        android:strokeWidth="10"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
 </vector>

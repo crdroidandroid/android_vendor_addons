@@ -4,9 +4,9 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M88 106s3 3 8 3 8 -3 8 -3"
+        android:pathData="M88 108s3 3 8 3 8 -3 8 -3"
         android:strokeColor="#000000"
-        android:strokeWidth="8"
+        android:strokeWidth="10"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
@@ -22,7 +22,7 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M80 89a5 5 0 1 0 -10 0h10Zm42 0a5.002 5.002 0 0 0 -5 -5 5.002 5.002 0 0 0 -5 5h10Z"
+        android:pathData="M80 89a5 5 0 1 0 -10 0zm42 0a5 5 0 0 0 -5 -5 5 5 0 0 0 -5 5z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
         android:strokeLineCap="round"

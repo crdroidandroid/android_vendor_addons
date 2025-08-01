@@ -8,8 +8,9 @@
         android:strokeColor="#000000"
         android:strokeWidth="12" />
     <path
-        android:pathData="M87 60H64a6 6 0 0 0 -6 6v12a6 6 0 0 0 6 6h14a6 6 0 0 1 6 6v12a6 6 0 0 1 -6 6H64a6 6 0 0 0 -6 6v12a6 6 0 0 0 6 6h23m18 -72h23a6 6 0 0 1 6 6v12a6 6 0 0 1 -6 6h-14a6 6 0 0 0 -6 6v12a6 6 0 0 0 6 6h14a6 6 0 0 1 6 6v12a6 6 0 0 1 -6 6h-23"
+        android:pathData="M86 60H63a6 6 0 0 0 -6 6v12a6 6 0 0 0 6 6h14a6 6 0 0 1 6 6v12a6 6 0 0 1 -6 6H63a6 6 0 0 0 -6 6v12a6 6 0 0 0 6 6h23m20 -72h23a6 6 0 0 1 6 6v12a6 6 0 0 1 -6 6h-14a6 6 0 0 0 -6 6v12a6 6 0 0 0 6 6h14a6 6 0 0 1 6 6v12a6 6 0 0 1 -6 6h-23"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeLineCap="round" />
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>

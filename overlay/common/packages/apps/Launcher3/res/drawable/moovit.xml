@@ -8,21 +8,15 @@
         android:strokeColor="#000000"
         android:strokeWidth="12" />
     <path
-        android:pathData="M72 75A4 4 0 0 1 64 75A4 4 0 0 1 72 75Z"
+        android:pathData="M68 79a4 4 0 1 0 0 -8 4 4 0 0 0 0 8m56 0a4 4 0 1 0 0 -8 4 4 0 0 0 0 8"
         android:strokeColor="#000000"
         android:strokeWidth="8"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M128 75A4 4 0 0 1 120 75A4 4 0 0 1 128 75Z"
+        android:pathData="M77 97s7 8 19 8 19 -8 19 -8"
         android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M77 95s7 8 19 8 19 -8 19 -8"
-        android:strokeColor="#000000"
-        android:strokeWidth="10"
+        android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
 </vector>

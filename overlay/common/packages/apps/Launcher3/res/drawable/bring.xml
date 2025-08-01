@@ -4,19 +4,19 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M124 170l-8 -120h26.5L156 154l-32 16Z"
+        android:pathData="M124 170l-8 -120h26.5L156 154z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M124 170l-88 -16 8 -104h72m-48 -4c-0.031 -16 4 -24 12 -24s12 8 12 24"
+        android:pathData="M124 170l-88 -16 8 -104h72m-52 -4c-0.034 -16 4.334 -24 13 -24s13 8 13 24"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M92 46c-0.031 -16 4 -24 12 -24s12 8 12 24M98 86l-25.395 34L59 109.263"
+        android:pathData="M90 46c-0.034 -16 4.334 -24 13 -24q13 0 13 24M98 86l-25.395 34L59 109.263"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

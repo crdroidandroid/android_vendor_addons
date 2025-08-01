@@ -4,33 +4,9 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M55 87v26m18 -26v26m18 -15v15m18 -15v15M91 98c0 -1.445 -0.233 -2.875 -0.685 -4.21a11.4 11.4 0 0 0 -1.951 -3.568c-0.836 -1.022 -1.828 -1.832 -2.92 -2.385a7.6 7.6 0 0 0 -6.888 0c-1.092 0.553 -2.084 1.363 -2.92 2.385a11.4 11.4 0 0 0 -1.95 3.569A13.2 13.2 0 0 0 73 98"
+        android:pathData="M96 169c40.317 0 73 -32.683 73 -73s-32.683 -73 -73 -73 -73 32.683 -73 73c0 14.053 3.97 27.178 10.851 38.315C32.865 141.22 23 155.189 23 155.189c9.747 8.861 25.065 0.212 28.082 -1.64C63.468 163.23 79.061 169 96 169"
         android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M109 98a13.2 13.2 0 0 0 -0.685 -4.21 11.4 11.4 0 0 0 -1.951 -3.568c-0.836 -1.022 -1.828 -1.832 -2.92 -2.385a7.6 7.6 0 0 0 -6.888 0c-1.092 0.553 -2.084 1.363 -2.92 2.385a11.4 11.4 0 0 0 -1.95 3.569A13.2 13.2 0 0 0 91 98"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M96 170c40.869 0 74 -33.131 74 -74s-33.131 -74 -74 -74 -74 33.13 -74 74c0 14.245 4.025 27.55 11 38.84 -1 7 -11 21.16 -11 21.16 9.88 8.982 25.408 0.215 28.467 -1.663C63.023 164.151 78.828 170 96 170"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M148 100A11 13 0 0 1 126 100A11 13 0 0 1 148 100Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M58 70A3 3 0 0 1 52 70A3 3 0 0 1 58 70Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="6"
+        android:strokeWidth="14"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
 </vector>

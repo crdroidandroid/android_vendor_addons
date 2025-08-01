@@ -10,10 +10,10 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M83.132 74C75.972 74 69 77.75 69 88.138 69 103.143 96 122 96 122s27 -18.857 27 -33.862C123 77.75 116.034 74 108.882 74c-5.585 0 -9.845 3.888 -12.882 8.571C92.949 77.866 88.703 74 83.132 74Z"
+        android:pathData="M83.132 74C75.972 74 69 77.75 69 88.138 69 103.143 96 122 96 122s27 -18.857 27 -33.862C123 77.75 116.034 74 108.882 74c-5.585 0 -9.845 3.888 -12.882 8.571C92.949 77.866 88.703 74 83.132 74"
         android:strokeColor="#000000"
         android:strokeWidth="12"
-        android:strokeMiterLimit="2"
         android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeMiterLimit="2" />
 </vector>

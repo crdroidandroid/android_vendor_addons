@@ -40,13 +40,13 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M34 32c0 -5.523 4.477 -10 10 -10h104c5.523 0 10 4.477 10 10v132a6 6 0 0 1 -6 6H40a6 6 0 0 1 -6 -6V32Z"
+        android:pathData="M34 32c0 -5.523 4.477 -10 10 -10h104c5.523 0 10 4.477 10 10v132a6 6 0 0 1 -6 6H40a6 6 0 0 1 -6 -6z"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M96 104l13 13 -13 13 -13 -13 13 -13Z"
+        android:pathData="M96 104l13 13 -13 13 -13 -13z"
         android:strokeColor="#000000"
         android:strokeWidth="10"
         android:strokeLineCap="round"

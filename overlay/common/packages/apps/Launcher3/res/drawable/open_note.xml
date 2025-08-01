@@ -7,13 +7,13 @@
         android:translateX="19"
         android:translateY="19">
         <path
-            android:pathData="M102 6h25a21 21 45 0 1 21 21v100a21 21 135 0 1 -21 21H27A21 21 45 0 1 6 127V27A21 21 135 0 1 27 6h25a6.8197051 6.8197051 23.744776 0 1 5.027174 2.2114624L77 30 96.972826 8.2114624A6.8197051 6.8197051 156.25522 0 1 102 6Z"
+            android:pathData="M102 6h25a21 21 45 0 1 21 21v100a21 21 135 0 1 -21 21H27a21 21 45 0 1 -21 -21V27A21 21 135 0 1 27 6h25a6.82 6.82 23.745 0 1 5.027 2.211L77 30 96.973 8.211A6.82 6.82 156.255 0 1 102 6"
             android:strokeColor="#000000"
             android:strokeWidth="12"
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
         <path
-            android:pathData="M55 48V72H34l41 52 45 -52H99V48L77 72Z"
+            android:pathData="M55 48v24H34l41 52 45 -52H99V48L77 72Z"
             android:strokeColor="#000000"
             android:strokeWidth="12"
             android:strokeLineCap="round"

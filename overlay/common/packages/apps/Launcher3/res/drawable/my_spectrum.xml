@@ -7,7 +7,7 @@
         <clip-path
             android:pathData="M0 0h192v192H0z" />
         <path
-            android:pathData="M162 170c0 -8.011 -1.707 -15.943 -5.024 -23.344 -3.317 -7.401 -8.178 -14.125 -14.307 -19.79 -6.129 -5.664 -13.404 -10.157 -21.412 -13.223C113.25 110.578 104.667 109 96 109c-8.667 0 -17.25 1.578 -25.257 4.643 -8.008 3.066 -15.283 7.559 -21.412 13.223 -6.129 5.665 -10.99 12.389 -14.307 19.79S30 161.989 30 170h132Z"
+            android:pathData="M162 170c0 -8.011 -1.707 -15.943 -5.024 -23.344s-8.178 -14.125 -14.307 -19.79 -13.404 -10.157 -21.412 -13.223C113.25 110.578 104.667 109 96 109s-17.25 1.578 -25.257 4.643c-8.008 3.066 -15.283 7.559 -21.412 13.223s-10.99 12.389 -14.307 19.79S30 161.989 30 170z"
             android:strokeColor="#000000"
             android:strokeWidth="12"
             android:strokeLineCap="round"
@@ -19,7 +19,7 @@
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
         <path
-            android:pathData="M93 45l10 9 -10 9V45Z"
+            android:pathData="M93 45l10 9 -10 9z"
             android:strokeColor="#000000"
             android:strokeWidth="10"
             android:strokeLineCap="round"

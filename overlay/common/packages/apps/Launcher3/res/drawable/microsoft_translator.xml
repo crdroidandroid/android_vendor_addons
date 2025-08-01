@@ -19,14 +19,14 @@
         android:pathData="M110.015 45.285c24.616 -1.14 33.669 0.239 58.058 2.76m-3.391 -4.582l-4.553 8.804m-27.917 -31.269c3.089 2.181 5.607 5.428 6.461 8.962m-29.609 8.918c0.042 5.439 0.021 9.06 -2.207 14.314m9.588 13.461c10.558 -1.147 25.678 -0.043 34.742 1.813 -5.627 4.451 -13.368 10.279 -14.64 13.729l-1.545 21.498v1.809c-3.768 0.086 -10.334 -1.266 -12.733 -2.742"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeMiterLimit="32"
         android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeMiterLimit="32" />
     <path
         android:pathData="M112.646 85.298c15.121 -1.473 33.771 0.607 48.467 3.627"
         android:strokeColor="#000000"
         android:strokeWidth="10"
-        android:strokeMiterLimit="32"
         android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:strokeLineJoin="round"
+        android:strokeMiterLimit="32" />
 </vector>

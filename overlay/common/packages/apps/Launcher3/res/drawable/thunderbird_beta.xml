@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="192"
+    android:viewportHeight="192"
+    android:width="192dp"
+    android:height="192dp">
+    <path
+        android:pathData="M162 171h-12a6 6 0 0 1 -6 -6v-12m0 0h18m-18 0v-11.999a6 6 0 0 1 6 -6h8M158 153a9 9 0 1 0 0 -18m4 36a9 9 0 1 0 0 -18"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeMiterLimit="6" />
+    <path
+        android:pathData="M71 78l25 24 25 -24M61 94c0 48 58 48 58 48m-16 -20.56L119 142"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M119 142c-72 0 -76 -38 -76 -38 -9 65 52.5 65 52.5 65"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M61 94s4 -42 -16 -54c3 24 -13 13 -13 49l-9.039 -12.039A75 75 0 0 0 126 162.74M79 66s-1 -15.5 15 -20c22 -37 74 -16 74 -16 -11.134 1.113 -19.789 3.467 -25.274 5.334C138.358 36.821 136 38 136 38c16 -6 35 10 35 10 -6.397 -1.112 -11.788 -1.142 -16.238 -0.605A75 75 0 0 1 167 118.166"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M61 94c0 -15.464 15.67 -28 35 -28s35 12.536 35 28c0 13.546 -12.024 24.846 -28 27.44"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <group
+        android:rotation="-15"
+        android:pivotX="116.157"
+        android:pivotY="46.742">
+        <path
+            android:pathData="M119.157 46.742A3 1 0 0 1 113.157 46.742A3 1 0 0 1 119.157 46.742Z"
+            android:strokeColor="#000000"
+            android:strokeWidth="6"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

@@ -4,31 +4,31 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M99 85A3 3 0 0 1 93 85A3 3 0 0 1 99 85Z"
+        android:pathData="M99 81A3 3 0 0 1 93 81A3 3 0 0 1 99 81Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M88 96A3 3 0 0 1 82 96A3 3 0 0 1 88 96Z"
+        android:pathData="M84 96A3 3 0 0 1 78 96A3 3 0 0 1 84 96Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M110 96A3 3 0 0 1 104 96A3 3 0 0 1 110 96Z"
+        android:pathData="M114 96A3 3 0 0 1 108 96A3 3 0 0 1 114 96Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M99 107A3 3 0 0 1 93 107A3 3 0 0 1 99 107Z"
+        android:pathData="M99 111A3 3 0 0 1 93 111A3 3 0 0 1 99 111Z"
         android:strokeColor="#000000"
         android:strokeWidth="6"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M58.749 96l-34.93 34.931a6.21 6.21 0 0 0 0 8.78l28.47 28.471a6.21 6.21 0 0 0 8.78 0L96 133.251M58.749 96l-34.93 -34.93a6.21 6.21 0 0 1 0 -8.78l28.47 -28.472a6.21 6.21 0 0 1 8.78 0L96 58.748M58.749 96L96 58.749M133.251 96l34.931 -34.93a6.21 6.21 0 0 0 0 -8.78l-28.471 -28.472a6.21 6.21 0 0 0 -8.781 0L96 58.748M133.251 96l34.931 34.931a6.21 6.21 0 0 1 0 8.78l-28.471 28.471a6.21 6.21 0 0 1 -8.781 0L96 133.251M133.251 96L96 133.251"
+        android:pathData="M52.562 96L23.755 67.193a5.993 5.993 0 0 1 0 -8.475l34.963 -34.963a5.993 5.993 0 0 1 8.475 0L96 52.562M52.562 96l-28.807 28.807a5.993 5.993 0 0 0 0 8.475l34.963 34.963a5.993 5.993 0 0 0 8.475 0L96 139.438M52.562 96L96 52.562m0 86.876l28.807 28.807a5.993 5.993 0 0 0 8.475 0l34.963 -34.963a5.993 5.993 0 0 0 0 -8.475L139.438 96M96 139.438L139.438 96M96 52.562l28.807 -28.807a5.993 5.993 0 0 1 8.475 0l34.963 34.963a5.993 5.993 0 0 1 0 8.475L139.438 96"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

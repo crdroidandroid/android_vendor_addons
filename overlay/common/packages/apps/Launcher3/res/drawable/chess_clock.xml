@@ -16,7 +16,7 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M22 112h27m-27 20h13m-13 -20v20m0.876 21A13.996 13.996 0 0 0 35 160a13.998 13.998 0 0 0 14 -14 13.998 13.998 0 0 0 -14 -14"
+        android:pathData="M22 112h27m-27 20h13m-13 -20v20m0.876 21A14 14 0 0 0 35 160a14 14 0 0 0 14 -14 14 14 0 0 0 -14 -14"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"
@@ -56,7 +56,7 @@
             android:strokeLineJoin="round" />
     </group>
     <path
-        android:pathData="M169 80h-27m27 -20h-13m13 20V60m-0.876 -21A13.996 13.996 0 0 0 156 32a13.998 13.998 0 0 0 -12.124 21A13.996 13.996 0 0 0 156 60"
+        android:pathData="M169 80h-27m27 -20h-13m13 20V60m-0.876 -21A14 14 0 0 0 156 32a13.998 13.998 0 0 0 -12.124 21A14 14 0 0 0 156 60"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

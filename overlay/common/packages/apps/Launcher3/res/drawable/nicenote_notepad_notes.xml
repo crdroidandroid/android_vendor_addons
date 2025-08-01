@@ -4,35 +4,7 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M5.8208927 11.112492H32.723405m7.068621 0h5.187081"
-        android:strokeColor="#000000"
-        android:strokeWidth="3.175"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:strokeMiterLimit="32" />
-    <path
-        android:pathData="M5.8208927 20.637497H25.654793m7.068608 0h12.255706"
-        android:strokeColor="#000000"
-        android:strokeWidth="3.175"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:strokeMiterLimit="32" />
-    <path
-        android:pathData="M5.8208927 30.162502H18.579041m7.068609 0h19.331457"
-        android:strokeColor="#000000"
-        android:strokeWidth="3.175"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:strokeMiterLimit="32" />
-    <path
-        android:pathData="M23.80271 29.63333"
-        android:strokeColor="#000000"
-        android:strokeWidth="3.175"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:strokeMiterLimit="32" />
-    <path
-        android:pathData="M5.8208927 39.687508h5.6895403m7.068608 0h26.400066"
+        android:pathData="M5.82 11.112h26.903m7.069 0h5.187M5.82 20.637h19.835m7.068 0H44.98M5.82 30.163h12.76m7.069 0H44.98M5.82 39.688h5.69m7.069 0h26.4"
         android:strokeColor="#000000"
         android:strokeWidth="3.175"
         android:strokeLineCap="round"

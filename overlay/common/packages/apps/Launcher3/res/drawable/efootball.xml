@@ -4,19 +4,7 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M148 44L44 148"
-        android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M130 130H68a6 6 0 0 1 -6 -6V68a6 6 0 0 1 6 -6h56a6 6 0 0 1 6 6v22a6 6 0 0 1 -6 6H62"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M170 96A74 74 0 0 1 22 96A74 74 0 0 1 170 96Z"
+        android:pathData="M130.58 59A47.8 47.8 0 0 0 100 48a47.8 47.8 0 0 0 -30.58 11H35.9C48.695 36.881 72.61 22 100 22s51.305 14.881 64.1 37zM148 96a48 48 0 0 0 -1.781 -13H27.138A74.5 74.5 0 0 0 26 96c0 4.435 0.39 8.779 1.138 13H146.22A48 48 0 0 0 148 96m-48 74c27.39 0 51.305 -14.881 64.1 -37h-33.52A47.8 47.8 0 0 1 100 144a47.8 47.8 0 0 1 -30.58 -11H35.9c12.795 22.119 36.71 37 64.1 37"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

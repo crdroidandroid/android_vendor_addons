@@ -4,55 +4,7 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M57 41A16 16 0 0 1 25 41A16 16 0 0 1 57 41Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M57 96A16 16 0 0 1 25 96A16 16 0 0 1 57 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M57 151A16 16 0 0 1 25 151A16 16 0 0 1 57 151Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M112 41A16 16 0 0 1 80 41A16 16 0 0 1 112 41Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M112 96A16 16 0 0 1 80 96A16 16 0 0 1 112 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M112 151A16 16 0 0 1 80 151A16 16 0 0 1 112 151Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M167 41A16 16 0 0 1 135 41A16 16 0 0 1 167 41Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M167 96A16 16 0 0 1 135 96A16 16 0 0 1 167 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M167 151A16 16 0 0 1 135 151A16 16 0 0 1 167 151Z"
+        android:pathData="M39 56c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17m0 57c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17m0 57c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17M96 56c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17m0 57c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17m0 57c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17m57 -114c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17m0 57c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17m0 57c9.389 0 17 -7.611 17 -17s-7.611 -17 -17 -17 -17 7.611 -17 17 7.611 17 17 17"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

@@ -4,31 +4,25 @@
     android:width="192dp"
     android:height="192dp">
     <path
-        android:pathData="M59 53H77A6 6 0 0 1 83 59V77A6 6 0 0 1 77 83H59A6 6 0 0 1 53 77V59A6 6 0 0 1 59 53Z"
+        android:pathData="M57 51H77A6 6 0 0 1 83 57V77A6 6 0 0 1 77 83H57A6 6 0 0 1 51 77V57A6 6 0 0 1 57 51Z"
         android:strokeColor="#000000"
-        android:strokeWidth="10"
+        android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M59 108H77A6 6 0 0 1 83 114V132A6 6 0 0 1 77 138H59A6 6 0 0 1 53 132V114A6 6 0 0 1 59 108Z"
+        android:pathData="M57 109H77A6 6 0 0 1 83 115V135A6 6 0 0 1 77 141H57A6 6 0 0 1 51 135V115A6 6 0 0 1 57 109Z"
         android:strokeColor="#000000"
-        android:strokeWidth="10"
+        android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M115 53H133A6 6 0 0 1 139 59V77A6 6 0 0 1 133 83H115A6 6 0 0 1 109 77V59A6 6 0 0 1 115 53Z"
+        android:pathData="M115 51H135A6 6 0 0 1 141 57V77A6 6 0 0 1 135 83H115A6 6 0 0 1 109 77V57A6 6 0 0 1 115 51Z"
         android:strokeColor="#000000"
-        android:strokeWidth="10"
+        android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round" />
     <path
-        android:pathData="M109 114a6 6 0 0 1 6 -6h18a6 6 0 0 1 6 6v5c0 13 -15 19 -15 19s-15 -6 -15 -19z"
-        android:strokeColor="#000000"
-        android:strokeWidth="10"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M49 25H31a6 6 0 0 0 -6 6v18m118 -24h18a6 6 0 0 1 6 6v18m-24 118h18a6 6 0 0 0 6 -6v-18M49 167H31a6 6 0 0 1 -6 -6v-18"
+        android:pathData="M109 115a6 6 0 0 1 6 -6h20a6 6 0 0 1 6 6v7c0 13 -16 19 -16 19s-16 -6 -16 -19zM46 22H28a6 6 0 0 0 -6 6v18m124 -24h18a6 6 0 0 1 6 6v18m-24 124h18a6 6 0 0 0 6 -6v-18M46 170H28a6 6 0 0 1 -6 -6v-18"
         android:strokeColor="#000000"
         android:strokeWidth="12"
         android:strokeLineCap="round"

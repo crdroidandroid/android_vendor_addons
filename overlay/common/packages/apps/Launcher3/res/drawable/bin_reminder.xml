@@ -4,29 +4,29 @@
     android:width="192dp"
     android:height="192dp">
     <group
-        android:rotation="-90.00013"
-        android:scaleX="0.9574871"
-        android:scaleY="0.9565336"
-        android:translateX="-1.123637"
-        android:translateY="4.582213">
+        android:rotation="-90.01634"
+        android:scaleX="0.9574822"
+        android:scaleY="0.9565332"
+        android:translateX="-1.124"
+        android:translateY="4.582">
         <group
-            android:rotation="82.09343">
+            android:rotation="82.10972">
             <path
-                android:pathData="M15.906214 35.874869l-0.000351 -24.077732 0.000351 -0.02238a5.9770243 5.9770243 135.22067 0 1 6 -5.95396H32.07082a6.0266568 6.0266568 44.660954 0 1 6.04124 5.970162l0.0042 2.740223 0.03477 22.42775a5.977455 5.977455 135.01902 0 1 -5.990684 5.986707l-9.806192 -0.02171"
+                android:pathData="M15.906 35.875v-24.1a5.977 5.977 135.22 0 1 6 -5.954h10.165a6.027 6.027 44.661 0 1 6.041 5.97l0.004 2.74 0.035 22.428a5.977 5.977 135.019 0 1 -5.99 5.987l-9.807 -0.022"
                 android:strokeColor="#000000"
                 android:strokeWidth="3.31763"
                 android:strokeLineCap="round"
                 android:strokeLineJoin="round"
                 android:strokeMiterLimit="32" />
             <path
-                android:pathData="M21.73004 40.96524A4.254242 4.013959 0 0 1 13.22155 40.96524A4.254242 4.013959 0 0 1 21.73004 40.96524Z"
+                android:pathData="M21.73 40.965A4.254 4.014 0 0 1 13.222 40.965A4.254 4.014 0 0 1 21.73 40.965Z"
                 android:strokeColor="#000000"
                 android:strokeWidth="3.31763"
                 android:strokeLineCap="round"
                 android:strokeLineJoin="round"
                 android:strokeMiterLimit="32" />
             <path
-                android:pathData="M10.884717 12.693172l30.522172 0.156121"
+                android:pathData="M10.885 12.693l30.522 0.156"
                 android:strokeColor="#000000"
                 android:strokeWidth="3.31763"
                 android:strokeLineCap="round"
