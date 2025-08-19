@@ -1,0 +1,59 @@
+//
+// SPDX-FileCopyrightText: crDroid Android Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+genrule {
+    name: "gen-bootanimation.zip",
+    tools: [
+        "soong_zip",
+    ],
+    tool_files: [
+        "gen-bootanimation.sh",
+        "bootanimation_1440.tar",
+        "bootanimation_1080.tar",
+        "bootanimation_720.tar",
+        "bootanimation.tar",
+        "desc.txt",
+    ],
+    out: ["bootanimation.zip"],
+    // If TARGET_BOOTANIMATION is set (exported as soong_config var prebuilt_file),
+    // we simply copy that file to $(out). Otherwise, we run our generator script,
+    // selecting the same .tar and desc sizes your Android.mk used.
+    cmd: select((
+            soong_config_variable("lineage_bootanimation", "prebuilt_file"),
+            soong_config_variable("lineage_bootanimation", "width"),
+            soong_config_variable("lineage_bootanimation", "height"),
+        ), {
+        // Copy a prebuilt bootanimation zip if provided
+        (any @ prebuilt_file, any @ width, any @ height):
+            "cp ../../../../../" + prebuilt_file + " $(out)",
+        // Otherwise, generate from prebuilts
+        (default, any @ width, any @ height):
+            "bash $(location gen-bootanimation.sh)"
+            + " $(out)"
+            + " $(genDir)"
+            + " $(location bootanimation_1440.tar)"
+            + " $(location bootanimation_1080.tar)"
+            + " $(location bootanimation_720.tar)"
+            + " $(location bootanimation.tar)"
+            + " $(location desc.txt)"
+            + " " + width
+            + " " + height
+            + " 30"
+            + " $(location soong_zip)",
+    }),
+}
+
+prebuilt_media {
+    name: "bootanimation.zip",
+    src: ":gen-bootanimation.zip",
+    product_specific: true,
+}
+
+install_symlink {
+    name: "bootanimation-dark.zip",
+    product_specific: true,
+    installed_location: "media/bootanimation-dark.zip",
+    symlink_target: "bootanimation.zip",
+}
