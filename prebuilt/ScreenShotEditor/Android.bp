@@ -1,0 +1,13 @@
+android_app_import {
+    name: "ScreenshotEditor",
+    apk: "ScreenshotEditor.apk",
+    certificate: "platform",
+    system_ext_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+}
