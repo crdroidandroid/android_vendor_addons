@@ -15,6 +15,15 @@
         over cable provided by the Pixelmigrate app. -->
     <feature name="com.google.android.feature.D2D_CABLE_MIGRATION_FEATURE" />
 
+    <!-- Explicitly disable features that are unavailable on handheld Nexus devices. -->
+    <unavailable-feature name="android.hardware.type.automotive" />
+    <unavailable-feature name="android.hardware.type.embedded" />
+    <unavailable-feature name="android.hardware.type.pc" />
+    <unavailable-feature name="android.hardware.type.television" />
+    <unavailable-feature name="android.hardware.type.watch" />
+    <unavailable-feature name="android.software.leanback" />
+    <unavailable-feature name="android.software.leanback_only" />
+
     <!-- Allow WfcActivation app scheduled jobs to run when app in background. -->
     <allow-in-power-save-except-idle package="com.google.android.wfcactivation" />
 
