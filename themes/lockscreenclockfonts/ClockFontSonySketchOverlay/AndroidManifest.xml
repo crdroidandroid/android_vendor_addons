@@ -26,6 +26,6 @@
     <application android:label="@string/font_sonysketch_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="sonysketch,sonysketch-semi-bold,sonysketch-bold" />
+            android:value="sony_sketch" />
     </application>
 </manifest>
