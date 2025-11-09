@@ -1,0 +1,51 @@
+package {
+    default_visibility: ["//visibility:public"],
+}
+
+android_library {
+    name: "ax_compose",
+    manifest: "AndroidManifest.xml",
+
+    srcs: [
+        "src/**/*.kt",
+    ],
+
+    resource_dirs: ["res"],
+
+    static_libs: [
+        "ax_deviceinfo",
+        "PlatformAnimationLib",
+        "PlatformMotionTestingComposeValues",
+        "androidx.core_core-ktx",
+        "androidx.appcompat_appcompat",
+        "androidx.preference_preference",
+        "com.google.android.material_material",
+        "kotlin-stdlib",
+        "kotlinx-coroutines-android",
+        "androidx.activity_activity-compose",
+        "androidx.compose.animation_animation-core",
+        "androidx.compose.animation_animation-graphics",
+        "androidx.compose.foundation_foundation",
+        "androidx.lifecycle_lifecycle-viewmodel-compose",
+        "androidx.compose.material3_material3",
+        "androidx.compose.material3_material3-window-size-class",
+        "androidx.compose.material_material-icons-core",
+        "androidx.compose.material_material-icons-extended",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.ui_ui",
+        "kotlinx-coroutines-core",
+        "SettingsLib",
+    ],
+
+    libs: [
+        "framework",
+    ],
+
+    kotlincflags: [
+        "-Xjvm-default=all",
+        "-P plugin:androidx.compose.compiler.plugins.kotlin:sourceInformation=true",
+    ],
+    use_resource_processor: true,
+    
+    visibility: ["//visibility:public"],
+}
