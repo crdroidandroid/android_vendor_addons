@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.composables</groupId>
+  <artifactId>icons-material-symbols-rounded-filled-android</artifactId>
+  <version>2.2.1</version>
+  <packaging>aar</packaging>
+  <name>Compose Icons Material Symbols RoundedFilled Android</name>
+  <description>Compose Icons Material Symbols RoundedFilled for Android.</description>
+  <url>https://github.com/composablehorizons/composeicons</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://github.com/composablehorizons/composeicons/blob/main/LICENSE</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>composablehorizons</id>
+      <name>Composable Horizons</name>
+      <email>support@composables.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:github.com/composablehorizons/composeicons.git</connection>
+    <developerConnection>scm:git:ssh://github.com/composablehorizons/composeicons.git</developerConnection>
+    <url>https://github.com/composablehorizons/composeicons/tree/main</url>
+  </scm>
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/composablehorizons/composeicons/issues</url>
+  </issueManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <version>2.2.21</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.foundation</groupId>
+      <artifactId>foundation</artifactId>
+      <version>1.9.3</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

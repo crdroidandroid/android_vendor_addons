@@ -1,0 +1,18 @@
+// This is a generated file. Do not modify directly.
+
+android_library_import {
+    name: "accompanist-drawablepainter",
+    aars: ["accompanist-drawablepainter-0.37.3.aar"],
+    sdk_version: "34",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    min_sdk_version: "21",
+    manifest: "manifest/AndroidManifest.xml",
+    static_libs: [
+        "kotlin-stdlib",
+        "androidx.compose.ui_ui",
+        "kotlinx-coroutines-android",
+    ],
+}

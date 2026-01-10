@@ -1,0 +1,33 @@
+// This is a generated file. Do not modify directly.
+// Automatically generated with:
+// pom2bp material3-android-1.5.0-alpha12.pom
+
+android_library_import {
+    name: "ax.androidx.compose.material3_material3",
+    aars: ["material3-android-1.5.0-alpha12.aar"],
+    sdk_version: "34",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    min_sdk_version: "21",
+    manifest: "manifest/AndroidManifest.xml",
+    static_libs: [
+        "androidx.activity_activity-compose",
+        "androidx.annotation_annotation",
+        "androidx.annotation_annotation-experimental",
+        "androidx.collection_collection",
+        "androidx.compose.animation_animation-core",
+        "androidx.compose.foundation_foundation",
+        "androidx.compose.foundation_foundation-layout",
+        "androidx.compose.material_material-ripple",
+        "androidx.lifecycle_lifecycle-common-java8",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.ui_ui",
+        "androidx.compose.ui_ui-text",
+        "androidx.compose.ui_ui-util",
+        "androidx.graphics_graphics-shapes",
+        "kotlin-stdlib",
+    ],
+
+}

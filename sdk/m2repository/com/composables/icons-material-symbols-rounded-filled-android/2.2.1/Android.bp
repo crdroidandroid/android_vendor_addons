@@ -1,0 +1,20 @@
+// This is a generated file. Do not modify directly.
+// Automatically generated with:
+// pom2bp icons-material-symbols-rounded-filled-android-2.2.1.pom
+
+android_library_import {
+    name: "com.composables_icons-material-symbols-rounded-filled-android",
+    aars: ["icons-material-symbols-rounded-filled-android-2.2.1.aar"],
+    sdk_version: "36",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    min_sdk_version: "21",
+    manifest: "manifest/AndroidManifest.xml",
+    static_libs: [
+        "kotlin-stdlib",
+        "androidx.compose.foundation_foundation",
+    ],
+
+}

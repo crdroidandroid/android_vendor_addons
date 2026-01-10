@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.google.accompanist",
+    "module": "accompanist-drawablepainter",
+    "version": "0.37.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "accompanist-drawablepainter-0.37.3.aar",
+          "url": "accompanist-drawablepainter-0.37.3.aar",
+          "size": 11349,
+          "sha512": "78ee8a0aca2662b4836ac9256b252380dc2a4f458564cd4fef75e013efa4665665bceda20e8c0b16636c45653eafbe46de56eee93a9643a8aa962c832f5b5b4e",
+          "sha256": "0453c4c54ec3ef13ae18b83300f1d2a078b1ca92d3a3781437516630e3b850df",
+          "sha1": "e4c0978b380a3a2c9c9ad1364dd2c7fc2aafc7f8",
+          "md5": "943e32e5864e67e9b23f2d36af132220"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "accompanist-drawablepainter-0.37.3.aar",
+          "url": "accompanist-drawablepainter-0.37.3.aar",
+          "size": 11349,
+          "sha512": "78ee8a0aca2662b4836ac9256b252380dc2a4f458564cd4fef75e013efa4665665bceda20e8c0b16636c45653eafbe46de56eee93a9643a8aa962c832f5b5b4e",
+          "sha256": "0453c4c54ec3ef13ae18b83300f1d2a078b1ca92d3a3781437516630e3b850df",
+          "sha1": "e4c0978b380a3a2c9c9ad1364dd2c7fc2aafc7f8",
+          "md5": "943e32e5864e67e9b23f2d36af132220"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "accompanist-drawablepainter-0.37.3-sources.jar",
+          "url": "accompanist-drawablepainter-0.37.3-sources.jar",
+          "size": 3104,
+          "sha512": "94f60545379b118cc32a3bf2c936ecc8784186621e53b8bd39b78e697d15c9956b571f87f37cfd9d4bf063c30ee05febf8d35854850935c1d6c85309b9a662a4",
+          "sha256": "d6a6406beed220e9e599f6868daa84409d8f6dfbc5ef16b9fb9e58b54cf1d2fc",
+          "sha1": "fc01bd98a445a8fb9280ef7278394c6b68d4d695",
+          "md5": "18de68aae55beef33486ab3481650d1a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "accompanist-drawablepainter-0.37.3-javadoc.jar",
+          "url": "accompanist-drawablepainter-0.37.3-javadoc.jar",
+          "size": 269292,
+          "sha512": "ea70c3bf152e628c6860ae1af8a84316a06a2ff2defc4ed177bcea6d5f2cfba302837a7544dd32c817d6ea70760d52b31d4daf3ba637ca537418f0c244d47cda",
+          "sha256": "dff8e3d943dd3c5049209e98f195ad8d69f37a5d6f24f164e0a4197e3ff3dadf",
+          "sha1": "e9b85dd2119bf618d77d236a2cc647fec3a3b45e",
+          "md5": "a016464d919f0a16c139700bd7e21806"
+        }
+      ]
+    }
+  ]
+}

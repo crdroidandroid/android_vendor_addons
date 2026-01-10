@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.composables",
+    "module": "icons-material-symbols-rounded-filled-android",
+    "version": "2.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "icons-material-symbols-rounded-filled-android-2.2.1.aar",
+          "url": "icons-material-symbols-rounded-filled-android-2.2.1.aar",
+          "size": 2371691,
+          "sha512": "f0189dcb545bfe1365c09b7a07053842ad76af9869f1672e362901df331bd6d4590c9ebbdbcd60d39b7e39369eaa647536469f504d4bf7a78b57bff2ecb37070",
+          "sha256": "7576a73fe7d8a7c3e4a048a3d3f28cc9fc3fe2a41faec8e6d56109e6807254f3",
+          "sha1": "474bfc3e212b272dab166283563b1f1282ae6719",
+          "md5": "eac430d83f3c1c9e42093cd5761aeeba"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "icons-material-symbols-rounded-filled-android-2.2.1.aar",
+          "url": "icons-material-symbols-rounded-filled-android-2.2.1.aar",
+          "size": 2371691,
+          "sha512": "f0189dcb545bfe1365c09b7a07053842ad76af9869f1672e362901df331bd6d4590c9ebbdbcd60d39b7e39369eaa647536469f504d4bf7a78b57bff2ecb37070",
+          "sha256": "7576a73fe7d8a7c3e4a048a3d3f28cc9fc3fe2a41faec8e6d56109e6807254f3",
+          "sha1": "474bfc3e212b272dab166283563b1f1282ae6719",
+          "md5": "eac430d83f3c1c9e42093cd5761aeeba"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "icons-material-symbols-rounded-filled-android-2.2.1-sources.jar",
+          "url": "icons-material-symbols-rounded-filled-android-2.2.1-sources.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "icons-material-symbols-rounded-filled-android-2.2.1-javadoc.jar",
+          "url": "icons-material-symbols-rounded-filled-android-2.2.1-javadoc.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    }
+  ]
+}
