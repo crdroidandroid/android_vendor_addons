@@ -1,0 +1,19 @@
+package {
+    default_visibility: ["//visibility:public"],
+}
+
+java_library {
+    name: "ax_platform_hooks",
+
+    srcs: [
+        "aidl/**/*.aidl",
+        "src/**/*.java",
+    ],
+
+    aidl: {
+        local_include_dirs: ["aidl"],
+    },
+
+    platform_apis: true,
+    visibility: ["//visibility:public"],
+}
