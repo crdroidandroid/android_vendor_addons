@@ -1,0 +1,29 @@
+package {
+    default_visibility: ["//visibility:public"],
+}
+
+android_library {
+    name: "commonutils",
+    manifest: "AndroidManifest.xml",
+
+    srcs: [
+        "src/**/*.kt",
+    ],
+
+    static_libs: [
+        "androidx.core_core-ktx",
+        "androidx.appcompat_appcompat",
+        "androidx.preference_preference",
+        "com.google.android.material_material",
+        "kotlin-stdlib",
+        "androidx.compose.material3_material3",
+    ],
+
+    kotlincflags: [
+        "-Xjvm-default=all",
+        "-P plugin:androidx.compose.compiler.plugins.kotlin:sourceInformation=true",
+    ],
+    use_resource_processor: true,
+    
+    visibility: ["//visibility:public"],
+}
