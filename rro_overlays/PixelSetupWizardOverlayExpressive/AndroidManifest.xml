@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.pixel.setupwizard.overlay.expressive_gms">
+    <overlay android:targetPackage="com.google.android.pixel.setupwizard"
+                   android:targetName="PixelSetupWizard"
+                   android:isStatic="true"
+                   android:priority="220"/>
+</manifest>
