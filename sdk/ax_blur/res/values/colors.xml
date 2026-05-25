@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <color name="ax_blur_surface_effect_0">@androidprv:color/customColorSurfaceEffect0</color>
+    <color name="ax_blur_surface_effect_2">@androidprv:color/customColorSurfaceEffect2</color>
+    <color name="ax_blur_surface_effect_3">@androidprv:color/customColorSurfaceEffect3</color>
+    <color name="ax_blur_fallback">@androidprv:color/materialColorSurfaceContainer</color>
+    <color name="ax_blur_surface_bright_expressive">@android:color/system_accent2_50</color>
+    <color name="ax_blur_surface_container_expressive">@android:color/system_accent2_100</color>
+</resources>

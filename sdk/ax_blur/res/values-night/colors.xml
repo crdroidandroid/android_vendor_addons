@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <color name="ax_blur_surface_bright_expressive">@android:color/system_accent2_800</color>
+    <color name="ax_blur_surface_container_expressive">@android:color/system_accent2_900</color>
+</resources>
