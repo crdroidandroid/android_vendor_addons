@@ -17,101 +17,66 @@
 package com.android.axion.compose.preferences
 
 import android.content.ContentResolver
-import android.database.ContentObserver
 import android.net.Uri
-import android.os.Handler
-import android.os.Looper
-import android.provider.Settings
+import android.os.UserHandle
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
-import kotlinx.coroutines.channels.awaitClose
+import com.android.axion.kotlin.settings.SettingsFlow as AxSettingsFlow
+import com.android.axion.kotlin.settings.SettingsType as AxSettingsType
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.callbackFlow
-import kotlinx.coroutines.flow.conflate
-import kotlinx.coroutines.flow.map
 
-enum class SettingsType { SECURE, SYSTEM, GLOBAL }
+enum class SettingsType {
+    SECURE,
+    SYSTEM,
+    GLOBAL;
 
-class SettingsFlow(
-    private val contentResolver: ContentResolver,
-    private val type: SettingsType,
+    internal fun toAxSettingsType(): AxSettingsType =
+        when (this) {
+            SECURE -> AxSettingsType.SECURE
+            SYSTEM -> AxSettingsType.SYSTEM
+            GLOBAL -> AxSettingsType.GLOBAL
+        }
+}
+
+class SettingsFlow @JvmOverloads constructor(
+    contentResolver: ContentResolver,
+    type: SettingsType,
+    userId: Int = UserHandle.myUserId(),
 ) {
+    private val delegate = AxSettingsFlow(contentResolver, type.toAxSettingsType(), userId)
 
-    fun getUri(key: String): Uri = when (type) {
-        SettingsType.SECURE -> Settings.Secure.getUriFor(key)
-        SettingsType.SYSTEM -> Settings.System.getUriFor(key)
-        SettingsType.GLOBAL -> Settings.Global.getUriFor(key)
-    }
+    fun getUri(key: String): Uri = delegate.getUri(key)
 
-    fun getString(key: String, default: String = ""): String = when (type) {
-        SettingsType.SECURE -> Settings.Secure.getString(contentResolver, key) ?: default
-        SettingsType.SYSTEM -> Settings.System.getString(contentResolver, key) ?: default
-        SettingsType.GLOBAL -> Settings.Global.getString(contentResolver, key) ?: default
-    }
+    fun getString(key: String, default: String = ""): String = delegate.getString(key, default)
 
-    fun putString(key: String, value: String): Boolean = when (type) {
-        SettingsType.SECURE -> Settings.Secure.putString(contentResolver, key, value)
-        SettingsType.SYSTEM -> Settings.System.putString(contentResolver, key, value)
-        SettingsType.GLOBAL -> Settings.Global.putString(contentResolver, key, value)
-    }
+    fun putString(key: String, value: String): Boolean = delegate.putString(key, value)
 
-    fun getInt(key: String, default: Int = 0): Int = try {
-        when (type) {
-            SettingsType.SECURE -> Settings.Secure.getInt(contentResolver, key, default)
-            SettingsType.SYSTEM -> Settings.System.getInt(contentResolver, key, default)
-            SettingsType.GLOBAL -> Settings.Global.getInt(contentResolver, key, default)
-        }
-    } catch (_: Exception) {
-        default
-    }
+    fun getInt(key: String, default: Int = 0): Int = delegate.getInt(key, default)
 
-    fun putInt(key: String, value: Int): Boolean = when (type) {
-        SettingsType.SECURE -> Settings.Secure.putInt(contentResolver, key, value)
-        SettingsType.SYSTEM -> Settings.System.putInt(contentResolver, key, value)
-        SettingsType.GLOBAL -> Settings.Global.putInt(contentResolver, key, value)
-    }
+    fun putInt(key: String, value: Int): Boolean = delegate.putInt(key, value)
 
-    fun getFloat(key: String, default: Float = 0f): Float = try {
-        when (type) {
-            SettingsType.SECURE -> Settings.Secure.getFloat(contentResolver, key, default)
-            SettingsType.SYSTEM -> Settings.System.getFloat(contentResolver, key, default)
-            SettingsType.GLOBAL -> Settings.Global.getFloat(contentResolver, key, default)
-        }
-    } catch (_: Exception) {
-        default
-    }
+    fun getFloat(key: String, default: Float = 0f): Float = delegate.getFloat(key, default)
 
-    fun putFloat(key: String, value: Float): Boolean = when (type) {
-        SettingsType.SECURE -> Settings.Secure.putFloat(contentResolver, key, value)
-        SettingsType.SYSTEM -> Settings.System.putFloat(contentResolver, key, value)
-        SettingsType.GLOBAL -> Settings.Global.putFloat(contentResolver, key, value)
-    }
+    fun putFloat(key: String, value: Float): Boolean = delegate.putFloat(key, value)
 
-    fun observe(key: String): Flow<Unit> = callbackFlow {
-        val observer = object : ContentObserver(Handler(Looper.getMainLooper())) {
-            override fun onChange(selfChange: Boolean) {
-                trySend(Unit)
-            }
-        }
-        contentResolver.registerContentObserver(getUri(key), false, observer)
-        trySend(Unit)
-        awaitClose { contentResolver.unregisterContentObserver(observer) }
-    }.conflate()
+    @JvmOverloads
+    fun observe(key: String, emitInitial: Boolean = true): Flow<Unit> =
+        delegate.observe(key, emitInitial)
 
     fun observeInt(key: String, default: Int = 0): Flow<Int> =
-        observe(key).map { getInt(key, default) }
+        delegate.observeInt(key, default)
 
     fun observeString(key: String, default: String = ""): Flow<String> =
-        observe(key).map { getString(key, default) }
+        delegate.observeString(key, default)
 
     fun observeBoolean(key: String, default: Boolean = false): Flow<Boolean> =
-        observeInt(key, if (default) 1 else 0).map { it != 0 }
+        delegate.observeBoolean(key, default)
 
     fun observeFloat(key: String, default: Float = 0f): Flow<Float> =
-        observe(key).map { getFloat(key, default) }
+        delegate.observeFloat(key, default)
 }
 
 @Composable

@@ -13,6 +13,7 @@ android_library {
     resource_dirs: ["res"],
 
     static_libs: [
+        "ax_kt",
         "PlatformAnimationLib",
         "PlatformMotionTestingComposeValues",
         "androidx.core_core-ktx",

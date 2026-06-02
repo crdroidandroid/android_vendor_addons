@@ -63,10 +63,9 @@ fun SettingsSection(
                 .fillMaxWidth()
                 .padding(vertical = 12.dp)
         ) {
-            @OptIn(ExperimentalMaterial3ExpressiveApi::class)
             Text(
-                text = title.uppercase(),
-                style = MaterialTheme.typography.labelMediumEmphasized,
+                text = title,
+                style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.padding(start = 4.dp, bottom = 12.dp)
             )

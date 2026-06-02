@@ -47,6 +47,7 @@ import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.material3.TopAppBarState
@@ -115,12 +116,12 @@ fun AxionScaffold(
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         containerColor = containerColor,
         topBar = {
-            AxionTopAppBar(
+            AxionLargeTopAppBar(
                 title = title,
-                onBackClick = onBackClick,
                 scrollBehavior = scrollBehavior,
                 collapsedByDefault = collapsedByDefault,
                 containerColor = containerColor,
+                navigationIcon = { ExpressiveBackButton(onClick = onBackClick) },
                 actions = actions,
             )
         },
@@ -129,14 +130,57 @@ fun AxionScaffold(
     )
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun AxionPinnedTopAppBar(
+    title: String,
+    modifier: Modifier = Modifier,
+    containerColor: Color = MaterialTheme.colorScheme.surfaceContainer,
+    scrolledContainerColor: Color = containerColor,
+    titleContentColor: Color = MaterialTheme.colorScheme.onSurface,
+    navigationIconContentColor: Color = MaterialTheme.colorScheme.onSurface,
+    actionIconContentColor: Color = MaterialTheme.colorScheme.primary,
+    navigationIcon: @Composable () -> Unit = {},
+    actions: @Composable RowScope.() -> Unit = {},
+) {
+    TopAppBar(
+        title = {
+            val density = LocalDensity.current
+            CompositionLocalProvider(
+                LocalDensity provides Density(density.density, fontScale = 1f),
+            ) {
+                Text(
+                    text = title,
+                    modifier = Modifier.semantics { heading() },
+                    style = MaterialTheme.typography.titleMedium,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
+        },
+        modifier = modifier,
+        navigationIcon = navigationIcon,
+        actions = actions,
+        colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = containerColor,
+            scrolledContainerColor = scrolledContainerColor,
+            titleContentColor = titleContentColor,
+            navigationIconContentColor = navigationIconContentColor,
+            actionIconContentColor = actionIconContentColor,
+        ),
+    )
+}
+
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-private fun AxionTopAppBar(
+fun AxionLargeTopAppBar(
     title: String,
-    onBackClick: () -> Unit,
     scrollBehavior: TopAppBarScrollBehavior,
-    collapsedByDefault: Boolean,
-    containerColor: Color,
+    modifier: Modifier = Modifier,
+    collapsedByDefault: Boolean = false,
+    containerColor: Color = MaterialTheme.colorScheme.surfaceContainer,
+    navigationIcon: @Composable () -> Unit = {},
+    titleContent: (@Composable () -> Unit)? = null,
     actions: @Composable RowScope.() -> Unit = {},
 ) {
     val colors = AxionTopAppBarColors(
@@ -206,10 +250,10 @@ private fun AxionTopAppBar(
     val navIconPaddingStartPx = density.run { NavIconPaddingStart.toPx() }
     val navIconPaddingEndPx = density.run { NavIconPaddingEnd.toPx() }
     val expandedTitlePaddingStartPx = density.run { ExpandedTitlePaddingStart.toPx() }
-    val currentMaxLines = if (collapsedFraction < 0.5f) 2 else 1
+    val currentMaxLines = if (collapsedFraction < 0.5f) 3 else 1
 
     Box(
-        modifier = Modifier
+        modifier = modifier
             .then(appBarDragModifier)
             .drawBehind { drawRect(color = appBarContainerColor) }
             .semantics { isTraversalGroup = true }
@@ -221,27 +265,31 @@ private fun AxionTopAppBar(
                     CompositionLocalProvider(
                         LocalContentColor provides colors.navigationIconContentColor,
                     ) {
-                        ExpressiveBackButton(onClick = onBackClick)
+                        navigationIcon()
                     }
                 }
 
                 Box(Modifier.layoutId("title")) {
-                    CompositionLocalProvider(
-                        LocalDensity provides Density(
-                            density = density.density,
-                            fontScale = 1f,
-                        )
-                    ) {
-                        Text(
-                            text = title,
-                            modifier = Modifier
-                                .padding(end = TitlePaddingEnd)
-                                .semantics { heading() },
-                            color = colors.titleContentColor,
-                            overflow = TextOverflow.Ellipsis,
-                            maxLines = currentMaxLines,
-                            style = interpolatedTextStyle,
-                        )
+                    if (titleContent != null) {
+                        titleContent()
+                    } else {
+                        CompositionLocalProvider(
+                            LocalDensity provides Density(
+                                density = density.density,
+                                fontScale = 1f,
+                            )
+                        ) {
+                            Text(
+                                text = title,
+                                modifier = Modifier
+                                    .padding(end = TitlePaddingEnd)
+                                    .semantics { heading() },
+                                color = colors.titleContentColor,
+                                overflow = TextOverflow.Ellipsis,
+                                maxLines = currentMaxLines,
+                                style = interpolatedTextStyle,
+                            )
+                        }
                     }
                 }
 
