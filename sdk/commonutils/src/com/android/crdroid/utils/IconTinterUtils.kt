@@ -167,6 +167,38 @@ object IconTinterUtils {
         )
     }
 
+    @JvmStatic
+    fun tintDrawable(source: Drawable?, key: String?, context: Context?): Drawable? {
+        if (source == null || context == null) return null
+
+        val iconStyle = Settings.System.getIntForUser(
+            context.contentResolver,
+            ICON_STYLE,
+            ICON_STYLE_MATERIAL_EXPRESSIVE_ICON,
+            UserHandle.USER_CURRENT
+        )
+
+        val randomColors = Settings.System.getIntForUser(
+            context.contentResolver,
+            ICON_RANDOM_COLORS,
+            0,
+            UserHandle.USER_CURRENT
+        ) == 1
+
+        val cornerStyle = Settings.System.getIntForUser(
+            context.contentResolver,
+            ICON_CORNER_STYLE,
+            CORNER_STYLE_ROUND,
+            UserHandle.USER_CURRENT
+        )
+
+        val icon = unwrapToOriginalIcon(source).mutate()
+        return buildTintedIcon(
+            icon, key, context, context.resources,
+            iconStyle, randomColors, cornerStyle
+        )
+    }
+
     private fun unwrapToOriginalIcon(drawable: Drawable): Drawable {
         if (drawable is LayerDrawable) {
             val inner = drawable.findDrawableByLayerId(ICON_LAYER_ID)
@@ -187,11 +219,24 @@ object IconTinterUtils {
     ) {
         val rawIcon: Drawable = preference.icon ?: return
         val icon: Drawable = unwrapToOriginalIcon(rawIcon).mutate()
+        preference.icon = buildTintedIcon(
+            icon, preference.key, context, res, iconStyle, randomColors, cornerStyle
+        )
+    }
 
+    private fun buildTintedIcon(
+        icon: Drawable,
+        key: String?,
+        context: Context,
+        res: Resources,
+        iconStyle: Int,
+        randomColors: Boolean,
+        cornerStyle: Int
+    ): Drawable {
         val colors: IconColors = if (randomColors) {
             getRandomColors(res)
         } else {
-            getCachedColorsForPreference(preference.key, res)
+            getCachedColorsForPreference(key, res)
         }
 
         val cornerRadiusDp = if (cornerStyle == CORNER_STYLE_ROUND) {
@@ -200,10 +245,10 @@ object IconTinterUtils {
             SQUARISH_CORNER_RADIUS_DP
         }
 
-        when (iconStyle) {
+        return when (iconStyle) {
             ICON_STYLE_MATERIAL_EXPRESSIVE_ICON -> {
-                applyIconWithBackground(
-                    preference, icon, colors.bg,
+                buildIconWithBackground(
+                    icon, colors.bg,
                     iconColor = colors.fg,
                     cornerRadiusDp = cornerRadiusDp,
                     context = context
@@ -212,8 +257,8 @@ object IconTinterUtils {
 
             ICON_STYLE_SOLID_BG_WHITE_ICON -> {
                 val saturatedBgColor = increaseSaturation(colors.bg, SOLID_BG_SATURATION_BOOST)
-                applyIconWithBackground(
-                    preference, icon, saturatedBgColor,
+                buildIconWithBackground(
+                    icon, saturatedBgColor,
                     iconColor = Color.WHITE,
                     cornerRadiusDp = cornerRadiusDp,
                     context = context
@@ -221,8 +266,8 @@ object IconTinterUtils {
             }
 
             ICON_STYLE_GRADIENT_BG_WHITE_ICON -> {
-                applyIconWithGradientBackground(
-                    preference, icon, colors.bg,
+                buildIconWithGradientBackground(
+                    icon, colors.bg,
                     cornerRadiusDp, context
                 )
             }
@@ -230,12 +275,12 @@ object IconTinterUtils {
             ICON_STYLE_COLOR_ICON_NO_BG -> {
                 icon.setTint(colors.bg)
                 icon.setTintMode(PorterDuff.Mode.SRC_ATOP)
-                preference.icon = icon
+                icon
             }
 
             ICON_STYLE_ACCENT_OUTLINE_ACCENT_ICON -> {
-                applyIconWithOutline(
-                    preference, icon,
+                buildIconWithOutline(
+                    icon,
                     outlineColor = resolveThemeColorAccent(context),
                     fillColor = Color.TRANSPARENT,
                     cornerRadiusDp = cornerRadiusDp,
@@ -245,8 +290,8 @@ object IconTinterUtils {
             }
 
             ICON_STYLE_SOLID_OUTLINE_SOLID_ICON -> {
-                applyIconWithOutline(
-                    preference, icon,
+                buildIconWithOutline(
+                    icon,
                     outlineColor = colors.bg,
                     fillColor = Color.TRANSPARENT,
                     cornerRadiusDp = cornerRadiusDp,
@@ -259,26 +304,25 @@ object IconTinterUtils {
                 val accentColor = resolveThemeColorAccent(context)
                 icon.setTint(accentColor)
                 icon.setTintMode(PorterDuff.Mode.SRC_ATOP)
-                preference.icon = icon
+                icon
             }
 
             else -> {
                 val accentColor = resolveThemeColorAccent(context)
                 icon.setTint(accentColor)
                 icon.setTintMode(PorterDuff.Mode.SRC_ATOP)
-                preference.icon = icon
+                icon
             }
         }
     }
 
-    private fun applyIconWithBackground(
-        preference: Preference,
+    private fun buildIconWithBackground(
         icon: Drawable,
         bgColor: Int,
         iconColor: Int,
         cornerRadiusDp: Int,
         context: Context
-    ) {
+    ): Drawable {
         val density = context.resources.displayMetrics.density
         val padding = (BG_PADDING_DP * density).toInt()
         val cornerRadius = (cornerRadiusDp * density).toInt()
@@ -299,16 +343,15 @@ object IconTinterUtils {
         icon.setTint(iconColor)
         icon.setTintMode(PorterDuff.Mode.SRC_ATOP)
 
-        preference.icon = layerDrawable
+        return layerDrawable
     }
 
-    private fun applyIconWithGradientBackground(
-        preference: Preference,
+    private fun buildIconWithGradientBackground(
         icon: Drawable,
         baseColor: Int,
         cornerRadiusDp: Int,
         context: Context
-    ) {
+    ): Drawable {
         val density = context.resources.displayMetrics.density
         val padding = (BG_PADDING_DP * density).toInt()
         val cornerRadius = (cornerRadiusDp * density).toInt()
@@ -342,18 +385,17 @@ object IconTinterUtils {
         icon.setTint(Color.WHITE)
         icon.setTintMode(PorterDuff.Mode.SRC_ATOP)
 
-        preference.icon = layerDrawable
+        return layerDrawable
     }
 
-    private fun applyIconWithOutline(
-        preference: Preference,
+    private fun buildIconWithOutline(
         icon: Drawable,
         outlineColor: Int,
         fillColor: Int,
         cornerRadiusDp: Int,
         context: Context,
         useAccentForIcon: Boolean
-    ) {
+    ): Drawable {
         val density = context.resources.displayMetrics.density
         val padding = (BG_PADDING_DP * density).toInt()
         val outlineWidth = (OUTLINE_WIDTH_DP * density).toInt()
@@ -377,7 +419,7 @@ object IconTinterUtils {
         icon.setTint(iconColor)
         icon.setTintMode(PorterDuff.Mode.SRC_ATOP)
 
-        preference.icon = layerDrawable
+        return layerDrawable
     }
 
     @ColorInt
