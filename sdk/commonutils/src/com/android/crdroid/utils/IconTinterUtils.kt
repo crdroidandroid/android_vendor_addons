@@ -10,10 +10,12 @@ import android.content.res.Resources
 import android.database.ContentObserver
 import android.graphics.Color
 import android.graphics.PorterDuff
+import android.graphics.drawable.AdaptiveIconDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.LayerDrawable
 import android.net.Uri
+import android.os.Build
 import android.os.Handler
 import android.os.UserHandle
 import android.provider.Settings
@@ -192,7 +194,7 @@ object IconTinterUtils {
             UserHandle.USER_CURRENT
         )
 
-        val icon = unwrapToOriginalIcon(source).mutate()
+        val icon = extractTintableGlyph(unwrapToOriginalIcon(source)).mutate()
         return buildTintedIcon(
             icon, key, context, context.resources,
             iconStyle, randomColors, cornerStyle
@@ -209,6 +211,18 @@ object IconTinterUtils {
         return drawable
     }
 
+    private fun extractTintableGlyph(drawable: Drawable): Drawable {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O &&
+            drawable is AdaptiveIconDrawable
+        ) {
+            drawable.foreground?.let { return it }
+        }
+        if (drawable is LayerDrawable && drawable.numberOfLayers >= 2) {
+            drawable.getDrawable(drawable.numberOfLayers - 1)?.let { return it }
+        }
+        return drawable
+    }
+
     private fun tintPreferenceIcon(
         preference: Preference,
         context: Context,
@@ -218,7 +232,7 @@ object IconTinterUtils {
         cornerStyle: Int
     ) {
         val rawIcon: Drawable = preference.icon ?: return
-        val icon: Drawable = unwrapToOriginalIcon(rawIcon).mutate()
+        val icon: Drawable = extractTintableGlyph(unwrapToOriginalIcon(rawIcon)).mutate()
         preference.icon = buildTintedIcon(
             icon, preference.key, context, res, iconStyle, randomColors, cornerStyle
         )
