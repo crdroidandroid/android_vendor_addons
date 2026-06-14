@@ -1,5 +1,6 @@
 package com.android.server.wm;
 
+import static android.app.ActivityTaskManager.INVALID_TASK_ID;
 import static android.app.AxSandboxManager.AppLockState.LOCKED;
 import static android.app.AxSandboxManager.AppLockState.NONE;
 import static android.app.AxSandboxManager.AppLockState.UNLOCKED;
@@ -30,6 +31,7 @@ import com.android.server.wm.ActivityRecord;
 import com.android.server.wm.sandbox.applock.AppLockRepository;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -87,6 +89,7 @@ public class AppLockService {
     private int mCurrentUserId = 0;
     private boolean mKeyguardDone = true;
     private String mLastFocusedAppKey = null;
+    private int mLastFocusedTaskId = INVALID_TASK_ID;
 
     public static final int CONFIRM_REQUEST_CODE = 0x0A584C4B;
 
@@ -301,6 +304,9 @@ public class AppLockService {
         if (data == null) {
             ActivityRecord target = r.resultTo;
             if (target == null) {
+                if (!TextUtils.isEmpty(packageName)) {
+                    clearPendingUnlock(packageName, userId);
+                }
                 return true;
             }
             lockSession(packageName, userId);
@@ -418,28 +424,49 @@ public class AppLockService {
     }
 
     public void onAppFocusChanged(ActivityRecord newFocus, Task newTask) {
-        String newKey = (newFocus != null) ? sessionKey(newFocus) : null;
+        if (!hasLockedPackages()) {
+            mLastFocusedAppKey = null;
+            mLastFocusedTaskId = INVALID_TASK_ID;
+            return;
+        }
+
+        final String newKey = (newFocus != null) ? sessionKey(newFocus) : null;
+        final int newTaskId = (newTask != null) ? newTask.mTaskId : INVALID_TASK_ID;
+
+        if (isTransientFocusInUnlockedTask(newFocus, newKey, newTaskId)) {
+            cancelTimeoutLock(mLastFocusedAppKey);
+            mUnlockTimestamps.put(mLastFocusedAppKey, SystemClock.elapsedRealtime());
+            lockTopApp(newTask, "onAppFocusChanged");
+            return;
+        }
+
         if (mLastFocusedAppKey != null && !mLastFocusedAppKey.equals(newKey)) {
             scheduleTimeoutLock(mLastFocusedAppKey);
             if (mRepository.getLockBehavior() == LOCK_BEHAVIOR_ON_LEAVE
                     && mUnlockedApps.contains(mLastFocusedAppKey)) {
-                int colon = mLastFocusedAppKey.indexOf(':');
-                if (colon > 0 && colon < mLastFocusedAppKey.length() - 1) {
-                    try {
-                        int oldUserId = Integer.parseInt(mLastFocusedAppKey.substring(0, colon));
-                        String oldPkg = mLastFocusedAppKey.substring(colon + 1);
-                        markSessionLocked(oldPkg, oldUserId);
-                    } catch (NumberFormatException ignored) {
-                    }
-                }
+                lockSessionKey(mLastFocusedAppKey);
             }
         }
         if (newKey != null) {
             cancelTimeoutLock(newKey);
-            mUnlockTimestamps.put(newKey, SystemClock.elapsedRealtime());
+            if (mUnlockedApps.contains(newKey)) {
+                mUnlockTimestamps.put(newKey, SystemClock.elapsedRealtime());
+            }
         }
         mLastFocusedAppKey = newKey;
+        mLastFocusedTaskId = newTaskId;
         lockTopApp(newTask, "onAppFocusChanged");
+    }
+
+    private boolean isTransientFocusInUnlockedTask(ActivityRecord newFocus, String newKey,
+            int newTaskId) {
+        return newFocus != null
+                && mLastFocusedAppKey != null
+                && !mLastFocusedAppKey.equals(newKey)
+                && newTaskId != INVALID_TASK_ID
+                && newTaskId == mLastFocusedTaskId
+                && mUnlockedApps.contains(mLastFocusedAppKey)
+                && !hasAppLock(newFocus.packageName, newFocus.mUserId);
     }
 
     public void onWindowingModeChanged(Task task, int prevMode) {
@@ -480,28 +507,50 @@ public class AppLockService {
     }
 
     public void clearUnlockedApp() {
-        mUnlockedApps.clear();
-        mUnlockTimestamps.clear();
-        clearAllTimeouts();
+        lockAllSessionsExcept(Collections.emptySet());
     }
 
     public void clearUnlockedApp(ActivityRecord r) {
         if (r == null) return;
-        if (r.occludesParent() || r.isActivityTypeHomeOrRecents()) {
-            if (r.isActivityTypeHomeOrRecents() && r.mTransitionController.isTransientLaunch(r)) {
-                return;
-            }
-            boolean wasUnlocked = mUnlockedApps.contains(sessionKey(r));
-            clearUnlockedApp();
-            if (wasUnlocked) {
-                markSessionUnlocked(r.packageName, r.mUserId);
-            } else {
-                markSessionLocked(r.packageName, r.mUserId);
-            }
-            if (WindowConfiguration.isFloating(r.getWindowingMode())) {
-                lockVisibleFullscreenApps(mAtms.mWindowManager.getDefaultDisplayContentLocked());
-            }
+        if (!r.occludesParent() && !r.isActivityTypeHomeOrRecents()) return;
+        if (r.isActivityTypeHomeOrRecents() && r.mTransitionController.isTransientLaunch(r)) {
+            return;
         }
+
+        final Set<String> keep = new HashSet<>(2);
+        final String key = sessionKey(r);
+        if (mUnlockedApps.contains(key)) {
+            keep.add(key);
+        }
+        final String ownerKey = getUnlockedTaskOwnerKey(r);
+        if (ownerKey != null) {
+            keep.add(ownerKey);
+        }
+        lockAllSessionsExcept(keep);
+
+        final long now = SystemClock.elapsedRealtime();
+        for (String k : keep) {
+            mUnlockTimestamps.put(k, now);
+        }
+
+        if (WindowConfiguration.isFloating(r.getWindowingMode())) {
+            lockVisibleFullscreenApps(mAtms.mWindowManager.getDefaultDisplayContentLocked());
+        }
+    }
+
+    private String getUnlockedTaskOwnerKey(ActivityRecord r) {
+        if (r.isActivityTypeHomeOrRecents()) return null;
+        final Task task = r.getTask();
+        if (task == null) return null;
+        final String basePkg = task.getBasePackageName();
+        if (TextUtils.isEmpty(basePkg) || basePkg.equals(r.packageName)) return null;
+        if (hasAppLock(r.packageName, r.mUserId)) return null;
+        final String ownerKey = sessionKey(task.mUserId, basePkg);
+        return mUnlockedApps.contains(ownerKey) ? ownerKey : null;
+    }
+
+    private boolean isTransientTopOfTaskOwner(ActivityRecord top, String ownerKey) {
+        return top != null && ownerKey.equals(getUnlockedTaskOwnerKey(top));
     }
 
     public void removeTask(Task task, String reason) {
@@ -518,6 +567,7 @@ public class AppLockService {
         mUnlockedApps.remove(targetKey);
         mUnlockTimestamps.remove(targetKey);
         cancelTimeoutLock(targetKey);
+        clearPendingUnlock(packageName, userId);
     }
 
     public void cleanupPackage(String packageName) {
@@ -556,29 +606,40 @@ public class AppLockService {
     }
 
     public void notifyAppLockStateChanged(String packageName, boolean isLocked) {
-        int count = mAppLockStateListeners.beginBroadcast();
-        for (int i = 0; i < count; i++) {
+        synchronized (mAppLockStateListeners) {
+            int count = mAppLockStateListeners.beginBroadcast();
             try {
-                mAppLockStateListeners.getBroadcastItem(i).onAppLockStateChanged(packageName, isLocked);
-            } catch (RemoteException ignored) {
+                for (int i = 0; i < count; i++) {
+                    try {
+                        mAppLockStateListeners.getBroadcastItem(i)
+                                .onAppLockStateChanged(packageName, isLocked);
+                    } catch (RemoteException ignored) {
+                    }
+                }
+            } finally {
+                mAppLockStateListeners.finishBroadcast();
             }
         }
-        mAppLockStateListeners.finishBroadcast();
     }
 
     private void notifyAppSessionChanged(String packageName, int userId, boolean isUnlocked) {
-        int count = mAppSessionListeners.beginBroadcast();
-        for (int i = 0; i < count; i++) {
+        synchronized (mAppSessionListeners) {
+            int count = mAppSessionListeners.beginBroadcast();
             try {
-                if (isUnlocked) {
-                    mAppSessionListeners.getBroadcastItem(i).onAppUnlocked(packageName, userId);
-                } else {
-                    mAppSessionListeners.getBroadcastItem(i).onAppLocked(packageName, userId);
+                for (int i = 0; i < count; i++) {
+                    try {
+                        if (isUnlocked) {
+                            mAppSessionListeners.getBroadcastItem(i).onAppUnlocked(packageName, userId);
+                        } else {
+                            mAppSessionListeners.getBroadcastItem(i).onAppLocked(packageName, userId);
+                        }
+                    } catch (RemoteException ignored) {
+                    }
                 }
-            } catch (RemoteException ignored) {
+            } finally {
+                mAppSessionListeners.finishBroadcast();
             }
         }
-        mAppSessionListeners.finishBroadcast();
     }
 
     private boolean isSessionUnlocked(String packageName, int userId) {
@@ -630,20 +691,43 @@ public class AppLockService {
     }
 
     private void lockAllSessionsAndNotify() {
-        if (mUnlockedApps.isEmpty()) return;
-        String[] keys = mUnlockedApps.toArray(new String[0]);
-        mUnlockedApps.clear();
-        mUnlockTimestamps.clear();
-        clearAllTimeouts();
-        for (String key : keys) {
-            int colon = key.indexOf(':');
-            if (colon <= 0 || colon >= key.length() - 1) continue;
-            try {
-                int userId = Integer.parseInt(key.substring(0, colon));
-                String packageName = key.substring(colon + 1);
-                notifyAppSessionChanged(packageName, userId, false);
-            } catch (NumberFormatException ignored) {
+        lockAllSessionsExcept(Collections.emptySet());
+    }
+
+    private void lockAllSessionsExcept(Set<String> keep) {
+        for (String key : mUnlockedApps.toArray(new String[0])) {
+            if (keep.contains(key)) {
+                cancelTimeoutLock(key);
+                continue;
             }
+            if (mUnlockedApps.remove(key)) {
+                mUnlockTimestamps.remove(key);
+                cancelTimeoutLock(key);
+                notifySessionKeyLocked(key);
+            }
+        }
+        if (keep.isEmpty()) {
+            clearAllTimeouts();
+        }
+        mUnlockTimestamps.keySet().retainAll(mUnlockedApps);
+    }
+
+    private void lockSessionKey(String key) {
+        int colon = key.indexOf(':');
+        if (colon <= 0 || colon >= key.length() - 1) return;
+        try {
+            markSessionLocked(key.substring(colon + 1), Integer.parseInt(key.substring(0, colon)));
+        } catch (NumberFormatException ignored) {
+        }
+    }
+
+    private void notifySessionKeyLocked(String key) {
+        int colon = key.indexOf(':');
+        if (colon <= 0 || colon >= key.length() - 1) return;
+        try {
+            notifyAppSessionChanged(key.substring(colon + 1),
+                    Integer.parseInt(key.substring(0, colon)), false);
+        } catch (NumberFormatException ignored) {
         }
     }
 
@@ -656,16 +740,8 @@ public class AppLockService {
             synchronized (mAtms.mGlobalLock) {
                 ActivityRecord top = mAtms.mRootWindowContainer.getTopResumedActivity();
                 String topKey = (top != null) ? sessionKey(top) : null;
-                if (!key.equals(topKey)) {
-                    int index = key.indexOf(":");
-                    if (index != -1) {
-                        try {
-                            int userId = Integer.parseInt(key.substring(0, index));
-                            String packageName = key.substring(index + 1);
-                            markSessionLocked(packageName, userId);
-                        } catch (NumberFormatException ignored) {
-                        }
-                    }
+                if (!key.equals(topKey) && !isTransientTopOfTaskOwner(top, key)) {
+                    lockSessionKey(key);
                 }
                 mTimeoutRunnables.remove(key);
             }
