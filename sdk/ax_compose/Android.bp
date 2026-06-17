@@ -14,6 +14,7 @@ android_library {
 
     static_libs: [
         "ax_kt",
+        "ax_utils",
         "PlatformAnimationLib",
         "PlatformMotionTestingComposeValues",
         "androidx.core_core-ktx",
