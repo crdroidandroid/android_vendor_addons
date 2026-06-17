@@ -26,6 +26,7 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
+import com.android.axion.util.PackageManagerUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -57,20 +58,25 @@ fun rememberAppList(vararg filters: AppFilter): State<List<AppEntry>> {
             val apps = pm.getInstalledApplications(PackageManager.GET_META_DATA)
             val entries = apps.mapNotNull { info ->
                 val isSystem = info.flags and ApplicationInfo.FLAG_SYSTEM != 0
+                val launchIntent = PackageManagerUtils.getLaunchIntentForPackage(
+                    context,
+                    info.packageName,
+                )
 
                 if (AppFilter.USER_ONLY in filterSet && isSystem) return@mapNotNull null
                 if (AppFilter.SYSTEM_ONLY in filterSet && !isSystem) return@mapNotNull null
                 if (AppFilter.NO_OVERLAYS in filterSet && info.isResourceOverlay) return@mapNotNull null
-                if (AppFilter.LAUNCHABLE_ONLY in filterSet &&
-                    pm.getLaunchIntentForPackage(info.packageName) == null) return@mapNotNull null
+                if (AppFilter.LAUNCHABLE_ONLY in filterSet && launchIntent == null) {
+                    return@mapNotNull null
+                }
 
-                val icon = runCatching { info.loadIcon(pm) }.getOrNull() ?: return@mapNotNull null
-                val className = pm.getLaunchIntentForPackage(info.packageName)
-                    ?.component?.className ?: ""
+                val icon = PackageManagerUtils.loadApplicationIcon(pm, info)
+                    ?: return@mapNotNull null
+                val className = launchIntent?.component?.className ?: ""
                 AppEntry(
                     packageName = info.packageName,
                     className = className,
-                    label = info.loadLabel(pm).toString(),
+                    label = PackageManagerUtils.loadApplicationLabel(pm, info).toString(),
                     icon = icon,
                     isSystem = isSystem,
                 )
