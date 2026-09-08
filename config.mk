@@ -48,6 +48,7 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-NumOverlap
 
 PRODUCT_PACKAGES += \
+    ImeNavBarSpaceOverlay \
     HideSmartSpace \
     SmartSpaceOffset \
     HideClock
