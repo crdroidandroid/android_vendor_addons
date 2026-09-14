@@ -1,0 +1,42 @@
+package {
+    default_visibility: ["//visibility:public"],
+}
+
+android_library {
+    name: "ax_sandbox_shared",
+    manifest: "AndroidManifest.xml",
+
+    srcs: [
+        "src/**/*.kt",
+    ],
+
+    resource_dirs: ["res"],
+
+    static_libs: [
+        "kotlin-stdlib",
+        "kotlinx-coroutines-core",
+        "androidx.core_core-ktx",
+        "androidx.compose.animation_animation",
+        "androidx.compose.animation_animation-core",
+        "androidx.compose.foundation_foundation",
+        "androidx.compose.material3_material3",
+        "androidx.compose.material_material-icons-core",
+        "androidx.compose.material_material-icons-extended",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.ui_ui",
+    ],
+
+    libs: [
+        "framework",
+    ],
+
+    kotlincflags: [
+        "-Xjvm-default=all",
+        "-opt-in=kotlin.RequiresOptIn",
+        "-P plugin:androidx.compose.compiler.plugins.kotlin:sourceInformation=true",
+    ],
+
+    use_resource_processor: true,
+
+    visibility: ["//visibility:public"],
+}
