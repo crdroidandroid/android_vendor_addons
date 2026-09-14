@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_title_create">Create PIN</string>
+    <string name="pin_title_confirm">Confirm PIN</string>
+    <string name="pin_title_enter">Enter PIN</string>
+    <string name="pin_prompt_create">Choose a 4-digit PIN</string>
+    <string name="pin_prompt_confirm">Re-enter your PIN</string>
+    <string name="pin_prompt_unlock">Enter your PIN to unlock private apps</string>
+    <string name="pin_error_mismatch">PINs mismatched. Try again or go back.</string>
+    <string name="pin_error_incorrect">Incorrect PIN</string>
+    <string name="action_biometric_unlock">Biometric Unlock</string>
+    <string name="action_backspace">Backspace</string>
+    <string name="action_forgot_password">Forgot Password?</string>
+
+    <string name="password_title_create">Create Password</string>
+    <string name="password_title_confirm">Confirm Password</string>
+    <string name="password_title_enter">Enter Password</string>
+    <string name="password_prompt_create">Choose a secure password</string>
+    <string name="password_prompt_confirm">Re-enter your password</string>
+    <string name="password_prompt_unlock">Enter your password to unlock private apps</string>
+    <string name="password_error_mismatch">Passwords mismatched. Try again or go back.</string>
+    <string name="password_error_incorrect">Incorrect password</string>
+    <string name="password_label">Password</string>
+    <string name="password_placeholder">Enter password</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_set_password">Set Password</string>
+    <string name="action_show_password">Show</string>
+    <string name="action_hide_password">Hide</string>
+
+    <string name="pattern_title_create">Create Pattern</string>
+    <string name="pattern_title_confirm">Confirm Pattern</string>
+    <string name="pattern_title_enter">Draw Pattern</string>
+    <string name="pattern_prompt_create">Connect at least 4 dots</string>
+    <string name="pattern_prompt_confirm">Draw your pattern again</string>
+    <string name="pattern_prompt_unlock">Draw your pattern to unlock private apps</string>
+    <string name="pattern_error_mismatch">Patterns don\'t match</string>
+    <string name="pattern_error_incorrect">Wrong pattern</string>
+    <string name="pattern_error_too_short">Connect at least 4 dots</string>
+</resources>

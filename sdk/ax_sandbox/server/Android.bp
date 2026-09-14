@@ -1,0 +1,8 @@
+filegroup {
+    name: "ax_sandbox_server_sources",
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
+    visibility: ["//visibility:public"],
+}
