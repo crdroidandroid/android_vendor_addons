@@ -14,11 +14,16 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3ExpressiveApi::class)
+
 package com.android.axion.compose.preferences
 
+import android.graphics.drawable.Drawable
 import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
@@ -35,6 +40,7 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Refresh
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Slider
@@ -50,18 +56,20 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalHapticFeedback
-import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.ui.res.stringResource
-import com.android.axion.compose.R
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.core.graphics.drawable.toBitmap
+import com.android.axion.compose.R
 import kotlin.math.roundToInt
 
-
-@OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun SliderPreference(
     title: String,
@@ -73,14 +81,22 @@ fun SliderPreference(
     steps: Int = 0,
     displayValue: String,
     modifier: Modifier = Modifier,
+    icon: ImageVector? = null,
+    customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
+    iconTint: Color? = null,
+    iconBackgroundColor: Color? = null,
     enabled: Boolean = true,
     position: PreferencePosition = LocalPreferencePosition.current,
-    onReset: (() -> Unit)? = null
+    onReset: (() -> Unit)? = null,
+    onValueClick: (() -> Unit)? = null,
 ) {
     val interactionSource = remember { MutableInteractionSource() }
     val shape = preferenceShape(position)
     val haptic = LocalHapticFeedback.current
     val contentAlpha = if (enabled) 1f else 0.38f
+    val hasSummary = summary.isNotEmpty()
+    val resolvedIconTint = iconTint ?: MaterialTheme.colorScheme.onSurfaceVariant
 
     Column(
         modifier = modifier
@@ -91,24 +107,76 @@ fun SliderPreference(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .heightIn(min = 72.dp)
+                .heightIn(min = PreferenceTokens.MinHeight)
                 .alpha(contentAlpha)
-                .padding(start = 16.dp, end = 16.dp, top = 12.dp),
+                .padding(
+                    start = PreferenceTokens.PaddingHorizontal,
+                    end = PreferenceTokens.PaddingHorizontal,
+                    top = PreferenceTokens.PaddingVertical,
+                    bottom = if (hasSummary) 0.dp else 4.dp,
+                ),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Spacer(modifier = Modifier.width(16.dp))
+            if (customIcon != null) {
+                Box(
+                    modifier = Modifier
+                        .size(PreferenceTokens.IconFrameSize)
+                        .alpha(contentAlpha),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    customIcon()
+                }
+                Spacer(modifier = Modifier.width(PreferenceTokens.IconSpacing))
+            } else if (iconDrawable != null) {
+                Box(
+                    modifier = Modifier
+                        .size(PreferenceTokens.IconFrameSize)
+                        .clip(CircleShape)
+                        .then(
+                            if (iconBackgroundColor != null) Modifier.background(iconBackgroundColor)
+                            else Modifier
+                        )
+                        .alpha(contentAlpha),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    val bitmap = remember(iconDrawable) {
+                        val width = if (iconDrawable.intrinsicWidth > 0) iconDrawable.intrinsicWidth else 48
+                        val height = if (iconDrawable.intrinsicHeight > 0) iconDrawable.intrinsicHeight else 48
+                        iconDrawable.toBitmap(width, height).asImageBitmap()
+                    }
+                    Image(
+                        bitmap = bitmap,
+                        contentDescription = null,
+                        modifier = Modifier.size(PreferenceTokens.IconSize),
+                    )
+                }
+                Spacer(modifier = Modifier.width(PreferenceTokens.IconSpacing))
+            } else if (icon != null) {
+                PreferenceIcon(
+                    icon = icon,
+                    tint = resolvedIconTint,
+                    backgroundColor = iconBackgroundColor,
+                    contentAlpha = contentAlpha,
+                )
+            }
+
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = title,
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.onSurface,
-                    modifier = Modifier.padding(vertical = 2.dp)
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
                 )
-                Text(
-                    text = summary,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
+                if (hasSummary) {
+                    Text(
+                        text = summary,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 10,
+                        overflow = TextOverflow.Ellipsis,
+                    )
+                }
             }
 
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -117,16 +185,28 @@ fun SliderPreference(
                     style = MaterialTheme.typography.labelLargeEmphasized,
                     color = MaterialTheme.colorScheme.primary,
                     textAlign = TextAlign.End,
-                    modifier = Modifier.widthIn(min = 60.dp)
+                    modifier = Modifier
+                        .widthIn(min = 60.dp)
+                        .then(
+                            if (onValueClick != null && enabled) {
+                                Modifier.clickable(
+                                    interactionSource = remember { MutableInteractionSource() },
+                                    indication = null,
+                                    onClick = onValueClick,
+                                )
+                            } else {
+                                Modifier
+                            }
+                        )
                 )
 
                 if (onReset != null && enabled) {
                     val resetHint = stringResource(R.string.long_press_to_reset)
                     val toastContext = LocalContext.current
-                    Spacer(modifier = Modifier.width(16.dp))
+                    Spacer(modifier = Modifier.width(PreferenceTokens.PaddingHorizontal))
                     Box(
                         modifier = Modifier
-                            .size(24.dp)
+                            .size(PreferenceTokens.IconSize)
                             .clip(CircleShape)
                             .combinedClickable(
                                 onClick = {
@@ -160,7 +240,7 @@ fun SliderPreference(
             interactionSource = interactionSource,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 24.dp)
+                .padding(horizontal = PreferenceTokens.SliderHorizontalPadding)
                 .alpha(contentAlpha),
             colors = SliderDefaults.colors(
                 thumbColor = MaterialTheme.colorScheme.primary,
@@ -169,7 +249,7 @@ fun SliderPreference(
             )
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(PreferenceTokens.SliderBottomSpacing))
     }
 }
 
@@ -184,6 +264,11 @@ fun SecureSettingSlider(
     unit: String = "",
     defaultValue: Int = min,
     modifier: Modifier = Modifier,
+    icon: ImageVector? = null,
+    customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
+    iconTint: Color? = null,
+    iconBackgroundColor: Color? = null,
     enabled: Boolean = true,
     position: PreferencePosition = LocalPreferencePosition.current,
     formatValue: ((Int) -> String)? = null
@@ -199,6 +284,11 @@ fun SecureSettingSlider(
         unit = unit,
         defaultValue = defaultValue,
         modifier = modifier,
+        icon = icon,
+        customIcon = customIcon,
+        iconDrawable = iconDrawable,
+        iconTint = iconTint,
+        iconBackgroundColor = iconBackgroundColor,
         enabled = enabled,
         position = position,
         formatValue = formatValue
@@ -216,6 +306,11 @@ fun SystemSettingSlider(
     unit: String = "",
     defaultValue: Int = min,
     modifier: Modifier = Modifier,
+    icon: ImageVector? = null,
+    customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
+    iconTint: Color? = null,
+    iconBackgroundColor: Color? = null,
     enabled: Boolean = true,
     position: PreferencePosition = LocalPreferencePosition.current,
     formatValue: ((Int) -> String)? = null
@@ -231,6 +326,11 @@ fun SystemSettingSlider(
         unit = unit,
         defaultValue = defaultValue,
         modifier = modifier,
+        icon = icon,
+        customIcon = customIcon,
+        iconDrawable = iconDrawable,
+        iconTint = iconTint,
+        iconBackgroundColor = iconBackgroundColor,
         enabled = enabled,
         position = position,
         formatValue = formatValue
@@ -249,6 +349,11 @@ fun SettingsSliderBase(
     unit: String = "",
     defaultValue: Int = min,
     modifier: Modifier = Modifier,
+    icon: ImageVector? = null,
+    customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
+    iconTint: Color? = null,
+    iconBackgroundColor: Color? = null,
     enabled: Boolean = true,
     position: PreferencePosition = LocalPreferencePosition.current,
     formatValue: ((Int) -> String)? = null
@@ -290,6 +395,11 @@ fun SettingsSliderBase(
         steps = 0, 
         displayValue = displayValue,
         modifier = modifier,
+        icon = icon,
+        customIcon = customIcon,
+        iconDrawable = iconDrawable,
+        iconTint = iconTint,
+        iconBackgroundColor = iconBackgroundColor,
         enabled = enabled,
         position = position
     )

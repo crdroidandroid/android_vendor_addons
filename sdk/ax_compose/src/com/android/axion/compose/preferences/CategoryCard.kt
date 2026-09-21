@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package com.android.axion.compose.preferences
 
 import androidx.compose.animation.core.animateFloatAsState
@@ -29,6 +31,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -42,11 +48,9 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
-@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun CategoryCard(
     title: String,

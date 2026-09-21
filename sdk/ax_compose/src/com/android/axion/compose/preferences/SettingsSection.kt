@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package com.android.axion.compose.preferences
 
 import androidx.compose.animation.AnimatedVisibility
@@ -32,6 +34,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -41,7 +44,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -65,9 +67,12 @@ fun SettingsSection(
         ) {
             Text(
                 text = title,
-                style = MaterialTheme.typography.labelMedium,
+                style = MaterialTheme.typography.titleSmallEmphasized,
                 color = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.padding(start = 4.dp, bottom = 12.dp)
+                modifier = Modifier.padding(
+                    start = PreferenceTokens.PaddingHorizontal,
+                    bottom = PreferenceTokens.CategoryPaddingBottom,
+                )
             )
             
             Column(
@@ -118,7 +123,6 @@ fun SettingsSectionTonal(
                         modifier = Modifier.size(22.dp)
                     )
                 }
-                @OptIn(ExperimentalMaterial3ExpressiveApi::class)
                 Text(
                     text = title,
                     style = MaterialTheme.typography.titleMediumEmphasized,

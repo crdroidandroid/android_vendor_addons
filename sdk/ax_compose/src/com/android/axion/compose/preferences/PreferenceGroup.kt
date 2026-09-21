@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package com.android.axion.compose.preferences
 
 import androidx.compose.animation.AnimatedVisibility
@@ -48,6 +50,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 interface PreferenceGroupScope {
@@ -71,6 +74,7 @@ fun PreferenceGroup(
     title: String? = null,
     collapsible: Boolean = false,
     initiallyExpanded: Boolean = true,
+    spacing: Dp = 1.dp,
     content: PreferenceGroupScope.() -> Unit
 ) {
     val scope = PreferenceGroupScopeImpl()
@@ -91,13 +95,13 @@ fun PreferenceGroup(
             if (collapsible) {
                 val titleShape = if (expanded) {
                     RoundedCornerShape(
-                        topStart = 28.dp,
-                        topEnd = 28.dp,
-                        bottomStart = 4.dp,
-                        bottomEnd = 4.dp,
+                        topStart = PreferenceTokens.CornerRadiusOuter,
+                        topEnd = PreferenceTokens.CornerRadiusOuter,
+                        bottomStart = PreferenceTokens.CornerRadiusInner,
+                        bottomEnd = PreferenceTokens.CornerRadiusInner,
                     )
                 } else {
-                    RoundedCornerShape(28.dp)
+                    RoundedCornerShape(PreferenceTokens.CornerRadiusOuter)
                 }
                 Row(
                     modifier = Modifier
@@ -106,7 +110,12 @@ fun PreferenceGroup(
                         .clip(titleShape)
                         .background(MaterialTheme.colorScheme.surfaceBright)
                         .clickable { expanded = !expanded }
-                        .padding(start = 16.dp, end = 16.dp, top = 14.dp, bottom = 14.dp),
+                        .padding(
+                            start = PreferenceTokens.PaddingHorizontal,
+                            end = PreferenceTokens.PaddingHorizontal,
+                            top = 14.dp,
+                            bottom = 14.dp,
+                        ),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Text(
@@ -138,30 +147,58 @@ fun PreferenceGroup(
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(start = 16.dp, bottom = 8.dp, top = 16.dp)
+                        .padding(
+                            start = PreferenceTokens.CategoryPaddingStart,
+                            bottom = PreferenceTokens.CategoryPaddingBottom,
+                            top = PreferenceTokens.CategoryPaddingTop,
+                        )
                 )
             }
         }
 
-        AnimatedVisibility(
-            visible = !collapsible || expanded,
-            enter = expandVertically() + fadeIn(),
-            exit = shrinkVertically() + fadeOut(),
-        ) {
-            Column(
-                verticalArrangement = Arrangement.spacedBy(1.dp)
+        if (collapsible) {
+            AnimatedVisibility(
+                visible = expanded,
+                enter = expandVertically() + fadeIn(),
+                exit = shrinkVertically() + fadeOut(),
             ) {
-                items.forEachIndexed { index, composable ->
-                    val position = when {
-                        items.size == 1 -> PreferencePosition.Single
-                        index == 0 -> if (collapsible && title != null) PreferencePosition.Middle else PreferencePosition.Top
-                        index == items.size - 1 -> PreferencePosition.Bottom
-                        else -> PreferencePosition.Middle
-                    }
-                    CompositionLocalProvider(LocalPreferencePosition provides position) {
-                        composable()
-                    }
-                }
+                PreferenceGroupContent(
+                    items = items,
+                    collapsible = true,
+                    hasTitle = title != null,
+                    spacing = spacing,
+                )
+            }
+        } else {
+            PreferenceGroupContent(
+                items = items,
+                collapsible = false,
+                hasTitle = title != null,
+                spacing = spacing,
+            )
+        }
+    }
+}
+
+@Composable
+private fun PreferenceGroupContent(
+    items: List<@Composable () -> Unit>,
+    collapsible: Boolean,
+    hasTitle: Boolean,
+    spacing: Dp,
+) {
+    Column(
+        verticalArrangement = Arrangement.spacedBy(spacing)
+    ) {
+        items.forEachIndexed { index, composable ->
+            val position =
+                preferencePosition(
+                    index = index,
+                    count = items.size,
+                    firstIsMiddle = collapsible && hasTitle,
+                )
+            CompositionLocalProvider(LocalPreferencePosition provides position) {
+                composable()
             }
         }
     }

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="long_press_to_reset">Long press to reset</string>
+    <string name="ax_color_picker_title">Color picker</string>
+    <string name="ax_color_picker_defaults">Defaults</string>
+    <string name="ax_color_picker_hue">Hue</string>
+    <string name="ax_color_picker_saturation">Saturation</string>
+    <string name="ax_color_picker_brightness">Brightness</string>
+    <string name="ax_color_picker_hex">HEX</string>
+    <string name="ax_color_picker_cancel">Cancel</string>
+    <string name="ax_color_picker_apply">Apply</string>
 </resources>

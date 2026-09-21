@@ -18,6 +18,8 @@
 package com.android.axion.compose.theme
 
 import android.app.Activity
+import android.content.Context
+import android.content.ContextWrapper
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.MaterialExpressiveTheme
@@ -37,15 +39,17 @@ import androidx.core.view.WindowCompat
 @Composable
 fun AxionTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
+    applySystemBars: Boolean = true,
     content: @Composable () -> Unit
 ) {
     val context = LocalContext.current
     val colorScheme = if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
     
     val view = LocalView.current
-    if (!view.isInEditMode) {
+    val activity = view.context.findActivity()
+    if (applySystemBars && !view.isInEditMode && activity != null) {
         SideEffect {
-            val window = (view.context as Activity).window
+            val window = activity.window
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
             WindowCompat.getInsetsController(window, view).isAppearanceLightNavigationBars = !darkTheme
         }
@@ -62,6 +66,14 @@ fun AxionTheme(
             LocalContentColor provides MaterialTheme.colorScheme.onSurface,
             content = content
         )
+    }
+}
+
+private tailrec fun Context.findActivity(): Activity? {
+    return when (this) {
+        is Activity -> this
+        is ContextWrapper -> baseContext.findActivity()
+        else -> null
     }
 }
 

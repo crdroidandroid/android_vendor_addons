@@ -24,6 +24,7 @@ android_library {
         "kotlin-stdlib",
         "kotlinx-coroutines-android",
         "androidx.activity_activity-compose",
+        "androidx.compose.animation_animation",
         "androidx.compose.animation_animation-core",
         "androidx.compose.animation_animation-graphics",
         "androidx.compose.foundation_foundation",

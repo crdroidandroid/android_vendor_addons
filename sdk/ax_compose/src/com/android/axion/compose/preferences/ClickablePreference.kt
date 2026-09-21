@@ -16,10 +16,9 @@
 
 package com.android.axion.compose.preferences
 
+import android.graphics.drawable.Drawable
 import androidx.compose.foundation.combinedClickable
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.OpenInNew
 import androidx.compose.material3.Icon
@@ -37,6 +36,7 @@ fun ClickablePreference(
     summary: String? = null,
     icon: ImageVector? = null,
     customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
     onClick: () -> Unit,
     onLongClick: (() -> Unit)? = null,
     modifier: Modifier = Modifier,
@@ -52,6 +52,7 @@ fun ClickablePreference(
         summary = summary,
         icon = icon,
         customIcon = customIcon,
+        iconDrawable = iconDrawable,
         enabled = enabled,
         iconTint = iconTint,
         iconBackgroundColor = iconBackgroundColor,
@@ -60,7 +61,6 @@ fun ClickablePreference(
         modifier = modifier.combinedClickable(enabled = enabled, onClick = onClick, onLongClick = onLongClick),
         widget = if (showExternalIcon) {
             {
-                Spacer(modifier = Modifier.width(8.dp))
                 Icon(
                     imageVector = @Suppress("DEPRECATION") Icons.Outlined.OpenInNew,
                     contentDescription = null,
