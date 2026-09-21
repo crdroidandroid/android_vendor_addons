@@ -74,14 +74,17 @@ import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.isTraversalGroup
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.lerp as lerpTextStyle
+import androidx.compose.ui.text.lerp as lerpComposeTextStyle
 import androidx.compose.ui.text.style.TextMotion
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.Velocity
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.isUnspecified
+import androidx.compose.ui.unit.lerp as lerpComposeTextUnit
 import androidx.compose.ui.util.lerp
 import kotlin.math.abs
 import kotlin.math.roundToInt
@@ -246,7 +249,11 @@ fun AxionLargeTopAppBar(
         }
 
     val currentAppBarHeightPx = maxHeightPx + scrollBehavior.state.heightOffset
-    val interpolatedTextStyle = lerpTextStyle(expandedTextStyle, collapsedTextStyle, collapsedFraction)
+    val interpolatedTextStyle = lerpTextStyle(
+        expandedTextStyle,
+        collapsedTextStyle,
+        collapsedFraction,
+    )
     val navIconPaddingStartPx = density.run { NavIconPaddingStart.toPx() }
     val navIconPaddingEndPx = density.run { NavIconPaddingEnd.toPx() }
     val expandedTitlePaddingStartPx = density.run { ExpandedTitlePaddingStart.toPx() }
@@ -357,6 +364,41 @@ fun AxionLargeTopAppBar(
             }
         }
     }
+}
+
+private fun lerpTextStyle(
+    start: TextStyle,
+    stop: TextStyle,
+    fraction: Float,
+): TextStyle {
+    val fontSize = lerpTextUnit(start.fontSize, stop.fontSize, fraction)
+    val letterSpacing = lerpTextUnit(start.letterSpacing, stop.letterSpacing, fraction)
+    val lineHeight = lerpTextUnit(start.lineHeight, stop.lineHeight, fraction)
+
+    return lerpComposeTextStyle(
+        start.copy(
+            fontSize = fontSize,
+            letterSpacing = letterSpacing,
+            lineHeight = lineHeight,
+        ),
+        stop.copy(
+            fontSize = fontSize,
+            letterSpacing = letterSpacing,
+            lineHeight = lineHeight,
+        ),
+        fraction,
+    )
+}
+
+private fun lerpTextUnit(
+    start: TextUnit,
+    stop: TextUnit,
+    fraction: Float,
+): TextUnit {
+    if (start.isUnspecified || stop.isUnspecified || start.type != stop.type) {
+        return if (fraction < 0.5f) start else stop
+    }
+    return lerpComposeTextUnit(start, stop, fraction)
 }
 
 @Stable

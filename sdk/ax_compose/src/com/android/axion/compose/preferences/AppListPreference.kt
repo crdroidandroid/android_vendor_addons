@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class, ExperimentalMaterial3Api::class)
+
 package com.android.axion.compose.preferences
 
-import android.content.pm.PackageManager
 import android.graphics.drawable.Drawable
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.Spring
@@ -67,6 +68,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.drawable.toBitmap
+import com.android.axion.util.PackageManagerUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -101,16 +103,15 @@ fun AppListPreference(
             appsInfo =
                 selectedPackages
                     .mapNotNull { pkg ->
-                        try {
-                            val info = packageManager.getApplicationInfo(pkg, 0)
-                            AppInfo(
-                                pkg,
-                                info.loadLabel(packageManager).toString(),
-                                info.loadIcon(packageManager),
-                            )
-                        } catch (e: PackageManager.NameNotFoundException) {
-                            null
-                        }
+                        val info = PackageManagerUtils.getApplicationInfo(context, pkg)
+                            ?: return@mapNotNull null
+                        val icon = PackageManagerUtils.loadApplicationIcon(packageManager, info)
+                        AppInfo(
+                            pkg,
+                            PackageManagerUtils.loadApplicationLabel(packageManager, info)
+                                .toString(),
+                            icon,
+                        )
                     }
                     .sortedBy { it.label.lowercase() }
         }
@@ -122,7 +123,10 @@ fun AppListPreference(
                 .fillMaxWidth()
                 .clip(shape)
                 .background(MaterialTheme.colorScheme.surfaceBright)
-                .padding(horizontal = 16.dp, vertical = 12.dp)
+                .padding(
+                    horizontal = PreferenceTokens.PaddingHorizontal,
+                    vertical = PreferenceTokens.PaddingVertical,
+                )
     ) {
         Text(
             text = title,

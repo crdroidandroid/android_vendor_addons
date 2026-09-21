@@ -18,34 +18,36 @@ package com.android.axion.compose.preferences
 
 import android.graphics.drawable.Drawable
 import androidx.compose.foundation.combinedClickable
-import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.OpenInNew
-import androidx.compose.material3.Icon
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ClickablePreference(
+fun PrimarySwitchPreference(
     title: String,
     summary: String? = null,
-    icon: ImageVector? = null,
-    customIcon: @Composable (() -> Unit)? = null,
-    iconDrawable: Drawable? = null,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit,
     onClick: () -> Unit,
     onLongClick: (() -> Unit)? = null,
     modifier: Modifier = Modifier,
+    icon: ImageVector? = null,
+    customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
     enabled: Boolean = true,
-    showExternalIcon: Boolean = false,
     iconTint: Color? = null,
     iconBackgroundColor: Color? = null,
     position: PreferencePosition = LocalPreferencePosition.current,
-    enlargeTitle: Boolean = false,
 ) {
     BasePreference(
         title = title,
@@ -57,19 +59,29 @@ fun ClickablePreference(
         iconTint = iconTint,
         iconBackgroundColor = iconBackgroundColor,
         position = position,
-        enlargeTitle = enlargeTitle,
-        modifier = modifier.combinedClickable(enabled = enabled, onClick = onClick, onLongClick = onLongClick),
-        widget = if (showExternalIcon) {
-            {
-                Icon(
-                    imageVector = @Suppress("DEPRECATION") Icons.Outlined.OpenInNew,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier
-                        .size(20.dp)
-                        .alpha(if (enabled) 1f else 0.38f),
+        modifier = modifier.combinedClickable(
+            enabled = enabled,
+            onClick = onClick,
+            onLongClick = onLongClick,
+        ),
+        widget = {
+            VerticalDivider(
+                modifier = Modifier
+                    .height(PreferenceTokens.DividerHeight)
+                    .width(PreferenceTokens.DividerWidth),
+                color = MaterialTheme.colorScheme.outlineVariant,
+            )
+            Spacer(modifier = Modifier.width(PreferenceTokens.DividerTrailingSpacing))
+            Box(
+                modifier = Modifier.widthIn(min = PreferenceTokens.WidgetFrameMinWidth),
+                contentAlignment = Alignment.Center,
+            ) {
+                ExpressiveSwitch(
+                    checked = checked,
+                    onCheckedChange = if (enabled) onCheckedChange else null,
+                    enabled = enabled,
                 )
             }
-        } else null,
+        },
     )
 }

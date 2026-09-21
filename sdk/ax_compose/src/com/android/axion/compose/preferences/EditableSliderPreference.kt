@@ -17,59 +17,50 @@
 package com.android.axion.compose.preferences
 
 import android.graphics.drawable.Drawable
-import androidx.compose.foundation.combinedClickable
-import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.OpenInNew
-import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.unit.dp
 
 @Composable
-fun ClickablePreference(
+fun EditableSliderPreference(
     title: String,
-    summary: String? = null,
+    summary: String,
+    value: Float,
+    onValueChange: (Float) -> Unit,
+    onValueChangeFinished: () -> Unit,
+    valueRange: ClosedFloatingPointRange<Float>,
+    steps: Int = 0,
+    displayValue: String,
+    modifier: Modifier = Modifier,
     icon: ImageVector? = null,
     customIcon: @Composable (() -> Unit)? = null,
     iconDrawable: Drawable? = null,
-    onClick: () -> Unit,
-    onLongClick: (() -> Unit)? = null,
-    modifier: Modifier = Modifier,
-    enabled: Boolean = true,
-    showExternalIcon: Boolean = false,
     iconTint: Color? = null,
     iconBackgroundColor: Color? = null,
+    enabled: Boolean = true,
     position: PreferencePosition = LocalPreferencePosition.current,
-    enlargeTitle: Boolean = false,
+    onReset: (() -> Unit)? = null,
+    onValueClick: (() -> Unit)? = null,
 ) {
-    BasePreference(
+    SliderPreference(
         title = title,
         summary = summary,
+        value = value,
+        onValueChange = onValueChange,
+        onValueChangeFinished = onValueChangeFinished,
+        valueRange = valueRange,
+        steps = steps,
+        displayValue = displayValue,
+        modifier = modifier,
         icon = icon,
         customIcon = customIcon,
         iconDrawable = iconDrawable,
-        enabled = enabled,
         iconTint = iconTint,
         iconBackgroundColor = iconBackgroundColor,
+        enabled = enabled,
         position = position,
-        enlargeTitle = enlargeTitle,
-        modifier = modifier.combinedClickable(enabled = enabled, onClick = onClick, onLongClick = onLongClick),
-        widget = if (showExternalIcon) {
-            {
-                Icon(
-                    imageVector = @Suppress("DEPRECATION") Icons.Outlined.OpenInNew,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier
-                        .size(20.dp)
-                        .alpha(if (enabled) 1f else 0.38f),
-                )
-            }
-        } else null,
+        onReset = onReset,
+        onValueClick = onValueClick,
     )
 }

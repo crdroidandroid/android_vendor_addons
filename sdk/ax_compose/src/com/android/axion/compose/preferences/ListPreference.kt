@@ -16,6 +16,7 @@
 
 package com.android.axion.compose.preferences
 
+import android.graphics.drawable.Drawable
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -39,6 +40,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
@@ -50,6 +52,9 @@ fun SecureListPreference(
     summary: String,
     options: List<Pair<String, String>>,
     defaultValue: String,
+    icon: ImageVector? = null,
+    customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
     position: PreferencePosition = LocalPreferencePosition.current,
     dependencyKey: String? = null
 ) {
@@ -66,6 +71,9 @@ fun SecureListPreference(
         options = options,
         value = value,
         onValueChange = setValue,
+        icon = icon,
+        customIcon = customIcon,
+        iconDrawable = iconDrawable,
         enabled = enabled,
         position = position
     )
@@ -79,6 +87,9 @@ fun ListPreference(
     value: String,
     onValueChange: (String) -> Unit,
     modifier: Modifier = Modifier,
+    icon: ImageVector? = null,
+    customIcon: @Composable (() -> Unit)? = null,
+    iconDrawable: Drawable? = null,
     enabled: Boolean = true,
     position: PreferencePosition = LocalPreferencePosition.current
 ) {
@@ -89,6 +100,9 @@ fun ListPreference(
     BasePreference(
         title = title,
         summary = displaySummary,
+        icon = icon,
+        customIcon = customIcon,
+        iconDrawable = iconDrawable,
         enabled = enabled,
         position = position,
         modifier = modifier.clickable(enabled = enabled) { showDialog = true },
@@ -118,6 +132,7 @@ private fun ListPreferenceDialog(
 ) {
     AlertDialog(
         onDismissRequest = onDismiss,
+        containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
         modifier = Modifier.width(dialogWidth()),
         title = {
             Text(
@@ -141,11 +156,14 @@ private fun ListPreferenceDialog(
                                 onClick = { onOptionSelected(key) },
                                 role = Role.RadioButton
                             )
-                            .padding(horizontal = 16.dp, vertical = 12.dp),
+                            .padding(
+                                horizontal = PreferenceTokens.DialogItemPaddingHorizontal,
+                                vertical = PreferenceTokens.DialogItemPaddingVertical,
+                            ),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         RadioButton(selected = selected, onClick = null)
-                        Spacer(modifier = Modifier.width(16.dp))
+                        Spacer(modifier = Modifier.width(PreferenceTokens.WidgetSpacing))
                         Text(
                             text = label,
                             style = MaterialTheme.typography.bodyLarge,

@@ -31,154 +31,144 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.Hyphens
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 
-private fun Context.fontFamilyFromConfig(normalKey: String, mediumKey: String): FontFamily? {
-    val normal = getAndroidConfig(normalKey)
-    val medium = getAndroidConfig(mediumKey)
-    if (normal.isEmpty() || medium.isEmpty()) return null
-    if (normal == "sans-serif" && medium == "sans-serif-medium") return null
-    return FontFamily(
-        Font(DeviceFontFamilyName(normal), FontWeight.Normal),
-        Font(DeviceFontFamilyName(medium), FontWeight.Medium),
+private class AxionFontFamily(context: Context) {
+    private val brand = context.configFontFamily("config_headlineFontFamily", "config_headlineFontFamilyMedium")
+    private val plain = context.configFontFamily("config_bodyFontFamily", "config_bodyFontFamilyMedium")
+
+    fun brand(
+        token: String,
+        size: TextUnit,
+        lineHeight: TextUnit,
+        weight: FontWeight = FontWeight.Normal,
+        tracking: TextUnit = 0.02.em,
+    ): TextStyle = expressiveStyle(
+        fontFamily = brand ?: variableFont("variable-$token"),
+        fontWeight = weight,
+        fontSize = size,
+        lineHeight = lineHeight,
+        letterSpacing = tracking,
     )
+
+    fun brandEmphasized(
+        token: String,
+        size: TextUnit,
+        lineHeight: TextUnit,
+        tracking: TextUnit = 0.02.em,
+    ): TextStyle = expressiveStyle(
+        fontFamily = brand ?: variableFont("variable-$token-emphasized"),
+        fontWeight = FontWeight.SemiBold,
+        fontSize = size,
+        lineHeight = lineHeight,
+        letterSpacing = tracking,
+    )
+
+    fun plain(
+        token: String,
+        size: TextUnit,
+        lineHeight: TextUnit,
+        weight: FontWeight = FontWeight.Normal,
+        tracking: TextUnit = 0.02.em,
+    ): TextStyle = expressiveStyle(
+        fontFamily = plain ?: variableFont("variable-$token"),
+        fontWeight = weight,
+        fontSize = size,
+        lineHeight = lineHeight,
+        letterSpacing = tracking,
+    )
+
+    fun plainEmphasized(
+        token: String,
+        size: TextUnit,
+        lineHeight: TextUnit,
+        tracking: TextUnit = 0.02.em,
+    ): TextStyle = expressiveStyle(
+        fontFamily = plain ?: variableFont("variable-$token-emphasized"),
+        fontWeight = FontWeight.SemiBold,
+        fontSize = size,
+        lineHeight = lineHeight,
+        letterSpacing = tracking,
+    )
+
+    companion object {
+        fun variableFont(name: String): FontFamily =
+            FontFamily(Font(DeviceFontFamilyName(name)))
+
+        @SuppressLint("DiscouragedApi")
+        private fun Context.configFontFamily(normalKey: String, mediumKey: String): FontFamily? {
+            val normal = getAndroidConfig(normalKey)
+            val medium = getAndroidConfig(mediumKey)
+            if (normal.isEmpty() || medium.isEmpty()) return null
+            if (normal == "sans-serif" && medium == "sans-serif-medium") return null
+            return FontFamily(
+                Font(DeviceFontFamilyName(normal), FontWeight.Normal),
+                Font(DeviceFontFamilyName(medium), FontWeight.Medium),
+            )
+        }
+
+        @SuppressLint("DiscouragedApi")
+        private fun Context.getAndroidConfig(name: String): String {
+            val id = resources.getIdentifier(name, "string", "android")
+            return if (id != 0) resources.getString(id) else ""
+        }
+    }
 }
 
-private fun variableFont(name: String): FontFamily =
-    FontFamily(Font(DeviceFontFamilyName(name)))
-
-@SuppressLint("DiscouragedApi")
-private fun Context.getAndroidConfig(configName: String): String {
-    val configId = resources.getIdentifier(configName, "string", "android")
-    return if (configId != 0) resources.getString(configId) else ""
-}
+private fun expressiveStyle(
+    fontFamily: FontFamily,
+    fontWeight: FontWeight,
+    fontSize: TextUnit,
+    lineHeight: TextUnit,
+    letterSpacing: TextUnit = 0.02.em,
+): TextStyle = TextStyle(
+    fontFamily = fontFamily,
+    fontWeight = fontWeight,
+    fontSize = fontSize,
+    lineHeight = lineHeight,
+    letterSpacing = letterSpacing,
+    hyphens = Hyphens.Auto,
+)
 
 private fun buildExpressiveTypography(context: Context): Typography {
-    val brand = context.fontFamilyFromConfig("config_headlineFontFamily", "config_headlineFontFamilyMedium")
-    val plain = context.fontFamilyFromConfig("config_bodyFontFamily", "config_bodyFontFamilyMedium")
-
+    val f = AxionFontFamily(context)
     return Typography(
-        displayLarge = TextStyle(
-            fontFamily = brand ?: variableFont("variable-display-large"), fontWeight = FontWeight.Normal,
-            fontSize = 57.sp, lineHeight = 64.sp, letterSpacing = (-0.2).sp, hyphens = Hyphens.Auto,
-        ),
-        displayLargeEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-display-large-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 57.sp, lineHeight = 64.sp, letterSpacing = (-0.2).sp, hyphens = Hyphens.Auto,
-        ),
-        displayMedium = TextStyle(
-            fontFamily = brand ?: variableFont("variable-display-medium"), fontWeight = FontWeight.Normal,
-            fontSize = 45.sp, lineHeight = 52.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        displayMediumEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-display-medium-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 45.sp, lineHeight = 52.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        displaySmall = TextStyle(
-            fontFamily = brand ?: variableFont("variable-display-small"), fontWeight = FontWeight.Normal,
-            fontSize = 36.sp, lineHeight = 44.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        displaySmallEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-display-small-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 36.sp, lineHeight = 44.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        headlineLarge = TextStyle(
-            fontFamily = brand ?: variableFont("variable-headline-large"), fontWeight = FontWeight.Normal,
-            fontSize = 32.sp, lineHeight = 40.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        headlineLargeEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-headline-large-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 32.sp, lineHeight = 40.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        headlineMedium = TextStyle(
-            fontFamily = brand ?: variableFont("variable-headline-medium"), fontWeight = FontWeight.Normal,
-            fontSize = 28.sp, lineHeight = 36.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        headlineMediumEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-headline-medium-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 28.sp, lineHeight = 36.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        headlineSmall = TextStyle(
-            fontFamily = brand ?: variableFont("variable-headline-small"), fontWeight = FontWeight.Normal,
-            fontSize = 24.sp, lineHeight = 32.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        headlineSmallEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-headline-small-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 24.sp, lineHeight = 32.sp, letterSpacing = 0.0.sp, hyphens = Hyphens.Auto,
-        ),
-        titleLarge = TextStyle(
-            fontFamily = brand ?: variableFont("variable-title-large"), fontWeight = FontWeight.Normal,
-            fontSize = 22.sp, lineHeight = 28.sp, letterSpacing = 0.02.em, hyphens = Hyphens.Auto,
-        ),
-        titleLargeEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-title-large-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 22.sp, lineHeight = 28.sp, letterSpacing = 0.sp, hyphens = Hyphens.Auto,
-        ),
-        titleMedium = TextStyle(
-            fontFamily = brand ?: variableFont("variable-title-medium"), fontWeight = FontWeight.Medium,
-            fontSize = 16.sp, lineHeight = 24.sp, letterSpacing = 0.02.em, hyphens = Hyphens.Auto,
-        ),
-        titleMediumEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-title-medium-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 16.sp, lineHeight = 24.sp, letterSpacing = 0.02.em, hyphens = Hyphens.Auto,
-        ),
-        titleSmall = TextStyle(
-            fontFamily = brand ?: variableFont("variable-title-small"), fontWeight = FontWeight.Medium,
-            fontSize = 14.sp, lineHeight = 20.sp, letterSpacing = 0.02.em, hyphens = Hyphens.Auto,
-        ),
-        titleSmallEmphasized = TextStyle(
-            fontFamily = brand ?: variableFont("variable-title-small-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 14.sp, lineHeight = 20.sp, letterSpacing = 0.02.em, hyphens = Hyphens.Auto,
-        ),
-        bodyLarge = TextStyle(
-            fontFamily = plain ?: variableFont("variable-body-large"), fontWeight = FontWeight.Normal,
-            fontSize = 16.sp, lineHeight = 24.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        bodyLargeEmphasized = TextStyle(
-            fontFamily = plain ?: variableFont("variable-body-large-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 16.sp, lineHeight = 24.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        bodyMedium = TextStyle(
-            fontFamily = plain ?: variableFont("variable-body-medium"), fontWeight = FontWeight.Normal,
-            fontSize = 14.sp, lineHeight = 20.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        bodyMediumEmphasized = TextStyle(
-            fontFamily = plain ?: variableFont("variable-body-medium-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 14.sp, lineHeight = 20.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        bodySmall = TextStyle(
-            fontFamily = plain ?: variableFont("variable-body-small"), fontWeight = FontWeight.Normal,
-            fontSize = 12.sp, lineHeight = 16.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        bodySmallEmphasized = TextStyle(
-            fontFamily = plain ?: variableFont("variable-body-small-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 12.sp, lineHeight = 16.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        labelLarge = TextStyle(
-            fontFamily = plain ?: variableFont("variable-label-large"), fontWeight = FontWeight.Medium,
-            fontSize = 14.sp, lineHeight = 20.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        labelLargeEmphasized = TextStyle(
-            fontFamily = plain ?: variableFont("variable-label-large-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 14.sp, lineHeight = 20.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        labelMedium = TextStyle(
-            fontFamily = plain ?: variableFont("variable-label-medium"), fontWeight = FontWeight.Medium,
-            fontSize = 12.sp, lineHeight = 16.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        labelMediumEmphasized = TextStyle(
-            fontFamily = plain ?: variableFont("variable-label-medium-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 12.sp, lineHeight = 16.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        labelSmall = TextStyle(
-            fontFamily = plain ?: variableFont("variable-label-small"), fontWeight = FontWeight.Medium,
-            fontSize = 11.sp, lineHeight = 16.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
-        labelSmallEmphasized = TextStyle(
-            fontFamily = plain ?: variableFont("variable-label-small-emphasized"), fontWeight = FontWeight.SemiBold,
-            fontSize = 11.sp, lineHeight = 16.sp, letterSpacing = 0.01.em, hyphens = Hyphens.Auto,
-        ),
+        displayLarge = f.brand("display-large", 57.sp, 64.sp),
+        displayLargeEmphasized = f.brandEmphasized("display-large", 57.sp, 64.sp),
+        displayMedium = f.brand("display-medium", 45.sp, 52.sp),
+        displayMediumEmphasized = f.brandEmphasized("display-medium", 45.sp, 52.sp),
+        displaySmall = f.brand("display-small", 36.sp, 44.sp),
+        displaySmallEmphasized = f.brandEmphasized("display-small", 36.sp, 44.sp),
+
+        headlineLarge = f.brand("headline-large", 32.sp, 40.sp),
+        headlineLargeEmphasized = f.brandEmphasized("headline-large", 32.sp, 40.sp),
+        headlineMedium = f.brand("headline-medium", 28.sp, 36.sp),
+        headlineMediumEmphasized = f.brandEmphasized("headline-medium", 28.sp, 36.sp),
+        headlineSmall = f.brand("headline-small", 24.sp, 32.sp),
+        headlineSmallEmphasized = f.brandEmphasized("headline-small", 24.sp, 32.sp),
+
+        titleLarge = f.brand("title-large", 22.sp, 28.sp),
+        titleLargeEmphasized = f.brandEmphasized("title-large", 22.sp, 28.sp),
+        titleMedium = f.brand("title-medium", 16.sp, 24.sp, FontWeight.Medium),
+        titleMediumEmphasized = f.brandEmphasized("title-medium", 16.sp, 24.sp),
+        titleSmall = f.brand("title-small", 14.sp, 20.sp, FontWeight.Medium),
+        titleSmallEmphasized = f.brandEmphasized("title-small", 14.sp, 20.sp),
+
+        bodyLarge = f.plain("body-large", 16.sp, 24.sp),
+        bodyLargeEmphasized = f.plainEmphasized("body-large", 16.sp, 24.sp),
+        bodyMedium = f.plain("body-medium", 14.sp, 20.sp),
+        bodyMediumEmphasized = f.plainEmphasized("body-medium", 14.sp, 20.sp),
+        bodySmall = f.plain("body-small", 12.sp, 16.sp, tracking = 0.00833333.em),
+        bodySmallEmphasized = f.plainEmphasized("body-small", 12.sp, 16.sp),
+
+        labelLarge = f.plain("label-large", 14.sp, 20.sp, FontWeight.Medium),
+        labelLargeEmphasized = f.plainEmphasized("label-large", 14.sp, 20.sp),
+        labelMedium = f.plain("label-medium", 12.sp, 16.sp, FontWeight.Medium, 0.00833333.em),
+        labelMediumEmphasized = f.plainEmphasized("label-medium", 12.sp, 16.sp, tracking = 0.00833333.em),
+        labelSmall = f.plain("label-small", 11.sp, 16.sp, FontWeight.Medium, 0.00909091.em),
+        labelSmallEmphasized = f.plainEmphasized("label-small", 11.sp, 16.sp, tracking = 0.00909091.em),
     )
 }
 
