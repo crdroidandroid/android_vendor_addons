@@ -63,11 +63,11 @@ public final class AxSandboxService extends SystemService {
             int userId = uid >= 0 ? UserHandle.getUserId(uid) : 0;
             boolean removedForAll = intent.getBooleanExtra(Intent.EXTRA_REMOVED_FOR_ALL_USERS, false);
 
-            mAppLockService.removeLockedApp(packageName, userId);
+            mAppLockService.cleanupPackage(packageName, userId);
             mAppHideService.setPackageHidden(packageName, false, userId);
             mIsolationService.removeSandboxedPackage(packageName, userId);
             if (removedForAll || userId == 0) {
-                mAppLockService.removeLockedApp(packageName, 999);
+                mAppLockService.cleanupPackage(packageName, 999);
                 mAppHideService.setPackageHidden(packageName, false, 999);
                 mIsolationService.removeSandboxedPackage(packageName, 999);
             }
