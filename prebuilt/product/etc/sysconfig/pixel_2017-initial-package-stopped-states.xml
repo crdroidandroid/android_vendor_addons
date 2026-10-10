@@ -36,6 +36,7 @@ Example usage
 -->
 <config>
     <initial-package-state package="com.android.pixellogger" stopped="false"/>
+    <initial-package-state package="com.google.android.apps.modem.pixellogger" stopped="false"/>
     <initial-package-state package="com.android.settings" stopped="false"/>
     <initial-package-state package="com.android.stk" stopped="false"/>
     <initial-package-state package="com.google.android.apps.internal.betterbug" stopped="false"/>

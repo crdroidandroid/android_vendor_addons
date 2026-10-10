@@ -3,4 +3,6 @@
 <config>
     <!-- This feature identifies devices with Contextual Search (Circle to Search) -->
     <feature name="com.google.android.feature.CONTEXTUAL_SEARCH"/>
+    <!-- This feature identifies devices with Contextual Search Live Translate -->
+    <feature name="com.google.android.feature.CONTEXTUAL_SEARCH_LIVE_TRANSLATE"/>
 </config>

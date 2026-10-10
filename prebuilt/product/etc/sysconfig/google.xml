@@ -45,9 +45,7 @@
     <allow-implicit-broadcast action="com.google.gservices.intent.action.GSERVICES_CHANGED" />
     <allow-implicit-broadcast action="com.google.gservices.intent.action.GSERVICES_OVERRIDE" />
     <allow-implicit-broadcast action="com.google.android.c2dm.intent.RECEIVE" />
-    <!-- TODO: This is a temporary workaround for allowing GmsCore to receive this broadcast.
-         This can be removed once OneTimeInitializer functionality is moved to GmsCore. -->
-    <allow-implicit-broadcast action="com.google.android.onetimeinitializer.ONE_TIME_INITIALIZED" />
+
 
     <!-- Play Store likewise must have network access to support other applications. -->
     <allow-in-power-save-except-idle package="com.android.vending" />
@@ -68,6 +66,7 @@
 
     <!-- Allow SetupWizard keeping at unrestricted mode of Battery usage. -->
     <bg-restriction-exemption package="com.google.android.setupwizard"/>
+    <bg-restriction-exemption package="com.google.android.apps.automotive.templates.host"/>
     <bg-restriction-exemption package="com.google.android.apps.setupwizard.searchselector"/>
 
     <!-- These Google applications all handle URLs to their websites by default -->
@@ -113,6 +112,7 @@
     <allow-association target="com.google.android.as" allowed="com.android.bluetooth" />
     <allow-association target="com.google.android.as" allowed="com.android.bluetooth.services" />
     <allow-association target="com.google.android.as" allowed="com.android.phone" />
+    <allow-association target="com.google.android.as" allowed="com.android.providers.blockednumber" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.contacts" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.media" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.telephony" />
@@ -122,20 +122,11 @@
     <allow-association target="com.google.android.as" allowed="com.google.android.providers.media.module" />
     <!-- AI services can bind to its open-source network component. -->
     <allow-association target="com.google.android.as" allowed="com.google.android.as.oss" />
+    <!-- AI services can bind to Settings Intelligence. -->
+    <allow-association target="com.google.android.as" allowed="com.google.android.settings.intelligence"/>
 
-    <!-- AI services open-source network component can bind back to the core package. -->
-    <allow-association target="com.google.android.as.oss" allowed="com.google.android.as" />
-    <!-- AI services open-source network component can bind to AI Core. -->
-    <allow-association target="com.google.android.as.oss" allowed="com.google.android.aicore" />
-
-    <!-- Pixel Launcher can bind to the open-source network component. -->
-    <allow-association target="com.google.android.as.oss" allowed="com.google.android.apps.nexuslauncher" />
-
-    <!-- Google app can bind to the open-source network component. -->
-    <allow-association target="com.google.android.as.oss" allowed="com.google.android.googlequicksearchbox" />
-
-    <!-- Gboard can bind to the AI services open-source network component. -->
-    <allow-association target="com.google.android.as.oss" allowed="com.google.android.inputmethod.latin" />
+     <!-- Specify the explicit set of other applications that Glasses Secure service is allowed to interact with.-->
+    <allow-association target="com.google.android.glasses.secure" allowed="com.google.android.as.oss" />
 
     <!-- Specify the explicit set of other applications whose app data directories are
         accessible by other applications. -->
@@ -147,6 +138,7 @@
 
     <!-- Specify the installer eligiable for updating the given GMS package. -->
     <update-ownership package="com.google.android.gms" installer="com.android.vending" />
+    <update-ownership package="com.google.android.verifier" installer="com.android.vending" />
 
     <!-- Denylist of packages that are not eligible for automatic rollback -->
     <automatic-rollback-denylisted-app package="com.android.vending" />
