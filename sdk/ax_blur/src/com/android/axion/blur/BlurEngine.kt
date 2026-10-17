@@ -111,7 +111,7 @@ open class BlurEngine @JvmOverloads constructor(
     private var recordedSourceState = SourceRecord()
     private var sourceBlurEffect: RenderEffect? = null
     private var sourceBlurEffectRadius = -1f
-    private var sourceBlurSaturation = 1f
+    private var sourceBlurSaturation = AX_BLUR_SOURCE_SATURATION
     private var sourceBlurCurveBias = 0f
     private var sourceBlurMinX = 0f
     private var sourceBlurMaxX = 255f
@@ -624,9 +624,12 @@ open class BlurEngine @JvmOverloads constructor(
             false
         }
         autoDiscoverSource()
+        // The cross-window drawable already painted the overlay colour; painting it again over the
+        // in-window layer doubled the tint wherever both paths drew.
         val drewSource = drawSourceBlur(
             canvas, left, top, right, bottom,
             cornerRadii, cornerRadius, crossWindowAlpha, clipPath,
+            withOverlay = !drewCrossWindow,
         )
         if (!drewSource && !drewCrossWindow) {
             if (crossWindowAlpha > 0) clearKey(key)
@@ -683,6 +686,7 @@ open class BlurEngine @JvmOverloads constructor(
         cornerRadius: Float,
         alpha: Int,
         clipPath: Path?,
+        withOverlay: Boolean = true,
     ): Boolean {
         val source = sourceView ?: return false
         if (
@@ -716,7 +720,9 @@ open class BlurEngine @JvmOverloads constructor(
         }
         clip(canvas, left, top, right, bottom, cornerRadii, cornerRadius, clipPath)
         canvas.drawRenderNode(sourceBlurNode)
-        drawOverlay(canvas, left, top, right, bottom, cornerRadii, cornerRadius, clipPath)
+        if (withOverlay) {
+            drawOverlay(canvas, left, top, right, bottom, cornerRadii, cornerRadius, clipPath)
+        }
         applyFadeGradient(canvas, left, top, right, bottom)
         canvas.restoreToCount(save)
         return true
@@ -1334,8 +1340,10 @@ open class BlurEngine @JvmOverloads constructor(
 
     private fun applyBlurSettings() {
         if (useSettingsBlurRadius) {
-            globalBlurEnabled = settingsInteractor.settings().enabled
-            baseBlurRadiusPx = settingsInteractor.settings().blurRadiusPx
+            // One read: settings() hits the settings provider each call.
+            val settings = settingsInteractor.settings()
+            globalBlurEnabled = settings.enabled
+            baseBlurRadiusPx = settings.blurRadiusPx
             updateBlurRadiusPx(baseBlurRadiusPx * blurFraction)
         }
     }

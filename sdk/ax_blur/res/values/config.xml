@@ -15,5 +15,7 @@
      limitations under the License.
 -->
 <resources>
-    <item name="config_axBlurSurfaceAlpha" format="float" type="dimen">0.7372549</item>
+    <!-- Frost tint opacity for Compose blur surfaces; equal to AX_BLUR_SURFACE_ALPHA (0x8A) / 255
+         so View and Compose surfaces match. -->
+    <item name="config_axBlurSurfaceAlpha" format="float" type="dimen">0.5411765</item>
 </resources>
