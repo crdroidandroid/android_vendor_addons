@@ -168,7 +168,6 @@ PRODUCT_PACKAGES += \
     FontExotwoOverlay \
     FontFifa2018Overlay \
     FontGrandHotelOverlay \
-    FontGoogleSansFlexOverlay \
     FontHarmonySansOverlay \
     FontIBMPlexSansOverlay \
     FontLatoOverlay \
