@@ -26,6 +26,6 @@
     <application android:label="@string/font_nothingdot_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="nothingdot" />
+            android:value="nothingdot57,nothingdot,pixelwars" />
     </application>
 </manifest>
