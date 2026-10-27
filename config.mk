@@ -180,7 +180,6 @@ PRODUCT_PACKAGES += \
     FontLatoOverlay \
     FontLinotteOverlay \
     FontNokiaPureOverlay \
-    FontNothingDotHeadlineOverlay \
     FontNothingDotOverlay \
     FontNunitoOverlay \
     FontOneplusSansOverlay \
