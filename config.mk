@@ -21,8 +21,12 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 ifeq ($(TARGET_HAS_UDFPS),true)
 PRODUCT_PACKAGES += \
-    UdfpsIcons \
+    UdfpsIcons
+
+ifneq ($(TARGET_EXCLUDES_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
     UdfpsAnimations
+endif
 endif
 
 PRODUCT_COPY_FILES += \
