@@ -30,6 +30,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.toggleableState
+import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -59,11 +63,16 @@ fun PrimarySwitchPreference(
         iconTint = iconTint,
         iconBackgroundColor = iconBackgroundColor,
         position = position,
-        modifier = modifier.combinedClickable(
-            enabled = enabled,
-            onClick = onClick,
-            onLongClick = onLongClick,
-        ),
+        modifier = modifier
+            .semantics {
+                role = Role.Switch
+                toggleableState = ToggleableState(checked)
+            }
+            .combinedClickable(
+                enabled = enabled,
+                onClick = onClick,
+                onLongClick = onLongClick,
+            ),
         widget = {
             VerticalDivider(
                 modifier = Modifier

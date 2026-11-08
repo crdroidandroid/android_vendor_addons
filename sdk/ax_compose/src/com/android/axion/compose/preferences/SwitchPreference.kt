@@ -19,8 +19,8 @@
 package com.android.axion.compose.preferences
 
 import android.graphics.drawable.Drawable
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.ripple
 import androidx.compose.runtime.Composable
@@ -29,6 +29,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.semantics.Role
 
 @Composable
 fun SwitchPreference(
@@ -57,11 +58,14 @@ fun SwitchPreference(
         iconTint = iconTint,
         iconBackgroundColor = iconBackgroundColor,
         position = position,
-        modifier = modifier.clickable(
+        modifier = modifier.toggleable(
+            value = checked,
             interactionSource = interactionSource,
             indication = ripple(),
             enabled = enabled,
-        ) { onCheckedChange(!checked) },
+            role = Role.Switch,
+            onValueChange = onCheckedChange,
+        ),
         widget = {
             ExpressiveSwitch(
                 checked = checked,
