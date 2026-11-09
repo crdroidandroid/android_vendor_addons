@@ -165,6 +165,7 @@ fun BottomSheetDialog(
             Box(
                 Modifier
                     .fillMaxSize()
+                    .semantics { hideFromAccessibility() }
                     .clickable(
                         indication = null,
                         interactionSource = remember { MutableInteractionSource() },
