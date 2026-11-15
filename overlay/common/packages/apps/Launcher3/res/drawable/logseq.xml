@@ -1,38 +1,11 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="50.8"
-    android:viewportHeight="50.8"
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <group
-        android:translateX="0.256"
-        android:translateY="0.048">
-        <path
-            android:pathData="M44.344 32.769A14.73 12.162 0 0 1 14.884 32.769A14.73 12.162 0 0 1 44.344 32.769Z"
-            android:strokeColor="#000000"
-            android:strokeWidth="3.175" />
-        <group
-            android:rotation="-74.9265"
-            android:scaleX="1.000227"
-            android:scaleY="0.9997731">
-            <group
-                android:rotation="45.0065">
-                <path
-                    android:pathData="M8.178 16.634A4.865 6.17 0 0 1 -1.552 16.634A4.865 6.17 0 0 1 8.178 16.634Z"
-                    android:strokeColor="#000000"
-                    android:strokeWidth="3.175" />
-            </group>
-        </group>
-        <group
-            android:rotation="29.41272"
-            android:scaleX="1.007321"
-            android:scaleY="0.9926327">
-            <group
-                android:rotation="-45.02767">
-                <path
-                    android:pathData="M30.02 16.236A5.454 3.203 0 0 1 19.112 16.236A5.454 3.203 0 0 1 30.02 16.236Z"
-                    android:strokeColor="#000000"
-                    android:strokeWidth="3.175" />
-            </group>
-        </group>
-    </group>
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M113,168c31.48,0 57,-19.699 57,-44s-25.52,-44 -57,-44 -57,19.7 -57,44 25.52,44 57,44ZM53,71.027c8.696,-5.021 10.598,-18.059 4.247,-29.12 -6.35,-11.06 -18.55,-15.956 -27.246,-10.934 -8.697,5.021 -10.599,18.059 -4.248,29.12 6.35,11.06 18.55,15.956 27.246,10.934ZM111.481,48.788c11.436,-3.023 19.148,-10.751 17.225,-17.262 -1.922,-6.51 -12.751,-9.337 -24.187,-6.314S85.371,35.963 87.294,42.474c1.922,6.51 12.751,9.337 24.187,6.314Z"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
 </vector>

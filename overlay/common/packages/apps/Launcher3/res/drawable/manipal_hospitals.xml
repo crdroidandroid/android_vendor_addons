@@ -1,11 +1,11 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M54 100a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm56 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm-28 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm-56 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm140 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm-28 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10ZM82 44a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 56a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm28 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 -28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 -84a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Z"
-        android:fillColor="#000000"
-        android:strokeColor="#000000"
-        android:strokeWidth="10" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M54,101a5,5 0,1 0,-0.001 -10,5 5,0 0,0 0,10ZM109.999,101a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM82,101a5,5 0,1 0,-0.001 -10,5 5,0 0,0 0,10ZM26,101a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM165.999,101a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM137.999,101a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM82,45a5,5 0,1 0,-0.001 -10,5 5,0 0,0 0,10ZM82,73a5,5 0,1 0,-0.001 -10,5 5,0 0,0 0,10ZM82,129a5,5 0,1 0,-0.002 -10A5,5 0,0 0,82 129ZM82,157a5,5 0,1 0,-0.002 -10A5,5 0,0 0,82 157ZM109.999,157a5,5 0,1 0,-0.001 -10.001,5 5,0 0,0 0.001,10.001ZM109.999,129a5,5 0,1 0,-0.001 -10.001,5 5,0 0,0 0.001,10.001ZM109.999,45a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM109.999,73a5,5 0,1 0,0 -10,5 5,0 0,0 0,10Z"
+      android:strokeWidth="10"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
 </vector>

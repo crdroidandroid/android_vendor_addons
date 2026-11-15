@@ -1,42 +1,51 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M34.002 96A6.001 6.001 0 0 1 22 96A6.001 6.001 0 0 1 34.002 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M68.007 62.006A6.001 6.001 0 0 1 56.005 62.006A6.001 6.001 0 0 1 68.007 62.006Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M102.001 28.001A6.001 6.001 0 0 1 89.999 28.001A6.001 6.001 0 0 1 102.001 28.001Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M68.007 129.994A6.001 6.001 0 0 1 56.005 129.994A6.001 6.001 0 0 1 68.007 129.994Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M102.001 96A6.001 6.001 0 0 1 89.999 96A6.001 6.001 0 0 1 102.001 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M135.995 62.006A6.001 6.001 0 0 1 123.993 62.006A6.001 6.001 0 0 1 135.995 62.006Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M102.001 163.999A6.001 6.001 0 0 1 89.999 163.999A6.001 6.001 0 0 1 102.001 163.999Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M135.995 129.994A6.001 6.001 0 0 1 123.993 129.994A6.001 6.001 0 0 1 135.995 129.994Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M170 96A6.001 6.001 0 0 1 157.998 96A6.001 6.001 0 0 1 170 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M28.001,96m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M62.006,62.006m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M96,28.001m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M62.006,129.994m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M96,96m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M129.994,62.006m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M96,163.999m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M129.994,129.994m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M163.999,96m-6.001,0a6.001,6.001 0,1 1,12.002 0a6.001,6.001 0,1 1,-12.002 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
 </vector>
