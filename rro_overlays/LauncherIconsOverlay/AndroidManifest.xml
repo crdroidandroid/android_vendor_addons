@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.launcher3.icons.overlay">
+    <overlay android:isStatic="true" android:priority="100" android:targetPackage="com.android.launcher3"/>
+
+    <application android:hasCode="false" android:label="LauncherIconsOverlay" android:allowBackup="false" />
+</manifest>

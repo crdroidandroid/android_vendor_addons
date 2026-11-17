@@ -1,0 +1,15 @@
+//
+// SPDX-FileCopyrightText: crDroid Android Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "LauncherIconsOverlay",
+    theme: "LauncherIconsOverlay",
+    certificate: "platform",
+    sdk_version: "current",
+    system_ext_specific: true,
+    resource_dirs: [
+        "res",
+    ],
+}
