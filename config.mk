@@ -47,9 +47,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     ImeNavBarSpaceOverlay \
-    HideSmartSpace \
-    SmartSpaceOffset \
-    HideClock
+    SmartSpaceOffset
 
 # Custom Overlays
 PRODUCT_PACKAGES += \
