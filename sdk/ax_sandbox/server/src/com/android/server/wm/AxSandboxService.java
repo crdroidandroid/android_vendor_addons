@@ -8,6 +8,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.UserHandle;
+import android.os.Process;
+import android.text.TextUtils;
+
+import com.android.server.LocalServices;
+import android.app.ActivityManagerInternal;
 
 import com.android.internal.app.HiddenNotificationInfo;
 import com.android.internal.app.IAppLockStateListener;
@@ -339,5 +344,52 @@ public final class AxSandboxService extends SystemService {
 
     public String getSpoofedSetting(String callingPackage, String settingName, int userId) {
         return mSpoofService.getSpoofedSetting(callingPackage, settingName, userId);
+    }
+
+    private int resolvePolicyUid(int uid) {
+        if (Process.isSdkSandboxUid(uid)) {
+            return Process.getAppUidForSdkSandboxUid(uid);
+        }
+        if (Process.isIsolatedUid(uid)) {
+            ActivityManagerInternal ami = LocalServices.getService(ActivityManagerInternal.class);
+            return ami != null ? ami.getIsolatedOwnerUid(uid) : Process.INVALID_UID;
+        }
+        return UserHandle.isApp(uid) ? uid : Process.INVALID_UID;
+    }
+
+    public boolean isSpoofSettingEnabledForUid(int callingUid, String settingKey) {
+        if (TextUtils.isEmpty(settingKey)) return false;
+        int ownerUid = resolvePolicyUid(callingUid);
+        if (ownerUid == Process.INVALID_UID) return false;
+        String[] packages = mContext.getPackageManager().getPackagesForUid(ownerUid);
+        if (packages == null) return false;
+        int userId = UserHandle.getUserId(ownerUid);
+        for (String packageName : packages) {
+            if (mSpoofService.isSpoofSettingEnabled(packageName, settingKey, userId)) return true;
+        }
+        return false;
+    }
+
+    public String getSpoofedSettingForUid(String callingPackage, int callingUid,
+            String settingName) {
+        int ownerUid = resolvePolicyUid(callingUid);
+        if (ownerUid == Process.INVALID_UID) return null;
+        int userId = UserHandle.getUserId(ownerUid);
+        if (!TextUtils.isEmpty(callingPackage)) {
+            try {
+                if (mContext.getPackageManager().getPackageUidAsUser(callingPackage, userId)
+                        == ownerUid) {
+                    return mSpoofService.getSpoofedSetting(callingPackage, settingName, userId);
+                }
+            } catch (android.content.pm.PackageManager.NameNotFoundException ignored) {
+            }
+        }
+        String[] packages = mContext.getPackageManager().getPackagesForUid(ownerUid);
+        if (packages == null) return null;
+        for (String packageName : packages) {
+            String value = mSpoofService.getSpoofedSetting(packageName, settingName, userId);
+            if (value != null) return value;
+        }
+        return null;
     }
 }

@@ -54,9 +54,9 @@ public class AxSettingsSpoofManager {
         }
     }
 
-    public String getSpoofedSetting(String callingPackage, String settingName, int userId) {
+    public String getSpoofedSetting(String callingPackage, int callingUid, String settingName) {
         try {
-            return getService().getSandboxSpoofedSetting(callingPackage, settingName, userId);
+            return getService().getSandboxSpoofedSetting(callingPackage, callingUid, settingName);
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
         }

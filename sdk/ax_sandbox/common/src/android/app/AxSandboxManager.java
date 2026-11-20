@@ -49,6 +49,13 @@ public class AxSandboxManager {
     /** @hide */
     public static final String SETTING_SANDBOX_CONFIG = "sandbox_config";
 
+    /** Per-app option that reports SELinux as enforcing. @hide */
+    public static final String SPOOF_SELINUX_ENFORCING = "selinux_enforcing";
+    /** Per-app option that hides ADB state and endpoints. @hide */
+    public static final String SPOOF_ADB_ENABLED = "adb_enabled";
+    /** Per-app option that hides root and custom-ROM artifacts. @hide */
+    public static final String SPOOF_ROOT_ENVIRONMENT = "root_environment";
+
     /** @hide */
     public static final String EXTRA_LOCKED_PACKAGE = "LOCKED_PACKAGE";
     /** @hide */
@@ -435,9 +442,10 @@ public class AxSandboxManager {
 
     /** @hide */
     @Nullable
-    public String getSpoofedSetting(@NonNull String callingPackage, @NonNull String settingName, int userId) {
+    public String getSpoofedSetting(@Nullable String callingPackage, int callingUid,
+            @NonNull String settingName) {
         try {
-            return getService().getSandboxSpoofedSetting(callingPackage, settingName, userId);
+            return getService().getSandboxSpoofedSetting(callingPackage, callingUid, settingName);
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
         }
