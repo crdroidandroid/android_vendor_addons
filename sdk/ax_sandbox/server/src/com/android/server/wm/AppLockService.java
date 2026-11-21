@@ -54,13 +54,44 @@ public class AppLockService {
     public static final int LOCK_BEHAVIOR_ON_SCREEN_OFF = 2;
     public static final int LOCK_BEHAVIOR_ON_KILL = 3;
 
+    public static final String SETTINGS_PACKAGE = "com.android.settings";
+
+    /** Packages that can never be hidden or sandboxed, and are trusted callers for those. */
     public static final Set<String> BLACKLISTED_PACKAGES = Set.of(
             "com.android.systemui",
             "com.android.launcher3",
             "android",
-            "com.android.settings",
+            SETTINGS_PACKAGE,
             SANDBOX_PACKAGE,
             APPLOCKER_PACKAGE
+    );
+
+    /**
+     * Packages that can never be app locked. Unlike {@link #BLACKLISTED_PACKAGES}, Settings
+     * is lockable: it is a regular launcher app and the unlock prompt does not depend on it.
+     */
+    private static final Set<String> LOCK_EXEMPT_PACKAGES = Set.of(
+            "com.android.systemui",
+            "com.android.launcher3",
+            "android",
+            SANDBOX_PACKAGE,
+            APPLOCKER_PACKAGE
+    );
+
+    /**
+     * Settings activities that confirm the device credential for other apps (KeyguardManager).
+     * They are an authentication step themselves, so gating them behind the app lock would
+     * double prompt, and cancelling the app lock prompt would abort the caller's flow.
+     */
+    private static final Set<String> LOCK_EXEMPT_SETTINGS_ACTIVITIES = Set.of(
+            SETTINGS_PACKAGE + ".ConfirmDeviceCredentialActivity",
+            SETTINGS_PACKAGE + ".ConfirmRemoteDeviceCredentialActivity",
+            SETTINGS_PACKAGE + ".password.ConfirmDeviceCredentialActivity",
+            SETTINGS_PACKAGE + ".password.ConfirmDeviceCredentialActivity$InternalActivity",
+            SETTINGS_PACKAGE + ".password.ConfirmLockPassword",
+            SETTINGS_PACKAGE + ".password.ConfirmLockPassword$InternalActivity",
+            SETTINGS_PACKAGE + ".password.ConfirmLockPattern",
+            SETTINGS_PACKAGE + ".password.ConfirmLockPattern$InternalActivity"
     );
 
     private static volatile AppLockService sInstance;
@@ -129,7 +160,7 @@ public class AppLockService {
 
     public AppLockState computeAppLockState(String packageName, int userId) {
         if (TextUtils.isEmpty(packageName)) return NONE;
-        if (BLACKLISTED_PACKAGES.contains(packageName)) return NONE;
+        if (LOCK_EXEMPT_PACKAGES.contains(packageName)) return NONE;
         if (!mRepository.isAppLocked(packageName, userId)) return NONE;
         if (!mKeyguardDone) return LOCKED;
         return isSessionUnlocked(packageName, userId) ? UNLOCKED : LOCKED;
@@ -153,10 +184,12 @@ public class AppLockService {
 
     public boolean isAppLocked(String packageName, int uid, ComponentName component) {
         if (TextUtils.isEmpty(packageName)) return false;
-        if (BLACKLISTED_PACKAGES.contains(packageName)) return false;
+        if (LOCK_EXEMPT_PACKAGES.contains(packageName)) return false;
         int userId = UserHandle.getUserId(uid);
         if (!mRepository.isAppLocked(packageName, userId)) return false;
-        if (component != null && isAuthActivity(component)) return false;
+        if (component != null && (isAuthActivity(component) || isLockExemptActivity(component))) {
+            return false;
+        }
         return !isSessionUnlocked(packageName, userId);
     }
 
@@ -193,7 +226,7 @@ public class AppLockService {
                 Set<String> seen = new HashSet<>();
                 for (LauncherActivityInfo info : activities) {
                     String pkgName = info.getApplicationInfo().packageName;
-                    if (!BLACKLISTED_PACKAGES.contains(pkgName) && !seen.contains(pkgName)) {
+                    if (!LOCK_EXEMPT_PACKAGES.contains(pkgName) && !seen.contains(pkgName)) {
                         result.add(pkgName);
                         seen.add(pkgName);
                     }
@@ -207,8 +240,10 @@ public class AppLockService {
                 if (pm != null) {
                     List<ApplicationInfo> apps = pm.getInstalledApplicationsAsUser(0, userId);
                     for (ApplicationInfo appInfo : apps) {
-                        if (BLACKLISTED_PACKAGES.contains(appInfo.packageName)) continue;
-                        if (isSystemUid(appInfo.uid)) continue;
+                        if (LOCK_EXEMPT_PACKAGES.contains(appInfo.packageName)) continue;
+                        // Settings runs as the system uid but is lockable.
+                        if (isSystemUid(appInfo.uid)
+                                && !SETTINGS_PACKAGE.equals(appInfo.packageName)) continue;
                         if (pm.getLaunchIntentForPackage(appInfo.packageName) != null) {
                             result.add(appInfo.packageName);
                         }
@@ -226,7 +261,7 @@ public class AppLockService {
     }
 
     public boolean isPackageLockable(String packageName, int userId) {
-        if (TextUtils.isEmpty(packageName) || BLACKLISTED_PACKAGES.contains(packageName)) {
+        if (TextUtils.isEmpty(packageName) || LOCK_EXEMPT_PACKAGES.contains(packageName)) {
             return false;
         }
         if (mRepository.isAppLocked(packageName, userId)) {
@@ -471,7 +506,7 @@ public class AppLockService {
                 && newTaskId != INVALID_TASK_ID
                 && newTaskId == mLastFocusedTaskId
                 && mUnlockedApps.contains(mLastFocusedAppKey)
-                && !hasAppLock(newFocus.packageName, newFocus.mUserId);
+                && !hasAppLockForActivity(newFocus);
     }
 
     public void onWindowingModeChanged(Task task, int prevMode) {
@@ -573,7 +608,7 @@ public class AppLockService {
         if (task == null) return null;
         final String basePkg = task.getBasePackageName();
         if (TextUtils.isEmpty(basePkg) || basePkg.equals(r.packageName)) return null;
-        if (hasAppLock(r.packageName, r.mUserId)) return null;
+        if (hasAppLockForActivity(r)) return null;
         final String ownerKey = sessionKey(task.mUserId, basePkg);
         return mUnlockedApps.contains(ownerKey) ? ownerKey : null;
     }
@@ -608,6 +643,18 @@ public class AppLockService {
     public boolean isAppLockerActivity(ComponentName componentName) {
         if (componentName == null) return false;
         return APPLOCKER_PACKAGE.equals(componentName.getPackageName());
+    }
+
+    private boolean hasAppLockForActivity(ActivityRecord r) {
+        if (r.mActivityComponent != null && isLockExemptActivity(r.mActivityComponent)) {
+            return false;
+        }
+        return hasAppLock(r.packageName, r.mUserId);
+    }
+
+    private static boolean isLockExemptActivity(ComponentName componentName) {
+        return SETTINGS_PACKAGE.equals(componentName.getPackageName())
+                && LOCK_EXEMPT_SETTINGS_ACTIVITIES.contains(componentName.getClassName());
     }
 
     public boolean isAuthActivity(ComponentName componentName) {
