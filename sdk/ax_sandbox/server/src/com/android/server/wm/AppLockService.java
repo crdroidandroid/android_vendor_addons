@@ -40,8 +40,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class AppLockService {
     public static final String SANDBOX_PACKAGE = "com.android.axion.sandbox";
-    public static final String APPLOCKER_PACKAGE = "com.android.applocker";
-    private static final String APPLOCKER_ACTIVITY = "com.android.applocker.AuthenticateActivity";
+    private static final ComponentName UNLOCK_PROMPT_COMPONENT = new ComponentName(
+            SANDBOX_PACKAGE, "com.android.axion.sandbox.AuthenticateActivity");
 
     private static final String EXTRA_LOCKED_UID = "LOCKED_UID";
     private static final String EXTRA_LOCKED_PACKAGE = "LOCKED_PACKAGE";
@@ -62,8 +62,7 @@ public class AppLockService {
             "com.android.launcher3",
             "android",
             SETTINGS_PACKAGE,
-            SANDBOX_PACKAGE,
-            APPLOCKER_PACKAGE
+            SANDBOX_PACKAGE
     );
 
     /**
@@ -74,8 +73,7 @@ public class AppLockService {
             "com.android.systemui",
             "com.android.launcher3",
             "android",
-            SANDBOX_PACKAGE,
-            APPLOCKER_PACKAGE
+            SANDBOX_PACKAGE
     );
 
     /**
@@ -641,8 +639,7 @@ public class AppLockService {
     }
 
     public boolean isAppLockerActivity(ComponentName componentName) {
-        if (componentName == null) return false;
-        return APPLOCKER_PACKAGE.equals(componentName.getPackageName());
+        return UNLOCK_PROMPT_COMPONENT.equals(componentName);
     }
 
     private boolean hasAppLockForActivity(ActivityRecord r) {
@@ -658,7 +655,7 @@ public class AppLockService {
     }
 
     public boolean isAuthActivity(ComponentName componentName) {
-        return isSandboxActivity(componentName) || isAppLockerActivity(componentName);
+        return isSandboxActivity(componentName);
     }
 
     public void registerAppLockStateListener(IAppLockStateListener listener) {
@@ -1007,29 +1004,11 @@ public class AppLockService {
 
     private Intent getConfirmIntent() {
         if (mConfirmIntent == null) {
-            Intent appLockerIntent = new Intent("com.android.applocker.action.SYSTEM_UNLOCK");
-            appLockerIntent.setClassName(APPLOCKER_PACKAGE, APPLOCKER_ACTIVITY);
-            appLockerIntent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-
-            PackageManager pm = (mContext != null) ? mContext.getPackageManager() : null;
-            if (pm != null) {
-                try {
-                    if (pm.resolveActivity(appLockerIntent, PackageManager.MATCH_DEFAULT_ONLY) != null) {
-                        mConfirmIntent = appLockerIntent;
-                        return mConfirmIntent;
-                    }
-                } catch (Exception ignored) {
-                }
-            }
-
-            Intent sandboxIntent = new Intent(ACTION_SYSTEM_UNLOCK);
-            sandboxIntent.setClassName(SANDBOX_PACKAGE, "com.android.axion.sandbox.AuthenticateActivity");
-            sandboxIntent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-
-            if (pm != null) {
-                mConfirmIntent = sandboxIntent;
-            }
-            return (pm != null) ? sandboxIntent : appLockerIntent;
+            Intent intent = new Intent(ACTION_SYSTEM_UNLOCK);
+            intent.setComponent(UNLOCK_PROMPT_COMPONENT);
+            intent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
+                    | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            mConfirmIntent = intent;
         }
         return mConfirmIntent;
     }

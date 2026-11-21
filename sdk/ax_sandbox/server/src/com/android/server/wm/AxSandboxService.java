@@ -32,7 +32,6 @@ import java.util.Set;
 public final class AxSandboxService extends SystemService {
 
     public static final String SANDBOX_PACKAGE = AppLockService.SANDBOX_PACKAGE;
-    public static final String APPLOCKER_PACKAGE = AppLockService.APPLOCKER_PACKAGE;
     public static final Set<String> BLACKLISTED_PACKAGES = AppLockService.BLACKLISTED_PACKAGES;
 
     private final ActivityTaskManagerService mAtms;
