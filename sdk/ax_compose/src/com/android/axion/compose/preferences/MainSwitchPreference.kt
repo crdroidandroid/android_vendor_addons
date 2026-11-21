@@ -78,7 +78,7 @@ fun MainSwitchPreference(
                     indication = ripple(),
                     enabled = enabled,
                     role = Role.Switch,
-                    onValueChange = onCheckedChange,
+                    onValueChange = rememberToggleFeedback(onCheckedChange),
                 )
                 .padding(
                     start = PreferenceTokens.MainSwitchPaddingStart,

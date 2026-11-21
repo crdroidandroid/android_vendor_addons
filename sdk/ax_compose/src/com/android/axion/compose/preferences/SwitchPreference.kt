@@ -64,7 +64,7 @@ fun SwitchPreference(
             indication = ripple(),
             enabled = enabled,
             role = Role.Switch,
-            onValueChange = onCheckedChange,
+            onValueChange = rememberToggleFeedback(onCheckedChange),
         ),
         widget = {
             ExpressiveSwitch(

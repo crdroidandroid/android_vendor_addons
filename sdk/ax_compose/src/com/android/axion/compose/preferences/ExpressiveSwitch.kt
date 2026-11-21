@@ -18,6 +18,7 @@
 package com.android.axion.compose.preferences
 
 import androidx.compose.animation.Crossfade
+import android.view.SoundEffectConstants
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
@@ -29,9 +30,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalView
 
 @Composable
 fun ExpressiveSwitch(
@@ -43,7 +47,7 @@ fun ExpressiveSwitch(
 ) {
     Switch(
         checked = checked,
-        onCheckedChange = onCheckedChange,
+        onCheckedChange = onCheckedChange?.let { rememberToggleFeedback(it) },
         modifier = modifier,
         enabled = enabled,
         interactionSource = interactionSource,
@@ -76,4 +80,16 @@ fun ExpressiveSwitch(
             disabledUncheckedIconColor = MaterialTheme.colorScheme.surfaceContainerHighest,
         ),
     )
+}
+
+@Composable
+internal fun rememberToggleFeedback(onCheckedChange: (Boolean) -> Unit): (Boolean) -> Unit {
+    val view = LocalView.current
+    val callback by rememberUpdatedState(onCheckedChange)
+    return remember(view) {
+        { checked ->
+            view.playSoundEffect(SoundEffectConstants.CLICK)
+            callback(checked)
+        }
+    }
 }
