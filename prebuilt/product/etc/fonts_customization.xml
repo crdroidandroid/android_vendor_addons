@@ -272,7 +272,7 @@
         </font>
     </family>
 
-    <family-list customizationType="new-named-family" name="google-sans-flex">
+    <family-list customizationType="new-named-family" name="google-sans-flex" fallback="google-sans">
         <family>
             <font style="normal" weight="100">GoogleSansFlex-Regular.ttf
                 <axis stylevalue="100" tag="wght"/>
